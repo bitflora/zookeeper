@@ -1,0 +1,46 @@
+{
+    "type": "minecraft:gift",
+    "pools": [
+      {
+        "rolls": 1,
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 50,
+            "name": "minecraft:cod"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 50,
+            "name": "minecraft:salmon"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 50,
+            "name": "minecraft:tropical_fish"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "name": "minecraft:pufferfish"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "name": "minecraft:ink_sac"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:nautilus_shell"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 100,
+            "name": "minecraft:netherite_ingot"
+          }
+        ]
+      }
+    ]
+  }
