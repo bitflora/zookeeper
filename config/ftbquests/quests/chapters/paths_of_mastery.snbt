@@ -1,0 +1,254 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "paths_of_mastery"
+	group: ""
+	icon: {
+		Count: 1
+		id: "minecraft:dirt_path"
+		tag: { }
+	}
+	id: "057B70A997446842"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["By studying animals, we can learn more about ourselves. Seek out the owl, and gain wisdom and understanding of the world around you."]
+			id: "51893424D161C6E7"
+			rewards: [{
+				id: "35EA88CA833F9F56"
+				item: {
+					Count: 1
+					id: "theoneprobe:probe"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Probe all the things!"
+			tasks: [{
+				count: 32L
+				id: "2974710D3A995F7A"
+				item: {
+					Count: 32
+					id: "exoticbirds:owl_egg"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Path of the Owl"
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["51893424D161C6E7"]
+			description: ["As you continue your study, you will gain greater knowledge. Soon, you will not need the probe; you will know everything you need to just by looking."]
+			id: "10C82AF7709F574A"
+			rewards: [{
+				auto: "invisible"
+				id: "1E215F2E093A66AF"
+				ignore_reward_blocking: true
+				stage: "owl_jade"
+				title: "Enable Jade"
+				type: "gamestage"
+			}]
+			subtitle: "Gain Insight"
+			tasks: [{
+				id: "453E5941F0F9104F"
+				title: "Deeper knowledge"
+				type: "checkmark"
+			}]
+			title: "Path of the Owl 2"
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["10C82AF7709F574A"]
+			description: [
+				"You are what you eat. So shouldn't you know more about what you eat?"
+				""
+				"Ponder the food, and its secrets will be revealed to you."
+				""
+				"(In other words, you'll know exactly how much hunger and satiety each piece of food is worth.)"
+			]
+			id: "0329AD75534DCCCA"
+			rewards: [{
+				auto: "invisible"
+				id: "0CB2BA04505A118D"
+				ignore_reward_blocking: true
+				stage: "owl_appleskin"
+				title: "Enable appleskin"
+				type: "gamestage"
+			}]
+			subtitle: "How do you like them apples?"
+			tasks: [{
+				id: "33EFCBF868B27EAD"
+				item: {
+					Count: 1
+					id: "minecraft:bread"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Path of the Owl 3"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["10C82AF7709F574A"]
+			description: [
+				"Now that you know yourself, you are ready to know your surroundings."
+				""
+				"Explore the world and soon you will instinctively know the land in your immediate area."
+			]
+			id: "2775AA62C6D95C4E"
+			rewards: [{
+				auto: "invisible"
+				id: "7D911ACE68D56D5C"
+				ignore_reward_blocking: true
+				stage: "owl_minimap"
+				title: "Enable minimap"
+				type: "gamestage"
+			}]
+			subtitle: "Minimap"
+			tasks: [
+				{
+					id: "690B39E0640990F2"
+					item: {
+						Count: 1
+						id: "minecraft:compass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "76EF714A68118460"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:bald_eagle"
+					type: "observation"
+				}
+			]
+			title: "Path of the Owl 4"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2775AA62C6D95C4E"]
+			description: [
+				"You have observed much. Now you must remember it."
+				""
+				"An elephant never forgets. Learn its ways, and you too will remember all the land you have traversed."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:map"
+				tag: { }
+			}
+			id: "0CEE042A446CD0B3"
+			rewards: [{
+				auto: "invisible"
+				id: "4BBD1D8543AE8DB6"
+				ignore_reward_blocking: true
+				stage: "owl_fullmap"
+				title: "Enable World Map"
+				type: "gamestage"
+			}]
+			subtitle: "Maximap"
+			tasks: [{
+				id: "1E8D305BF27AFA06"
+				observe_type: 5
+				timer: 0L
+				title: "Behold an elephant"
+				to_observe: "alexsmobs:elephant"
+				type: "observation"
+			}]
+			title: "Path of the Owl 5"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			description: ["There are many ways to catch animals. Study the spider, and learn her snares."]
+			icon: {
+				Count: 1
+				id: "tconstruct:spider_head"
+				tag: { }
+			}
+			id: "000F0C223F4007A3"
+			rewards: [{
+				id: "5FEDF225285E58DF"
+				item: {
+					Count: 1
+					id: "minecraft:lead"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "06588D4B061DE053"
+				item: {
+					Count: 32
+					id: "minecraft:spider_eye"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Path of the Spider"
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"You have so many things! You need so many ways to store them!"
+				""
+				"Perhaps the humble rat has things to teach you."
+			]
+			icon: {
+				Count: 1
+				id: "rats:rat_arrow"
+				tag: { }
+			}
+			id: "787A422E4D27C364"
+			rewards: [{
+				id: "04F542596286AE17"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:iron_chest"
+					tag: {
+						woodType: "acacia"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "46CD3F663A2D7799"
+				item: {
+					Count: 1
+					id: "minecraft:oak_log"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Path of the Packrat"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			description: ["It's a dangerous world. You need better equipment. Learn from the master of armor. Learn from the turtle."]
+			icon: {
+				Count: 1
+				id: "aquaculture:box_turtle"
+				tag: { }
+			}
+			id: "6BDA6CFB89959B12"
+			tasks: [{
+				id: "30CACF71DE2EC761"
+				title: "Path of the Turtle"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+	]
+	title: "Paths of Mastery"
+}

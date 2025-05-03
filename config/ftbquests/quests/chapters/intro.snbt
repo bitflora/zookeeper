@@ -1,0 +1,276 @@
+{
+	autofocus_id: "542CDE05F61489C1"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intro"
+	group: ""
+	id: "037AF3175182FC03"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"The world is scarred. Lost."
+				""
+				"Years have passed since the loss of the ultimate zookeeper, but the wounds have not healed."
+				""
+				"It is up to you. You must bring back the ultimate zookeeper. And to do that, you will have to become the penultimate zookeeper."
+				""
+				"Travel the world. Gather its creatures. Learn their secrets. Gain their strength. Save the zookeeper, save the world."
+				"Welcome!"
+			]
+			id: "542CDE05F61489C1"
+			rewards: [{
+				id: "1D8BDE43B188D3E8"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [{
+				id: "638F715AC6928DBA"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["542CDE05F61489C1"]
+			description: [
+				"Like so many quests, this one starts with cobblestone. You're going to need a lot of it."
+				""
+				"To automate this, you'll need help from our friend, the &aMantis Shrimp&r. Tame him with &9tropical fish&r, tell him to break blocks, and then hand him the block to break with shift+right click!"
+				""
+				"Keep in mind that he can only breathe in the water. If you lose him, you can buy more from a pet store in a village."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:cobblestone"
+				tag: { }
+			}
+			id: "0E0B7CEB802E2BA0"
+			rewards: [
+				{
+					id: "2A71B174C4679FBD"
+					item: {
+						Count: 1
+						id: "alexsmobs:spawn_egg_mantis_shrimp"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 24
+					id: "0D9F23D10D1D8DFE"
+					item: {
+						Count: 1
+						id: "kubejs:marine_food"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "682443FE66BD7431"
+					item: {
+						Count: 1
+						id: "minecraft:lava_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5E6B5FEE2F767991"
+				title: "Cobblestone"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0E0B7CEB802E2BA0"]
+			description: [
+				"&aMagpies&r often scrounge up useful items, like &9iron ingots&r. They will happily drop these in exchange for &9seeds&r that are lying around."
+				""
+				"With some clever usage of &9droppers&r, you can semi-automate this process. Then sit back and let the passive income roll in."
+				""
+				""
+				"(&aKingfishers&r will also occasionally scrounge up useful items, but you will have to pry them from their cold, dead beaks.)"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:feather"
+				tag: { }
+			}
+			id: "39048B07BF1302D2"
+			rewards: [{
+				count: 5
+				id: "5B38F2BE952E9FE7"
+				item: {
+					Count: 1
+					id: "exoticbirds:magpie_spawn_egg"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Magpie bartering"
+			tasks: [
+				{
+					id: "34C36D34A0A62C49"
+					observe_type: 0
+					timer: 0L
+					to_observe: "exoticbirds:magpie"
+					type: "observation"
+				}
+				{
+					consume_items: false
+					count: 5L
+					id: "30AB731046A7C6C3"
+					item: {
+						Count: 5
+						id: "minecraft:iron_ingot"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 5L
+					id: "2914C2313988E93D"
+					item: {
+						Count: 5
+						id: "minecraft:gold_ingot"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0E0B7CEB802E2BA0"]
+			description: ["With so many animals stomping around, our machines need to be sturdier than usual. Some of the recipes you are familiar with will require more &9cobblestone&r than usual. Make sure to check the recipe book."]
+			icon: {
+				Count: 1
+				id: "compressedblocks:c1_cobblestone"
+				tag: { }
+			}
+			id: "18592710C935A9C9"
+			rewards: [{
+				count: 3
+				id: "1A0667CFD9C9B313"
+				item: {
+					Count: 1
+					id: "minecraft:dropper"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "363E0065BFF249F7"
+					item: {
+						Count: 1
+						id: "minecraft:dropper"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "07C84CAC3E797133"
+					item: {
+						Count: 1
+						id: "compressedblocks:c1_cobblestone"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0E0B7CEB802E2BA0"]
+			description: [
+				"While different animals need different food, a lot of them are going to be carnivores. And as we all know, &9worms&r are a delicious, meaty treat. And they're so economical, too!"
+				""
+				"Build a &9worm farm&r and put anything into it that you would put into a normal composter. Your worms will thrive and provide an excellent protein source for your other animals. "
+				""
+				"Note: the &9worm farm&r cannot be properly automated with hoppers; you must retrieve your worms manually."
+			]
+			icon: {
+				Count: 1
+				id: "aquaculture:worm"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "497CC95523D1F210"
+			rewards: [{
+				count: 20
+				id: "0DD4BAEF66770543"
+				item: {
+					Count: 1
+					id: "aquaculture:worm"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Groovy"
+			tasks: [
+				{
+					id: "026CDB3CE0740606"
+					item: {
+						Count: 1
+						id: "aquaculture:worm_farm"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "0817BC3E15A5713F"
+					item: {
+						Count: 15
+						id: "aquaculture:worm"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"18592710C935A9C9"
+				"497CC95523D1F210"
+			]
+			description: [
+				"Fish may have different food preferences, but if you mash enough food-like stuff together, you can get something that will please most of them. &9Marine food&r can be used to tame most tameable aquatic animals, such as &aMantis Shrimps&r, &aMudskippers&r, or &aAxolotls&r."
+				""
+				"To make it, you'll need &9worms&r for the nutrition, with a dash of &9sugar&r to add flavor. And of course, all fish food has some &9ash&r in it (really, look at the nutrition analysis sometime), which you can obtain by smelting down &9compressed cobblestone&r into its basic inorganic elements. Mix that all together, and you've got a nice generic food. It's got what fish crave!"
+				""
+				"Alas, it is not healthy enough to make them breed."
+			]
+			id: "1023B9A16DFDA09C"
+			tasks: [{
+				count: 32L
+				id: "42306082C0EA1973"
+				item: {
+					Count: 32
+					id: "kubejs:marine_food"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+	]
+	title: "Intro"
+}
