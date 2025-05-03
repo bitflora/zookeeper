@@ -2,13 +2,33 @@
     "type": "minecraft:gift",
     "pools": [
       {
-        "rolls": 1,
+        "rolls": 3,
         "bonus_rolls": 0.0,
         "entries": [
           {
             "type": "minecraft:item",
-            "weight": 100,
+            "weight": 50,
+            "name": "minecraft:iron_ingot"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 30,
             "name": "minecraft:gold_ingot"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 8,
+            "name": "minecraft:redstone"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 7,
+            "name": "minecraft:iron_nugget"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:gold_nugget"
           }
         ]
       }
