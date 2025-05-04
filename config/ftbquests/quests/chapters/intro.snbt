@@ -31,7 +31,7 @@
 				type: "checkmark"
 			}]
 			x: -3.5d
-			y: -6.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["542CDE05F61489C1"]
@@ -84,7 +84,7 @@
 				type: "checkmark"
 			}]
 			x: -3.5d
-			y: -4.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["0E0B7CEB802E2BA0"]
@@ -112,11 +112,11 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Magpie bartering"
+			subtitle: "One for sorrow, two for joy"
 			tasks: [
 				{
 					id: "34C36D34A0A62C49"
-					observe_type: 0
+					observe_type: 5
 					timer: 0L
 					to_observe: "exoticbirds:magpie"
 					type: "observation"
@@ -144,8 +144,9 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -4.0d
+			title: "Magpie Bartering"
+			x: -1.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["0E0B7CEB802E2BA0"]
@@ -186,8 +187,9 @@
 					type: "item"
 				}
 			]
+			title: "Compressed Cobblestone"
 			x: -3.5d
-			y: -2.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["0E0B7CEB802E2BA0"]
@@ -243,7 +245,7 @@
 				}
 			]
 			x: -5.0d
-			y: -2.0d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -269,7 +271,129 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 0.5d
+			y: -6.0d
+		}
+		{
+			description: ["&aSeals&r a friendly creatures that hang around on the shore. They love &9fish&r. If thrown 3 &9fish&r, they will search around in the water for something to repay you with."]
+			id: "5D575F0113A9CD9B"
+			rewards: [{
+				id: "1F80FF197D4F997C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "Like a wet piglin"
+			tasks: [{
+				id: "54E6901A5BE4E23B"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:seal"
+				type: "observation"
+			}]
+			title: "Seal barter"
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			description: [
+				"The &aPlatypus&r is a strange creature. But even strange friends can be helpful."
+				""
+				"When given &9marine food&r or &9redstone&r, he will get charged up, seek out the nearest &9clay block&r, and dig up useful materials for you."
+				""
+				"The &aPlatypus&r can be easily transported inside a &9water bucket&r."
+			]
+			id: "7D3DD42485E7C0FF"
+			tasks: [{
+				id: "67E4A29E5647FA24"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:platypus"
+				type: "observation"
+			}]
+			title: "Platypus Scavenging"
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			description: [
+				"The &aOretoise&r is a special mob that spawns only underground in complete darkness. It grows &9ores&r on its back, and if you attack it with a pickaxe, you can collect it. Feed it &9glowberries&r to help it regrow new ore."
+				""
+				"Collecting ores can be automated with an &9iron rod&r at the end of a piston."
+				""
+				"However, getting the &aOretoise&r back to your base will pose the larger challenge. A &9lead&r will not work. You can either use a &9minecart&r, or follow the &ePath of the Spider&r to get better animal capture devices."
+			]
+			icon: {
+				Count: 1
+				id: "aquaculture:starshell_turtle"
+				tag: { }
+			}
+			id: "40C3133370726213"
+			rewards: [
+				{
+					id: "5618D1D7EFF99075"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "09977187F62D4E1D"
+					item: {
+						Count: 1
+						id: "minecraft:iron_block"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "61D7B619555896F2"
+					item: {
+						Count: 1
+						id: "minecraft:lapis_block"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Yertle the Minder"
+			tasks: [
+				{
+					id: "1042C9E083BDFC63"
+					observe_type: 5
+					timer: 0L
+					to_observe: "quark:tortoise"
+					type: "observation"
+				}
+				{
+					count: 3L
+					id: "15A7DC723BFB4A51"
+					item: {
+						Count: 3
+						id: "minecraft:glow_berries"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "3D00B33CAC713ED7"
+					item: {
+						Count: 1
+						id: "quark:iron_rod"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "22A342AD5F0DBB2F"
+					item: {
+						Count: 20
+						id: "minecraft:lapis_lazuli"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Oretoise Farming"
+			x: 0.5d
+			y: -9.5d
 		}
 	]
 	title: "Intro"

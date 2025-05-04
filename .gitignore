@@ -1,2 +1,4 @@
 *.jar
 .mixin.out/
+saves/
+logs/

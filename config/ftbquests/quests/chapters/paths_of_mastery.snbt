@@ -13,7 +13,12 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["By studying animals, we can learn more about ourselves. Seek out the owl, and gain wisdom and understanding of the world around you."]
+			description: ["By studying animals, we can learn more about ourselves. Seek out the &aOwl&r, and gain wisdom and understanding of the world around you."]
+			icon: {
+				Count: 1
+				id: "exoticbirds:owl_egg"
+				tag: { }
+			}
 			id: "51893424D161C6E7"
 			rewards: [{
 				id: "35EA88CA833F9F56"
@@ -25,16 +30,25 @@
 				type: "item"
 			}]
 			subtitle: "Probe all the things!"
-			tasks: [{
-				count: 32L
-				id: "2974710D3A995F7A"
-				item: {
-					Count: 32
-					id: "exoticbirds:owl_egg"
-					tag: { }
+			tasks: [
+				{
+					count: 32L
+					id: "2974710D3A995F7A"
+					item: {
+						Count: 32
+						id: "exoticbirds:owl_egg"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "09F188FDC2750BA5"
+					observe_type: 5
+					timer: 0L
+					to_observe: "exoticbirds:owl"
+					type: "observation"
+				}
+			]
 			title: "Path of the Owl"
 			x: -5.0d
 			y: -4.5d
@@ -98,8 +112,16 @@
 			description: [
 				"Now that you know yourself, you are ready to know your surroundings."
 				""
-				"Explore the world and soon you will instinctively know the land in your immediate area."
+				"Perhaps, it would help to take a different perspective on the world around you. Befriend an &aEagle&r, and work on seeing things from a bird's-eye view."
 			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:bald_eagle"
+					DisplayMobFlags: 98
+				}
+			}
 			id: "2775AA62C6D95C4E"
 			rewards: [{
 				auto: "invisible"
@@ -112,20 +134,35 @@
 			subtitle: "Minimap"
 			tasks: [
 				{
-					id: "690B39E0640990F2"
-					item: {
-						Count: 1
-						id: "minecraft:compass"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
 					id: "76EF714A68118460"
 					observe_type: 5
 					timer: 0L
 					to_observe: "alexsmobs:bald_eagle"
 					type: "observation"
+				}
+				{
+					id: "75FC3B5A08A94539"
+					item: {
+						Count: 1
+						id: "alexsmobs:falconry_hood"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6B226E97C9338901"
+					item: {
+						Count: 1
+						id: "alexsmobs:falconry_glove"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/bald_eagle_challenge"
+					criterion: ""
+					id: "74DFE839AA72BBCF"
+					type: "advancement"
 				}
 			]
 			title: "Path of the Owl 4"
@@ -137,12 +174,14 @@
 			description: [
 				"You have observed much. Now you must remember it."
 				""
-				"An elephant never forgets. Learn its ways, and you too will remember all the land you have traversed."
+				"An &aElephant&r never forgets. Learn its ways, and you too will remember all the land you have traversed."
 			]
 			icon: {
 				Count: 1
-				id: "minecraft:map"
-				tag: { }
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:elephant"
+				}
 			}
 			id: "0CEE042A446CD0B3"
 			rewards: [{
@@ -154,20 +193,41 @@
 				type: "gamestage"
 			}]
 			subtitle: "Maximap"
-			tasks: [{
-				id: "1E8D305BF27AFA06"
-				observe_type: 5
-				timer: 0L
-				title: "Behold an elephant"
-				to_observe: "alexsmobs:elephant"
-				type: "observation"
-			}]
+			tasks: [
+				{
+					id: "1E8D305BF27AFA06"
+					observe_type: 5
+					timer: 0L
+					title: "Behold an elephant"
+					to_observe: "alexsmobs:elephant"
+					type: "observation"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "3FB925D14DF138ED"
+					stat: "minecraft:walk_one_cm"
+					type: "stat"
+					value: 10000
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/tame_elephant"
+					criterion: ""
+					id: "20D2990970CF1B2A"
+					type: "advancement"
+				}
+			]
 			title: "Path of the Owl 5"
 			x: -4.0d
 			y: 0.0d
 		}
 		{
-			description: ["There are many ways to catch animals. Study the spider, and learn her snares."]
+			description: ["There are many ways to catch animals. Study the &aspider&r, and learn her snares."]
 			icon: {
 				Count: 1
 				id: "tconstruct:spider_head"
@@ -183,16 +243,30 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				count: 32L
-				id: "06588D4B061DE053"
-				item: {
-					Count: 32
-					id: "minecraft:spider_eye"
-					tag: { }
+			tasks: [
+				{
+					count: 32L
+					id: "06588D4B061DE053"
+					item: {
+						Count: 32
+						id: "minecraft:spider_eye"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					icon: {
+						Count: 1
+						id: "tconstruct:spider_head"
+						tag: { }
+					}
+					id: "685D74BFAC209DC7"
+					observe_type: 5
+					timer: 0L
+					to_observe: "minecraft:spider"
+					type: "observation"
+				}
+			]
 			title: "Path of the Spider"
 			x: -0.5d
 			y: -4.5d
@@ -220,15 +294,24 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "46CD3F663A2D7799"
-				item: {
-					Count: 1
-					id: "minecraft:oak_log"
-					tag: { }
+			tasks: [
+				{
+					id: "46CD3F663A2D7799"
+					item: {
+						Count: 1
+						id: "minecraft:oak_log"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "44BBB0D9E7C5D040"
+					observe_type: 5
+					timer: 0L
+					to_observe: "rats:rat"
+					type: "observation"
+				}
+			]
 			title: "Path of the Packrat"
 			x: 3.5d
 			y: -4.5d
