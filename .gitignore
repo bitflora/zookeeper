@@ -2,3 +2,5 @@
 .mixin.out/
 saves/
 logs/
+journeymap/
+settings.json

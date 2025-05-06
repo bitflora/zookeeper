@@ -86,6 +86,49 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         B: 'kubejs:fur_ball'
     });
 
+    e.shaped('cyclic:waxed_redstone', [
+        'BBB',
+        'BR ',
+        'BBB'
+    ], {
+        R: 'minecraft:redstone_block',
+        B: 'kubejs:fur_ball'
+    });
+
+    // Rat recipe adjustments
+    e.remove({ output: 'rats:rat_cage' });
+    e.shaped('rats:rat_cage', [
+        'BBB',
+        'B B',
+        'CFC'
+    ], {
+        B: 'minecraft:iron_bars',
+        F: 'kubejs:fur_ball',
+        C: 'compressedblocks:c1_cobblestone',
+    });
+
+    e.remove({ output: 'rats:rat_breeding_lantern' });
+    e.shaped('rats:rat_breeding_lantern', [
+        ' F ',
+        'RLR',
+        ' R '
+    ], {
+        L: 'minecraft:redstone_lamp',
+        F: 'kubejs:fur_ball',
+        R: 'minecraft:red_dye',
+    });
+
+    e.remove({ output: 'rats:cheese_stick' });
+    e.shaped('rats:rat_breeding_lantern', [
+        '  C',
+        ' F ',
+        'S  '
+    ], {
+        S: 'minecraft:stick',
+        F: 'kubejs:fur_ball',
+        C: 'rats:cheese',
+    });
+
     // Custom items
     e.smelting('2x supplementaries:ash', 'compressedblocks:c1_cobblestone');
 
@@ -119,9 +162,9 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
 
     // Fur ball
     e.shapeless('kubejs:fur_ball', [
-        '#minecraft:wool',
-        '#kubejs:furs',
-        '#forge:feathers'
+        '2x #minecraft:wool',
+        '2x #kubejs:furs',
+        '2x #forge:feathers'
     ]);
 
   });

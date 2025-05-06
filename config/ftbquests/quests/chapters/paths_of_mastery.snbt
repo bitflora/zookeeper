@@ -9,7 +9,7 @@
 		tag: { }
 	}
 	id: "057B70A997446842"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -227,7 +227,7 @@
 			y: 0.0d
 		}
 		{
-			description: ["There are many ways to catch animals. Study the &aspider&r, and learn her snares."]
+			description: ["There are many ways to catch animals. Study the &aSpider&r, and learn her snares."]
 			icon: {
 				Count: 1
 				id: "tconstruct:spider_head"
