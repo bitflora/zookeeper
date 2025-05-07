@@ -9,6 +9,44 @@
 		tag: { }
 	}
 	id: "089292C7643A0B27"
+	images: [
+		{
+			click: "https://alexs-mobs-unofficial.fandom.com/wiki/"
+			height: 2.0d
+			image: "kubejs:textures/quests/alexsmobs.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.5d
+			y: -9.0d
+		}
+		{
+			click: "https://exoticbirds.fandom.com/wiki/Exotic_Birds_Wikia"
+			height: 2.0d
+			image: "kubejs:textures/quests/exoticbirds.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: -9.0d
+		}
+		{
+			click: "https://minecraft-mods.fandom.com/wiki/Genetic_Animals"
+			height: 2.0d
+			image: "kubejs:textures/quests/geneticanimals.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 5.5d
+			y: -9.0d
+		}
+		{
+			click: "https://rats-mod.fandom.com/wiki/Rats_Mod_Wiki"
+			height: 2.0d
+			image: "kubejs:textures/quests/rats.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 8.0d
+			y: -9.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -303,6 +341,13 @@
 		}
 		{
 			description: ["&aPelicans&r can be tamed with &9cooked salmon or cod&r. After this, you can access their inventory by shift+right-clicking on them. In this way, you can take the &9fish&r they have caught."]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "exoticbirds:pelican"
+				}
+			}
 			id: "698D256DFECBB08F"
 			tasks: [{
 				id: "58A5F4E99C4A93BA"
@@ -311,13 +356,6 @@
 				to_observe: "exoticbirds:pelican"
 				type: "observation"
 			}]
-			icon: {
-				Count: 1
-				id: "alexsmobs:tab_icon"
-				tag: {
-					DisplayEntityType: "exoticbirds:pelican"
-				}
-			}
 			title: "Pelicans"
 			x: 1.0d
 			y: -5.0d

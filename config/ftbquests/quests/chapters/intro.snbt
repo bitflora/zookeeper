@@ -563,6 +563,7 @@
 				title: "Any #forge:feathers"
 				type: "item"
 			}]
+			title: "Feather Farm"
 			x: -3.5d
 			y: -8.0d
 		}
