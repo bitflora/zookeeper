@@ -10,4 +10,6 @@ ServerEvents.tags('item', e => {
     e.add('forge:feathers', 'unusualprehistory:raptor_feathers');
     e.add('forge:feathers', 'unusualprehistory:raptor_feathers');
     e.add('forge:feathers', 'unusualprehistory:austro_feathers');
+
+    e.add('forge:slimeballs', 'alexsmobs:banana_slug_slime');
 });

@@ -161,10 +161,14 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ]);
 
     // Fur ball
-    e.shapeless('kubejs:fur_ball', [
+    e.shapeless('kubejs:fur_mess', [
         '2x #minecraft:wool',
         '2x #kubejs:furs',
         '2x #forge:feathers'
+    ]);
+
+    e.shapeless('kubejs:fur_ball', [
+        '9x kubejs:fur_mess',
     ]);
 
   });

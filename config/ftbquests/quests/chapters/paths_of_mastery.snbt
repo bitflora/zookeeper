@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "paths_of_mastery"
-	group: ""
+	group: "7CB2981FF186C8EE"
 	icon: {
 		Count: 1
 		id: "minecraft:dirt_path"
 		tag: { }
 	}
 	id: "057B70A997446842"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

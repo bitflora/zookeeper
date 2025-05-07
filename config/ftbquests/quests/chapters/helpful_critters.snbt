@@ -1,0 +1,290 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "helpful_critters"
+	group: "7CB2981FF186C8EE"
+	icon: {
+		Count: 1
+		id: "alexsmobs:platypus_bucket"
+		tag: { }
+	}
+	id: "089292C7643A0B27"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&aShoebills&r look fierce, but are actually quite timid. Leave them in peace and they will spend their time fishing. Often they will discard what they find fishing on the ground. You could use that!"
+				""
+				"&aShoebills&r cannot be bred. Feed them &9crocodile eggs&r to increase their lure, and &9terrapin eggs&r to increase their luck."
+			]
+			icon: {
+				Count: 1
+				id: "aquaculture:diamond_fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "60C1F8060221D020"
+			optional: true
+			rewards: [
+				{
+					id: "418D3CB912C41A7E"
+					item: {
+						Count: 1
+						id: "aquaculture:treasure_chest"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7A4BD5D6CCC4879F"
+					item: {
+						Count: 1
+						id: "aquaculturedelight:large_fish_with_vegetables"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "68A80736C16053A4"
+					item: {
+						Count: 1
+						id: "aquaculturedelight:rollmops"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Fishing farm"
+			tasks: [
+				{
+					id: "0D3CCAE1D2797C78"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:shoebill"
+					type: "observation"
+				}
+				{
+					count: 20L
+					id: "5C26089E3F56DD61"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:raw_fishes)"
+						}
+					}
+					title: "Any #forge:raw_fishes"
+					type: "item"
+				}
+			]
+			title: "Shoebill"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["32E5BB2EC0EE79E6"]
+			description: [
+				"The &aOretoise&r is a special mob that spawns only underground in complete darkness. It grows &9ores&r on its back, and if you attack it with a pickaxe, you can collect it. Feed it &9glowberries&r to help it regrow new ore."
+				""
+				"Collecting ores can be automated with an &9iron rod&r at the end of a piston."
+				""
+				"However, getting the &aOretoise&r back to your base will pose the larger challenge. A &9lead&r will not work. You can either use a &9minecart&r, or follow the &ePath of the Spider&r to get better animal capture devices."
+			]
+			icon: {
+				Count: 1
+				id: "aquaculture:starshell_turtle"
+				tag: { }
+			}
+			id: "40C3133370726213"
+			optional: true
+			rewards: [
+				{
+					id: "5618D1D7EFF99075"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "09977187F62D4E1D"
+					item: {
+						Count: 1
+						id: "minecraft:iron_block"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "61D7B619555896F2"
+					item: {
+						Count: 1
+						id: "minecraft:lapis_block"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Yertle the Miner"
+			tasks: [
+				{
+					id: "1042C9E083BDFC63"
+					observe_type: 5
+					timer: 0L
+					to_observe: "quark:tortoise"
+					type: "observation"
+				}
+				{
+					count: 3L
+					id: "15A7DC723BFB4A51"
+					item: {
+						Count: 3
+						id: "minecraft:glow_berries"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "3D00B33CAC713ED7"
+					item: {
+						Count: 1
+						id: "quark:iron_rod"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "22A342AD5F0DBB2F"
+					item: {
+						Count: 20
+						id: "minecraft:lapis_lazuli"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Oretoise Farming"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1023B9A16DFDA09C"]
+			description: ["&aSeals&r are friendly creatures that hang around on the shore. They love &9fish&r. If thrown 3 &9fish&r or &9marine foods&r, they will search around in the water for something to repay you with."]
+			id: "5D575F0113A9CD9B"
+			optional: true
+			rewards: [{
+				id: "1F80FF197D4F997C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "Like a wet piglin"
+			tasks: [{
+				id: "54E6901A5BE4E23B"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:seal"
+				type: "observation"
+			}]
+			title: "Seal bartering"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"&aHummingbirds&r will pollinate your crops, and they're even better at it than &aBees&r. Keep them nearby with a well-stocked &9Hummingbird Feeder&r."
+				""
+				"(But make sure you use the correct kind of hummingbird, ie: those from Alex's Mobs, not those from Exotic Birds.)"
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:hummingbird"
+				}
+			}
+			id: "7AD1F81C0307BF3D"
+			optional: true
+			rewards: [
+				{
+					id: "3E9175AA1B673E7A"
+					item: {
+						Count: 1
+						id: "alexsmobs:hummingbird_feeder"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "01B1EB2C92DDE7CC"
+					item: {
+						Count: 1
+						id: "minecraft:sugar"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/breed_hummingbird"
+				criterion: ""
+				id: "0FB7D84F15696CB1"
+				type: "advancement"
+			}]
+			title: "Hummingbirds"
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			description: [
+				"&aSugar Gliders&r can be tamed with &9sweet berries&r. "
+				""
+				"If placed on your head, they will give you Slow Falling."
+				""
+				"If placed on a &9leaf block&r, they will forage up items for you."
+			]
+			id: "64F41D390E0B3BD7"
+			tasks: [{
+				id: "450BB6408A9B1FA5"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:sugar_glider"
+				type: "observation"
+			}]
+			title: "Sugar Glider"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			description: ["&aBanana Slugs&r leave a trail of &9slime&r, which can be collected. It's easier than finding a slime chunk!"]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:banana_slug"
+				}
+			}
+			id: "53505BCE09554730"
+			tasks: [
+				{
+					id: "19C43F728B7B964B"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:banana_slug"
+					type: "observation"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/banana_slug"
+					criterion: ""
+					id: "291125FDD8D8AEF9"
+					type: "advancement"
+				}
+			]
+			title: "Banana Slug"
+			x: 6.0d
+			y: -4.5d
+		}
+	]
+	title: "Helpful Critters"
+}

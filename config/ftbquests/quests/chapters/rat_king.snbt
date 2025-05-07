@@ -1,0 +1,181 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "rat_king"
+	group: "58C00CAA276A1624"
+	icon: {
+		Count: 1
+		id: "rats:rat_pelt"
+		tag: { }
+	}
+	id: "371935E8AF89EE97"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3331CF8114EA836C"]
+			description: [
+				"You may have noticed a lot of vermin running around at night. But the Ultimate Zookeeper taught us that every animal is beautiful in its own way. Even the rats."
+				""
+				"And there are a lot of &aRats&r. They are filthy. They steal your crops and food. But they are also very intelligent. They may well turn out to be the key to this whole enterprise."
+				""
+				"Like hostile mobs, they spawn in the dark, particularly on top of &9garbage&r blocks. But first you'll need cheese..."
+			]
+			id: "7A2C02287D85FC14"
+			rewards: [{
+				id: "420836BFF1184E7E"
+				item: {
+					Count: 1
+					id: "rats:garbage_pile"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "469326982B56AC98"
+				title: "Chapter 2: Rat King"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7A2C02287D85FC14"]
+			description: [
+				"To tame a &aRat&r, you will need a lot of &9cheese&r. To make cheese, pour &9milk&r into a &9cauldron&r and wait a bit. Throw the cheese pieces to a rat repeatedly to tame it (it may take 10-20 pieces)."
+				""
+				"Do make sure to tame more than one. You'll need a male and a female to really get your rat colony going."
+			]
+			icon: {
+				Count: 1
+				id: "rats:cheese"
+				tag: { }
+			}
+			id: "1760CADD80B02D03"
+			rewards: [
+				{
+					count: 20
+					id: "6C3D92FE73E0943B"
+					item: {
+						Count: 1
+						id: "rats:cheese"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "37600C7F6FADD39E"
+					item: {
+						Count: 1
+						id: "rats:trash_can"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Crafting over spilt milk"
+			tasks: [
+				{
+					id: "3B834D16B42F12B9"
+					item: {
+						Count: 1
+						id: "minecraft:cauldron"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4279CB22CCFECA80"
+					item: {
+						Count: 1
+						id: "minecraft:milk_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "059DDCA78AB7A47D"
+					item: {
+						Count: 20
+						id: "rats:cheese"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Cheese"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1760CADD80B02D03"]
+			description: [
+				"Good start! Now keep going until you have a male and a female."
+				""
+				"Then, place them both inside a &9cage&r with a &9breeding lantern&r."
+			]
+			icon: "rats:rat_upgrade_health"
+			id: "1CAAB5A966BC42BD"
+			rewards: [
+				{
+					id: "1C310FAC3F9D492A"
+					item: {
+						Count: 1
+						id: "rats:rat_burger"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "11599DA93C1FE8FF"
+					item: {
+						Count: 1
+						id: "rats:purified_garbage"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7832C4A2E537532E"
+					item: {
+						Count: 1
+						id: "rats:block_of_cheese"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "rats:tame_rat"
+					criterion: ""
+					id: "2A5EEE888500ACB8"
+					type: "advancement"
+				}
+				{
+					id: "398171A839A9C7E9"
+					item: {
+						Count: 1
+						id: "rats:rat_cage"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1E007CA95683A3EB"
+					item: {
+						Count: 1
+						id: "rats:rat_breeding_lantern"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Tame a rat"
+			x: -0.5d
+			y: -2.0d
+		}
+	]
+	title: "&a2.&r Rat King"
+}

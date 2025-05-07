@@ -1,3 +1,6 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "58C00CAA276A1624", title: "The Zoo" }
+		{ id: "7CB2981FF186C8EE", title: "Bonus" }
+	]
 }

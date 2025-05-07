@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3_science"
+	group: "58C00CAA276A1624"
+	icon: {
+		Count: 1
+		id: "unusualprehistory:grog"
+		tag: { }
+	}
+	id: "2CCAB6FDD327FE7B"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "&a3.&r Science!"
+}

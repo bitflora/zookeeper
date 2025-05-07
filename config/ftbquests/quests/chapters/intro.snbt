@@ -3,7 +3,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "intro"
-	group: ""
+	group: "58C00CAA276A1624"
+	icon: {
+		Count: 1
+		id: "inventorypets:pet_cow"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "037AF3175182FC03"
 	order_index: 0
 	quest_links: [ ]
@@ -20,11 +27,32 @@
 				"Welcome!"
 			]
 			id: "542CDE05F61489C1"
-			rewards: [{
-				id: "1D8BDE43B188D3E8"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "1D8BDE43B188D3E8"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "03DF5436A743AA66"
+					item: {
+						Count: 1
+						id: "farmersdelight:steak_and_potatoes"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4DB998D94D4C44A8"
+					item: {
+						Count: 1
+						id: "farmersdelight:apple_cider"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "638F715AC6928DBA"
 				title: "Welcome!"
@@ -160,16 +188,27 @@
 				tag: { }
 			}
 			id: "18592710C935A9C9"
-			rewards: [{
-				count: 3
-				id: "1A0667CFD9C9B313"
-				item: {
-					Count: 1
-					id: "minecraft:dropper"
-					tag: { }
+			rewards: [
+				{
+					count: 3
+					id: "1A0667CFD9C9B313"
+					item: {
+						Count: 1
+						id: "minecraft:dropper"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "42AC8B82471FA567"
+					item: {
+						Count: 1
+						id: "alexsmobs:spawn_egg_mantis_shrimp"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "363E0065BFF249F7"
@@ -211,18 +250,29 @@
 				}
 			}
 			id: "497CC95523D1F210"
-			rewards: [{
-				count: 20
-				id: "0DD4BAEF66770543"
-				item: {
-					Count: 1
-					id: "aquaculture:worm"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					count: 20
+					id: "0DD4BAEF66770543"
+					item: {
+						Count: 1
+						id: "aquaculture:worm"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "74CEE00DAE9D913F"
+					item: {
+						Count: 1
+						id: "alexsdelight:cooked_centipede_leg"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Groovy"
 			tasks: [
 				{
@@ -263,6 +313,28 @@
 				"Alas, it is not healthy enough to make them breed."
 			]
 			id: "1023B9A16DFDA09C"
+			rewards: [
+				{
+					count: 10
+					id: "317BAD44C58D7FF7"
+					item: {
+						Count: 1
+						id: "kubejs:marine_food"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "297FC6D6235EA141"
+					item: {
+						Count: 1
+						id: "aquaculturedelight:fish_chorba"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			subtitle: "kinda squishy"
 			tasks: [{
 				count: 32L
@@ -276,27 +348,6 @@
 			}]
 			x: -4.0d
 			y: -13.0d
-		}
-		{
-			dependencies: ["1023B9A16DFDA09C"]
-			description: ["&aSeals&r a friendly creatures that hang around on the shore. They love &9fish&r. If thrown 3 &9fish&r or &9marine foods&r, they will search around in the water for something to repay you with."]
-			id: "5D575F0113A9CD9B"
-			rewards: [{
-				id: "1F80FF197D4F997C"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
-			subtitle: "Like a wet piglin"
-			tasks: [{
-				id: "54E6901A5BE4E23B"
-				observe_type: 5
-				timer: 0L
-				to_observe: "alexsmobs:seal"
-				type: "observation"
-			}]
-			title: "Seal bartering"
-			x: -1.5d
-			y: -12.0d
 		}
 		{
 			dependencies: ["1023B9A16DFDA09C"]
@@ -320,94 +371,10 @@
 			y: -14.0d
 		}
 		{
-			dependencies: ["32E5BB2EC0EE79E6"]
-			description: [
-				"The &aOretoise&r is a special mob that spawns only underground in complete darkness. It grows &9ores&r on its back, and if you attack it with a pickaxe, you can collect it. Feed it &9glowberries&r to help it regrow new ore."
-				""
-				"Collecting ores can be automated with an &9iron rod&r at the end of a piston."
-				""
-				"However, getting the &aOretoise&r back to your base will pose the larger challenge. A &9lead&r will not work. You can either use a &9minecart&r, or follow the &ePath of the Spider&r to get better animal capture devices."
-			]
-			icon: {
-				Count: 1
-				id: "aquaculture:starshell_turtle"
-				tag: { }
-			}
-			id: "40C3133370726213"
-			optional: true
-			rewards: [
-				{
-					id: "5618D1D7EFF99075"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-				{
-					id: "09977187F62D4E1D"
-					item: {
-						Count: 1
-						id: "minecraft:iron_block"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "61D7B619555896F2"
-					item: {
-						Count: 1
-						id: "minecraft:lapis_block"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			subtitle: "Yertle the Miner"
-			tasks: [
-				{
-					id: "1042C9E083BDFC63"
-					observe_type: 5
-					timer: 0L
-					to_observe: "quark:tortoise"
-					type: "observation"
-				}
-				{
-					count: 3L
-					id: "15A7DC723BFB4A51"
-					item: {
-						Count: 3
-						id: "minecraft:glow_berries"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "3D00B33CAC713ED7"
-					item: {
-						Count: 1
-						id: "quark:iron_rod"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					count: 20L
-					id: "22A342AD5F0DBB2F"
-					item: {
-						Count: 20
-						id: "minecraft:lapis_lazuli"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			title: "Oretoise Farming"
-			x: 3.5d
-			y: -7.5d
-		}
-		{
 			description: [
 				"As a zookeeper, you will need to learn a variety of methods for capturing animals. Luckily, most birds are easy to catch! Just construct a &9bird cage&r to catch it in."
 				""
-				"You can use it as a decoration in your house, or release the bird bad into a more convenient location. And they are 100% reusable!"
+				"You can use it as a decoration in your house, or release the bird back into a more convenient location. And they are 100% reusable!"
 			]
 			id: "2C392589E2568FD8"
 			rewards: [{
@@ -419,7 +386,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "I know why the caged bird sings"
+			subtitle: "I know why the singing bird is caged"
 			tasks: [{
 				id: "101745A1909C60BA"
 				item: {
@@ -479,13 +446,18 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["4A08737D7BD6DA01"]
+			dependencies: [
+				"4A08737D7BD6DA01"
+				"771A06EEF7B6EFC2"
+				"1E0E0877222A6343"
+				"7A87C22347CB375D"
+			]
 			description: [
-				"You've probably sheared &aSheep&r for &9wool&r before, but these sheep are a little different. They come with varied genetics. Some are have genes which produce a lot of &9wool&r, some produce only &9leather&r. You would do well to breed the fluffier ones for maximum &9wool&r production."
+				"You may have noticed that the farm animals are a little different from what you're used to. They come with varied genetics, which you can breed for better wool production, and different colors and appearance. And instead of being hermaphrodites, these animals are created male and female, along with the pregnancies that entails."
 				""
-				"As an alternative, you may be able to find wooly &aLlamas&r instead, or even particularly fluffy &aRabbits&r. Any of these are viable for a wool farm."
+				"There are &63&r different animals you could breed as a &9wool&r source. You're familiar with &aSheep&r, but you could also use wooly &aLlamas&r, or even particularly fluffy &aRabbits&r. The choice is yours! You could even make use of all three."
 				""
-				"Keep in mind: none of the above animals are hermaphroditic. They have males and females now!"
+				"All of these animals can be bred with the standard items, and all can be sheared using &9dispensers&r. They also need to be able to graze on grass or flowers in order keep up their wool production and get pregnant. Take good care of them!"
 			]
 			icon: {
 				Count: 1
@@ -540,6 +512,7 @@
 					type: "item"
 				}
 			]
+			title: "Wool Farm"
 			x: -5.5d
 			y: -8.0d
 		}
@@ -595,7 +568,13 @@
 		}
 		{
 			dependencies: ["73C5A4EE94671353"]
-			description: ["Just put it all together and you have yourself a &9fur ball&r."]
+			description: [
+				"Just put it all together, and what do you have? "
+				""
+				"A mess."
+				""
+				"But put enough &9fur messes&r together, and you have yourself a &9fur ball&r. The epitome of fur! It's more useful than you might think."
+			]
 			id: "6D184A8F42832AE3"
 			rewards: [{
 				count: 10
@@ -608,16 +587,28 @@
 				type: "item"
 			}]
 			subtitle: "My cat also makes these"
-			tasks: [{
-				count: 10L
-				id: "177DF95E30CB9063"
-				item: {
-					Count: 10
-					id: "kubejs:fur_ball"
-					tag: { }
+			tasks: [
+				{
+					count: 9L
+					id: "227F25B2797A37EC"
+					item: {
+						Count: 9
+						id: "kubejs:fur_mess"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 5L
+					id: "503B7CF87021231F"
+					item: {
+						Count: 1
+						id: "kubejs:fur_ball"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: -8.0d
 		}
@@ -676,6 +667,7 @@
 				type: "xp_levels"
 				xp_levels: 3
 			}]
+			subtitle: "Nap time"
 			tasks: [{
 				id: "6B7981B65F0CF23E"
 				item: {
@@ -687,6 +679,7 @@
 				}
 				type: "item"
 			}]
+			title: "Sleeping Mat"
 			x: 0.5d
 			y: -6.0d
 		}
@@ -744,6 +737,82 @@
 			x: 7.0d
 			y: -12.5d
 		}
+		{
+			description: [
+				"You know the &aSheep&r well as the main source of &9wool&r. And they're certainly not bad choices; with the right genetics, sheep will out-produce any other woolen animals. The wooliest sheep can produce up to &64&r wool at a time!"
+				""
+				"If you decide to stick with the trusty sheep as your wool source, keep the following in mind:"
+				""
+				"- Some sheep are \"hair sheep.\" These will produce no wool, but can be harvested for &9leather&r."
+				"- Some sheep are shedders, and will naturally drop &9wool&r without intervention."
+				"- You can &9milk&r sheep after they have given birth."
+				"- Sheep will give birth to &61-3&r lambs at a time."
+			]
+			icon: {
+				Count: 1
+				id: "inventorypets:pet_sheep"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7A87C22347CB375D"
+			optional: true
+			tasks: [{
+				id: "1B1099B3442D045A"
+				title: "Sheep"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -9.5d
+		}
+		{
+			description: [
+				"The &aLlama&r is a perfectly respectable source of &9wool&r. But only the fluffy ones can be sheared for &61&r wool; the rest are leather sources. "
+				""
+				"Here's what else you need to know:"
+				""
+				"- &aLlamas&r will give birth to &61&r baby at a time."
+				"- Colder biomes will generally have fluffier &aLlamas&r."
+				"- Make sure to tame the Wandering Trader's &aLlamas&r if you want to keep them."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:lead"
+				tag: { }
+			}
+			id: "1E0E0877222A6343"
+			optional: true
+			tasks: [{
+				id: "00C8C7E49B537212"
+				title: "Llamas"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: -7.0d
+		}
+		{
+			description: [
+				"If you want to try something differen, consider &aRabbits&r for your &9wool&r source. Fluffy rabbits will produce &61&r &9white wool&r when sheared, and they are the fastest breeder of any of these animals."
+				""
+				"Here's what else you might want to know:"
+				"- &aRabbits&r will give birth to &61-13&r kits at a time."
+				"- You'll find fluffier &aRabbits&r in colder biomes."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:rabbit_hide"
+				tag: { }
+			}
+			id: "771A06EEF7B6EFC2"
+			optional: true
+			tasks: [{
+				id: "23B4CC89381D7437"
+				title: "Rabbits"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -6.5d
+		}
 	]
-	title: "Intro"
+	title: "&a1.&r Down on the Farm"
 }
