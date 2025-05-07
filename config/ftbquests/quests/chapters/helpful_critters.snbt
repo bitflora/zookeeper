@@ -20,9 +20,9 @@
 			]
 			icon: {
 				Count: 1
-				id: "aquaculture:diamond_fishing_rod"
+				id: "alexsmobs:tab_icon"
 				tag: {
-					Damage: 0
+					DisplayEntityType: "alexsmobs:shoebill"
 				}
 			}
 			id: "60C1F8060221D020"
@@ -96,8 +96,10 @@
 			]
 			icon: {
 				Count: 1
-				id: "aquaculture:starshell_turtle"
-				tag: { }
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "quark:toretoise"
+				}
 			}
 			id: "40C3133370726213"
 			optional: true
@@ -132,7 +134,7 @@
 					id: "1042C9E083BDFC63"
 					observe_type: 5
 					timer: 0L
-					to_observe: "quark:tortoise"
+					to_observe: "quark:toretoise"
 					type: "observation"
 				}
 				{
@@ -172,6 +174,13 @@
 		{
 			dependencies: ["1023B9A16DFDA09C"]
 			description: ["&aSeals&r are friendly creatures that hang around on the shore. They love &9fish&r. If thrown 3 &9fish&r or &9marine foods&r, they will search around in the water for something to repay you with."]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:seal"
+				}
+			}
 			id: "5D575F0113A9CD9B"
 			optional: true
 			rewards: [{
@@ -244,6 +253,13 @@
 				""
 				"If placed on a &9leaf block&r, they will forage up items for you."
 			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:sugar_glider"
+				}
+			}
 			id: "64F41D390E0B3BD7"
 			tasks: [{
 				id: "450BB6408A9B1FA5"
@@ -284,6 +300,27 @@
 			title: "Banana Slug"
 			x: 6.0d
 			y: -4.5d
+		}
+		{
+			description: ["&aPelicans&r can be tamed with &9cooked salmon or cod&r. After this, you can access their inventory by shift+right-clicking on them. In this way, you can take the &9fish&r they have caught."]
+			id: "698D256DFECBB08F"
+			tasks: [{
+				id: "58A5F4E99C4A93BA"
+				observe_type: 5
+				timer: 0L
+				to_observe: "exoticbirds:pelican"
+				type: "observation"
+			}]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "exoticbirds:pelican"
+				}
+			}
+			title: "Pelicans"
+			x: 1.0d
+			y: -5.0d
 		}
 	]
 	title: "Helpful Critters"
