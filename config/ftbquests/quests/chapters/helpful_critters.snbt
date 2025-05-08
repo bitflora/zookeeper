@@ -367,6 +367,25 @@
 			x: 1.0d
 			y: -5.0d
 		}
+		{
+			description: [
+				"If you should be lucky enough to chance upon an albino &aPeafowl&r, know that it will drop &9gold ingots&r every &65-10&r minutes. It is well worth bringing home and parking over a &9hopper&r."
+				""
+				"Sadly, you cannot breed an albino; you must be lucky enough to find one in the wild. At least, until later chapters..."
+			]
+			id: "3FEC3146E773C305"
+			optional: true
+			tasks: [{
+				id: "485FA0BE5571B87E"
+				observe_type: 0
+				timer: 0L
+				to_observe: "exoticbirds:peafowl"
+				type: "observation"
+			}]
+			title: "White Peafowl"
+			x: 9.0d
+			y: -2.0d
+		}
 	]
 	title: "Helpful Critters"
 }

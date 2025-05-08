@@ -1,0 +1,404 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2_rat_king"
+	group: "58C00CAA276A1624"
+	icon: {
+		Count: 1
+		id: "rats:rat_pelt"
+		tag: { }
+	}
+	id: "371935E8AF89EE97"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3331CF8114EA836C"]
+			description: [
+				"You may have noticed a lot of vermin running around at night. But the Ultimate Zookeeper taught us that every animal is beautiful in its own way. Even the rats."
+				""
+				"And there are a lot of &aRats&r. They are filthy. They steal your crops and food. But they are also very intelligent. They may well turn out to be the key to this whole enterprise."
+				""
+				"Like hostile mobs, they spawn in the dark, particularly on top of &9garbage&r blocks. But first you'll need cheese..."
+			]
+			id: "7A2C02287D85FC14"
+			rewards: [{
+				id: "420836BFF1184E7E"
+				item: {
+					Count: 1
+					id: "rats:garbage_pile"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "469326982B56AC98"
+				title: "Chapter 2: Rat King"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7A2C02287D85FC14"]
+			description: [
+				"To tame a &aRat&r, you will need a lot of &9cheese&r. To make cheese, pour &9milk&r into a &9cauldron&r and wait a bit. Throw the cheese pieces to a rat repeatedly to tame it (it may take &610-20&r pieces)."
+				""
+				"Do make sure to tame more than one. You'll need a male and a female to really get your rat colony going."
+			]
+			icon: {
+				Count: 1
+				id: "rats:cheese"
+				tag: { }
+			}
+			id: "1760CADD80B02D03"
+			rewards: [
+				{
+					count: 20
+					id: "6C3D92FE73E0943B"
+					item: {
+						Count: 1
+						id: "rats:cheese"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "37600C7F6FADD39E"
+					item: {
+						Count: 1
+						id: "rats:trash_can"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Crafting over spilt milk"
+			tasks: [
+				{
+					id: "3B834D16B42F12B9"
+					item: {
+						Count: 1
+						id: "minecraft:cauldron"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4279CB22CCFECA80"
+					item: {
+						Count: 1
+						id: "minecraft:milk_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "059DDCA78AB7A47D"
+					item: {
+						Count: 20
+						id: "rats:cheese"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Cheese"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1760CADD80B02D03"]
+			description: [
+				"Good start! Now keep going until you have a male and a female."
+				""
+				"Then, place them both inside a &9cage&r with a &9breeding lantern&r."
+			]
+			icon: "rats:rat_upgrade_health"
+			id: "1CAAB5A966BC42BD"
+			rewards: [
+				{
+					id: "1C310FAC3F9D492A"
+					item: {
+						Count: 1
+						id: "rats:rat_burger"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "11599DA93C1FE8FF"
+					item: {
+						Count: 1
+						id: "rats:purified_garbage"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7832C4A2E537532E"
+					item: {
+						Count: 1
+						id: "rats:block_of_cheese"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "rats:tame_rat"
+					criterion: ""
+					id: "2A5EEE888500ACB8"
+					type: "advancement"
+				}
+				{
+					id: "398171A839A9C7E9"
+					item: {
+						Count: 1
+						id: "rats:rat_cage"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1E007CA95683A3EB"
+					item: {
+						Count: 1
+						id: "rats:rat_breeding_lantern"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Tame a rat"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1CAAB5A966BC42BD"]
+			description: [
+				"&aRats&r are very smart creatures, and you can train them to do many of your tasks. Try using one to automate &nwheat farming&r first. "
+				""
+				"1. Plant the farm"
+				"2. Place a &aRat&r in the middle of it."
+				"3. Right-click the &aRat&r to open his inventory, then cycle through his commands, finally clicking on \"&5Harvest&r\""
+				"4. Use a &9cheese staff&r to assign him a chest to put the harvest into."
+				"5. Sit back and let the &aRat&r do all the work."
+				""
+				"We're going to need more rats!"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wheat"
+				tag: { }
+			}
+			id: "77805105BDA7D030"
+			rewards: [{
+				count: 3
+				id: "6BD1F0C6516F141D"
+				item: {
+					Count: 1
+					id: "minecraft:hay_block"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6430C4F167C80069"
+					item: {
+						Count: 1
+						id: "rats:cheese_stick"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "294D3544E91A7C24"
+					item: {
+						Count: 32
+						id: "minecraft:wheat"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "53D3AD009292ECFD"
+					item: {
+						Count: 32
+						id: "minecraft:wheat_seeds"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Rat Automation"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["77805105BDA7D030"]
+			description: [
+				"Your &aRats&r can do other tasks on the farm as well. They can breed animals. They can even kill them for harvesting."
+				""
+				"Which is great, because you're going to need to harvest a lot of animals in order to make the vitally important &9meatwad&r."
+				""
+				"Make a &9Mob Filter&r, and then select the animal you want your &aRat&r to hunt. Make sure you don't confuse whitelists and blacklists (they will not target babies either way). Then apply that upgrade to the chosen &aRat&r's interface, and command it to &5Hunt Mobs&r. Sit back and let nature take its course."
+				""
+				"Don't forget to use your &9Cheese Staff&r to direct all drops to a chest."
+			]
+			icon: {
+				Count: 1
+				id: "alexscavesdelight:pure_darkness_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "12A799586D7DDE9E"
+			rewards: [{
+				id: "304FA46654E4B660"
+				item: {
+					Count: 1
+					id: "rats:rat_upgrade_mob_filter"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "A taste for blood"
+			tasks: [{
+				id: "6ED8F1E9B1EC5388"
+				title: "OK"
+				type: "checkmark"
+			}]
+			title: "Killer Rats"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["12A799586D7DDE9E"]
+			description: ["Bird meat will be an essential ingredient in this &9meatwad&r. Your world is full of birds of all kinds, in addition to our old favorite, the &aChicken&r. Pick one and build a sustainable farm with your &aRats&r as the farm hands."]
+			id: "16D5C80F4AEBAB43"
+			rewards: [{
+				count: 4
+				id: "4D8347A9B3AD3813"
+				item: {
+					Count: 1
+					id: "farmersdelight:roast_chicken"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Cluck cluck! It's in the bag!"
+			tasks: [{
+				count: 10L
+				id: "011FC12C71A914DE"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:bird_meat)"
+					}
+				}
+				title: "Any #kubejs:bird_meat"
+				type: "item"
+			}]
+			title: "Bird Meat"
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["12A799586D7DDE9E"]
+			description: [
+				"You will need fish meat to complete this &9meatwad&r. There are a few ways you could go about this."
+				""
+				"First, you could keep using your &aRats&r. They can be taught to fish using &9Rat Upgrade: Fisherman&r and the &5Harvest&r command."
+				""
+				"Alternately, you could find some &eShoebills&r. They will also spend their time fishing and dropping plenty of goods for you, and if you feed them &9crocodile eggs&r you can even increase their lure."
+				""
+				"Choose a path, or maybe do both at the same time."
+			]
+			id: "46AB95DA5177E791"
+			rewards: [{
+				count: 2
+				id: "61F5A4411EE49E8A"
+				item: {
+					Count: 1
+					id: "aquaculturedelight:rollmops"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Fish fear me"
+			tasks: [{
+				count: 10L
+				id: "5D4FFFD47DBD90A6"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:raw_fishes)"
+					}
+				}
+				title: "Any #forge:raw_fishes"
+				type: "item"
+			}]
+			title: "Fish Meat"
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["12A799586D7DDE9E"]
+			description: [
+				"As with the &9furball&r, you will need to construct your &9meatwad&r from multiple classes of animals."
+				""
+				"Mammal meat will be a critical component. There are many animals you can farm in order to harvest this, including &aKangaroos&r, &aCows&r, &aSheep&r, &aPigs&r, &aRabbits&r, or even &aBears&r. Pick your favorite and teach your &aRats&r how to harvest them sustainably."
+				""
+				"You could even have your &aRats&r farm other &aRats&r!"
+			]
+			id: "43C9F54E723D9809"
+			rewards: [
+				{
+					count: 3
+					id: "06638804268B93C3"
+					item: {
+						Count: 1
+						id: "alexsdelight:kangaroo_stew"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "11B1B41726E76FF4"
+					item: {
+						Count: 1
+						id: "alexsdelight:bison_burger"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 10L
+				id: "0B1E331A7C380873"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:mammal_meat)"
+					}
+				}
+				title: "Any #kubejs:mammal_meat"
+				type: "item"
+			}]
+			title: "Mammal Meat"
+			x: 7.0d
+			y: -4.5d
+		}
+	]
+	title: "&a2.&r Rat King"
+}
