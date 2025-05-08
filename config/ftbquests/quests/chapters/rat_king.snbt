@@ -176,6 +176,70 @@
 			x: -0.5d
 			y: -2.0d
 		}
+		{
+			dependencies: ["1CAAB5A966BC42BD"]
+			description: [
+				"&aRats&r are very smart creatures, and you can train them to do many of your tasks. Try using one to automate &nwheat farming&r first. "
+				""
+				"1. Plant the farm"
+				"2. Place a &aRat&r in the middle of it."
+				"3. Right-click the &aRat&r to open his inventory, then cycle through his commands, finally clicking on \"&lHarvest&r\""
+				"4. Use a &9cheese staff&r to assign him a chest to put the harvest into."
+				"5. Sit back and let the &aRat&r do all the work."
+				""
+				"We're going to need more rats!"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wheat"
+				tag: { }
+			}
+			id: "77805105BDA7D030"
+			rewards: [{
+				count: 3
+				id: "6BD1F0C6516F141D"
+				item: {
+					Count: 1
+					id: "minecraft:hay_block"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6430C4F167C80069"
+					item: {
+						Count: 1
+						id: "rats:cheese_stick"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "294D3544E91A7C24"
+					item: {
+						Count: 32
+						id: "minecraft:wheat"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "53D3AD009292ECFD"
+					item: {
+						Count: 32
+						id: "minecraft:wheat_seeds"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Rat Automation"
+			x: 2.0d
+			y: -2.0d
+		}
 	]
 	title: "&a2.&r Rat King"
 }

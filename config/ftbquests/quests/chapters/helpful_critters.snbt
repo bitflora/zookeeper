@@ -39,10 +39,10 @@
 		}
 		{
 			click: "https://rats-mod.fandom.com/wiki/Rats_Mod_Wiki"
-			height: 2.0d
+			height: 1.0d
 			image: "kubejs:textures/quests/rats.png"
 			rotation: 0.0d
-			width: 2.5d
+			width: 3.0d
 			x: 8.0d
 			y: -9.0d
 		}
@@ -273,6 +273,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "Hyper bees"
 			tasks: [{
 				advancement: "alexsmobs:alexsmobs/breed_hummingbird"
 				criterion: ""
@@ -289,7 +290,7 @@
 				""
 				"If placed on your head, they will give you Slow Falling."
 				""
-				"If placed on a &9leaf block&r, they will forage up items for you."
+				"If placed on a &9leaf block&r, they will forage up items for you, including &9worms&r, which you can use to automate worm farming."
 			]
 			icon: {
 				Count: 1
@@ -299,6 +300,8 @@
 				}
 			}
 			id: "64F41D390E0B3BD7"
+			optional: true
+			subtitle: "Fuzzy hat, finder of stuff"
 			tasks: [{
 				id: "450BB6408A9B1FA5"
 				observe_type: 5
@@ -320,6 +323,8 @@
 				}
 			}
 			id: "53505BCE09554730"
+			optional: true
+			subtitle: "Slimy yet satisfying"
 			tasks: [
 				{
 					id: "19C43F728B7B964B"
@@ -349,6 +354,8 @@
 				}
 			}
 			id: "698D256DFECBB08F"
+			optional: true
+			subtitle: "Fishing Friend"
 			tasks: [{
 				id: "58A5F4E99C4A93BA"
 				observe_type: 5
