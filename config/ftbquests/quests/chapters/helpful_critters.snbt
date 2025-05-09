@@ -373,6 +373,13 @@
 				""
 				"Sadly, you cannot breed an albino; you must be lucky enough to find one in the wild. At least, until later chapters..."
 			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "exoticbirds:peafowl"
+				}
+			}
 			id: "3FEC3146E773C305"
 			optional: true
 			tasks: [{

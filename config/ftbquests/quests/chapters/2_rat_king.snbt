@@ -382,6 +382,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "Mmmm... beefy"
 			tasks: [{
 				count: 10L
 				id: "0B1E331A7C380873"
@@ -398,6 +399,63 @@
 			title: "Mammal Meat"
 			x: 7.0d
 			y: -4.5d
+		}
+		{
+			dependencies: [
+				"43C9F54E723D9809"
+				"16D5C80F4AEBAB43"
+				"46AB95DA5177E791"
+			]
+			description: ["Now put them all together and you got yourself a mess of meat."]
+			id: "71755D565CA09466"
+			tasks: [{
+				id: "4EF7977B708730DD"
+				item: {
+					Count: 1
+					id: "kubejs:meat_mess"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["71755D565CA09466"]
+			description: [
+				"You will need a new kind of &aRat&r to finish off your meatwad: the &aChef Rat&r. Give any &aRat&r the &9Rat Upgrade: Chef&r item, and an optional cute hat, and he will cook items for you, including a few things that you cannot cook yourself."
+				""
+				"If you want the &aChef Rat&r to automatically work on items in a chest, set him to &5Transport&r."
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:meatwad"
+				tag: { }
+			}
+			id: "2BD87743BD547C81"
+			subtitle: "I get it. It ain't making me laugh, but I get it."
+			tasks: [
+				{
+					id: "75DFF91D8A4B5C12"
+					item: {
+						Count: 1
+						id: "rats:rat_upgrade_chef"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4C4661348B1401DB"
+					item: {
+						Count: 1
+						id: "kubejs:meatwad"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: -2.0d
 		}
 	]
 	title: "&a2.&r Rat King"

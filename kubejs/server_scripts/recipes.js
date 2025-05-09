@@ -171,4 +171,11 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '9x kubejs:fur_mess',
     ]);
 
+    // meatwad
+    e.shapeless('kubejs:meat_mess', [
+        '2x #kubejs:mammal_meat',
+        '2x #kubejs:bird_meat',
+        '#forge:raw_fishes'
+    ]);
+
   });
