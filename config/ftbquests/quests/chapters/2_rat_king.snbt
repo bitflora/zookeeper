@@ -21,6 +21,13 @@
 				""
 				"Like hostile mobs, they spawn in the dark, particularly on top of &9garbage&r blocks. But first you'll need cheese..."
 			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "rats:rat"
+				}
+			}
 			id: "7A2C02287D85FC14"
 			rewards: [{
 				id: "420836BFF1184E7E"
