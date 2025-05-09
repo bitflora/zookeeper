@@ -16,109 +16,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: [
-				"The world is scarred. Lost."
-				""
-				"Years have passed since the loss of the ultimate zookeeper, but the wounds have not healed."
-				""
-				"It is up to you. You must bring back the ultimate zookeeper. And to do that, you will have to become the penultimate zookeeper."
-				""
-				"Travel the world. Gather its creatures. Learn their secrets. Gain their strength. Save the zookeeper, save the world."
-				"Welcome!"
-			]
-			id: "542CDE05F61489C1"
-			rewards: [
-				{
-					id: "1D8BDE43B188D3E8"
-					type: "xp_levels"
-					xp_levels: 1
-				}
-				{
-					id: "03DF5436A743AA66"
-					item: {
-						Count: 1
-						id: "farmersdelight:steak_and_potatoes"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					count: 2
-					id: "4DB998D94D4C44A8"
-					item: {
-						Count: 1
-						id: "farmersdelight:apple_cider"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "638F715AC6928DBA"
-				title: "Welcome!"
-				type: "checkmark"
-			}]
-			x: -11.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["542CDE05F61489C1"]
-			description: [
-				"Like so many quests, this one starts with cobblestone. You're going to need a lot of it."
-				""
-				"To automate this, you'll need help from our friend, the &aMantis Shrimp&r. Tame him with &9tropical fish&r, tell him to break blocks, and then hand him the block to break with shift+right click!"
-				""
-				"Keep in mind that he can only breathe in the water. If you lose him, you can buy more from a pet store in a village."
-			]
-			icon: {
-				Count: 1
-				id: "minecraft:cobblestone"
-				tag: { }
-			}
-			id: "0E0B7CEB802E2BA0"
-			rewards: [
-				{
-					id: "2A71B174C4679FBD"
-					item: {
-						Count: 1
-						id: "alexsmobs:spawn_egg_mantis_shrimp"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					count: 24
-					id: "0D9F23D10D1D8DFE"
-					item: {
-						Count: 1
-						id: "kubejs:marine_food"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "682443FE66BD7431"
-					item: {
-						Count: 1
-						id: "minecraft:lava_bucket"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "5E6B5FEE2F767991"
-				title: "Cobblestone"
-				type: "checkmark"
-			}]
-			x: -8.0d
-			y: -13.0d
-		}
-		{
-			dependencies: [
-				"32E5BB2EC0EE79E6"
-				"2C392589E2568FD8"
-			]
+			dependencies: ["32E5BB2EC0EE79E6"]
 			description: [
 				"&aMagpies&r often scrounge up useful items, like &9iron ingots&r. They will happily drop these in exchange for &9seeds&r that are lying around."
 				""
@@ -179,64 +77,10 @@
 			]
 			title: "Magpie Bartering"
 			x: 3.5d
-			y: -10.0d
+			y: -11.0d
 		}
 		{
-			dependencies: ["0E0B7CEB802E2BA0"]
-			description: ["With so many animals stomping around, our machines need to be sturdier than usual. Some of the recipes you are familiar with will require more &9cobblestone&r than usual. Make sure to check the recipe book."]
-			icon: {
-				Count: 1
-				id: "compressedblocks:c1_cobblestone"
-				tag: { }
-			}
-			id: "18592710C935A9C9"
-			rewards: [
-				{
-					count: 3
-					id: "1A0667CFD9C9B313"
-					item: {
-						Count: 1
-						id: "minecraft:dropper"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "42AC8B82471FA567"
-					item: {
-						Count: 1
-						id: "alexsmobs:spawn_egg_mantis_shrimp"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "363E0065BFF249F7"
-					item: {
-						Count: 1
-						id: "minecraft:dropper"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "07C84CAC3E797133"
-					item: {
-						Count: 1
-						id: "compressedblocks:c1_cobblestone"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			title: "Compressed Cobblestone"
-			x: -6.5d
-			y: -12.0d
-		}
-		{
-			dependencies: ["0E0B7CEB802E2BA0"]
+			dependencies: ["1F9528CF1F2437B2"]
 			description: [
 				"While different animals need different food, a lot of them are going to be carnivores. And as we all know, &9worms&r are a delicious, meaty treat. And they're so economical, too!"
 				""
@@ -299,14 +143,11 @@
 					type: "item"
 				}
 			]
-			x: -6.5d
-			y: -14.0d
+			x: -10.5d
+			y: -7.0d
 		}
 		{
-			dependencies: [
-				"18592710C935A9C9"
-				"497CC95523D1F210"
-			]
+			dependencies: ["623459C89E933CFB"]
 			description: [
 				"Fish may have different food preferences, but if you mash enough food-like stuff together, you can get something that will please most of them. &9Marine food&r can be used to tame most tameable aquatic animals, such as &aMantis Shrimps&r, &aMudskippers&r, or &aAxolotls&r."
 				""
@@ -348,8 +189,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: -13.0d
+			x: -0.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["1023B9A16DFDA09C"]
@@ -376,16 +217,19 @@
 				type: "observation"
 			}]
 			title: "Platypus Scavenging"
-			x: -1.5d
-			y: -14.0d
+			x: 3.5d
+			y: -7.0d
 		}
 		{
 			description: [
 				"As a zookeeper, you will need to learn a variety of methods for capturing animals. Luckily, most birds are easy to catch! Just construct a &9bird cage&r to catch it in."
 				""
 				"You can use it as a decoration in your house, or release the bird back into a more convenient location. And they are 100% reusable!"
+				""
+				"(Note that this will only work on the birds from the Exotic Birds mod, ie: not the noble Chicken, or those from Alex's Mobs.)"
 			]
 			id: "2C392589E2568FD8"
+			optional: true
 			rewards: [{
 				id: "5CF27FD97A4D28DB"
 				item: {
@@ -406,11 +250,11 @@
 				type: "item"
 			}]
 			title: "Birdcages"
-			x: 2.0d
-			y: -11.5d
+			x: -3.5d
+			y: -13.0d
 		}
 		{
-			dependencies: ["542CDE05F61489C1"]
+			dependencies: ["1F9528CF1F2437B2"]
 			description: [
 				"Animals seem complex, but when you get down to it, they're mostly just wads of fur and meat. If we hope to reconstruct the king of all animals, we're going to need to gather a lot of that sort of thing."
 				""
@@ -451,8 +295,8 @@
 				type: "item"
 			}]
 			title: "Furballs For Beginners"
-			x: -8.0d
-			y: -8.0d
+			x: -10.5d
+			y: -11.0d
 		}
 		{
 			dependencies: [
@@ -522,11 +366,14 @@
 				}
 			]
 			title: "Wool Farm"
-			x: -5.5d
-			y: -8.0d
+			x: -6.5d
+			y: -11.0d
 		}
 		{
-			dependencies: ["19D3DDFF262F8F19"]
+			dependencies: [
+				"19D3DDFF262F8F19"
+				"2C392589E2568FD8"
+			]
 			description: [
 				"When you get right down to it, &9feathers&r are just bird fur."
 				""
@@ -574,7 +421,7 @@
 			}]
 			title: "Feather Farm"
 			x: -3.5d
-			y: -8.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["73C5A4EE94671353"]
@@ -586,16 +433,23 @@
 				"But put enough &9fur messes&r together, and you have yourself a &9fur ball&r. The epitome of fur! It's more useful than you might think."
 			]
 			id: "6D184A8F42832AE3"
-			rewards: [{
-				count: 10
-				id: "300B4AD54622CC7A"
-				item: {
-					Count: 1
-					id: "kubejs:fur_ball"
-					tag: { }
+			rewards: [
+				{
+					count: 10
+					id: "300B4AD54622CC7A"
+					item: {
+						Count: 1
+						id: "kubejs:fur_ball"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "342A543AAA0853C7"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "My cat also makes these"
 			tasks: [
 				{
@@ -619,14 +473,11 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: -8.0d
+			x: -0.5d
+			y: -11.0d
 		}
 		{
-			dependencies: [
-				"18592710C935A9C9"
-				"6D184A8F42832AE3"
-			]
+			dependencies: ["6D184A8F42832AE3"]
 			description: [
 				"A &9redstone clock&r makes it easy to turn a redstone signal on and off at regular intervals. This can be handy in many kinds of automated farms."
 				""
@@ -664,8 +515,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: -10.0d
+			x: 1.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["6D184A8F42832AE3"]
@@ -690,8 +541,8 @@
 				type: "item"
 			}]
 			title: "Sleeping Mat"
-			x: 0.5d
-			y: -6.0d
+			x: 1.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -744,8 +595,8 @@
 				title: "Chapter 1 Complete!"
 				type: "checkmark"
 			}]
-			x: 7.0d
-			y: -12.5d
+			x: 6.5d
+			y: -9.0d
 		}
 		{
 			description: [
@@ -772,8 +623,8 @@
 				title: "Sheep"
 				type: "checkmark"
 			}]
-			x: -6.5d
-			y: -9.5d
+			x: -8.0d
+			y: -13.0d
 		}
 		{
 			description: [
@@ -799,8 +650,8 @@
 				title: "Llamas"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: -9.5d
+			x: -6.5d
+			y: -13.0d
 		}
 		{
 			description: [
@@ -824,9 +675,39 @@
 				title: "Rabbits"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: -6.5d
+			x: -5.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["497CC95523D1F210"]
+			id: "623459C89E933CFB"
+			tasks: [{
+				id: "7F98798E6A611340"
+				item: {
+					Count: 1
+					id: "supplementaries:ash"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			description: [
+				"It's time for you to get comfortable with more animals. You will need to gather many different species together to accomplish your goals."
+				""
+				"This will require some travel around the world. You might want to spend time on the &2Paths of Mastery&r chapter to make your travels easier."
+			]
+			id: "1F9528CF1F2437B2"
+			tasks: [{
+				id: "3AE80261478B6079"
+				title: "Chapter 1"
+				type: "checkmark"
+			}]
+			x: -13.0d
+			y: -9.0d
 		}
 	]
-	title: "&a1.&r Down on the Farm"
+	title: "&a1.&r Animal Farm"
 }

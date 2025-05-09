@@ -63,6 +63,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     // Remove some recipes
     e.remove({ mod: 'cyclic' })
     e.remove({ output: 'theoneprobe:probe' });
+    e.remove({ mod: "inventorypets"});
 
     // add back in select Cyclic items
     e.shaped('1x cyclic:clock', [
@@ -94,6 +95,98 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         R: 'minecraft:redstone_block',
         B: 'kubejs:fur_ball'
     });
+
+    // Add back inventory pets
+    e.remove({ output: "cookingforblockheads:cow_jar"});
+    e.shaped('cookingforblockheads:cow_jar', [
+        'GBG',
+        'MFM',
+        'GMG'
+    ], {
+        B: 'minecraft:beef',
+        G: 'minecraft:glass',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_cow', [
+        'DXD',
+        'FMF',
+        'FMF'
+    ], {
+        X: 'minecraft:beef',
+        G: 'minecraft:diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_chicken', [
+        'DXD',
+        'FMF',
+        'FMF'
+    ], {
+        X: 'minecraft:feather',
+        G: 'minecraft:diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_sheep', [
+        'DXD',
+        'FMF',
+        'FMF'
+    ], {
+        X: 'minecraft:white_wool',
+        G: 'minecraft:diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_pig', [
+        'DXD',
+        'FMF',
+        'FMF'
+    ], {
+        X: 'minecraft:porkchop',
+        G: 'minecraft:diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_ocelot', [
+        'WXW',
+        'FMF',
+        'FMF'
+    ], {
+        W: 'minecraft:string',
+        G: 'minecraft:diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_squid', [
+        'WXW',
+        'FMF',
+        'FMF'
+    ], {
+        W: 'minecraft:ink_sac',
+        G: 'minecraft:diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_pufferfish', [
+        'WXW',
+        'FMF',
+        'FMF'
+    ], {
+        W: 'minecraft:pufferfish',
+        G: 'minecraft:diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+
 
     // Rat recipe adjustments
     e.remove({ output: 'rats:rat_cage' });

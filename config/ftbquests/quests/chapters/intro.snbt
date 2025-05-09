@@ -11,6 +11,291 @@
 	id: "0F446F15D72EE31C"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"The world is scarred. Lost."
+				""
+				"Years have passed since the loss of The Ultimate Zookeeper, but the wounds have not healed."
+				""
+				"It is up to you. You must bring back The Ultimate Zookeeper. And to do that, you will have to become The Penultimate Zookeeper."
+				""
+				"Travel the world. Gather its creatures. Learn their secrets. Gain their strength. Save the Zookeeper, save the world."
+			]
+			id: "542CDE05F61489C1"
+			rewards: [
+				{
+					id: "1D8BDE43B188D3E8"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "03DF5436A743AA66"
+					item: {
+						Count: 1
+						id: "farmersdelight:steak_and_potatoes"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4DB998D94D4C44A8"
+					item: {
+						Count: 1
+						id: "farmersdelight:apple_cider"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "638F715AC6928DBA"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			title: "It Starts"
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["542CDE05F61489C1"]
+			description: [
+				""
+				"It's dangerous to go alone! Take this."
+				""
+				"He is a &aMantis Shrimp&r. Tame him with &9marine food&r or &9tropical fish&r and he will be your first friend of many."
+				""
+				"He can follow you around, and will eevn fight off enemies. But his real strength lies in his block-breaking ability. Just put him tin &6Break Blocks&r mode, and then hand him the block to break with shift+right click!"
+				""
+				"Keep in mind that he can only breathe in the water. If you lose him, you can buy more from a pet store in a village, or catch one in the wild in reefs or mangrove swamps."
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:mantis_shrimp"
+				}
+			}
+			id: "0E0B7CEB802E2BA0"
+			rewards: [
+				{
+					id: "2A71B174C4679FBD"
+					item: {
+						Count: 1
+						id: "alexsmobs:spawn_egg_mantis_shrimp"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 24
+					id: "0D9F23D10D1D8DFE"
+					item: {
+						Count: 1
+						id: "kubejs:marine_food"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "The power of friendship"
+			tasks: [{
+				id: "5E6B5FEE2F767991"
+				title: "Cobblestone"
+				type: "checkmark"
+			}]
+			title: "Mantis Shrimp"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4C415A8AB88183F2"]
+			description: ["With so many animals stomping around, our machines need to be sturdier than usual. Some of the recipes you are familiar with will require more &9cobblestone&r than usual. Make sure to check the recipe book."]
+			icon: {
+				Count: 1
+				id: "compressedblocks:c1_cobblestone"
+				tag: { }
+			}
+			id: "18592710C935A9C9"
+			rewards: [
+				{
+					count: 3
+					id: "1A0667CFD9C9B313"
+					item: {
+						Count: 1
+						id: "minecraft:dropper"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "42AC8B82471FA567"
+					item: {
+						Count: 1
+						id: "alexsmobs:spawn_egg_mantis_shrimp"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Very dense rocks"
+			tasks: [
+				{
+					id: "363E0065BFF249F7"
+					item: {
+						Count: 1
+						id: "minecraft:dropper"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "07C84CAC3E797133"
+					item: {
+						Count: 1
+						id: "compressedblocks:c1_cobblestone"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Compressed Cobblestone"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0E0B7CEB802E2BA0"]
+			description: [
+				"Like so many quests, this one starts with &9cobblestone&r. You're going to need a lot of it."
+				""
+				"You should take put your &aMantis Shrimp&r's block-breaking ability to good use, and put him to work in an automated cobblestone farm."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:cobblestone"
+				tag: { }
+			}
+			id: "4C415A8AB88183F2"
+			rewards: [{
+				id: "54F5E37861CC0B97"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "Very large rocks"
+			tasks: [
+				{
+					count: 64L
+					id: "310484B379C47142"
+					item: {
+						Count: 64
+						id: "minecraft:cobblestone"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "47FF70487F2CBFF9"
+					item: {
+						Count: 1
+						id: "minecraft:lava_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Cobblestone"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"18592710C935A9C9"
+				"5C4F9A1EDB08C532"
+			]
+			description: [
+				"You did it! You are ready to start building your zoo, and doing the work necessary to bring back The Ultimate Zookeeper."
+				""
+				"Proceed to &2Chapter 1&r."
+			]
+			id: "74336F1DA3E7B563"
+			rewards: [
+				{
+					id: "6D18611FFA1D0A55"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					count: 4
+					id: "66493477C3FBBC4F"
+					item: {
+						Count: 1
+						id: "farmersdelight:hot_cocoa"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Everybody is very impressed"
+			tasks: [{
+				id: "302901B91B07EA83"
+				title: "Complete Intro"
+				type: "checkmark"
+			}]
+			title: "Intro Complete!"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["542CDE05F61489C1"]
+			description: [
+				"This is a tech-oriented, but with a heavy emphasis on animals. Any farms and automations that you build will be work of the behaviors of mobs; there is no Create in this pack. You will gather animals from the world and put their special abilities to work in your ever-growing zoo."
+				""
+				"And you will be creating an actual zoo as you go, not just machines. You will need the money raised from zoogoers to fund your research."
+				""
+				"Explore. Collect. Build. Automate. Enjoy."
+			]
+			id: "3390ABCC920D83AA"
+			tasks: [{
+				id: "6586EC1F973B0C13"
+				title: "About this modpack"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3390ABCC920D83AA"]
+			description: [
+				"These are the primary chapters of this modpack. They are dedicated to getting specific animals and building automated farms around them."
+				""
+				"In most cases you will be able to choose from a number of possible animals to base your farm on. Tired of &9beef&r? Try &aKangaroo&r! Or perhaps you prefer the superior fertility of &aRabbits&r. Different animals will provide different advantages. The choice is yours."
+			]
+			id: "0E3E391DBE4589F9"
+			tasks: [{
+				id: "551B2042F04945A1"
+				title: "The Research"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0E3E391DBE4589F9"]
+			description: [
+				"Research is expensive! It costs money!"
+				""
+				"You're going to need to build a zoo to raise funds. Zoogooers will pay you based on how varied and how exotic your animals are. So even if you don't need an animal to build your farms, it can still be worth your while to gather them and put them into enclosures where people can see them."
+			]
+			id: "5C4F9A1EDB08C532"
+			tasks: [{
+				id: "7F42935C11A742C2"
+				title: "The Zoo"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+	]
 	title: "Intro"
 }

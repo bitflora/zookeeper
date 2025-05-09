@@ -230,8 +230,10 @@
 			description: ["There are many ways to catch animals. Study the &aSpider&r, and learn her snares."]
 			icon: {
 				Count: 1
-				id: "tconstruct:spider_head"
-				tag: { }
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "minecraft:spider"
+				}
 			}
 			id: "000F0C223F4007A3"
 			rewards: [{

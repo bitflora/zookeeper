@@ -393,6 +393,33 @@
 			x: 9.0d
 			y: -2.0d
 		}
+		{
+			description: [
+				"The Nether's equivalent of a wolf, &aFoxhounds&r can serve the same function if you manage to tame them with &9coal&r (while protected by a &9fire resistance potion&r)."
+				""
+				"They also have the fringe benefit of speed up any &9furnace&r that they are sitting atop."
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "quark:foxhound"
+				}
+			}
+			id: "69EFF552EC4AE3EE"
+			optional: true
+			subtitle: "Burning loins"
+			tasks: [{
+				id: "6228E92AB05C63F4"
+				observe_type: 5
+				timer: 0L
+				to_observe: "quark:foxhound"
+				type: "observation"
+			}]
+			title: "Foxhound"
+			x: 8.5d
+			y: -5.5d
+		}
 	]
 	title: "Helpful Critters"
 }

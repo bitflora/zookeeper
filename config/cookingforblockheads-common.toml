@@ -1,5 +1,5 @@
 #If true, a cow can be squished into a Milk Jar by dropping an anvil on top.
-cowJarEnabled = true
+cowJarEnabled = false
 #The amount of milk the cow in a jar generates per tick.
 #Range: > -2147483648
 cowJarMilkPerTick = 1

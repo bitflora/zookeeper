@@ -287,7 +287,11 @@
 		}
 		{
 			dependencies: ["12A799586D7DDE9E"]
-			description: ["Bird meat will be an essential ingredient in this &9meatwad&r. Your world is full of birds of all kinds, in addition to our old favorite, the &aChicken&r. Pick one and build a sustainable farm with your &aRats&r as the farm hands."]
+			description: [
+				"Bird meat will be an essential ingredient in this &9meatwad&r. Your world is full of birds of all kinds, in addition to our old favorite, the &aChicken&r. You already made a bird farm in the previous chapter, and it's probably already generating meat on the side. "
+				""
+				"All you need to do now is direct your &9Rats&r to move that meat into this pipeline."
+			]
 			id: "16D5C80F4AEBAB43"
 			rewards: [{
 				count: 4
@@ -461,7 +465,68 @@
 					type: "item"
 				}
 			]
+			title: "Now you're cooking"
 			x: 11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2BD87743BD547C81"]
+			description: [
+				"The &9meatwad&r opens new possibilities in terms of animal technology. Perhaps we can rebuild animals, but smaller, and more convenient. "
+				""
+				"Maybe in a jar. "
+				""
+				"Maybe even in our inventory."
+			]
+			id: "339261A4BC77999B"
+			subtitle: "Tiny possibilities abound"
+			tasks: [
+				{
+					id: "635C325D061E70FE"
+					item: {
+						Count: 1
+						id: "cookingforblockheads:cow_jar"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7B898D5089F71255"
+					item: {
+						Count: 1
+						id: "inventorypets:pet_chicken"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Miniaturization"
+			x: 13.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["339261A4BC77999B"]
+			description: [
+				"Now that we have our raw materials and have experimented with miniaturization, whole new areas of science are open to us. It's time to lean into researching and seeing just what we are really capable of."
+				""
+				"But for that we'll need funding. If you haven't been expanding your zoo, this might be a good time to do so."
+			]
+			id: "52A36EA542522041"
+			rewards: [{
+				id: "56DDA8EC9398049E"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+			subtitle: "Behold your rodent empire"
+			tasks: [{
+				id: "5C2311529A9A2A9B"
+				title: "Complete Chapter 2"
+				type: "checkmark"
+			}]
+			title: "Chapter 2 Complete!"
+			x: 15.5d
 			y: -2.0d
 		}
 	]

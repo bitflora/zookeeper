@@ -13,19 +13,19 @@
 	#Pets eat rarer items (default:false)
 	petsEatWholeItems = false
 	#Turn off all dungeons (default:false)
-	disableAllDungeons = false
+	disableAllDungeons = true
 	#Turn off Nether dungeons (default:false)
-	disableNetherDungeons = false
+	disableNetherDungeons = true
 	#Turn off Space dungeons (default:false)
-	disableSpaceDungeons = false
+	disableSpaceDungeons = true
 	#Turn off Underground dungeons (default:false)
-	disableUndergroundDungeons = false
+	disableUndergroundDungeons = true
 	#Turn off Sea Cave dungeons (default:false)
-	disableSeaCaveDungeons = false
+	disableSeaCaveDungeons = true
 	#Turn off Sky dungeons (default:false)
-	disableSkyDungeons = false
+	disableSkyDungeons = true
 	#Turn off Tree Tops (default:false)
-	disableTreeTops = false
+	disableTreeTops = true
 	#Disable mobs spawning in dungeons (default:false)
 	disableMobsSpawnInDungeons = false
 	#Disable Squid Pet swim speed boost ability (default:false)
