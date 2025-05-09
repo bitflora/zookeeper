@@ -2,5 +2,16 @@
 .mixin.out/
 saves/
 logs/
+crash-reports/
 journeymap/
+resourcepacks/
 settings.json
+.curseclient
+.qmenu_opened.marker
+minecraftinstance.json
+options.txt
+config/rats-common-1.toml.bak
+config/unusualprehistory-common-1.toml.bak
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/ingredient-list-type-sort-order.ini
+config/jei/world/local/FAFO/bookmarks.ini
