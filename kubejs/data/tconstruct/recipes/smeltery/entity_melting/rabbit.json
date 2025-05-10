@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:entity_melting",
+  "entity": {
+    "type": "eanimod:enhanced_rabbit"
+  },
+  "result": {
+    "fluid": "kubejs:anecdata",
+    "amount": 20
+  },
+  "damage": 2
+}
