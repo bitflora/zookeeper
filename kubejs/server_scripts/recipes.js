@@ -65,6 +65,19 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     e.remove({ output: 'theoneprobe:probe' });
     e.remove({ mod: "inventorypets"});
 
+    // misc recipe adjustments
+    e.remove({ output: 'cagebox:cage_box' });
+    e.shaped('1x cagebox:cage_box', [
+        'III',
+        'IBI',
+        'CCC'
+      ], {
+        C: 'compressedblocks:c1_cobblestone',
+        I: 'minecraft:iron_bars',
+        B: 'kubejs:brain'
+      }
+    );
+
     // add back in select Cyclic items
     e.shaped('1x cyclic:clock', [
         'CCC',
@@ -271,4 +284,119 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '#forge:raw_fishes'
     ]);
 
+    e.shaped('kubejs:brain', [
+        'MMM',
+        'MRM',
+        'MMM'
+    ], {
+        M: 'kubejs:meatwad',
+        R: 'minecraft:redstone',
+    });
+
+
+
+    // Tinker's Construct items
+    e.remove({ output: 'tconstruct:smeltery_controller'});
+    e.shaped('tconstruct:smeltery_controller', [
+        'BCB',
+        'CXC',
+        'BCB'
+    ], {
+        B: 'tconstruct:seared_brick',
+        C: 'minecraft:copper_ingot',
+        X: 'kubejs:brain',
+    });
+
+
+    e.remove({ output: 'tconstruct:foundry_controller'});
+    e.shaped('tconstruct:foundry_controller', [
+        'BCB',
+        'CXC',
+        'BCB'
+    ], {
+        B: 'tconstruct:scorched_brick',
+        C: 'minecraft:obsidian',
+        X: 'kubejs:brain',
+    });
+
+    e.remove({ output: 'tconstruct:grout'});
+    e.shaped('8x tconstruct:grout', [
+        'CSS',
+        'SSA',
+        'AAA'
+    ], {
+        M: 'minecraft:clay',
+        S: '#forge:sand',
+        A: 'supplementaries:ash',
+    });
+
+    e.shaped('2x tconstruct:grout', [
+        'CS ',
+        'A  ',
+        '   '
+    ], {
+        M: 'minecraft:clay',
+        S: '#forge:sand',
+        A: 'supplementaries:ash',
+    });
+
+    e.remove({ output: 'tconstruct:nether_grout'});
+    e.shaped('8x tconstruct:nether_grout', [
+        'MSS',
+        'SSA',
+        'AAA'
+    ], {
+        M: 'minecraft:magma_block',
+        S: '#minecraft:soul_fire_base_blocks',
+        A: 'supplementaries:ash',
+    });
+
+
+    e.shaped('2x tconstruct:nether_grout', [
+        'MS ',
+        'A  ',
+        '   '
+    ], {
+        M: 'minecraft:magma_cream',
+        S: '#minecraft:soul_fire_base_blocks',
+        A: 'supplementaries:ash',
+    });
+
+    // tconstruct rec
+
+    //castingTable(e, "minecraft:acacia_button", "minecraft:cobblestone", "kubejs:liquid_science", 20, 40, true);
+    e.custom({
+      type: "tconstruct:casting_table",
+      cast: {
+        item: 'exoticbirds:peafowl_egg'
+      },
+      cast_consumed: true,
+      fluid: {
+        fluid: 'tconstruct:molten_gold',
+        amount: 810
+      },
+      result: {
+        item: 'exoticbirds:peafowl_spawn_egg',
+        nbt: {EntityTag:{"Variant":2}}
+      },
+      cooling_time: 40
+    });
+    // castingTable(e, "exoticbirds:peafowl_spawn_egg", "exoticbirds:peafowl_egg", "tconstruct:molten_gold", 810, 40, true);
+
   });
+
+  function castingTable(event, result, castItem, inputFluid, amount, coolingTime, consumption) {
+    event.custom({
+      type: "tconstruct:casting_table",
+      cast: {
+        item: castItem
+      },
+      cast_consumed: consumption,
+      fluid: {
+        fluid: inputFluid,
+        amount: amount
+      },
+      result: result,
+      cooling_time: coolingTime
+    });
+  }

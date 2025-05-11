@@ -11,6 +11,252 @@
 	id: "2CCAB6FDD327FE7B"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"It's time to do some science! We have basic farms in place for raw materials. We have &aRats&r, which are basically better paid grad students. All we need is some quality science equipment."
+				""
+				"In this chapter, you will build out your needed laboratory equipment, and do Science with a few select lab animals, including &aAxolotls&r and &aRats&r."
+			]
+			id: "6831C5457E1E265B"
+			tasks: [{
+				id: "24E3915FEDC8CA6F"
+				title: "Begin Chapter 3"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			description: ["The center of your lab is the &9Sciencery&r. To build one, you'll need to turn a lot of &9grout&r into a lot of &9seared bricks&r, so get to it."]
+			icon: {
+				Count: 1
+				id: "tconstruct:smeltery_controller"
+				tag: { }
+			}
+			id: "6CB261440A7B3B52"
+			rewards: [
+				{
+					id: "6930EC25CC2773CD"
+					item: {
+						Count: 1
+						id: "minecraft:lava_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4964CEC015D471E5"
+					item: {
+						Count: 1
+						id: "tconstruct:seared_basin"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "56CF206445C420A3"
+					item: {
+						Count: 1
+						id: "tconstruct:materials_and_you"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "046A2B9404F9E967"
+					item: {
+						Count: 1
+						id: "tconstruct:puny_smelting"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "56E02371CE4421A7"
+					item: {
+						Count: 1
+						id: "tconstruct:mighty_smelting"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3FFF2B6C6D576074"
+					item: {
+						Count: 1
+						id: "tconstruct:smeltery_controller"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "7F91776D4917AD5A"
+					item: {
+						Count: 20
+						id: "tconstruct:seared_brick"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6449EBD9E2164E86"
+					item: {
+						Count: 1
+						id: "tconstruct:grout"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "091DECAB9A952FF5"
+					item: {
+						Count: 1
+						id: "tconstruct:seared_faucet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2A571EDBF19A8A0B"
+					item: {
+						Count: 1
+						id: "tconstruct:seared_drain"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5FDDEA14C83ECA36"
+					item: {
+						Count: 1
+						id: "tconstruct:seared_table"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"We will need laboratory animals in order to conduct our science. And there is no animal more sciencey than the &aAxolotl&r. Though nearly extinct in the wild, the species thrives in captivity due to its unique ability to regrow any lost limb, and even parts of its brain!"
+				""
+				"Catch at least 1 male and 1 female &aAxolotl&r, and start breeding them. These &aAxolotls&r can be bred with &9worms&r, and will need &9dripleaf plants&r or &9seagrass&r in the water with them to give them a place to lay their &9eggs&r. Once laid, you can safely relocate the &9eggs&r with a &9bucket of water&r."
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "minecraft:axolotl"
+				}
+			}
+			id: "1266905BED12A811"
+			rewards: [
+				{
+					count: 3
+					id: "06BD6016795657FF"
+					item: {
+						Count: 1
+						id: "eanimod:enhanced_axolotl_egg_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "55DCA75886D6368D"
+					item: {
+						Count: 1
+						id: "minecraft:big_dripleaf"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6A0DC243604B15F4"
+					item: {
+						Count: 1
+						id: "minecraft:small_dripleaf"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "minecraft:axolotl_bucket"
+						tag: { }
+					}
+					id: "7E3CC36E3947A181"
+					observe_type: 0
+					timer: 0L
+					to_observe: "eanimod:enhanced_axolotl"
+					type: "observation"
+				}
+				{
+					id: "7EAF3E9764B80E7F"
+					item: {
+						Count: 1
+						id: "eanimod:enhanced_axolotl_bucket"
+						tag: {
+							display: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "41F11D9E758996D9"
+					item: {
+						Count: 1
+						id: "eanimod:enhanced_axolotl_egg_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Axolotls!"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6CB261440A7B3B52"]
+			description: ["Now that you have a &9Sciencery&r, a whole new world of tools is open to you. Try a few out!"]
+			id: "40D1DB5EC7F5978B"
+			rewards: [{
+				id: "1E2154884E749B7E"
+				item: {
+					Count: 1
+					id: "tconstruct:tinkers_anvil"
+					tag: {
+						texture: "tconstruct:pig_iron_block"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E56986EA11FBB3C"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tconstruct:modifiable/held)"
+					}
+				}
+				title: "Any #tconstruct:modifiable/held"
+				type: "item"
+			}]
+			title: "Better Tools"
+			x: -2.5d
+			y: 1.5d
+		}
+	]
 	title: "&a3.&r Science!"
 }

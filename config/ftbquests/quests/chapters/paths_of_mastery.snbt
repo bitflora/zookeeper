@@ -16,8 +16,11 @@
 			description: ["By studying animals, we can learn more about ourselves. Seek out the &aOwl&r, and gain wisdom and understanding of the world around you."]
 			icon: {
 				Count: 1
-				id: "exoticbirds:owl_egg"
-				tag: { }
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "exoticbirds:owl"
+					DisplayMobFlags: 98
+				}
 			}
 			id: "51893424D161C6E7"
 			rewards: [{
@@ -219,6 +222,7 @@
 					advancement: "alexsmobs:alexsmobs/tame_elephant"
 					criterion: ""
 					id: "20D2990970CF1B2A"
+					title: "Tame an elephant"
 					type: "advancement"
 				}
 			]
@@ -236,15 +240,26 @@
 				}
 			}
 			id: "000F0C223F4007A3"
-			rewards: [{
-				id: "5FEDF225285E58DF"
-				item: {
-					Count: 1
-					id: "minecraft:lead"
-					tag: { }
+			rewards: [
+				{
+					id: "5FEDF225285E58DF"
+					item: {
+						Count: 1
+						id: "minecraft:lead"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					auto: "invisible"
+					id: "6AFC1E344AAEA3B8"
+					ignore_reward_blocking: true
+					stage: "spider_lead"
+					title: "Enable leads"
+					type: "gamestage"
+				}
+			]
+			shape: "pentagon"
 			tasks: [
 				{
 					count: 32L
@@ -270,8 +285,8 @@
 				}
 			]
 			title: "Path of the Spider"
-			x: -0.5d
-			y: -4.5d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
 			description: [
@@ -315,8 +330,8 @@
 				}
 			]
 			title: "Path of the Packrat"
-			x: 3.5d
-			y: -4.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			description: ["It's a dangerous world. You need better equipment. Learn from the master of armor. Learn from the turtle."]
@@ -333,6 +348,160 @@
 			}]
 			x: -5.5d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"000F0C223F4007A3"
+				"1E534F3C1A7F1156"
+			]
+			description: [
+				"There are other animals skilled in the art of capture. Study the &aAnaconda&r and learn how it captures its prey. With this knowledge, construct a better &9lead&r, known as a &9vine lasso&r."
+				""
+				""
+				"If you want more, feed it a few times. Eventually it will shed more skin for you."
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:vine_lasso"
+				tag: { }
+			}
+			id: "4E47FDCA426C22E9"
+			rewards: [
+				{
+					id: "336A2492D6B7ABA2"
+					item: {
+						Count: 1
+						id: "alexsmobs:vine_lasso"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "7BCAD9128321AE3F"
+					item: {
+						Count: 1
+						id: "alexsmobs:shed_snake_skin"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "The anaconda"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:shed_snake_skin"
+					tag: { }
+				}
+				id: "595E3B773E98663D"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:anaconda"
+				type: "observation"
+			}]
+			title: "Path of the Spider 3"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["000F0C223F4007A3"]
+			description: ["As the spider constantly reweaves her web, so you must practice your own craft. Make more leads until you're great at it."]
+			id: "1E534F3C1A7F1156"
+			rewards: [{
+				id: "2BD12A8E1D593B54"
+				item: {
+					Count: 1
+					id: "minecraft:lead"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Practice makes perfect"
+			tasks: [{
+				count: 4L
+				id: "2309E49C398891AF"
+				item: {
+					Count: 4
+					id: "minecraft:lead"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Path of the Spider 2"
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"3C436A5A1F57E9BC"
+				"000F0C223F4007A3"
+			]
+			description: ["Eureka! We can build a cage that will capture any mob who walks over it. Then it can be carried easily to another area."]
+			id: "76C39DF60A496604"
+			subtitle: "What's in the box?"
+			tasks: [{
+				id: "621F663B5AB1805B"
+				item: {
+					Count: 1
+					id: "cagebox:cage_box"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Path of the Spider 5"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"000F0C223F4007A3"
+				"4E47FDCA426C22E9"
+			]
+			description: ["So far, all of these capture devices still require us to walk the animal all the back to where we want it. This is inconvenient; many of them are not very mobile. Let us ponder the &aSpider&r's works some more."]
+			id: "3C436A5A1F57E9BC"
+			rewards: [{
+				auto: "invisible"
+				id: "4518C1790ABBAEB3"
+				ignore_reward_blocking: true
+				stage: "spider_cagebox"
+				title: "Enable cage box"
+				type: "gamestage"
+			}]
+			subtitle: "Surfing the web"
+			tasks: [{
+				count: 20L
+				id: "740B9304FFD09402"
+				item: {
+					Count: 20
+					id: "minecraft:cobweb"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Path of the Spider 4"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"000F0C223F4007A3"
+				"76C39DF60A496604"
+			]
+			description: ["Thanks to the latest scientific advances, you don't even need to lay snares anymore. A flick of the wrist, and they are yours."]
+			id: "12AE03987D663AB8"
+			subtitle: "Gotta catch them all"
+			tasks: [{
+				id: "6917B6F7363D4064"
+				item: {
+					Count: 1
+					id: "cyclic:magic_net"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
 		}
 	]
 	title: "Paths of Mastery"

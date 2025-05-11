@@ -13,4 +13,6 @@ StartupEvents.registry('item', e => {
 
     e.create('meat_mess').tooltip('The combined meat of many animals.');
     e.create('meatwad').tooltip('The essence of meat. Who knows what it could turn into?');
+
+    e.create('brain').tooltip('Thinking meat.');
 });
