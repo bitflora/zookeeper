@@ -293,6 +293,12 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         R: 'minecraft:redstone',
     });
 
+    e.shapeless('kubejs:stem_cell', [
+        'kubejs:meatwad',
+        'kubejs:fur_ball',
+        '#forge:eggs'
+    ]);
+
 
 
     // Tinker's Construct items
@@ -377,13 +383,33 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       },
       result: {
         item: 'exoticbirds:peafowl_spawn_egg',
-        nbt: {EntityTag:{"Variant":2}}
+        nbt: {
+          EntityTag:{"Variant":2},
+          display:{Name:'{"text":"Albino peafowl spawn egg"}' }
+        }
       },
       cooling_time: 40
     });
-    // castingTable(e, "exoticbirds:peafowl_spawn_egg", "exoticbirds:peafowl_egg", "tconstruct:molten_gold", 810, 40, true);
+
+    castingBasin(e, "kubejs:embryo", "kubejs:stem_cell", "kubejs:liquid_science", 810, 60, true);
 
   });
+
+  function castingBasin(event, result, castItem, inputFluid, amount, coolingTime, consumption) {
+    event.custom({
+      type: "tconstruct:casting_basin",
+      cast: {
+        item: castItem
+      },
+      cast_consumed: consumption,
+      fluid: {
+        fluid: inputFluid,
+        amount: amount
+      },
+      result: result,
+      cooling_time: coolingTime
+    });
+  }
 
   function castingTable(event, result, castItem, inputFluid, amount, coolingTime, consumption) {
     event.custom({

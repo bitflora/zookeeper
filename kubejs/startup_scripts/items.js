@@ -15,4 +15,6 @@ StartupEvents.registry('item', e => {
     e.create('meatwad').tooltip('The essence of meat. Who knows what it could turn into?');
 
     e.create('brain').tooltip('Thinking meat.');
+    e.create('stem_cell').tooltip('Precursor to life, if only you can apply more Science.');
+    e.create('embryo').tooltip('Animal waiting to be born. And also waiting for a few more ingredients to know what kind of animal it is.');
 });

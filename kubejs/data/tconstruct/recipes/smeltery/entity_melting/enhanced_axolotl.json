@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:entity_melting",
+  "entity": {
+    "type": "eanimod:enhanced_axolotl"
+  },
+  "result": {
+    "fluid": "kubejs:liquid_science",
+    "amount": 20
+  },
+  "damage": 2
+}
