@@ -244,11 +244,11 @@
 				}
 			]
 			title: "Rat Automation"
-			x: 2.0d
+			x: 1.5d
 			y: -2.0d
 		}
 		{
-			dependencies: ["77805105BDA7D030"]
+			dependencies: ["37BDE6950C14AEE3"]
 			description: [
 				"Your &aRats&r can do other tasks on the farm as well. They can breed animals. They can even kill them for harvesting."
 				""
@@ -288,7 +288,7 @@
 		{
 			dependencies: ["12A799586D7DDE9E"]
 			description: [
-				"Bird meat will be an essential ingredient in this &9meatwad&r. Your world is full of birds of all kinds, in addition to our old favorite, the &aChicken&r. You already made a bird farm in the previous chapter, and it's probably already generating meat on the side. "
+				"Bird meat will be an essential ingredient in this &9meatwad&r. Your world is full of birds of all kinds, in addition to our old favorite, the &aChicken&r. You already made a &9feather&r farm in the previous chapter, and it's probably already generating meat on the side. "
 				""
 				"All you need to do now is direct your &9Rats&r to move that meat into this pipeline."
 			]
@@ -366,7 +366,7 @@
 			description: [
 				"As with the &9furball&r, you will need to construct your &9meatwad&r from multiple classes of animals."
 				""
-				"Mammal meat will be a critical component. There are many animals you can farm in order to harvest this, including &aKangaroos&r, &aCows&r, &aSheep&r, &aPigs&r, &aRabbits&r, or even &aBears&r. Pick your favorite and teach your &aRats&r how to harvest them sustainably."
+				"Mammal meat will be a critical component. There are many animals you can farm in order to harvest this, including &aKangaroos&r, &aCows&r, &aSheep&r, &aPigs&r, &aRabbits&r, or even &aBears&r. Pick your favorite and teach your &aRats&r how to harvest them sustainably. You can probably modift your &9fur&r farm from &2Chapter 1&r for this."
 				""
 				"You could even have your &aRats&r farm other &aRats&r!"
 			]
@@ -527,6 +527,39 @@
 			}]
 			title: "Chapter 2 Complete!"
 			x: 15.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["77805105BDA7D030"]
+			description: [
+				"The &9furball&r makes possible the construction of a &9fan&r, a device which can push mobs where you please when redstone is applied."
+				""
+				"This should aid you greatly in automating those animal farms."
+				""
+				"Note that there are two recipes, costing either a large amount of &9iron&r, or a &9rat hand&r."
+			]
+			id: "37BDE6950C14AEE3"
+			rewards: [{
+				count: 3
+				id: "5ABFE5C50B4E144D"
+				item: {
+					Count: 1
+					id: "cyclic:fan"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "02BD8F07F80B48E5"
+				item: {
+					Count: 1
+					id: "cyclic:fan"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Rat Fan"
+			x: 3.5d
 			y: -2.0d
 		}
 	]

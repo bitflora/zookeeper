@@ -198,6 +198,7 @@
 					id: "7E3CC36E3947A181"
 					observe_type: 0
 					timer: 0L
+					title: "Find an axolotl"
 					to_observe: "eanimod:enhanced_axolotl"
 					type: "observation"
 				}
@@ -210,6 +211,7 @@
 							display: { }
 						}
 					}
+					title: "Catch an axolotl"
 					type: "item"
 				}
 				{
@@ -219,6 +221,7 @@
 						id: "eanimod:enhanced_axolotl_egg_bucket"
 						tag: { }
 					}
+					title: "Breed axolotls"
 					type: "item"
 				}
 			]

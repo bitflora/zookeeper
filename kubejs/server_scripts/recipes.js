@@ -109,6 +109,28 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         B: 'kubejs:fur_ball'
     });
 
+    e.shaped('cyclic:fan', [
+        ' IF',
+        'BRF',
+        ' IF'
+    ], {
+        R: 'minecraft:redstone',
+        F: 'kubejs:fur_ball',
+        I: 'minecraft:iron_ingot',
+        B: 'minecraft:iron_block'
+    });
+
+    e.shaped('cyclic:fan', [
+        ' IF',
+        'PRF',
+        ' IF'
+    ], {
+        R: 'minecraft:redstone',
+        F: 'kubejs:fur_ball',
+        I: 'minecraft:iron_ingot',
+        P: 'rats:rat_paw'
+    });
+
     // Add back inventory pets
     e.remove({ output: "cookingforblockheads:cow_jar"});
     e.shaped('cookingforblockheads:cow_jar', [
@@ -368,7 +390,11 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         A: 'supplementaries:ash',
     });
 
-    // tconstruct rec
+    // tconstruct recipes
+
+    castingBasin(e, "kubejs:embryo", "kubejs:stem_cell", "kubejs:liquid_science", 810, 60, true);
+
+    // spawn egs
 
     //castingTable(e, "minecraft:acacia_button", "minecraft:cobblestone", "kubejs:liquid_science", 20, 40, true);
     e.custom({
@@ -391,7 +417,101 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       cooling_time: 40
     });
 
-    castingBasin(e, "kubejs:embryo", "kubejs:stem_cell", "kubejs:liquid_science", 810, 60, true);
+    e.shaped('alexsmobs:spawn_egg_shoebill', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: '#forge:armors/boots',
+      S: '#forge:feathers',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_mantis_shrimp', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: '#forge:tools/pickaxes',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('3x alexsmobs:spawn_egg_raccoon', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'alexsmobs:raccoon_tail',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_banana_slug', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: '#forge:slimeballs',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_sugar_glider', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'kubejs:fur_ball',
+      S: 'minecraft:sugar',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_seal', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: '#minecraft:fishes',
+      S: 'kubejs:fur_ball',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_platypus', [
+      'sIS',
+      ' X ',
+      ' E '
+    ], {
+      I: '#minecraft:fishes',
+      S: 'kubejs:fur_ball',
+      s: '#forge:feathers',
+      X: 'kubejs:embryo',
+      E: 'eanimod:turtle_egg',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_anaconda', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'alexsmobs:shed_snake_skin',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('4x alexsmobs:spawn_egg_lobster', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'alexsmobs:lobster_tail',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
 
   });
 

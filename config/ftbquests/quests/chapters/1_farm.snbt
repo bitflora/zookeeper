@@ -261,7 +261,14 @@
 				"&9Fur balls&r may not sound appealing, but you will be surprised at their uses. The first ingredient, of course, is &9fur&r. Most mammals have it, including &aRaccoons&r, &aGazelle&r, and &aBison&r. You will need to find some of these animals, capture them, and then breed them for their &9fur&r."
 				""
 				"And hey, if you get some good meat to eat in the process, all the better!"
+				""
+				"It may also be worth noting that the &aGrizzly Bear&r will shed even while alive, if you are brave enough to pen some up."
 			]
+			icon: {
+				Count: 1
+				id: "naturalist:fur"
+				tag: { }
+			}
 			id: "4A08737D7BD6DA01"
 			rewards: [
 				{
@@ -285,13 +292,15 @@
 			]
 			subtitle: "First, fur"
 			tasks: [{
-				count: 10L
 				id: "375096A2DA0819E0"
 				item: {
-					Count: 10
-					id: "naturalist:fur"
-					tag: { }
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:furs)"
+					}
 				}
+				title: "Any #kubejs:furs"
 				type: "item"
 			}]
 			title: "Furballs For Beginners"
@@ -338,7 +347,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Second, Wool"
+			subtitle: "Second, wool"
 			tasks: [
 				{
 					count: 10L
@@ -698,6 +707,8 @@
 				"It's time for you to get comfortable with more animals. You will need to gather many different species together to accomplish your goals."
 				""
 				"This will require some travel around the world. You might want to spend time on the &2Paths of Mastery&r chapter to make your travels easier."
+				""
+				"Please keep in mind that most of your farms will not be fully automatable in this chapter. That will come later."
 			]
 			id: "1F9528CF1F2437B2"
 			tasks: [{

@@ -298,6 +298,48 @@
 			x: 3.0d
 			y: -3.5d
 		}
+		{
+			id: "397FE29AD20529EC"
+			tasks: [{
+				id: "32686CC0BCD84E55"
+				title: "Using this quest book"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			id: "75DD55D68ACC8C94"
+			tasks: [{
+				id: "54D0042CC4CF1AAC"
+				title: "Using JEI"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"The following mods are core to this modpack:"
+				"- Alex's Mobs"
+				"- Exotic Birds"
+				"- Genetic Animals"
+				"- Rats"
+				"- Tinker's Contruct"
+				""
+				"If you are confused about something, you may want to search for thier wikis, several of which are linked in the &2Helpful Critters&r section. That section will also give you details about the most important animals, especially where we have made changes like adding foods which will tame them."
+			]
+			id: "4342896FE9651396"
+			subtitle: "This one goes out to the ones I loved"
+			tasks: [{
+				id: "6EA68DEB08B6D1A9"
+				title: "Got it!"
+				type: "checkmark"
+			}]
+			title: "Major Mods"
+			x: 3.0d
+			y: 2.5d
+		}
 	]
 	title: "Intro"
 }

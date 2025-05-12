@@ -12,9 +12,7 @@ StartupEvents.registry('fluid', e => {
   e.create('liquid_science')
     .thinTexture(0x99ccff)
     .bucketColor(0x99ccff)
-    .displayName('Liquid Science')
-    .noBucket()
-    .noBlock();
+    .displayName('Liquid Science');
 
 
 
