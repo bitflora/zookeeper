@@ -4,7 +4,7 @@
     "type": "rats:rat"
   },
   "result": {
-    "fluid": "kubejs:anecdata",
+    "fluid": "kubejs:anecdotes",
     "amount": 20
   },
   "damage": 2

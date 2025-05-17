@@ -22,5 +22,7 @@ JadeStage.setStage("owl_jade");
 
 import mods.itemstages.ItemStages;
 
+ItemStages.restrict(<item:scannable:scanner>, "owl_scanner");
+
 ItemStages.restrict(<item:minecraft:lead>, "spider_lead");
 ItemStages.restrict(<item:cagebox:cage_box>, "spider_cagebox");

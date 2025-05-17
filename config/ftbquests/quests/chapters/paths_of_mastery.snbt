@@ -35,10 +35,11 @@
 			subtitle: "Probe all the things!"
 			tasks: [
 				{
+					consume_items: true
 					count: 32L
 					id: "2974710D3A995F7A"
 					item: {
-						Count: 32
+						Count: 1
 						id: "exoticbirds:owl_egg"
 						tag: { }
 					}
@@ -54,7 +55,7 @@
 			]
 			title: "Path of the Owl"
 			x: -5.0d
-			y: -4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["51893424D161C6E7"]
@@ -70,9 +71,11 @@
 			}]
 			subtitle: "Gain Insight"
 			tasks: [{
-				id: "453E5941F0F9104F"
-				title: "Deeper knowledge"
-				type: "checkmark"
+				advancement: "exoticbirds:default/incubate_egg"
+				criterion: ""
+				id: "57848E5053F990A9"
+				title: "Incubate an egg to 100% spawn chance"
+				type: "advancement"
 			}]
 			title: "Path of the Owl 2"
 			x: -5.0d
@@ -106,9 +109,9 @@
 				}
 				type: "item"
 			}]
-			title: "Path of the Owl 3"
+			title: "Path of the Owl A1"
 			x: -6.5d
-			y: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["10C82AF7709F574A"]
@@ -165,12 +168,13 @@
 					advancement: "alexsmobs:alexsmobs/bald_eagle_challenge"
 					criterion: ""
 					id: "74DFE839AA72BBCF"
+					title: "Kill something with an eagle from 100 blocks away"
 					type: "advancement"
 				}
 			]
-			title: "Path of the Owl 4"
+			title: "Path of the Owl B1"
 			x: -4.0d
-			y: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2775AA62C6D95C4E"]
@@ -226,9 +230,9 @@
 					type: "advancement"
 				}
 			]
-			title: "Path of the Owl 5"
-			x: -4.0d
-			y: 0.0d
+			title: "Path of the Owl B2"
+			x: -2.5d
+			y: -3.0d
 		}
 		{
 			description: ["There are many ways to catch animals. Study the &aSpider&r, and learn her snares."]
@@ -429,7 +433,7 @@
 				type: "item"
 			}]
 			title: "Path of the Spider 2"
-			x: 2.5d
+			x: 3.0d
 			y: -5.5d
 		}
 		{
@@ -486,7 +490,7 @@
 		{
 			dependencies: [
 				"000F0C223F4007A3"
-				"76C39DF60A496604"
+				"13C07E06513000D0"
 			]
 			description: ["Thanks to the latest scientific advances, you don't even need to lay snares anymore. A flick of the wrist, and they are yours."]
 			id: "12AE03987D663AB8"
@@ -500,6 +504,92 @@
 				}
 				type: "item"
 			}]
+			title: "Path of the Spider 7"
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0329AD75534DCCCA"]
+			description: ["The underground world is important too. Explore the caves, befriend one its native fauna, and perhaps you will gain their insight."]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:flutter"
+				}
+			}
+			id: "19A1BEC086EA9CCD"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "08F63AB2DE8F6DCE"
+					ignore_reward_blocking: true
+					stage: "owl_scanner"
+					title: "Enable Scanner"
+					type: "gamestage"
+				}
+				{
+					id: "3F4C01F5D64F0966"
+					item: {
+						Count: 1
+						id: "scannable:scanner"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2C43B53B229D45C2"
+					item: {
+						Count: 1
+						id: "scannable:rare_ores_module"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Diggy diggy diggy hole"
+			tasks: [
+				{
+					id: "6C25DD72F8C1750B"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:flutter"
+					type: "observation"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/tame_flutter"
+					criterion: ""
+					id: "1DC5C45994416957"
+					title: "Tame a flutter"
+					type: "advancement"
+				}
+			]
+			title: "Path of the Owl A2"
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"76C39DF60A496604"
+				"000F0C223F4007A3"
+			]
+			description: ["What could teach us even more than the &aSpider&r? Perhaps we should learn from the insect which captures Spiders. Find and tame a &aTarantula Hawk&r by feeding it &9spider eyes&r, and become the ultimate trapper."]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "alexsmobs:tarantula_hawk"
+				}
+			}
+			id: "13C07E06513000D0"
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_tarantula_hawk"
+				criterion: ""
+				id: "47899A7BD9BBB70A"
+				title: "Tame a Tarantula Hawk"
+				type: "advancement"
+			}]
+			title: "Path of the Spider 6"
 			x: 0.0d
 			y: -4.0d
 		}

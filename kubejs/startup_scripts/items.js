@@ -13,8 +13,12 @@ StartupEvents.registry('item', e => {
 
     e.create('meat_mess').tooltip('The combined meat of many animals.');
     e.create('meatwad').tooltip('The essence of meat. Who knows what it could turn into?');
+    e.create('breeding_chow').tooltip('Generic food to breed most meat-eaters.')
 
     e.create('brain').tooltip('Thinking meat.');
     e.create('stem_cell').tooltip('Precursor to life, if only you can apply more Science.');
     e.create('embryo').tooltip('Animal waiting to be born. And also waiting for a few more ingredients to know what kind of animal it is.');
+
+    e.create('scientific_paper_draft').tooltip('Just needs to pass peer review.');
+    e.create('scientific_paper').tooltip('A critical component of tenure.');
 });

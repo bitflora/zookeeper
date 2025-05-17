@@ -4,7 +4,7 @@
     "type": "eanimod:enhanced_axolotl"
   },
   "result": {
-    "fluid": "kubejs:liquid_science",
+    "fluid": "kubejs:experimental_results",
     "amount": 20
   },
   "damage": 2

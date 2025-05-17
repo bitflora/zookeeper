@@ -1,11 +1,11 @@
 {
   "type": "tconstruct:entity_melting",
   "entity": {
-    "type": "guinea_pig_mod:guinea-pig"
+    "type": "guinea_pig_mod:guinea_pig"
   },
   "result": {
-    "fluid": "kubejs:anecdata",
-    "amount": 20
+    "fluid": "kubejs:anecdotes",
+    "amount": 50
   },
   "damage": 2
 }

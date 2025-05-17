@@ -4,8 +4,8 @@
     "type": "minecraft:rabbit"
   },
   "result": {
-    "fluid": "kubejs:anecdata",
-    "amount": 20
+    "fluid": "kubejs:anecdotes",
+    "amount": 30
   },
   "damage": 2
 }

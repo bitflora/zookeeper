@@ -267,6 +267,7 @@
 			}
 			id: "12A799586D7DDE9E"
 			rewards: [{
+				count: 2
 				id: "304FA46654E4B660"
 				item: {
 					Count: 1
@@ -277,9 +278,13 @@
 			}]
 			subtitle: "A taste for blood"
 			tasks: [{
-				id: "6ED8F1E9B1EC5388"
-				title: "OK"
-				type: "checkmark"
+				id: "4E87C14066D4060D"
+				item: {
+					Count: 1
+					id: "rats:rat_upgrade_mob_filter"
+					tag: { }
+				}
+				type: "item"
 			}]
 			title: "Killer Rats"
 			x: 5.0d
@@ -362,11 +367,11 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["12A799586D7DDE9E"]
+			dependencies: ["38E7DBD0E3BFE798"]
 			description: [
 				"As with the &9furball&r, you will need to construct your &9meatwad&r from multiple classes of animals."
 				""
-				"Mammal meat will be a critical component. There are many animals you can farm in order to harvest this, including &aKangaroos&r, &aCows&r, &aSheep&r, &aPigs&r, &aRabbits&r, or even &aBears&r. Pick your favorite and teach your &aRats&r how to harvest them sustainably. You can probably modift your &9fur&r farm from &2Chapter 1&r for this."
+				"Mammal meat will be a critical component. There are many animals you can farm in order to harvest this, including &aKangaroos&r, &aCows&r, &aSheep&r, &aPigs&r, &aRabbits&r, or even &aBears&r. Pick your favorite and teach your &aRats&r how to breed and harvest them sustainably. You can probably modify your &9fur&r farm from &2Chapter 1&r for this."
 				""
 				"You could even have your &aRats&r farm other &aRats&r!"
 			]
@@ -408,7 +413,7 @@
 				type: "item"
 			}]
 			title: "Mammal Meat"
-			x: 7.0d
+			x: 8.0d
 			y: -4.5d
 		}
 		{
@@ -419,6 +424,16 @@
 			]
 			description: ["Now put them all together and you got yourself a mess of meat."]
 			id: "71755D565CA09466"
+			rewards: [{
+				count: 5
+				id: "3E43915BD5D17964"
+				item: {
+					Count: 1
+					id: "kubejs:meat_mess"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4EF7977B708730DD"
 				item: {
@@ -470,7 +485,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["2BD87743BD547C81"]
+			dependencies: ["0C6FD867C36563BE"]
 			description: [
 				"The &9meatwad&r opens new possibilities in terms of animal technology. Perhaps we can rebuild animals, but smaller, and more convenient. "
 				""
@@ -503,7 +518,7 @@
 				}
 			]
 			title: "Miniaturization"
-			x: 13.5d
+			x: 14.0d
 			y: -2.0d
 		}
 		{
@@ -560,6 +575,81 @@
 			}]
 			title: "Rat Fan"
 			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["12A799586D7DDE9E"]
+			description: [
+				"Birth and death are both critical parts of an animal's lifecycle."
+				""
+				"Your &aRats&r can be taught to breed animals with the simple use of a &9Rat Upgrade: Breeder&r. Make sure to set your breeders to take food from the appropriate chest, and then set them to &nHarvest&r and they will keep your animals very happy."
+			]
+			id: "38E7DBD0E3BFE798"
+			rewards: [{
+				count: 3
+				id: "66FE8BB6126345ED"
+				item: {
+					Count: 1
+					id: "rats:rat_upgrade_breeder"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Hugs and kisses and rats"
+			tasks: [{
+				id: "6B73EB80F7EF20AE"
+				item: {
+					Count: 1
+					id: "rats:rat_upgrade_breeder"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Lover Rats"
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2BD87743BD547C81"]
+			description: ["The &9meatwad&r open up new mechanisms for us, including the &9rat crafting table&r. Build one of these and then use it to automate your &9meatwad&r construction from here out."]
+			icon: {
+				Count: 1
+				id: "rats:rat_crafting_table"
+				tag: { }
+			}
+			id: "0C6FD867C36563BE"
+			rewards: [{
+				id: "2A2BAAA6B5E0CEA5"
+				item: {
+					Count: 1
+					id: "rats:rat_upgrade_crafting"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "If I only had a brain"
+			tasks: [
+				{
+					id: "5B268DE9C5D8BDE1"
+					item: {
+						Count: 1
+						id: "kubejs:brain"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "09B2867256325C37"
+					item: {
+						Count: 1
+						id: "rats:rat_crafting_table"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Automated Crafting"
+			x: 12.5d
 			y: -2.0d
 		}
 	]

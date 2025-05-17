@@ -257,6 +257,27 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         C: 'rats:cheese',
     });
 
+    e.remove({ output: 'rats:rat_upgrade_basic' });
+    e.shaped('rats:rat_upgrade_basic', [
+        'CCC',
+        'CFC',
+        'CCC'
+    ], {
+        F: 'kubejs:fur_ball',
+        C: 'rats:cheese',
+    });
+
+    e.remove({ output: 'rats:rat_crafting_table' });
+    e.shaped('rats:rat_crafting_table', [
+        'BCB',
+        'CTC',
+        'BCB'
+    ], {
+        T: 'minecraft:crafting_table',
+        B: 'kubejs:brain',
+        C: 'rats:cheese'
+    });
+
     // Custom items
     e.smelting('2x supplementaries:ash', 'compressedblocks:c1_cobblestone');
 
@@ -321,6 +342,14 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '#forge:eggs'
     ]);
 
+    e.shaped('kubejs:breeding_chow', [
+      'M M',
+      'MMM',
+      ' M '
+    ], {
+      M: 'kubejs:meatwad'
+    });
+
 
 
     // Tinker's Construct items
@@ -353,7 +382,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'SSA',
         'AAA'
     ], {
-        M: 'minecraft:clay',
+        C: 'minecraft:clay',
         S: '#forge:sand',
         A: 'supplementaries:ash',
     });
@@ -363,7 +392,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'A  ',
         '   '
     ], {
-        M: 'minecraft:clay',
+        C: 'minecraft:clay',
         S: '#forge:sand',
         A: 'supplementaries:ash',
     });
@@ -392,11 +421,15 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
 
     // tconstruct recipes
 
-    castingBasin(e, "kubejs:embryo", "kubejs:stem_cell", "kubejs:liquid_science", 810, 60, true);
+    castingBasin(e, "kubejs:embryo", "kubejs:stem_cell", "kubejs:experimental_results", 810, 60, true);
+
+    castingTable(e, 'kubejs:scientific_paper_draft', 'minecraft:paper', 'kubejs:experimental_results', 810, 120, true);
+    castingTable(e, 'kubejs:scientific_paper', 'kubejs:scientific_paper_draft', 'kubejs:anecdotes', 810, 120, true);
+    castingTable(e, 'kubejs:scientific_paper', 'minecraft:paper', 'kubejs:citations', 5, 80, true);
 
     // spawn egs
 
-    //castingTable(e, "minecraft:acacia_button", "minecraft:cobblestone", "kubejs:liquid_science", 20, 40, true);
+    // TODO: remove or change; there is no gold dropped anymore
     e.custom({
       type: "tconstruct:casting_table",
       cast: {
@@ -411,7 +444,8 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         item: 'exoticbirds:peafowl_spawn_egg',
         nbt: {
           EntityTag:{"Variant":2},
-          display:{Name:'{"text":"Albino peafowl spawn egg"}' }
+          //item_name:{"color":"yellow","text":"Albino peafowl spawn egg"}
+          //display:{Name:'{"text":"Albino peafowl spawn egg"}' } // TODO: Make this not set the entity name
         }
       },
       cooling_time: 40
@@ -423,6 +457,17 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       ' E '
     ], {
       I: '#forge:armors/boots',
+      S: '#forge:feathers',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_bald_eagle', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'farmersdelight:hamburger',
       S: '#forge:feathers',
       X: 'kubejs:embryo',
       E: '#forge:eggs',
@@ -511,6 +556,61 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       X: 'kubejs:embryo',
       E: '#forge:eggs',
     });
+
+    e.shaped('alexsmobs:spawn_egg_tarantula_hawk', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'minecraft:spider_eye',
+      S: '#forge:feathers',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('guinea_pig_mod:guinea_pig_spawn_egg', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'kubejs:fur_ball',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('4x minecraft:spider_spawn_egg', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'minecraft:spider_eye',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    // Caged Mobs
+    e.remove({ output: 'cagedmobs:mob_cage'});
+    e.remove({ output: 'cagedmobs:dna_sampler'});
+    e.remove({ output: 'cagedmobs:diamond_dna_sampler'});
+    e.remove({ output: 'cagedmobs:netherite_dna_sampler'});
+
+    // TODO: put them back
+
+    // TODO: make sciencey recipes for the upgrades
+
+
+    // Unusual Prehistory
+    e.remove({ output: 'unusualprehistory:organic_ooze'});
+    // TODO
+    // e.shaped('unusualprehistory:organic_ooze', [
+    //     'MSS',
+    //     'SSA',
+    //     'AAA'
+    // ], {
+    //     M: 'minecraft:magma_block',
+    //     S: '#minecraft:soul_fire_base_blocks',
+    //     A: 'supplementaries:ash',
+    // });
 
 
   });

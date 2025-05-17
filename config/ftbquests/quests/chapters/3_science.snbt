@@ -19,6 +19,15 @@
 				"In this chapter, you will build out your needed laboratory equipment, and do Science with a few select lab animals, including &aAxolotls&r and &aRats&r."
 			]
 			id: "6831C5457E1E265B"
+			rewards: [{
+				id: "5CFBD8FEF2B39FFE"
+				item: {
+					Count: 1
+					id: "tconstruct:puny_smelting"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "24E3915FEDC8CA6F"
 				title: "Begin Chapter 3"
@@ -28,6 +37,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["6831C5457E1E265B"]
 			description: ["The center of your lab is the &9Sciencery&r. To build one, you'll need to turn a lot of &9grout&r into a lot of &9seared bricks&r, so get to it."]
 			icon: {
 				Count: 1
@@ -59,15 +69,6 @@
 					item: {
 						Count: 1
 						id: "tconstruct:materials_and_you"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "046A2B9404F9E967"
-					item: {
-						Count: 1
-						id: "tconstruct:puny_smelting"
 						tag: { }
 					}
 					type: "item"
@@ -143,6 +144,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["6CB261440A7B3B52"]
 			description: [
 				"We will need laboratory animals in order to conduct our science. And there is no animal more sciencey than the &aAxolotl&r. Though nearly extinct in the wild, the species thrives in captivity due to its unique ability to regrow any lost limb, and even parts of its brain!"
 				""
@@ -233,6 +235,7 @@
 			dependencies: ["6CB261440A7B3B52"]
 			description: ["Now that you have a &9Sciencery&r, a whole new world of tools is open to you. Try a few out!"]
 			id: "40D1DB5EC7F5978B"
+			optional: true
 			rewards: [{
 				id: "1E2154884E749B7E"
 				item: {
@@ -257,8 +260,244 @@
 				type: "item"
 			}]
 			title: "Better Tools"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3903C286AAE568C9"]
+			description: [
+				"After you have scienced enough &bAxolotls&r, you'll be able to do some more interesting things, like create spawn eggs."
+				""
+				"Remember how way back in Chapter 1, you built a &9worm farm&r? But it wasn't a true farm, in the sense of producing &9worms&r on its own, without your manual intervention. Now you can fix that!"
+				""
+				"&aSugar Gliders&r are really good at foraging for insects when they are placed upon a &9leaf block&r. Now, maybe you haven't found a Sugar Glider yet. Not to worry. Make yourself some &9stem cells&r, pour some &1liquid science&r on it, and you've got an &9embryo&r ready to be made into a &9Sugar Glider Spawn Egg&r."
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:embryo"
+				tag: { }
+			}
+			id: "3FA3C3C16A9DF41B"
+			rewards: [
+				{
+					count: 3
+					id: "7ECF14633CD55570"
+					item: {
+						Count: 1
+						id: "minecraft:oak_leaves"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "24C2DD72277F01CD"
+					item: {
+						Count: 1
+						id: "minecraft:jungle_leaves"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "22E2F6027F3D0058"
+					item: {
+						Count: 1
+						id: "kubejs:stem_cell"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "79F975D9A5010623"
+					item: {
+						Count: 1
+						id: "kubejs:embryo"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4B5FB3B2A336BAEC"
+					item: {
+						Count: 1
+						id: "alexsmobs:spawn_egg_sugar_glider"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Reproducible Science"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1266905BED12A811"]
+			description: ["Now, it's just matter of setting up a breeding chamber for your &aAxolotls&r, and feeding the offspring into the &9Sciencery&r. I'm sure that with a clever use of &9leads&r, &9fans&r and &aRats&r you can keep science running even when you're not around."]
+			id: "3903C286AAE568C9"
+			tasks: [{
+				id: "2B017ED5AC992890"
+				item: {
+					Count: 1
+					id: "kubejs:experimental_results_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Industrial Science"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3FA3C3C16A9DF41B"]
+			description: [
+				"Ok, so maybe the &aSugar Glider&r doesn't find &9worms&r all that quickly. Not to worry! There is another way."
+				""
+				"You've already automated the creation of the &9meatwad&r. With those, you can construct &9breeding chow&r, which is useful for breeding most meat-eaters, including &aAxolotls&r. Just set up your &aRats&r to craft it and give it to your axolotls, and you're in business."
+			]
+			id: "6079EDB456F3DE89"
+			rewards: [{
+				count: 5
+				id: "17FBA733324032F0"
+				item: {
+					Count: 1
+					id: "kubejs:breeding_chow"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "625D28C6BB64756B"
+				item: {
+					Count: 1
+					id: "kubejs:breeding_chow"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["592C13B11CD5EC9A"]
+			description: [
+				"To generate our anecdotes we will need another animal to experiment on. Three are suitable. &aRats&r are viable, but will also be the least productive. Next are &aRabbits&r, a classic lab animal. But the best of all are &aGuinea Pigs&r. If you have not yet encountered any in your travels, you now have the technology to create their spawn egg in the lab, and should do so."
+				""
+				"As with your &aAxolotls&r, you will want to set some aside for breeding, while sending the rest into the &9Sciencery&r. "
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:anecdotes_bucket"
+				tag: { }
+			}
+			id: "0B3C743441943C29"
+			subtitle: "The singular of data"
+			tasks: [
+				{
+					id: "6813382765EF59A8"
+					item: {
+						Count: 1
+						id: "kubejs:anecdotes_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "16C0C8D4104C906F"
+					item: {
+						Count: 1
+						id: "kubejs:scientific_paper"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Less Rigorous Science"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B3C743441943C29"]
+			description: [
+				"Of course, as we all know, the primary goal of a scientist is not to gather results or data, but to gather &1citations&r. As many as possible."
+				""
+				"The good news is that once you get this process going, it's largely self-sustaining. Sure, your first &9scientific paper&r required a large amount of research and data, but now you can just feed it back into the &9Sciencery&r endlessly for more papers and more citations."
+				""
+				"Really, the hardest part will be keeping up a supply of &9paper&r to publish all this on. Build yourself a &9sugar cane&r farm and teach a rat how to craft that into &9paper&r."
+			]
+			id: "41F5F15BE95C79DC"
+			tasks: [{
+				id: "308B395091D61DFE"
+				item: {
+					Count: 1
+					id: "kubejs:citations_bucket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Citations"
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6079EDB456F3DE89"]
+			description: ["It's finally time to publish! Just pour your results all over some &9paper&r, I'm sure the journals will love the first draft."]
+			id: "01B494C61A52BB02"
+			subtitle: "Or perish, whichever"
+			tasks: [{
+				id: "46E70D036767FAEE"
+				item: {
+					Count: 1
+					id: "kubejs:scientific_paper_draft"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Publish"
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["01B494C61A52BB02"]
+			description: ["Sorry, it turns out that Reviewer 2 didn't like your paper. We're going to need to punch it up a bit. Let's turn to that other great source of science: &1anecdotes&r. Enough of them is basically the same thing as data, right?"]
+			id: "592C13B11CD5EC9A"
+			tasks: [{
+				id: "2C3EF81FF1DFFB49"
+				title: "Rejected"
+				type: "checkmark"
+			}]
 			x: -2.5d
-			y: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3FA3C3C16A9DF41B"]
+			description: ["You can use the &9embryo&r to construct all manner of &9spawn eggs&r. Take a look through the recipe book for some that might be useful. This is much easier than running around the world trying to find them in the wild."]
+			id: "5F701142176AB299"
+			optional: true
+			rewards: [{
+				count: 5
+				id: "25628B7DF50C47AA"
+				item: {
+					Count: 1
+					id: "kubejs:embryo"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F367C631259FDE4"
+				item: {
+					Count: 1
+					id: "minecraft:spider_spawn_egg"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Spawn Eggs"
+			x: 4.5d
+			y: -3.0d
 		}
 	]
 	title: "&a3.&r Science!"

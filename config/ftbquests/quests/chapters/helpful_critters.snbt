@@ -124,7 +124,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["32E5BB2EC0EE79E6"]
 			description: [
 				"The &aOretoise&r is a special mob that spawns only underground in complete darkness. It grows &9ores&r on its back, and if you attack it with a pickaxe, you can collect it. Feed it &9glowberries&r to help it regrow new ore."
 				""
@@ -301,6 +300,15 @@
 			}
 			id: "64F41D390E0B3BD7"
 			optional: true
+			rewards: [{
+				id: "6640D79CD010593D"
+				item: {
+					Count: 1
+					id: "farmersdelight:sweet_berry_cheesecake"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "Fuzzy hat, finder of stuff"
 			tasks: [{
 				id: "450BB6408A9B1FA5"
@@ -324,6 +332,15 @@
 			}
 			id: "53505BCE09554730"
 			optional: true
+			rewards: [{
+				id: "73F0BA9F801B6E37"
+				item: {
+					Count: 1
+					id: "minecraft:slime_block"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "Slimy yet satisfying"
 			tasks: [
 				{
@@ -355,6 +372,27 @@
 			}
 			id: "698D256DFECBB08F"
 			optional: true
+			rewards: [
+				{
+					id: "6A41B06FAC0EC154"
+					item: {
+						Count: 1
+						id: "farmersdelight:grilled_salmon"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "439D91572BC3597E"
+					item: {
+						Count: 1
+						id: "farmersdelight:salmon_roll"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Fishing Friend"
 			tasks: [{
 				id: "58A5F4E99C4A93BA"
@@ -366,32 +404,6 @@
 			title: "Pelicans"
 			x: 1.0d
 			y: -5.0d
-		}
-		{
-			description: [
-				"If you should be lucky enough to chance upon an albino &aPeafowl&r, know that it will drop &9gold ingots&r every &65-10&r minutes. It is well worth bringing home and parking over a &9hopper&r."
-				""
-				"Sadly, you cannot breed an albino; you must be lucky enough to find one in the wild. At least, until later chapters..."
-			]
-			icon: {
-				Count: 1
-				id: "alexsmobs:tab_icon"
-				tag: {
-					DisplayEntityType: "exoticbirds:peafowl"
-				}
-			}
-			id: "3FEC3146E773C305"
-			optional: true
-			tasks: [{
-				id: "485FA0BE5571B87E"
-				observe_type: 0
-				timer: 0L
-				to_observe: "exoticbirds:peafowl"
-				type: "observation"
-			}]
-			title: "White Peafowl"
-			x: 9.0d
-			y: -2.0d
 		}
 		{
 			description: [
@@ -408,6 +420,16 @@
 			}
 			id: "69EFF552EC4AE3EE"
 			optional: true
+			rewards: [{
+				count: 2
+				id: "440C6F33054763C7"
+				item: {
+					Count: 1
+					id: "minecraft:coal_block"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "Burning loins"
 			tasks: [{
 				id: "6228E92AB05C63F4"
@@ -419,6 +441,31 @@
 			title: "Foxhound"
 			x: 8.5d
 			y: -5.5d
+		}
+		{
+			description: ["You've ridden a &aHorse&r before. But did you know that you can use a &9saddle&r to ride an &aOstrich&r? That'll impress your friends way more! Just make sure to mount it a few times saddle-less first to tame it."]
+			id: "0F97AC4DED393C95"
+			optional: true
+			rewards: [{
+				id: "4CA9F38276DB52A7"
+				item: {
+					Count: 1
+					id: "minecraft:saddle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Feathered Mount"
+			tasks: [{
+				id: "685A18034D2DCB8D"
+				observe_type: 5
+				timer: 0L
+				to_observe: "exoticbirds:ostrich"
+				type: "observation"
+			}]
+			title: "Ostrich"
+			x: 8.5d
+			y: -2.5d
 		}
 	]
 	title: "Helpful Critters"
