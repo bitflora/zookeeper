@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "kubejs:scientific_paper"
+  },
+  "result": {
+    "fluid": "kubejs:citations",
+    "amount": 7
+  },
+  "temperature": 450,
+  "time": 24
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:barter",
+  "replace": true,
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "functions": [
+          ],
+          "name": "alexsmobs:maggot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "functions": [
+          ],
+          "name": "aquaculture:worm"
+        }
+      ]
+    }
+  ]
+}

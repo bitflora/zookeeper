@@ -1,0 +1,20 @@
+{
+  "replaceDefault": true,
+  "values": [
+    {
+      "registryName": "minecraft:tropical_fish_bucket",
+      "hungerRestored": 6000,
+      "isBreedingItem": true
+    },
+    {
+      "registryName": "aquaculture:worm",
+      "hungerRestored": 6000,
+      "isBreedingItem": true
+    },
+    {
+      "registryName": "kubejs:breeding_chow",
+      "hungerRestored": 6000,
+      "isBreedingItem": true
+    }
+  ]
+}
