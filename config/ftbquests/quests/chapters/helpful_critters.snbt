@@ -444,6 +444,13 @@
 		}
 		{
 			description: ["You've ridden a &aHorse&r before. But did you know that you can use a &9saddle&r to ride an &aOstrich&r? That'll impress your friends way more! Just make sure to mount it a few times saddle-less first to tame it."]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "exoticbirds:ostrich"
+				}
+			}
 			id: "0F97AC4DED393C95"
 			optional: true
 			rewards: [{
@@ -466,6 +473,47 @@
 			title: "Ostrich"
 			x: 8.5d
 			y: -2.5d
+		}
+		{
+			description: ["You were lucky enough to find a &aChocobo&r nest! Break it and take the eggs. When you're somewhere safe, hatch them, and then tame and ride the magnificent birds just like you would a &aHorse&r."]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "chocobos:chocobo"
+				}
+			}
+			id: "730CFA944E09BEA7"
+			rewards: [
+				{
+					id: "3BB94D6566154984"
+					item: {
+						Count: 1
+						id: "minecraft:saddle"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4EA400154D4D1055"
+					item: {
+						Count: 1
+						id: "chocobos:leather_chocobo_armor"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4A817E87828DD5DA"
+				observe_type: 0
+				timer: 0L
+				title: "Chocobos"
+				to_observe: "chocobos:chocobo_nest"
+				type: "observation"
+			}]
+			x: 7.5d
+			y: 0.0d
 		}
 	]
 	title: "Helpful Critters"

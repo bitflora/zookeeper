@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "fluid": "kubejs:experimental_results",
+      "amount": 100
+    },
+    {
+      "fluid": "kubejs:anecdotes",
+      "amount": 100
+    },
+    {
+      "fluid": "kubejs:citations",
+      "amount": 20
+    }
+  ],
+  "result": {
+    "fluid": "kubejs:liquid_science",
+    "amount": 100
+  },
+  "temperature": 550
+}

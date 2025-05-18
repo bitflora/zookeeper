@@ -84,5 +84,10 @@
   },
   "balm": {
     "jade": true
+  },
+  "drinkbeer": {
+    "mixed_beer": true,
+    "trade_box": true,
+    "beer_barrel": true
   }
 }

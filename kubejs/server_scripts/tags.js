@@ -3,7 +3,7 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:furs', 'alexsmobs:bison_fur');
     e.add('kubejs:furs', 'biomesoplenty:hair');
     e.add('kubejs:furs', 'naturalist:fur');
-    e.add('kubejs:furs', 'unusualprehistory:smilo_fur');
+    //e.add('kubejs:furs', 'unusualprehistory:smilo_fur');
 
     e.add('kubejs:mammal_meat', '#forge:raw_pork');
     e.add('kubejs:mammal_meat', 'minecraft:beef');
@@ -15,7 +15,7 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:mammal_meat', 'farmersdelight:minced_beef');
     e.add('kubejs:mammal_meat', 'alexsmobs:kangaroo_meat');
     e.add('kubejs:mammal_meat', 'alexsdelight:raw_bison');
-    e.add('kubejs:mammal_meat', 'unusualprehistory:raw_mammoth');
+    // e.add('kubejs:mammal_meat', 'unusualprehistory:raw_mammoth');
     e.add('kubejs:mammal_meat', 'rats:raw_rat');
     e.add('kubejs:mammal_meat', 'eanimod:rawrabbit_small');
 
@@ -31,12 +31,14 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:bird_meat', 'naturalist:duck');
 
     // already have forge:raw_fishes
+    e.add('kubejs:ancient_raw_fishes', 'unusualprehistory:raw_stetha');
+    e.add('kubejs:ancient_raw_fishes', 'unusualprehistory:raw_scau');
 
     e.add('forge:feathers', 'alexsmobs:roadrunner_feather');
     e.add('forge:feathers', 'alexsmobs:emu_feather');
-    e.add('forge:feathers', 'unusualprehistory:raptor_feathers');
-    e.add('forge:feathers', 'unusualprehistory:raptor_feathers');
-    e.add('forge:feathers', 'unusualprehistory:austro_feathers');
+
+    e.add('kubejs:ancient_feathers', 'unusualprehistory:raptor_feathers')
+    e.add('kubejs:ancient_feathers', 'unusualprehistory:austro_feathers');
 
     e.add('forge:slimeballs', 'alexsmobs:banana_slug_slime');
 });

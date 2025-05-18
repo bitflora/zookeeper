@@ -21,4 +21,7 @@ StartupEvents.registry('item', e => {
 
     e.create('scientific_paper_draft').tooltip('Just needs to pass peer review.');
     e.create('scientific_paper').tooltip('A critical component of tenure.');
+
+    e.create('data').tooltip('What is data but a whole lot of anecdotes?');
+    e.create('hard_science').tooltip('Too much math involved, if I\'m being honest.');
 });

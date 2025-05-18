@@ -499,6 +499,102 @@
 			x: 4.5d
 			y: -3.0d
 		}
+		{
+			dependencies: ["41F5F15BE95C79DC"]
+			description: [
+				"Our research is almost complete. Take everything you've made so far: the &1experimental results&r, the &1anecdotes&r, the &1citations&r, and mix them together inside a &9Sciencery&r. Behold, &1liquid science&r! Pour that out into a &9casting basin&r and you have yourself &9hard science&r."
+				""
+				"With that, you are ready for &2Chapter 4&r. It's time to bring back the dinosaurs."
+			]
+			id: "3F245081455640EC"
+			rewards: [
+				{
+					count: 12
+					id: "4481BE6C025EF9D9"
+					item: {
+						Count: 1
+						id: "alexscaves:dinosaur_nugget"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1F6962A3DD3A6CBC"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+			subtitle: "Hard Science"
+			tasks: [{
+				id: "2CA362C949B33441"
+				item: {
+					Count: 1
+					id: "kubejs:hard_science"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Complete Chapter 3"
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B3C743441943C29"]
+			description: [
+				"A new technology has been unlocked!"
+				""
+				"You can greatly shrink most of your animal farms now. Harden those &1anecdotes&r into &9wisdom&r, and construct a &9mob cage&r. Put an appropriate block in the cage so that it will be a good environment for your animal."
+				""
+				"Next, make a &9DNA Sampler&r. Stick the animal you want to replicate, then deposit the sample in the cage. From then on, science will automatically harvest the drops for you. &9DNA Samplers&r are one-time use."
+				""
+				"Higher tier samplers can be used on hostile mobs, or even bosses."
+			]
+			id: "3ECFD1A5D2E4486C"
+			optional: true
+			rewards: [
+				{
+					id: "68B31B7E6C69AB4C"
+					item: {
+						Count: 1
+						id: "cagedmobs:hopping_mob_cage"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "14FB1B4F5D6FB4EF"
+					item: {
+						Count: 1
+						id: "cagedmobs:diamond_dna_sampler"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3D060B0752DA3C97"
+					item: {
+						Count: 1
+						id: "cagedmobs:mob_cage"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0EF0C500B5911972"
+					item: {
+						Count: 1
+						id: "cagedmobs:dna_sampler"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Caged Mobs"
+			x: 0.0d
+			y: 4.0d
+		}
 	]
 	title: "&a3.&r Science!"
 }

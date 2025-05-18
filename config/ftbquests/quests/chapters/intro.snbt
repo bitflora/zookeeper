@@ -309,6 +309,13 @@
 			y: 2.5d
 		}
 		{
+			description: [
+				"When you pull up your inventory, JEI will show you all the items available to you on the right. Feel free to search this list. Left and right-click items to see their recipes."
+				""
+				"Some items that you are familiar with with have different recipes in this modpack, so make sure to take a look!"
+				""
+				"You can also use JEI to see what items different mobs drop, and what items breed them. This will be very valuable information."
+			]
 			id: "75DD55D68ACC8C94"
 			tasks: [{
 				id: "54D0042CC4CF1AAC"

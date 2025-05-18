@@ -316,6 +316,25 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '2x #forge:feathers'
     ]);
 
+    // prehistoric stuff is more efficient, to give incentives to upgrade farms
+    e.shapeless('3x kubejs:fur_mess', [
+        '2x #minecraft:wool',
+        '1x unusualprehistory:smilo_fur',
+        '2x #forge:feathers'
+    ]);
+
+    e.shapeless('3x kubejs:fur_mess', [
+        '2x #minecraft:wool',
+        '2x #kubejs:furs',
+        '1x #kubejs:ancient_feathers'
+    ]);
+
+    e.shapeless('9x kubejs:fur_mess', [
+        '2x #minecraft:wool',
+        '1x unusualprehistory:smilo_fur',
+        '1x #kubejs:ancient_feathers'
+    ]);
+
     e.shapeless('kubejs:fur_ball', [
         '9x kubejs:fur_mess',
     ]);
@@ -326,6 +345,26 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '2x #kubejs:bird_meat',
         '#forge:raw_fishes'
     ]);
+
+    e.shapeless('3x kubejs:meat_mess', [
+        '1x unusualprehistory:raw_mammoth',
+        '2x #kubejs:bird_meat',
+        '#forge:raw_fishes'
+    ]);
+
+    e.shapeless('3x kubejs:meat_mess', [
+        '2x #kubejs:mammal_meat',
+        '2x #kubejs:bird_meat',
+        '#kubejs:ancient_raw_fishes'
+    ]);
+
+    e.shapeless('9x kubejs:meat_mess', [
+        '1x unusualprehistory:raw_mammoth',
+        '2x #kubejs:bird_meat',
+        '#kubejs:ancient_raw_fishes'
+    ]);
+
+    // meatwad is made by rats, see data pack
 
     e.shaped('kubejs:brain', [
         'MMM',
@@ -426,6 +465,27 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     castingTable(e, 'kubejs:scientific_paper_draft', 'minecraft:paper', 'kubejs:experimental_results', 810, 120, true);
     castingTable(e, 'kubejs:scientific_paper', 'kubejs:scientific_paper_draft', 'kubejs:anecdotes', 810, 120, true);
     castingTable(e, 'kubejs:scientific_paper', 'minecraft:paper', 'kubejs:citations', 5, 80, true);
+
+    e.custom({
+      type: "tconstruct:casting_basin",
+      fluid: {
+        fluid: 'kubejs:liquid_science',
+        amount: 810
+      },
+      result: 'kubejs:hard_science',
+      cooling_time: 90
+    });
+
+    e.custom({
+      type: "tconstruct:casting_basin",
+      fluid: {
+        fluid: 'kubejs:anecdotes',
+        amount: 810
+      },
+      result: 'kubejs:data',
+      cooling_time: 90
+    });
+
 
     // spawn egs
 
@@ -588,29 +648,110 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       E: '#forge:eggs',
     });
 
+    e.shaped('minecraft:ocelot_spawn_egg', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'kubejs:fur_ball',
+      S: 'minecraft:jungle_sapling',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
     // Caged Mobs
     e.remove({ output: 'cagedmobs:mob_cage'});
     e.remove({ output: 'cagedmobs:dna_sampler'});
     e.remove({ output: 'cagedmobs:diamond_dna_sampler'});
     e.remove({ output: 'cagedmobs:netherite_dna_sampler'});
 
-    // TODO: put them back
+    e.shaped('cagedmobs:mob_cage', [
+      'III',
+      'IXI',
+      'BBB'
+    ], {
+      I: 'minecraft:iron_bars',
+      X: 'kubejs:data',
+      B: 'minecraft:iron_block',
+    });
+
+    e.shaped('cagedmobs:dna_sampler', [
+      'I  ',
+      ' X ',
+      '  B'
+    ], {
+      I: 'minecraft:iron_ingot',
+      X: 'kubejs:data',
+      B: 'minecraft:iron_block',
+    });
+
+    e.shaped('cagedmobs:diamond_dna_sampler', [
+      'I  ',
+      ' X ',
+      '  B'
+    ], {
+      I: 'minecraft:diamond',
+      X: 'kubejs:data',
+      B: 'minecraft:diamond_block',
+    });
+
+    e.shaped('cagedmobs:netherite_dna_sampler', [
+      'I  ',
+      ' X ',
+      '  B'
+    ], {
+      I: 'minecraft:netherite_ingot',
+      X: 'kubejs:data',
+      B: 'minecraft:netherite_block',
+    });
 
     // TODO: make sciencey recipes for the upgrades
 
 
     // Unusual Prehistory
     e.remove({ output: 'unusualprehistory:organic_ooze'});
-    // TODO
-    // e.shaped('unusualprehistory:organic_ooze', [
-    //     'MSS',
-    //     'SSA',
-    //     'AAA'
-    // ], {
-    //     M: 'minecraft:magma_block',
-    //     S: '#minecraft:soul_fire_base_blocks',
-    //     A: 'supplementaries:ash',
-    // });
+    e.shaped('unusualprehistory:organic_ooze', [
+        ' S ',
+        'SWS',
+        ' S '
+    ], {
+        S: 'kubejs:stem_cell',
+        W: 'kubejs:hard_science',
+    });
+
+    e.remove({ output: 'unusualprehistory:flask'});
+    e.shaped('3x unusualprehistory:flask', [
+        ' G ',
+        'G G',
+        'FGF'
+    ], {
+        G: 'minecraft:glass',
+        F: 'kubejs:fur_ball',
+    });
+
+    e.remove({ output: 'unusualprehistory:analyzer'});
+    e.shaped('unusualprehistory:analyzer', [
+        'III',
+        'IBI',
+        'CSC'
+    ], {
+        I: 'minecraft:iron_ingot',
+        B: 'kubejs:brain',
+        C: 'minecraft:copper_ingot',
+        S: 'minecraft:hard_science',
+    });
+
+    e.remove({ output: 'unusualprehistory:cultivator'});
+    e.shaped('unusualprehistory:cultivator', [
+        'III',
+        'GOG',
+        'CBC'
+    ], {
+        I: 'minecraft:iron_ingot',
+        G: 'minecraft:glass',
+        B: 'kubejs:brain',
+        C: 'minecraft:copper_ingot',
+    });
 
 
   });

@@ -9,8 +9,104 @@
 		tag: { }
 	}
 	id: "06A4BBEF3E73DC32"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["3F245081455640EC"]
+			description: [
+				"Your zoo has grown by leaps and bounds. What was once little more than a petting zoo now contains all manner of creatures, and funds vast scientific research. But we can still make it better."
+				""
+				"We can add dinosaurs."
+				""
+				"All of our research into recreating life has given us most of what we need. There's just a little bit more to do."
+			]
+			id: "7E0557D04A8EACF0"
+			rewards: [{
+				id: "1A0DAB3970B1D4C0"
+				item: {
+					Count: 1
+					id: "unusualprehistory:encyclopedia"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Scientists say we can, and therefore should"
+			tasks: [{
+				id: "08281D292ACC5DB7"
+				title: "Begin Chapter 4"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7E0557D04A8EACF0"]
+			description: ["We're going to need a lot of raw material to resurrect these creatures. Make a whole lot of &9organic ooze&r. It may even be worth your while to automate the process."]
+			id: "75D3BEFEA09CF5D9"
+			tasks: [{
+				count: 20L
+				id: "005ABDAF49B80AB9"
+				item: {
+					Count: 20
+					id: "unusualprehistory:organic_ooze"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "The Secret of the Ooze"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			description: ["First, you will need an &9analyzer&r. Place &9flasks&r and fossils into it to get some &9dna flasks&r."]
+			icon: {
+				Count: 1
+				id: "unusualprehistory:analyzer"
+				tag: { }
+			}
+			id: "4014DB068B97D666"
+			tasks: [
+				{
+					id: "465B6C9D8059DE3B"
+					item: {
+						Count: 1
+						id: "unusualprehistory:analyzer"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4CA0230F8EE84314"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(unusualprehistory:dna_flasks)"
+						}
+					}
+					title: "Any #unusualprehistory:dna_flasks"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			description: ["Next, you need a &9cultivator&r. Place your &9dna flasks&r in here along with &9organic ooze&r, and it will reconstruct embryos for you."]
+			id: "6A226F7D1EFAC888"
+			tasks: [{
+				id: "4E91FDDB7669E71D"
+				item: {
+					Count: 1
+					id: "unusualprehistory:cultivator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+	]
 	title: "&a4.&r Dinosaurs"
 }
