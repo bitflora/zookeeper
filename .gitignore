@@ -15,3 +15,5 @@ config/unusualprehistory-common-1.toml.bak
 config/jei/ingredient-list-mod-sort-order.ini
 config/jei/ingredient-list-type-sort-order.ini
 config/jei/world/local/FAFO/bookmarks.ini
+*.bak
+modernfix/StructureCacheV1/*
