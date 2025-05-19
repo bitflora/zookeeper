@@ -37,8 +37,8 @@
 				title: "Begin Chapter 4"
 				type: "checkmark"
 			}]
-			x: -8.5d
-			y: -1.5d
+			x: -2.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["7E0557D04A8EACF0"]
@@ -55,8 +55,8 @@
 				type: "item"
 			}]
 			title: "The Secret of the Ooze"
-			x: -6.0d
-			y: -1.5d
+			x: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["75D3BEFEA09CF5D9"]
@@ -90,12 +90,16 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: -1.5d
+			x: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4014DB068B97D666"]
-			description: ["Next, you need a &9cultivator&r. Place your &9dna flasks&r in here along with &9organic ooze&r, and it will reconstruct embryos for you."]
+			description: [
+				"Next, you need a &9cultivator&r. Place your &9dna flasks&r in here along with &9organic ooze&r, and it will reconstruct embryos for you."
+				""
+				"Note that for safety reasons, none of these creatures can be bred. To get more, you must go through these steps again (but note that you can usually analyze an animal's drops for more DNA)."
+			]
 			id: "6A226F7D1EFAC888"
 			tasks: [{
 				id: "4E91FDDB7669E71D"
@@ -108,6 +112,603 @@
 			}]
 			x: -2.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["6A226F7D1EFAC888"]
+			description: ["The &aSmilodon&r is fortunate enough to have a close relative still living into the modern age. Once you have a &9smilodon embryo&r, you can just stick it into an &aOcelot&r to have it brought to term."]
+			icon: {
+				Count: 1
+				id: "unusualprehistory:smilodon_embryo"
+				tag: { }
+			}
+			id: "228ACCC3FDFBE7AA"
+			tasks: [
+				{
+					id: "73C0856EAE0C4F4E"
+					item: {
+						Count: 1
+						id: "unusualprehistory:smilodon_embryo"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1
+						id: "inventorypets:pet_ocelot"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "554AC6C2AF866F42"
+					observe_type: 5
+					timer: 0L
+					to_observe: "minecraft:ocelot"
+					type: "observation"
+				}
+			]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["228ACCC3FDFBE7AA"]
+			description: ["&9Smilidons&r are the first of many animals to be revived. Get at least two of them. When they groom each other, they'll drop &9smilodon fur&r. This special fur is far more effective at making &9fur balls&r than modern fur."]
+			icon: {
+				Count: 1
+				id: "unusualprehistory:smilo_fur"
+				tag: { }
+			}
+			id: "49A910011E2190A0"
+			tasks: [
+				{
+					id: "52707E15CA4CCD24"
+					observe_type: 5
+					timer: 0L
+					to_observe: "unusualprehistory:smilodon"
+					type: "observation"
+				}
+				{
+					id: "6305C73484B85E67"
+					item: {
+						Count: 1
+						id: "unusualprehistory:smilo_fur"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Smilodon Success"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B575536787142FF"]
+			dependency_requirement: "all_started"
+			description: ["&fRaise it from infancy, and it’ll &adefend you&r with unparalleled loyalty. An &etank of companionship&r from the ancient world."]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "unusualprehistory:sloth_pouch_armor"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5FB9AEA859B8D3B7"
+			rewards: [
+				{
+					id: "257C1AC36BE20E6D"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					count: 2
+					id: "2429E981B76529E0"
+					item: {
+						Count: 1
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "aquamirae:potion_of_tenacity"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "&7A Gentle Giant's Bond"
+			tasks: [
+				{
+					id: "683F38834C784E8F"
+					item: "unusualprehistory:megath_embryo"
+					type: "item"
+				}
+				{
+					id: "3D64163DD9DC3ECF"
+					item: "unusualprehistory:dino_pouch"
+					type: "item"
+				}
+				{
+					id: "62FF0915187FBB6E"
+					item: {
+						Count: 1
+						id: "unusualprehistory:sloth_pouch_armor"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&3&lIt’s Got Your Back"
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"49A910011E2190A0"
+				"641B372E730D52D4"
+			]
+			description: ["Many animals hatch from eggs. You can just put those anywhere they won't get trampled and wait for them to hatch. For the more mammalian creatures you are reviving, an &9Incubator&r will be needed. Keep in mind that these are one-time use!"]
+			id: "1B575536787142FF"
+			tasks: [{
+				id: "26CA9F9B3939B7BC"
+				item: {
+					Count: 1
+					id: "unusualprehistory:incubator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Ancient Mammals"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6A226F7D1EFAC888"]
+			description: ["Encrusted DNA has been corrupted, but still contains useful information. Alas, you need to fight to get it."]
+			icon: {
+				Count: 1
+				id: "unusualprehistory:encrusted_sack"
+				tag: { }
+			}
+			id: "3B91C2231946BBAB"
+			tasks: [
+				{
+					id: "756D0EE15C4CCFD0"
+					item: {
+						Count: 1
+						id: "unusualprehistory:encrusted_sack"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					entity: "unusualprehistory:encrusted"
+					id: "5E8C43C7D8695895"
+					title: "Kill the encrusted"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "The Encrusted"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3B91C2231946BBAB"]
+			description: ["You're going to accumulate a lot of DNA, it woul behoove you to build a &9DNA Fridge&r to store it in."]
+			icon: {
+				Count: 1
+				id: "unusualprehistory:dna_fridge"
+				tag: { }
+			}
+			id: "641B372E730D52D4"
+			subtitle: "Keep Newman away"
+			tasks: [
+				{
+					id: "554B3E364D060164"
+					item: {
+						Count: 1
+						id: "unusualprehistory:encrusted_organ"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2D6530044F829724"
+					item: {
+						Count: 1
+						id: "unusualprehistory:dna_fridge"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Cold Storage"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B575536787142FF"]
+			dependency_requirement: "all_started"
+			description: [
+				"&fThis towering herbivore can be quite temperamental."
+				""
+				"Beware, it doesn’t like surprises!"
+			]
+			hide_until_deps_complete: true
+			icon: "unusualprehistory:paracer_embryo"
+			id: "2B2E7789DBE76B29"
+			rewards: [
+				{
+					id: "75C9013ADE4C003F"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "226BF6CA9F2CABE4"
+					item: "unusualprehistory:tar_bucket"
+					type: "item"
+				}
+			]
+			subtitle: "&7Big temper, bigger challenge..."
+			tasks: [{
+				id: "5DD8F9E8F7610D38"
+				item: "unusualprehistory:paracer_embryo"
+				type: "item"
+			}]
+			title: "&c&lColossal Herbivore"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B575536787142FF"]
+			dependency_requirement: "all_started"
+			description: [
+				"&fWear the &6Tyrant's Crown&r to gain the Mammoth's respect and &ashear their thick fur&r. While their wool is precious, their meat serves as a &cnutritious source of sustenance&r. "
+				""
+				"&lWill you lead, or will you feast?&r"
+			]
+			hide_until_deps_visible: true
+			icon: "unusualprehistory:mammoth_meatball"
+			id: "04EA7A40090EEDC9"
+			rewards: [
+				{
+					id: "5783F54FA3CBFB7A"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "2071016A6820E1C3"
+					item: "unusualprehistory:raw_mammoth"
+					random_bonus: 3
+					type: "item"
+				}
+			]
+			subtitle: "&7Command the herd’s loyalty... or their meat."
+			tasks: [
+				{
+					id: "0E2B19B0E16650C8"
+					item: "unusualprehistory:mammoth_embryo"
+					type: "item"
+				}
+				{
+					id: "5ED2A7BBCECFEF5F"
+					item: {
+						Count: 1
+						id: "unusualprehistory:tyrants_crown"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B765CD0F8C6A08A"
+					item: {
+						Count: 1
+						id: "minecraft:shears"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "462A39C9457EBC10"
+					item: "unusualprehistory:raw_mammoth"
+					type: "item"
+				}
+				{
+					id: "07292F88BB6ADCC7"
+					item: "unusualprehistory:cooked_mammoth"
+					type: "item"
+				}
+				{
+					id: "72227BB62585DFAC"
+					item: "unusualprehistory:mammoth_meatball"
+					type: "item"
+				}
+			]
+			title: "&e&lThe Pack's Respect"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6A226F7D1EFAC888"]
+			description: ["Most ancient animals will hatch out of eggs. Just put those eggs somewhere safe where they won't be stepped on, and wait."]
+			id: "3C93415319B18E01"
+			tasks: [{
+				id: "479D5FF8EBB58B11"
+				title: "Ancient Eggs"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6A226F7D1EFAC888"]
+			description: ["There's a lot of ancient aquatic life you could bring back. And they're easy to transport in water buckets!"]
+			id: "4FACC1C88C7F81CA"
+			tasks: [{
+				id: "00CD708FC57A54AD"
+				title: "Ancient Oceans"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C93415319B18E01"]
+			dependency_requirement: "all_started"
+			description: ["&fNot only delicious, their &cfeathers&r can be crafted into &aleather boots&r that &eignore fall damage&r. Glide through the prehistoric skies like never before!"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "unusualprehistory:austro_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5694EC129C10CD10"
+			rewards: [
+				{
+					id: "5C0D4E5E7E1E2976"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "73F671D8550BD516"
+					item: "unusualprehistory:austro_feather"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Feathers of Flight"
+			tasks: [
+				{
+					id: "1ECFE7C97F11BAE2"
+					item: "unusualprehistory:austro_eggs"
+					type: "item"
+				}
+				{
+					id: "3CA1A3454A9BCA70"
+					item: "unusualprehistory:raw_austro"
+					type: "item"
+				}
+				{
+					id: "72C3D769BCA2CD4A"
+					item: "unusualprehistory:cooked_austro"
+					type: "item"
+				}
+				{
+					id: "6EC94F5CD62A1D55"
+					item: "unusualprehistory:austro_feather"
+					type: "item"
+				}
+				{
+					id: "1CA3BAEA8B81CC1B"
+					item: {
+						Count: 1
+						id: "unusualprehistory:austro_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: " &4&lFalling with Grace"
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3C93415319B18E01"]
+			dependency_requirement: "all_started"
+			description: ["&fWhen threatened, their defensive plates &cdrop&r, providing an &eimpressive weapon material&r. Craft deadly gear to honor their strength."]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "unusualprehistory:primal_macuahuitl"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4DEF8983912A44B7"
+			rewards: [
+				{
+					id: "2E9C14972DC53909"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "24BDBED87E8AE73F"
+					item: "unusualprehistory:antarcto_plate"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Blades of the Past"
+			tasks: [
+				{
+					id: "232E3C2793C07146"
+					item: "unusualprehistory:antarcto_eggs"
+					type: "item"
+				}
+				{
+					id: "19EAAEF5259B040F"
+					item: "unusualprehistory:antarcto_plate"
+					type: "item"
+				}
+				{
+					id: "6D84421392CA48F9"
+					item: {
+						Count: 1
+						id: "unusualprehistory:primal_macuahuitl"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&c&lSaw Tail"
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4FACC1C88C7F81CA"]
+			dependency_requirement: "all_started"
+			description: ["&fThe &6Eryon&r loves digging in mud, uncovering &atreasures&r like fossils. Partner with this ancient archaeologist for a journey back in time."]
+			hide_until_deps_complete: true
+			icon: "unusualprehistory:eryon_fossil"
+			id: "2C5CD39AD677CC01"
+			rewards: [
+				{
+					id: "6C36CAF901A043DD"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "530B7F208D0988B1"
+					title: "Random reward x3"
+					type: "random"
+				}
+			]
+			subtitle: "An Archaeologist of Himself"
+			tasks: [{
+				id: "62E69D3BE277E7F6"
+				item: "unusualprehistory:eryon_eggs"
+				type: "item"
+			}]
+			title: "&3&lDigging through Time"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4FACC1C88C7F81CA"]
+			dependency_requirement: "all_started"
+			description: ["&fThe &6Palaeophis&r sheds its skin over time, leaving behind durable &7traces of history&r. Use them for crafting or trading. Its past is your gain!"]
+			hide_until_deps_complete: true
+			icon: "unusualprehistory:palaeo_bucket"
+			id: "73E05E030F2760D0"
+			rewards: [
+				{
+					id: "1F46D2C4C8750729"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "5751E570CCB2DE1B"
+					item: "alexsmobs:shed_snake_skin"
+					type: "item"
+				}
+			]
+			subtitle: "One snake's trash is a man's tresure"
+			tasks: [
+				{
+					id: "0B82CBFC24BB4BC2"
+					item: "unusualprehistory:palaeo_embryo"
+					type: "item"
+				}
+				{
+					id: "7BF5A3C6AF92341C"
+					item: "unusualprehistory:palaeo_bucket"
+					type: "item"
+				}
+				{
+					id: "784BE639C600162A"
+					item: "unusualprehistory:palaeo_skin"
+					type: "item"
+				}
+			]
+			title: "&5&lSkin of Survival"
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4FACC1C88C7F81CA"]
+			dependency_requirement: "all_started"
+			description: ["&fThe &6Ammonite&r can be harvested for its durable &ashell fragments&r. These fragments can be transformed into a &bwar pick&r or reconstructed into a full shell. A true relic of ancient oceans!"]
+			hide_until_deps_complete: true
+			icon: "unusualprehistory:ammon_bucket"
+			id: "6CA5F12F142F46F5"
+			rewards: [
+				{
+					id: "2F0E9A2F4ED22AB1"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					count: 3
+					id: "3AA1BDCF71574F9C"
+					item: "minecraft:nautilus_shell"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					count: 3
+					id: "22872FA48E92E101"
+					item: "minecraft:scute"
+					random_bonus: 7
+					type: "item"
+				}
+			]
+			subtitle: "&7Fragments of the Deep"
+			tasks: [
+				{
+					id: "1F6ACC650E448379"
+					item: "unusualprehistory:ammon_eggs"
+					type: "item"
+				}
+				{
+					id: "258185E9DDA08007"
+					item: "unusualprehistory:ammon_bucket"
+					type: "item"
+				}
+				{
+					id: "219C4DB8BCA9E6A1"
+					item: "unusualprehistory:shell_shard"
+					type: "item"
+				}
+				{
+					id: "79D73EC623FAB8EA"
+					item: {
+						Count: 1
+						id: "unusualprehistory:warpick"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4984C58BD2B063EA"
+					item: "unusualprehistory:ammonite_shell"
+					type: "item"
+				}
+			]
+			title: "&6&lA Shelled Fella"
+			x: 0.0d
+			y: 3.5d
 		}
 	]
 	title: "&a4.&r Dinosaurs"

@@ -420,16 +420,29 @@
 			}
 			id: "69EFF552EC4AE3EE"
 			optional: true
-			rewards: [{
-				count: 2
-				id: "440C6F33054763C7"
-				item: {
-					Count: 1
-					id: "minecraft:coal_block"
-					tag: { }
+			rewards: [
+				{
+					count: 2
+					id: "440C6F33054763C7"
+					item: {
+						Count: 1
+						id: "minecraft:coal_block"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "165106F654535FA8"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Burning loins"
 			tasks: [{
 				id: "6228E92AB05C63F4"
@@ -475,7 +488,7 @@
 			y: -2.5d
 		}
 		{
-			description: ["You were lucky enough to find a &aChocobo&r nest! Break it and take the eggs. When you're somewhere safe, hatch them, and then tame and ride the magnificent birds just like you would a &aHorse&r."]
+			description: ["You were lucky enough to find a &aChocobo&r nest! Break it and take the eggs. When you're somewhere safe, hatch them, and then tame and ride these magnificent birds just like you would a &aHorse&r."]
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -508,10 +521,11 @@
 				id: "4A817E87828DD5DA"
 				observe_type: 0
 				timer: 0L
-				title: "Chocobos"
+				title: "Find a chocobo nest"
 				to_observe: "chocobos:chocobo_nest"
 				type: "observation"
 			}]
+			title: "Chocobos"
 			x: 7.5d
 			y: 0.0d
 		}

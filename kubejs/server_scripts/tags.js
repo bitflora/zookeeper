@@ -38,7 +38,7 @@ ServerEvents.tags('item', e => {
     e.add('forge:feathers', 'alexsmobs:emu_feather');
 
     e.add('kubejs:ancient_feathers', 'unusualprehistory:raptor_feathers')
-    e.add('kubejs:ancient_feathers', 'unusualprehistory:austro_feathers');
+    e.add('kubejs:ancient_feathers', 'unusualprehistory:austro_feather');
 
     e.add('forge:slimeballs', 'alexsmobs:banana_slug_slime');
 });
