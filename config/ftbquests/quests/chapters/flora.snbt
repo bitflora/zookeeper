@@ -1,0 +1,102 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "flora"
+	group: "58C00CAA276A1624"
+	icon: "unusualprehistory:bennett"
+	id: "1A4FE6F97F9260C7"
+	images: [{
+		height: 20.0d
+		image: "minecraft:textures/gui/quests/background3.png"
+		rotation: 0.0d
+		width: 35.55555555555556d
+		x: -0.5d
+		y: -0.5d
+	}]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&fDive into the wonders of prehistoric flora. &aRecreate&r ancient ecosystems by cultivating forgotten plants that shaped the world as we know it."]
+			hide_until_deps_complete: true
+			icon: "unusualprehistory:petrified_bush"
+			id: "0EFFFC431176B779"
+			subtitle: " &7The Roots of History"
+			tasks: [{
+				id: "47324E279884800E"
+				title: "The basis of every ecosystem"
+				type: "checkmark"
+			}]
+			title: " &2&lSeeds of Time"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2ADFA0D6450D2199"]
+			dependency_requirement: "one_started"
+			description: ["&fGrow the mighty &6Titanic Trees&r, towering giants of a forgotten world. These &acolossal wonders&r stand as a &csymbol of prehistoric strength&r."]
+			icon: "unusualprehistory:foxii_sapling"
+			id: "795A8B1BE66B6C81"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7265FCC4377C15F5"
+					type: "random"
+				}
+				{
+					id: "48BFAA901F55CF66"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			shape: "pentagon"
+			subtitle: "&7When trees ruled the skies…"
+			tasks: [{
+				count: 4L
+				id: "34A6FF2D1301C074"
+				item: "unusualprehistory:foxii_sapling"
+				type: "item"
+			}]
+			title: "&6&lTitanic Legacy"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2ADFA0D6450D2199"]
+			dependency_requirement: "one_started"
+			description: ["&fHarvest &aDryophyllum Saplings&r, seeds, and fruits to preserve the &bquiet whispers of ancient canopies&r. Each leaf tells a story of a time when &cenormous forests&r blanketed the Earth. "]
+			icon: "unusualprehistory:dryo_sapling"
+			id: "40CD3EA2EAEE9828"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "33FED0D865DBAC62"
+					type: "random"
+				}
+				{
+					id: "6309C0ED8B1E04EA"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			shape: "hexagon"
+			subtitle: "&7Leaves that remember…"
+			tasks: [
+				{
+					id: "55DE075B38DBE683"
+					item: "unusualprehistory:dryo_sapling"
+					type: "item"
+				}
+				{
+					id: "7F7BBC3CECC2A26E"
+					item: "unusualprehistory:dryo_nuts"
+					type: "item"
+				}
+			]
+			title: "&a&lDryophyllum’s Whisper"
+			x: 2.0d
+			y: -2.0d
+		}
+	]
+	title: "&2 Flora"
+}

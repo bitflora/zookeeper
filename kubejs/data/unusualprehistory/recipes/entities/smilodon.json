@@ -1,0 +1,22 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "unusualprehistory"
+	},
+	"entity": "unusualprehistory:smilodon",
+	"samplerTier": 1,
+	"environments": ["farm"],
+	"growTicks": 1800,
+	"results": [
+		{
+			"chance": 0.5,
+			"output": {
+				"item": "unusualprehistory:smilo_fur"
+			},
+			"minAmount": 1,
+			"maxAmount": 1
+		}
+	]
+
+}
