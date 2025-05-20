@@ -4,7 +4,7 @@
 			"type": "forge:mod_loaded",
 			"modid": "unusualprehistory"
 	},
-	"entity": "unusualprehistory:scaumenacia",
+	"entity": "unusualprehistory:scau",
 	"samplerTier": 1,
 	"environments": ["farm"],
 	"growTicks": 1800,
