@@ -4,18 +4,18 @@
 			"type": "forge:mod_loaded",
 			"modid": "unusualprehistory"
 	},
-	"entity": "unusualprehistory:smilodon",
-	"samplerTier": 1,
+	"entity": "unusualprehistory:sludge",
+	"samplerTier": 2,
 	"environments": ["farm"],
 	"growTicks": 1800,
 	"results": [
 		{
-			"chance": 0.05,
+			"chance": 0.3,
 			"output": {
-				"item": "unusualprehistory:smilo_fur"
+				"item": "unusualprehistory:tar_fossil"
 			},
 			"minAmount": 1,
-			"maxAmount": 1
+			"maxAmount": 4
 		}
 	]
 

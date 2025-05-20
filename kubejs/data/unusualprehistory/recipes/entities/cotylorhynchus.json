@@ -4,19 +4,19 @@
 			"type": "forge:mod_loaded",
 			"modid": "unusualprehistory"
 	},
-	"entity": "unusualprehistory:smilodon",
+	"entity": "unusualprehistory:cotylorhynchus",
 	"samplerTier": 1,
 	"environments": ["farm"],
-	"growTicks": 1800,
+	"growTicks": 2800,
 	"results": [
 		{
-			"chance": 0.05,
+			"chance": 1,
 			"output": {
-				"item": "unusualprehistory:smilo_fur"
+				"item": "unusualprehistory:raw_coty"
 			},
 			"minAmount": 1,
 			"maxAmount": 1
-		}
+		},
 	]
 
 }

@@ -4,15 +4,23 @@
 			"type": "forge:mod_loaded",
 			"modid": "unusualprehistory"
 	},
-	"entity": "unusualprehistory:smilodon",
-	"samplerTier": 1,
+	"entity": "unusualprehistory:encrusted",
+	"samplerTier": 2,
 	"environments": ["farm"],
 	"growTicks": 1800,
 	"results": [
 		{
+			"chance": 0.9,
+			"output": {
+				"item": "unusualprehistory:encrusted_organ"
+			},
+			"minAmount": 1,
+			"maxAmount": 1
+		},
+		{
 			"chance": 0.05,
 			"output": {
-				"item": "unusualprehistory:smilo_fur"
+				"item": "unusualprehistory:amber_chunk"
 			},
 			"minAmount": 1,
 			"maxAmount": 1

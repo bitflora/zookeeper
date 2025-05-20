@@ -1,0 +1,30 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "unusualprehistory"
+	},
+	"entity": "unusualprehistory:mammoth",
+	"samplerTier": 1,
+	"environments": ["farm"],
+	"growTicks": 2800,
+	"results": [
+		{
+			"chance": 0.9,
+			"output": {
+				"item": "unusualprehistory:raw_mammoth"
+			},
+			"minAmount": 1,
+			"maxAmount": 4
+		},
+		{
+			"chance": 0.9,
+			"output": {
+				"item": "naturalist:fur"
+			},
+			"minAmount": 1,
+			"maxAmount": 5
+		}
+	]
+
+}
