@@ -150,7 +150,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'FMF'
     ], {
         X: 'minecraft:beef',
-        G: 'minecraft:diamond',
+        D: 'minecraft:diamond',
         F: 'kubejs:fur_ball',
         M: 'kubejs:meatwad'
     });
@@ -161,7 +161,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'FMF'
     ], {
         X: 'minecraft:feather',
-        G: 'minecraft:diamond',
+        D: 'minecraft:diamond',
         F: 'kubejs:fur_ball',
         M: 'kubejs:meatwad'
     });
@@ -172,7 +172,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'FMF'
     ], {
         X: 'minecraft:white_wool',
-        G: 'minecraft:diamond',
+        D: 'minecraft:diamond',
         F: 'kubejs:fur_ball',
         M: 'kubejs:meatwad'
     });
@@ -183,7 +183,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'FMF'
     ], {
         X: 'minecraft:porkchop',
-        G: 'minecraft:diamond',
+        D: 'minecraft:diamond',
         F: 'kubejs:fur_ball',
         M: 'kubejs:meatwad'
     });
@@ -194,7 +194,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'FMF'
     ], {
         W: 'minecraft:string',
-        G: 'minecraft:diamond',
+        D: 'minecraft:diamond',
         F: 'kubejs:fur_ball',
         M: 'kubejs:meatwad'
     });
@@ -205,7 +205,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'FMF'
     ], {
         W: 'minecraft:ink_sac',
-        G: 'minecraft:diamond',
+        D: 'minecraft:diamond',
         F: 'kubejs:fur_ball',
         M: 'kubejs:meatwad'
     });
@@ -216,7 +216,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'FMF'
     ], {
         W: 'minecraft:pufferfish',
-        G: 'minecraft:diamond',
+        D: 'minecraft:diamond',
         F: 'kubejs:fur_ball',
         M: 'kubejs:meatwad'
     });
@@ -655,6 +655,17 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ], {
       I: 'kubejs:fur_ball',
       S: 'minecraft:jungle_sapling',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('minecraft:cat_spawn_egg', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'kubejs:fur_ball',
+      S: 'minecraft:string',
       X: 'kubejs:embryo',
       E: '#forge:eggs',
     });

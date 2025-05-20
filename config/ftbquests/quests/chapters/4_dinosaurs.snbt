@@ -114,7 +114,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["6A226F7D1EFAC888"]
+			dependencies: ["566FE43D09E1B7A3"]
 			description: ["The &aSmilodon&r is fortunate enough to have a close relative still living into the modern age. Once you have a &9smilodon embryo&r, you can just stick it into an &aOcelot&r to have it brought to term."]
 			icon: {
 				Count: 1
@@ -147,7 +147,7 @@
 					type: "observation"
 				}
 			]
-			x: -0.5d
+			x: 1.0d
 			y: -2.0d
 		}
 		{
@@ -178,7 +178,7 @@
 				}
 			]
 			title: "Smilodon Success"
-			x: 1.0d
+			x: 2.5d
 			y: -2.0d
 		}
 		{
@@ -257,12 +257,12 @@
 				}
 				type: "item"
 			}]
-			title: "Ancient Mammals"
-			x: 2.5d
+			title: "Wombs of Steel"
+			x: 4.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6A226F7D1EFAC888"]
+			dependencies: ["566FE43D09E1B7A3"]
 			description: ["Encrusted DNA has been corrupted, but still contains useful information. Alas, you need to fight to get it."]
 			icon: {
 				Count: 1
@@ -289,7 +289,7 @@
 				}
 			]
 			title: "The Encrusted"
-			x: -0.5d
+			x: 1.0d
 			y: -1.0d
 		}
 		{
@@ -323,7 +323,7 @@
 				}
 			]
 			title: "Cold Storage"
-			x: 1.0d
+			x: 2.5d
 			y: -1.0d
 		}
 		{
@@ -453,8 +453,8 @@
 				title: "Ancient Oceans"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: 1.5d
+			x: 0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
@@ -600,7 +600,7 @@
 				type: "item"
 			}]
 			title: "&3&lDigging through Time"
-			x: -2.0d
+			x: 2.0d
 			y: 4.0d
 		}
 		{
@@ -641,8 +641,8 @@
 				}
 			]
 			title: "&5&lSkin of Survival"
-			x: -4.0d
-			y: 3.5d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4FACC1C88C7F81CA"]
@@ -707,8 +707,972 @@
 				}
 			]
 			title: "&6&lA Shelled Fella"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6A226F7D1EFAC888"]
+			description: ["Animals and plants are all part of an interdependent system. We cannot successfully raise ancient beasts without also raising the plants they depended on."]
+			id: "5C34CDA20CC8F25A"
+			tasks: [{
+				id: "0FC94592101964CA"
+				title: "Ancient Plants"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["73E05E030F2760D0"]
+			dependency_requirement: "one_started"
+			description: [""]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "unusualprehistory:shedscale_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "14A432951F946A58"
+			rewards: [
+				{
+					id: "1A47985C95676093"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "270403C884A7925D"
+					item: "medieval_craft_weapons:titanite_ingot_4"
+					type: "item"
+				}
+				{
+					id: "615F221DB32A7641"
+					item: "minecraft:heart_of_the_sea"
+					type: "item"
+				}
+			]
+			subtitle: "&7Fins of Mastery"
+			tasks: [
+				{
+					id: "4036BC1AEFE6DA5F"
+					item: {
+						Count: 1
+						id: "unusualprehistory:shedscale_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B5F5EEC8393A54D"
+					item: {
+						Count: 1
+						id: "unusualprehistory:shedscale_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0D15E8E77EE09217"
+					item: {
+						Count: 1
+						id: "unusualprehistory:shedscale_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72DE9E5A9B8FF470"
+					item: {
+						Count: 1
+						id: "unusualprehistory:shedscale_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&3&lSwimming with Grace"
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3C93415319B18E01"]
+			dependency_requirement: "all_started"
+			description: [
+				"&fThese elusive creatures thrive in caves and rooted dirt. "
+				""
+				"A small but vital link in the prehistoric ecosystem!"
+			]
+			hide_until_deps_complete: true
+			icon: "unusualprehistory:talpanas_egg"
+			id: "15B6B2F4A2BFC503"
+			rewards: [
+				{
+					id: "2BC56E6F4AEABE08"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					count: 5
+					id: "7EFBF2BE80293790"
+					item: "minecraft:rooted_dirt"
+					type: "item"
+				}
+			]
+			subtitle: "&7Shadows beneath the soil..."
+			tasks: [
+				{
+					id: "652A2BA3E0B64830"
+					item: "unusualprehistory:talpanas_egg"
+					type: "item"
+				}
+				{
+					id: "7932FEA309EEB201"
+					item: "minecraft:rooted_dirt"
+					type: "item"
+				}
+				{
+					id: "7CD149FC6F2D133A"
+					item: "minecraft:hanging_roots"
+					type: "item"
+				}
+			]
+			title: "&7&lRoot Dwellers"
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3C93415319B18E01"]
+			dependency_requirement: "all_started"
+			description: [
+				"&fTame a &aTriceratops&r using &aGinkgo fruit&r. As they grow, they shed their horns, perfect for crafting a &cpowerful shield&r. "
+				"A defensive ally for any prehistoric adventure!"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "unusualprehistory:trike_shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "239FC7726C5081CE"
+			rewards: [
+				{
+					id: "341A4DCD116377B5"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "2C336AF2A357E782"
+					item: {
+						Count: 1
+						id: "alexscaves:primordial_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "&7A mighty shield awaits..."
+			tasks: [
+				{
+					id: "72F913CC6465FC21"
+					item: "unusualprehistory:trike_eggs"
+					type: "item"
+				}
+				{
+					id: "647B9D057E5C06D0"
+					item: "unusualprehistory:trike_horn"
+					type: "item"
+				}
+				{
+					id: "51A02A3F518AA55E"
+					item: {
+						Count: 1
+						id: "unusualprehistory:trike_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1960B90E0C89CAAA"
+					item: "unusualprehistory:ginkgo_fruit"
+					type: "item"
+				}
+				{
+					id: "0B7DC876C1303AE3"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+			]
+			title: "&6&lHorned Guardians"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C93415319B18E01"]
+			dependency_requirement: "all_started"
+			description: ["&fCan be pacified with the correct meat. Block its mighty blows, and its powerful &cscutes&r can be transformed into an &aimpenetrable helmet&r."]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "unusualprehistory:majunga_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0373B0A1BBCF3A0D"
+			rewards: [
+				{
+					id: "0A5A86FBEB67FCD8"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "5873F9B2ECA10DC5"
+					item: "unusualprehistory:majunga_scute"
+					random_bonus: 3
+					type: "item"
+				}
+			]
+			subtitle: "&7Deflect, Survive, Dominate"
+			tasks: [
+				{
+					id: "52C8DB625E64FB9F"
+					item: "unusualprehistory:majunga_eggs"
+					type: "item"
+				}
+				{
+					id: "210005F6963461AA"
+					item: "unusualprehistory:raw_coty"
+					type: "item"
+				}
+				{
+					id: "18D02DF6D2154CEF"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B7BAF2F52861C5D"
+					item: "unusualprehistory:majunga_scute"
+					type: "item"
+				}
+				{
+					id: "368A21D494DC445F"
+					item: {
+						Count: 1
+						id: "unusualprehistory:majunga_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&4&lHard Skull"
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5C34CDA20CC8F25A"]
+			dependency_requirement: "one_started"
+			description: ["&fCollect &aGinkgo Saplings&r and their fruits to &6restore the legacy&r of prehistoric flora. These resilient trees carry the &bessence of ancient forests&r."]
+			icon: "unusualprehistory:ginkgo_sapling"
+			id: "446D75D4092DCCF5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E2D7892F63043EE"
+					type: "random"
+				}
+				{
+					id: "7EB03519512862F7"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			shape: "hexagon"
+			subtitle: "&7Ginkgo’s ancient gift…"
+			tasks: [
+				{
+					id: "18C89F639D2DB96E"
+					item: "unusualprehistory:ginkgo_sapling"
+					type: "item"
+				}
+				{
+					id: "2BFD4744842F03EF"
+					item: "unusualprehistory:ginkgo_fruit"
+					type: "item"
+				}
+				{
+					id: "6A3E1812DD7919D9"
+					item: "unusualprehistory:raw_ginkgo_seeds"
+					type: "item"
+				}
+				{
+					id: "5D4CD8625661A582"
+					item: "unusualprehistory:cooked_ginkgo_seeds"
+					type: "item"
+				}
+			]
+			title: "&2&lRoots of the Past"
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6A226F7D1EFAC888"]
+			description: ["The past isn't all scales and fins. Mammals have been stomping around for a while, too. Try reviving a few of our ancient relatives. But be aware that it will take a bit more work."]
+			id: "566FE43D09E1B7A3"
+			tasks: [{
+				id: "3C9D4B3C7A2DD2F8"
+				title: "Ancient Fuzzballs"
+				type: "checkmark"
+			}]
 			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5C34CDA20CC8F25A"
+				"4FACC1C88C7F81CA"
+			]
+			description: ["&fExplore the ancient waters and gather &aunique aquatic flora&r that once thrived in prehistoric oceans. From lush &3kelp&r to delicate &bcoral&r, each plant is a piece of history waiting to resurface."]
+			hide_until_deps_complete: true
+			icon: "unusualprehistory:archaefructus"
+			id: "1AF186874427A88C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2146FB470C1B2B12"
+					type: "loot"
+				}
+				{
+					id: "4EA187DB1DEE7C1C"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			shape: "hexagon"
+			subtitle: "&7Dive beneath the waves"
+			tasks: [
+				{
+					id: "0DF0711116E1D79A"
+					item: "unusualprehistory:archaefructus"
+					type: "item"
+				}
+				{
+					id: "2D7796FA3ADAC404"
+					item: "unusualprehistory:clathrodictyon"
+					type: "item"
+				}
+				{
+					id: "77B47F08AF26253D"
+					item: "unusualprehistory:anostylostroma_block"
+					type: "item"
+				}
+				{
+					id: "091DB90B1FA60387"
+					item: "unusualprehistory:nelumbites"
+					type: "item"
+				}
+				{
+					id: "7C9B6D0308071288"
+					item: "unusualprehistory:quereuxia"
+					type: "item"
+				}
+			]
+			title: "&3&lAquatic Wonders"
+			x: -2.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["5C34CDA20CC8F25A"]
+			description: ["&fCollect &aplants and flowers&r that once painted the prehistoric landscapes. From towering ferns to vibrant wildflowers, these specimens represent the lush beauty of ancient Earth."]
+			hide_until_deps_complete: true
+			icon: "unusualprehistory:bennett"
+			id: "2ADFA0D6450D2199"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3479098795AF4AA5"
+					type: "loot"
+				}
+				{
+					id: "04B896398B393EB2"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			shape: "octagon"
+			subtitle: "&7Reviving the land’s past"
+			tasks: [
+				{
+					id: "1948AC7C26E08F13"
+					item: "unusualprehistory:archaeos"
+					type: "item"
+				}
+				{
+					id: "0F85C44AF195DD5E"
+					item: "unusualprehistory:bennett"
+					type: "item"
+				}
+				{
+					id: "217A0D77C48FD0F2"
+					item: "unusualprehistory:leefructus"
+					type: "item"
+				}
+				{
+					id: "778904EEE0DD142C"
+					item: "unusualprehistory:horsetail"
+					type: "item"
+				}
+				{
+					id: "08DEC322D4741ED8"
+					item: "unusualprehistory:sarracenia"
+					type: "item"
+				}
+				{
+					id: "442A1272A2BA49B8"
+					item: "unusualprehistory:raiguenrayun"
+					type: "item"
+				}
+			]
+			title: "&2&lEarth’s Green Heritage"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5C34CDA20CC8F25A"]
+			description: ["This ancient version of bamboo grows and has many of the same uses as it modern conterpart."]
+			id: "69903CD6D1E42BC4"
+			subtitle: "Ancient Bamboo"
+			tasks: [{
+				id: "7A32B6EF3ECBC48F"
+				item: {
+					Count: 1
+					id: "unusualprehistory:zuloagae"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3C93415319B18E01"
+				"446D75D4092DCCF5"
+			]
+			dependency_requirement: "all_started"
+			description: ["&fBeware the &cPachycephalosaurus&r's powerful headbutt. Feed them &aGinkgo Seeds&r to avoid a concussion and earn their trust!"]
+			hide_until_deps_complete: true
+			icon: "unusualprehistory:pachy_eggs"
+			id: "37E8D8D363C1C6A7"
+			rewards: [
+				{
+					id: "0516E9BBE903662C"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "20574BDD985F70EA"
+					item: {
+						Count: 1
+						id: "minecraft:chainmail_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "&7A walking battering ram..."
+			tasks: [
+				{
+					id: "583C027F9859ADEA"
+					item: "unusualprehistory:pachy_eggs"
+					type: "item"
+				}
+				{
+					id: "52131E92FD6AEBA5"
+					item: "unusualprehistory:raw_ginkgo_seeds"
+					type: "item"
+				}
+			]
+			title: "&c&lWatch Your Head"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3C93415319B18E01"]
+			dependency_requirement: "all_started"
+			description: [
+				"&fDefeat the mighty &cTyrannosaurus&r to weaken it. Use an &eAdorned Staff&r to interact and collect its scales and teeth without taking its life. "
+				""
+				"This peaceful approach will earn you powerful materials for crafting legendary gear."
+			]
+			hide_until_deps_complete: true
+			icon: "unusualprehistory:rex_head"
+			id: "50A76A9371A1DFEA"
+			rewards: [
+				{
+					id: "48B3B152E4E1B2F2"
+					type: "xp_levels"
+					xp_levels: 7
+				}
+				{
+					id: "5F62E216154E361E"
+					item: "medieval_craft_weapons:titanite_chunk_7"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6CE2AD9A2CE11D54"
+					item: "unusualprehistory:rex_scale"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "14720C5F1C66C7AC"
+					item: "unusualprehistory:rex_tooth"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Even the mightiest can be pacified..."
+			tasks: [
+				{
+					id: "5E7CED5013330689"
+					item: "unusualprehistory:rex_eggs"
+					type: "item"
+				}
+				{
+					id: "5301F499397CEDAF"
+					item: {
+						Count: 1
+						id: "unusualprehistory:adorned_staff"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3CE7DD991C36F0D8"
+					item: "unusualprehistory:rex_scale"
+					type: "item"
+				}
+				{
+					id: "546E8DA42AA069FE"
+					item: "unusualprehistory:rex_tooth"
+					type: "item"
+				}
+				{
+					id: "0215E5031E8F4ADA"
+					item: {
+						Count: 1
+						id: "unusualprehistory:tyrants_crown"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7473F314A0E31F2B"
+					item: "unusualprehistory:rex_boombox"
+					type: "item"
+				}
+				{
+					id: "1245F259F0891AA9"
+					item: "unusualprehistory:rex_head"
+					type: "item"
+				}
+				{
+					id: "27E01A0D6FCC77D9"
+					item: {
+						Count: 1
+						id: "unusualprehistory:veloci_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&6&lThe Fall of the King"
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1B575536787142FF"]
+			dependency_requirement: "all_started"
+			description: ["&fTrade special fruits like &eZuloagae&r with this ancient ape to gain its trust. Its size and strength make it a &bvaluable ally&r in the wild.&7"]
+			hide_until_deps_complete: true
+			icon: "unusualprehistory:giganto_embryo"
+			id: "4BBD2D5DDAC7922D"
+			rewards: [
+				{
+					id: "0EAAFDB4464689F2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "58AD33BB3A794529"
+					item: "medieval_craft_weapons:titanite_ingot_4"
+					type: "item"
+				}
+			]
+			subtitle: "&7\"A friend lost in time…\""
+			tasks: [
+				{
+					id: "3BAB5732A04613EC"
+					item: "unusualprehistory:giganto_embryo"
+					type: "item"
+				}
+				{
+					id: "667D73CBD937E25D"
+					item: "unusualprehistory:zuloagae"
+					type: "item"
+				}
+			]
+			title: " &6&lGigantopithecus"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4BBD2D5DDAC7922D"
+				"69903CD6D1E42BC4"
+			]
+			description: [
+				"&fThe &6Gigantopithecus&r accepts &eZuloagae&r in exchange for an &cExotic Fruit Loot Box&r. Each trade unlocks a world of rare items that bring prehistoric wonders to life."
+				""
+				"&7Exotic flavors lead to exotic treasures."
+			]
+			icon: {
+				Count: 1
+				id: "unusualprehistory:fruit_loot_box"
+				tag: {
+					CustomModelData: 2
+					color: 3975347
+					display: {
+						Name: "{\"color\":\"white\",\"translate\":\"unusualprehistory.fruit_loot_box.exotic\"}"
+					}
+					tradeItem: {
+						Count: 1b
+						id: "unusualprehistory:zuloagae"
+					}
+					translationKey: "unusualprehistory.fruit_loot_box.exotic"
+				}
+			}
+			id: "440356C8C654E266"
+			rewards: [
+				{
+					id: "15D101E0633C0452"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "57DC2C1500837857"
+					item: "unusualprehistory:red_fruit"
+					random_bonus: 6
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7A Taste of Adventure"
+			tasks: [
+				{
+					id: "523B1CA82CEB7316"
+					item: {
+						Count: 1
+						id: "unusualprehistory:fruit_loot_box"
+						tag: {
+							CustomModelData: 2
+							color: 3975347
+							display: {
+								Name: "{\"color\":\"white\",\"translate\":\"unusualprehistory.fruit_loot_box.exotic\"}"
+							}
+							tradeItem: {
+								Count: 1b
+								id: "unusualprehistory:zuloagae"
+							}
+							translationKey: "unusualprehistory.fruit_loot_box.exotic"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "562782E37678BB04"
+					item: "unusualprehistory:red_fruit"
+					type: "item"
+				}
+			]
+			title: "&4&lExotic Trade"
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["440356C8C654E266"]
+			description: ["&fBring your &6Exotic fruits&r to the Gigantopithecus, and in return, receive a &bLuxurious Fruit Loot Box&r filled with exceptional finds. Indulge in the grandeur of ancient trades!"]
+			icon: {
+				Count: 1
+				id: "unusualprehistory:fruit_loot_box"
+				tag: {
+					CustomModelData: 3
+					color: 8355711
+					display: {
+						Name: "{\"color\":\"yellow\",\"translate\":\"unusualprehistory.fruit_loot_box.luxurious\"}"
+					}
+					tradeItem: {
+						Count: 1b
+						id: "unusualprehistory:red_fruit"
+					}
+					translationKey: "unusualprehistory.fruit_loot_box.luxurious"
+				}
+			}
+			id: "328EA9E46A99B6B6"
+			rewards: [
+				{
+					id: "4EE6816901BD0762"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "778F7E8778D1FD3F"
+					item: "unusualprehistory:white_fruit"
+					random_bonus: 6
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Opulence in a Box"
+			tasks: [
+				{
+					id: "166C6A24AC646012"
+					item: {
+						Count: 1
+						id: "unusualprehistory:fruit_loot_box"
+						tag: {
+							CustomModelData: 3
+							color: 8355711
+							display: {
+								Name: "{\"color\":\"yellow\",\"translate\":\"unusualprehistory.fruit_loot_box.luxurious\"}"
+							}
+							tradeItem: {
+								Count: 1b
+								id: "unusualprehistory:red_fruit"
+							}
+							translationKey: "unusualprehistory.fruit_loot_box.luxurious"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5FDCF787299E318A"
+					item: {
+						Count: 1
+						id: "unusualprehistory:handmade_battleaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D11B6E3791CDE92"
+					item: "unusualprehistory:white_fruit"
+					type: "item"
+				}
+			]
+			title: "&e&lLuxurious Exchange"
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["328EA9E46A99B6B6"]
+			dependency_requirement: "one_started"
+			description: ["&fOffer the &6Luxurious Fruits&r to the Gigantopithecus to claim a &aRedolent Fruit Loot Box&r. Each box carries the unique aroma of prehistoric rarity."]
+			icon: {
+				Count: 1
+				id: "unusualprehistory:fruit_loot_box"
+				tag: {
+					CustomModelData: 4
+					color: 8355711
+					display: {
+						Name: "{\"color\":\"aqua\",\"translate\":\"unusualprehistory.fruit_loot_box.redolent\"}"
+					}
+					tradeItem: {
+						Count: 1b
+						id: "unusualprehistory:white_fruit"
+					}
+					translationKey: "unusualprehistory.fruit_loot_box.redolent"
+				}
+			}
+			id: "07D0FC746A47AC28"
+			rewards: [
+				{
+					id: "09DC430D71DB5000"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "00CF4EB31BA4EF63"
+					item: "unusualprehistory:yellow_fruit"
+					random_bonus: 6
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Scented Fortune"
+			tasks: [
+				{
+					id: "51CAF059827A6D92"
+					item: {
+						Count: 1
+						id: "unusualprehistory:fruit_loot_box"
+						tag: {
+							CustomModelData: 4
+							color: 8355711
+							display: {
+								Name: "{\"color\":\"aqua\",\"translate\":\"unusualprehistory.fruit_loot_box.redolent\"}"
+							}
+							tradeItem: {
+								Count: 1b
+								id: "unusualprehistory:white_fruit"
+							}
+							translationKey: "unusualprehistory.fruit_loot_box.redolent"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B529FDFD281BF17"
+					item: {
+						Count: 1
+						id: "unusualprehistory:handmade_club"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4564E8CE402C4EBC"
+					item: {
+						Count: 1
+						id: "unusualprehistory:barina_whistle"
+						tag: {
+							instrument: "unusualprehistory:ocarina"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3FCC1AE199115B94"
+					item: "unusualprehistory:yellow_fruit"
+					type: "item"
+				}
+			]
+			title: "&3&lFragrant Rewards"
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["07D0FC746A47AC28"]
+			description: ["&fTrade &aRedolent Fruits&r with the Gigantopithecus to earn a &dSalubrious Fruit Loot Box&r. Inside lies the essence of prehistoric vitality and rewards beyond imagination."]
+			icon: {
+				Count: 1
+				id: "unusualprehistory:fruit_loot_box"
+				tag: {
+					CustomModelData: 5
+					color: 13421772
+					display: {
+						Name: "{\"color\":\"light_purple\",\"translate\":\"unusualprehistory.fruit_loot_box.salubrious\"}"
+					}
+					tradeItem: {
+						Count: 1b
+						id: "unusualprehistory:yellow_fruit"
+					}
+					translationKey: "unusualprehistory.fruit_loot_box.salubrious"
+				}
+			}
+			id: "23DE2108E73E143F"
+			rewards: [
+				{
+					id: "1FB33CCA4F16C5EC"
+					type: "xp"
+					xp: 2500
+				}
+				{
+					id: "475F3B030EE50EE0"
+					item: "unusualprehistory:blue_fruit_scraps"
+					random_bonus: 6
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Healthy Gains"
+			tasks: [
+				{
+					id: "39F73C617370C45A"
+					item: {
+						Count: 1
+						id: "unusualprehistory:fruit_loot_box"
+						tag: {
+							CustomModelData: 5
+							color: 13421772
+							display: {
+								Name: "{\"color\":\"light_purple\",\"translate\":\"unusualprehistory.fruit_loot_box.salubrious\"}"
+							}
+							tradeItem: {
+								Count: 1b
+								id: "unusualprehistory:yellow_fruit"
+							}
+							translationKey: "unusualprehistory.fruit_loot_box.salubrious"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A970EC9E9B4400F"
+					item: {
+						Count: 1
+						id: "unusualprehistory:handmade_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "54A618569F835DBE"
+					item: "unusualprehistory:blue_fruit"
+					type: "item"
+				}
+			]
+			title: "&d&lPristine Gifts"
+			x: 4.0d
+			y: 6.5d
 		}
 	]
 	title: "&a4.&r Dinosaurs"
