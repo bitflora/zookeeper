@@ -7,6 +7,7 @@
 	"entity": "unusualprehistory:scau",
 	"samplerTier": 1,
 	"environments": ["farm"],
+	"requiresWater": true,
 	"growTicks": 1800,
 	"results": [
 		{
