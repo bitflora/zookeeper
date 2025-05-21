@@ -10,7 +10,7 @@
 	"growTicks": 1800,
 	"results": [
 		{
-			"chance": 0.9,
+			"chance": 1,
 			"output": {
 				"item": "unusualprehistory:encrusted_organ"
 			},
@@ -20,7 +20,7 @@
 		{
 			"chance": 0.05,
 			"output": {
-				"item": "unusualprehistory:amber_chunk"
+				"item": "unusualprehistory:amber_shard"
 			},
 			"minAmount": 1,
 			"maxAmount": 1
