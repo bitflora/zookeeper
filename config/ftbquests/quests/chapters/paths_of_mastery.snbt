@@ -334,23 +334,42 @@
 				}
 			]
 			title: "Path of the Packrat"
-			x: -3.5d
+			x: 3.0d
 			y: 3.0d
 		}
 		{
-			description: ["It's a dangerous world. You need better equipment. Learn from the master of armor. Learn from the turtle."]
+			description: ["It's a dangerous world out there. You cannot always rely on your equipment to protect you. Instead, become one with your equipment. Learn the ways of the turtle."]
 			icon: {
 				Count: 1
 				id: "aquaculture:box_turtle"
 				tag: { }
 			}
 			id: "6BDA6CFB89959B12"
-			tasks: [{
-				id: "30CACF71DE2EC761"
-				title: "Path of the Turtle"
-				type: "checkmark"
+			rewards: [{
+				id: "7C0743B740AB01FC"
+				item: {
+					Count: 1
+					id: "cyclic:heart"
+					tag: { }
+				}
+				type: "item"
 			}]
-			x: -5.5d
+			subtitle: "Don't tell me to come out of my shell"
+			tasks: [{
+				consume_items: true
+				id: "72AD3D4A642DAA3F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(aquaculture:turtle)"
+					}
+				}
+				title: "Any #aquaculture:turtle"
+				type: "item"
+			}]
+			title: "Path of the Turtle"
+			x: -7.5d
 			y: 2.0d
 		}
 		{
@@ -592,6 +611,129 @@
 			title: "Path of the Spider 6"
 			x: 0.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["6BDA6CFB89959B12"]
+			description: ["More!"]
+			id: "277D423AD980A93C"
+			rewards: [{
+				id: "49F49560BB3DE2DD"
+				item: {
+					Count: 1
+					id: "cyclic:heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "4264EA5F10926AC1"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(aquaculture:turtle)"
+					}
+				}
+				title: "Any #aquaculture:turtle"
+				type: "item"
+			}]
+			title: "Path of the Turtle 2"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["277D423AD980A93C"]
+			description: ["Even more!"]
+			icon: {
+				Count: 1
+				id: "aquaculture:box_turtle"
+				tag: { }
+			}
+			id: "50E66BFA39CF99F3"
+			rewards: [{
+				id: "09288ABDB25773D1"
+				item: {
+					Count: 1
+					id: "cyclic:heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "7D3597F4D87BA8BA"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(aquaculture:turtle)"
+					}
+				}
+				title: "Any #aquaculture:turtle"
+				type: "item"
+			}]
+			title: "Path of the Turtle A2"
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["277D423AD980A93C"]
+			description: [
+				"Spend some time getting into the headspace of a &aTurtle&r."
+				""
+				"Eureka! Why not carry your whole home with you just as the &aTurtle&r does? Just place down your &9tent&r and build it with your &9mallet.&r Click on the door to enter your tent. Set up whatever you please inside."
+				""
+				"Then go back out and use the &9mallet&r on the door to take the tent down and carry it with you wherever you want to travel."
+				""
+				"You can even keep animals in there!"
+			]
+			id: "7B1BB8EC96CE9DFD"
+			rewards: [
+				{
+					id: "7E24511165DC4A09"
+					item: {
+						Count: 1
+						id: "nomadictents:large_indlu"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0F38D5C1FA929699"
+					item: {
+						Count: 1
+						id: "nomadictents:golden_mallet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "089672E1F884CCCE"
+					ignore_reward_blocking: true
+					stage: "turtle_tent"
+					title: "Enable Tents"
+					type: "gamestage"
+				}
+			]
+			tasks: [{
+				id: "43BE8A99DD86616D"
+				item: {
+					Count: 1
+					id: "minecraft:turtle_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Path of the Turtle B1"
+			x: -5.0d
+			y: 0.0d
 		}
 	]
 	title: "Paths of Mastery"

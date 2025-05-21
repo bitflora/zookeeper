@@ -61,7 +61,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     );
 
     // Remove some recipes
-    e.remove({ mod: 'cyclic' })
+    //e.remove({ mod: 'cyclic' }) // TODO: remove these, after investigating the recipes
     e.remove({ output: 'theoneprobe:probe' });
     e.remove({ mod: "inventorypets"});
 

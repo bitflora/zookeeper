@@ -26,3 +26,11 @@ ItemStages.restrict(<item:scannable:scanner>, "owl_scanner");
 
 ItemStages.restrict(<item:minecraft:lead>, "spider_lead");
 ItemStages.restrict(<item:cagebox:cage_box>, "spider_cagebox");
+
+
+import crafttweaker.api.mod.Mod;
+
+for item in loadedMods.nomadictents.itemStacks {
+    // println(item);
+    ItemStages.restrict(item, "turtle_tent");
+}
