@@ -12,7 +12,7 @@
 		{
 			"chance": 0.3,
 			"output": {
-				"item": "unusualprehistory:tar_fossil"
+				"item": "unusualprehistory:tar_fossil_item"
 			},
 			"minAmount": 1,
 			"maxAmount": 4
