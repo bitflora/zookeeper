@@ -37,8 +37,8 @@
 				title: "Begin Chapter 4"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: -8.5d
+			x: -11.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7E0557D04A8EACF0"]
@@ -55,8 +55,8 @@
 				type: "item"
 			}]
 			title: "The Secret of the Ooze"
-			x: -2.0d
-			y: -6.0d
+			x: -10.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["75D3BEFEA09CF5D9"]
@@ -90,8 +90,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -4.0d
+			x: -8.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["4014DB068B97D666"]
@@ -110,8 +110,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.5d
+			x: -7.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["566FE43D09E1B7A3"]
@@ -147,8 +147,8 @@
 					type: "observation"
 				}
 			]
-			x: 1.0d
-			y: -2.0d
+			x: -2.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["228ACCC3FDFBE7AA"]
@@ -178,14 +178,13 @@
 				}
 			]
 			title: "Smilodon Success"
-			x: 2.5d
-			y: -2.0d
+			x: -0.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["1B575536787142FF"]
 			dependency_requirement: "all_started"
-			description: ["&fRaise it from infancy, and it’ll &adefend you&r with unparalleled loyalty. An &etank of companionship&r from the ancient world."]
-			hide_until_deps_complete: true
+			description: ["Raise the &aMegatherium&r from infancy by carrying it on your back, and it’ll defend you from attack. Think of it as a very very large puppy."]
 			icon: {
 				Count: 1
 				id: "unusualprehistory:sloth_pouch_armor"
@@ -194,6 +193,7 @@
 				}
 			}
 			id: "5FB9AEA859B8D3B7"
+			optional: true
 			rewards: [
 				{
 					id: "257C1AC36BE20E6D"
@@ -237,9 +237,9 @@
 					type: "item"
 				}
 			]
-			title: "&3&lIt’s Got Your Back"
-			x: 6.0d
-			y: -3.5d
+			title: "Megatherium"
+			x: 1.0d
+			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -258,8 +258,8 @@
 				type: "item"
 			}]
 			title: "Wombs of Steel"
-			x: 4.0d
-			y: -1.5d
+			x: 1.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["566FE43D09E1B7A3"]
@@ -289,8 +289,8 @@
 				}
 			]
 			title: "The Encrusted"
-			x: 1.0d
-			y: -1.0d
+			x: -2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3B91C2231946BBAB"]
@@ -323,49 +323,16 @@
 				}
 			]
 			title: "Cold Storage"
-			x: 2.5d
-			y: -1.0d
+			x: -0.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1B575536787142FF"]
 			dependency_requirement: "all_started"
 			description: [
-				"&fThis towering herbivore can be quite temperamental."
+				"With your help, the &aMammoth&r could once again roam the tundra. And they will help you in return. &9Mammoth meat&r is much more effecient at &9meatwad&r production than modern mammal meat."
 				""
-				"Beware, it doesn’t like surprises!"
-			]
-			hide_until_deps_complete: true
-			icon: "unusualprehistory:paracer_embryo"
-			id: "2B2E7789DBE76B29"
-			rewards: [
-				{
-					id: "75C9013ADE4C003F"
-					type: "xp_levels"
-					xp_levels: 2
-				}
-				{
-					id: "226BF6CA9F2CABE4"
-					item: "unusualprehistory:tar_bucket"
-					type: "item"
-				}
-			]
-			subtitle: "&7Big temper, bigger challenge..."
-			tasks: [{
-				id: "5DD8F9E8F7610D38"
-				item: "unusualprehistory:paracer_embryo"
-				type: "item"
-			}]
-			title: "&c&lColossal Herbivore"
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["1B575536787142FF"]
-			dependency_requirement: "all_started"
-			description: [
-				"&fWear the &6Tyrant's Crown&r to gain the Mammoth's respect and &ashear their thick fur&r. While their wool is precious, their meat serves as a &cnutritious source of sustenance&r. "
-				""
-				"&lWill you lead, or will you feast?&r"
+				"If you are able to defeat a &aTyrannasaurus Rex&r and craft the &9Tyrant's Crown&r, you can also &9shear&r these beasts for various items."
 			]
 			hide_until_deps_visible: true
 			icon: "unusualprehistory:mammoth_meatball"
@@ -391,46 +358,14 @@
 					type: "item"
 				}
 				{
-					id: "5ED2A7BBCECFEF5F"
-					item: {
-						Count: 1
-						id: "unusualprehistory:tyrants_crown"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5B765CD0F8C6A08A"
-					item: {
-						Count: 1
-						id: "minecraft:shears"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "462A39C9457EBC10"
 					item: "unusualprehistory:raw_mammoth"
 					type: "item"
 				}
-				{
-					id: "07292F88BB6ADCC7"
-					item: "unusualprehistory:cooked_mammoth"
-					type: "item"
-				}
-				{
-					id: "72227BB62585DFAC"
-					item: "unusualprehistory:mammoth_meatball"
-					type: "item"
-				}
 			]
-			title: "&e&lThe Pack's Respect"
-			x: 6.0d
-			y: -0.5d
+			title: "Wooly Mammoth"
+			x: 2.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["6A226F7D1EFAC888"]
@@ -441,8 +376,8 @@
 				title: "Ancient Eggs"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: -1.5d
+			x: -7.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6A226F7D1EFAC888"]
@@ -453,14 +388,13 @@
 				title: "Ancient Oceans"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 2.0d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
 			dependency_requirement: "all_started"
 			description: ["Like the &aVelociraptor&r, these raptors have special &9feathers&r that can be used to more efficiently make &9fur balls&r, or craft &9boots&r that will ignore fall damage. They will simply drop their &9feathers&r occasionally as they groom themselves."]
-			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "unusualprehistory:austro_boots"
@@ -469,6 +403,7 @@
 				}
 			}
 			id: "5694EC129C10CD10"
+			optional: true
 			rewards: [
 				{
 					id: "5C0D4E5E7E1E2976"
@@ -479,6 +414,15 @@
 					id: "73F671D8550BD516"
 					item: "unusualprehistory:austro_feather"
 					random_bonus: 2
+					type: "item"
+				}
+				{
+					id: "6641178A80E1CC9C"
+					item: {
+						Count: 1
+						id: "unusualprehistory:raw_austro"
+						tag: { }
+					}
 					type: "item"
 				}
 			]
@@ -516,15 +460,14 @@
 					type: "item"
 				}
 			]
-			title: " &4&lFalling with Grace"
-			x: -7.0d
-			y: -4.0d
+			title: "Austraptors"
+			x: -11.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
 			dependency_requirement: "all_started"
-			description: ["&fWhen threatened, their defensive plates &cdrop&r, providing an &eimpressive weapon material&r. Craft deadly gear to honor their strength."]
-			hide_until_deps_complete: true
+			description: ["These spiky beasts don't appreciate monsters any more than you do. And their fight against monsters can have a side-benefits for you; sometimes it will cause them to drop their &9plates&r, a vital crafting ingredient."]
 			icon: {
 				Count: 1
 				id: "unusualprehistory:primal_macuahuitl"
@@ -570,44 +513,36 @@
 					type: "item"
 				}
 			]
-			title: "&c&lSaw Tail"
-			x: -7.0d
-			y: -2.5d
+			title: "Antarctopelta"
+			x: -8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4FACC1C88C7F81CA"]
 			dependency_requirement: "all_started"
-			description: ["&fThe &6Eryon&r loves digging in mud, uncovering &atreasures&r like fossils. Partner with this ancient archaeologist for a journey back in time."]
-			hide_until_deps_complete: true
+			description: ["The &aEryon&r loves digging in mud. Sometimes he uncovers junk, sometimes &9fossils&r that you can display."]
 			icon: "unusualprehistory:eryon_fossil"
 			id: "2C5CD39AD677CC01"
-			rewards: [
-				{
-					id: "6C36CAF901A043DD"
-					type: "xp_levels"
-					xp_levels: 2
-				}
-				{
-					id: "530B7F208D0988B1"
-					title: "Random reward x3"
-					type: "random"
-				}
-			]
+			optional: true
+			rewards: [{
+				id: "6C36CAF901A043DD"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
 			subtitle: "An Archaeologist of Himself"
 			tasks: [{
 				id: "62E69D3BE277E7F6"
 				item: "unusualprehistory:eryon_eggs"
 				type: "item"
 			}]
-			title: "&3&lDigging through Time"
-			x: 2.0d
-			y: 4.0d
+			title: "Eryon"
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4FACC1C88C7F81CA"]
 			dependency_requirement: "all_started"
 			description: ["&fThe &6Palaeophis&r sheds its skin over time, leaving behind durable &7traces of history&r. Use them for crafting or trading. Its past is your gain!"]
-			hide_until_deps_complete: true
 			icon: "unusualprehistory:palaeo_bucket"
 			id: "73E05E030F2760D0"
 			rewards: [
@@ -640,15 +575,14 @@
 					type: "item"
 				}
 			]
-			title: "&5&lSkin of Survival"
-			x: 0.5d
-			y: 4.0d
+			title: "Palaeophis"
+			x: 1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4FACC1C88C7F81CA"]
 			dependency_requirement: "all_started"
 			description: ["&fThe &6Ammonite&r can be harvested for its durable &ashell fragments&r. These fragments can be transformed into a &bwar pick&r or reconstructed into a full shell. A true relic of ancient oceans!"]
-			hide_until_deps_complete: true
 			icon: "unusualprehistory:ammon_bucket"
 			id: "6CA5F12F142F46F5"
 			rewards: [
@@ -706,7 +640,7 @@
 					type: "item"
 				}
 			]
-			title: "&6&lA Shelled Fella"
+			title: "Ammonite"
 			x: 3.0d
 			y: 2.5d
 		}
@@ -719,14 +653,13 @@
 				title: "Ancient Plants"
 				type: "checkmark"
 			}]
-			x: -4.0d
-			y: 2.0d
+			x: -4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["73E05E030F2760D0"]
 			dependency_requirement: "one_started"
 			description: [""]
-			hide_until_deps_visible: true
 			icon: {
 				Count: 1
 				id: "unusualprehistory:shedscale_helmet"
@@ -735,16 +668,12 @@
 				}
 			}
 			id: "14A432951F946A58"
+			optional: true
 			rewards: [
 				{
 					id: "1A47985C95676093"
 					type: "xp_levels"
 					xp_levels: 5
-				}
-				{
-					id: "270403C884A7925D"
-					item: "medieval_craft_weapons:titanite_ingot_4"
-					type: "item"
 				}
 				{
 					id: "615F221DB32A7641"
@@ -800,8 +729,8 @@
 				}
 			]
 			title: "&3&lSwimming with Grace"
-			x: 0.5d
-			y: 5.5d
+			x: 3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
@@ -811,9 +740,9 @@
 				""
 				"A small but vital link in the prehistoric ecosystem!"
 			]
-			hide_until_deps_complete: true
 			icon: "unusualprehistory:talpanas_egg"
 			id: "15B6B2F4A2BFC503"
+			optional: true
 			rewards: [
 				{
 					id: "2BC56E6F4AEABE08"
@@ -845,18 +774,18 @@
 					type: "item"
 				}
 			]
-			title: "&7&lRoot Dwellers"
-			x: -7.0d
-			y: -1.0d
+			title: "Talpanas"
+			x: -9.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
 			dependency_requirement: "all_started"
 			description: [
-				"&fTame a &aTriceratops&r using &aGinkgo fruit&r. As they grow, they shed their horns, perfect for crafting a &cpowerful shield&r. "
-				"A defensive ally for any prehistoric adventure!"
+				"As the &aTriceratops&r grows, it will shed its &9horns&r, a vital crafting component."
+				""
+				"The can also tame it using &9Ginkgo fruit&r. This (with the help of a &9saddle&r) will enable you to ride it around."
 			]
-			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "unusualprehistory:trike_shield"
@@ -883,7 +812,6 @@
 					type: "item"
 				}
 			]
-			subtitle: "&7A mighty shield awaits..."
 			tasks: [
 				{
 					id: "72F913CC6465FC21"
@@ -896,35 +824,23 @@
 					type: "item"
 				}
 				{
-					id: "51A02A3F518AA55E"
-					item: {
-						Count: 1
-						id: "unusualprehistory:trike_shield"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "1960B90E0C89CAAA"
 					item: "unusualprehistory:ginkgo_fruit"
 					type: "item"
 				}
-				{
-					id: "0B7DC876C1303AE3"
-					item: "minecraft:saddle"
-					type: "item"
-				}
 			]
-			title: "&6&lHorned Guardians"
+			title: "Triceratops"
 			x: -7.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
 			dependency_requirement: "all_started"
-			description: ["&fCan be pacified with the correct meat. Block its mighty blows, and its powerful &cscutes&r can be transformed into an &aimpenetrable helmet&r."]
+			description: [
+				"Its &9scutes&r will be useful in crafting. They will sometimes drop when you block an attack from it with your &9shield&r."
+				""
+				"If you have all the scutes you need, you can tame it with &9raw cotylorhynchus&r."
+			]
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
@@ -947,16 +863,10 @@
 					type: "item"
 				}
 			]
-			subtitle: "&7Deflect, Survive, Dominate"
 			tasks: [
 				{
 					id: "52C8DB625E64FB9F"
 					item: "unusualprehistory:majunga_eggs"
-					type: "item"
-				}
-				{
-					id: "210005F6963461AA"
-					item: "unusualprehistory:raw_coty"
 					type: "item"
 				}
 				{
@@ -975,21 +885,10 @@
 					item: "unusualprehistory:majunga_scute"
 					type: "item"
 				}
-				{
-					id: "368A21D494DC445F"
-					item: {
-						Count: 1
-						id: "unusualprehistory:majunga_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
 			]
-			title: "&4&lHard Skull"
-			x: -7.0d
-			y: 2.5d
+			title: "Majungasaurus"
+			x: -5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5C34CDA20CC8F25A"]
@@ -997,6 +896,7 @@
 			description: ["&fCollect &aGinkgo Saplings&r and their fruits to &6restore the legacy&r of prehistoric flora. These resilient trees carry the &bessence of ancient forests&r."]
 			icon: "unusualprehistory:ginkgo_sapling"
 			id: "446D75D4092DCCF5"
+			optional: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -1034,8 +934,8 @@
 				}
 			]
 			title: "&2&lRoots of the Past"
-			x: -5.5d
-			y: 4.0d
+			x: -1.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["6A226F7D1EFAC888"]
@@ -1046,8 +946,8 @@
 				title: "Ancient Fuzzballs"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -1.5d
+			x: -7.0d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -1055,9 +955,9 @@
 				"4FACC1C88C7F81CA"
 			]
 			description: ["&fExplore the ancient waters and gather &aunique aquatic flora&r that once thrived in prehistoric oceans. From lush &3kelp&r to delicate &bcoral&r, each plant is a piece of history waiting to resurface."]
-			hide_until_deps_complete: true
 			icon: "unusualprehistory:archaefructus"
 			id: "1AF186874427A88C"
+			optional: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -1100,15 +1000,15 @@
 				}
 			]
 			title: "&3&lAquatic Wonders"
-			x: -2.0d
-			y: 3.5d
+			x: -3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["5C34CDA20CC8F25A"]
 			description: ["&fCollect &aplants and flowers&r that once painted the prehistoric landscapes. From towering ferns to vibrant wildflowers, these specimens represent the lush beauty of ancient Earth."]
-			hide_until_deps_complete: true
 			icon: "unusualprehistory:bennett"
 			id: "2ADFA0D6450D2199"
+			optional: true
 			rewards: [
 				{
 					exclude_from_claim_all: true
@@ -1156,8 +1056,8 @@
 				}
 			]
 			title: "&2&lEarth’s Green Heritage"
-			x: -4.0d
-			y: 4.5d
+			x: -5.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5C34CDA20CC8F25A"]
@@ -1173,53 +1073,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"3C93415319B18E01"
-				"446D75D4092DCCF5"
-			]
-			dependency_requirement: "all_started"
-			description: ["&fBeware the &cPachycephalosaurus&r's powerful headbutt. Feed them &aGinkgo Seeds&r to avoid a concussion and earn their trust!"]
-			hide_until_deps_complete: true
-			icon: "unusualprehistory:pachy_eggs"
-			id: "37E8D8D363C1C6A7"
-			rewards: [
-				{
-					id: "0516E9BBE903662C"
-					type: "xp_levels"
-					xp_levels: 2
-				}
-				{
-					id: "20574BDD985F70EA"
-					item: {
-						Count: 1
-						id: "minecraft:chainmail_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			subtitle: "&7A walking battering ram..."
-			tasks: [
-				{
-					id: "583C027F9859ADEA"
-					item: "unusualprehistory:pachy_eggs"
-					type: "item"
-				}
-				{
-					id: "52131E92FD6AEBA5"
-					item: "unusualprehistory:raw_ginkgo_seeds"
-					type: "item"
-				}
-			]
-			title: "&c&lWatch Your Head"
-			x: -6.0d
-			y: 2.0d
+			x: 3.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
@@ -1229,7 +1084,6 @@
 				""
 				"This peaceful approach will earn you powerful materials for crafting legendary gear."
 			]
-			hide_until_deps_complete: true
 			icon: "unusualprehistory:rex_head"
 			id: "50A76A9371A1DFEA"
 			rewards: [
@@ -1237,11 +1091,6 @@
 					id: "48B3B152E4E1B2F2"
 					type: "xp_levels"
 					xp_levels: 7
-				}
-				{
-					id: "5F62E216154E361E"
-					item: "medieval_craft_weapons:titanite_chunk_7"
-					type: "item"
 				}
 				{
 					count: 3
@@ -1318,7 +1167,7 @@
 					type: "item"
 				}
 			]
-			title: "&6&lThe Fall of the King"
+			title: "The Mighty T. Rex"
 			x: -8.5d
 			y: 1.0d
 		}
@@ -1326,21 +1175,13 @@
 			dependencies: ["1B575536787142FF"]
 			dependency_requirement: "all_started"
 			description: ["&fTrade special fruits like &eZuloagae&r with this ancient ape to gain its trust. Its size and strength make it a &bvaluable ally&r in the wild.&7"]
-			hide_until_deps_complete: true
 			icon: "unusualprehistory:giganto_embryo"
 			id: "4BBD2D5DDAC7922D"
-			rewards: [
-				{
-					id: "0EAAFDB4464689F2"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-				{
-					id: "58AD33BB3A794529"
-					item: "medieval_craft_weapons:titanite_ingot_4"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0EAAFDB4464689F2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			subtitle: "&7\"A friend lost in time…\""
 			tasks: [
 				{
@@ -1355,8 +1196,8 @@
 				}
 			]
 			title: " &6&lGigantopithecus"
-			x: 6.0d
-			y: 1.0d
+			x: 5.0d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -1682,6 +1523,7 @@
 				"The good news is that when it does so, it can drop some of its &9feathers&r. These feathers are useful in several recipes, and much more effective at making &9fur balls&r."
 			]
 			id: "7316B33460141583"
+			optional: true
 			tasks: [{
 				id: "0F00A2B74A22F018"
 				item: {
@@ -1691,8 +1533,9 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -5.5d
+			title: "Velociraptors"
+			x: -11.5d
+			y: -3.0d
 		}
 	]
 	title: "&a4.&r Dinosaurs"

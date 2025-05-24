@@ -8,12 +8,12 @@
           {
             "type": "minecraft:item",
             "weight": 50,
-            "name": "minecraft:iron_ingot"
+            "name": "minecraft:raw_iron"
           },
           {
             "type": "minecraft:item",
             "weight": 30,
-            "name": "minecraft:gold_ingot"
+            "name": "minecraft:raw_gold"
           },
           {
             "type": "minecraft:item",

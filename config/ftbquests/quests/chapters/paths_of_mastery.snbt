@@ -369,8 +369,8 @@
 				type: "item"
 			}]
 			title: "Path of the Turtle"
-			x: -7.5d
-			y: 2.0d
+			x: -8.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -529,7 +529,7 @@
 		}
 		{
 			dependencies: ["0329AD75534DCCCA"]
-			description: ["The underground world is important too. Explore the caves, befriend one its native fauna, and perhaps you will gain their insight."]
+			description: ["The underground world is important too. Explore the caves, befriend its native fauna/flora, and perhaps you will gain their insight."]
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -601,6 +601,7 @@
 				}
 			}
 			id: "13C07E06513000D0"
+			subtitle: "To catch a predator"
 			tasks: [{
 				advancement: "alexsmobs:alexsmobs/tame_tarantula_hawk"
 				criterion: ""
@@ -640,8 +641,8 @@
 				type: "item"
 			}]
 			title: "Path of the Turtle 2"
-			x: -6.0d
-			y: 2.0d
+			x: -6.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["277D423AD980A93C"]
@@ -676,7 +677,7 @@
 			}]
 			title: "Path of the Turtle A2"
 			x: -4.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["277D423AD980A93C"]
@@ -733,7 +734,104 @@
 			}]
 			title: "Path of the Turtle B1"
 			x: -5.0d
-			y: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "3E9A852F048BC209"
+			rewards: [{
+				id: "2FF44CD238E6EA21"
+				item: {
+					Count: 1
+					id: "cyclic:heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "049F51800ACA5EC4"
+				item: {
+					Count: 5
+					id: "minecraft:scute"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			id: "00BD2DDCF3647EAE"
+			rewards: [{
+				id: "524C50414201C6B6"
+				item: {
+					Count: 1
+					id: "cyclic:heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "31463BCA836A2B6E"
+				item: {
+					Count: 1
+					id: "alexsmobs:spiked_scute"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			description: [
+				"A Turtle always carries its house with it. Why not carry other things as well?"
+				""
+				"Study the &aKangaroo&r and learn the art of keeping an extra pocket handy."
+			]
+			icon: {
+				Count: 1
+				id: "cyclic:inventory_cake"
+				tag: { }
+			}
+			id: "1F6A9D38155568BA"
+			rewards: [{
+				id: "3E86DE53CE46BE9F"
+				item: {
+					Count: 1
+					id: "cyclic:inventory_cake"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 4L
+					id: "5C34BD721C99EEBA"
+					item: {
+						Count: 4
+						id: "alexsmobs:kangaroo_hide"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 6L
+					id: "32A45E0F0BEB4832"
+					item: {
+						Count: 6
+						id: "alexsdelight:cooked_kangaroo_shank"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Carry your storage"
+			x: -3.5d
+			y: 1.5d
 		}
 	]
 	title: "Paths of Mastery"

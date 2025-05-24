@@ -55,8 +55,8 @@
 				type: "checkmark"
 			}]
 			title: "It Starts"
-			x: -6.0d
-			y: -0.5d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["542CDE05F61489C1"]
@@ -106,8 +106,8 @@
 				type: "checkmark"
 			}]
 			title: "Mantis Shrimp"
-			x: -3.0d
-			y: -0.5d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4C415A8AB88183F2"]
@@ -161,8 +161,8 @@
 				}
 			]
 			title: "Compressed Cobblestone"
-			x: 3.0d
-			y: -0.5d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0E0B7CEB802E2BA0"]
@@ -212,6 +212,7 @@
 			dependencies: [
 				"18592710C935A9C9"
 				"5C4F9A1EDB08C532"
+				"4342896FE9651396"
 			]
 			description: [
 				"You did it! You are ready to start building your zoo, and doing the work necessary to bring back The Ultimate Zookeeper."
@@ -243,8 +244,8 @@
 				type: "checkmark"
 			}]
 			title: "Intro Complete!"
-			x: 6.0d
-			y: -0.5d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["542CDE05F61489C1"]
@@ -261,7 +262,7 @@
 				title: "About this modpack"
 				type: "checkmark"
 			}]
-			x: -3.0d
+			x: 2.0d
 			y: -3.5d
 		}
 		{
@@ -279,8 +280,8 @@
 				title: "The Research"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -3.5d
+			x: 2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0E3E391DBE4589F9"]
@@ -295,24 +296,26 @@
 				title: "The Zoo"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -3.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["542CDE05F61489C1"]
 			id: "397FE29AD20529EC"
 			tasks: [{
 				id: "32686CC0BCD84E55"
 				title: "Using this quest book"
 				type: "checkmark"
 			}]
-			x: -3.0d
-			y: 2.5d
+			x: -2.0d
+			y: -3.5d
 		}
 		{
+			dependencies: ["397FE29AD20529EC"]
 			description: [
 				"When you pull up your inventory, JEI will show you all the items available to you on the right. Feel free to search this list. Left and right-click items to see their recipes."
 				""
-				"Some items that you are familiar with with have different recipes in this modpack, so make sure to take a look!"
+				"Some items that you are familiar with will have different recipes in this modpack. Some, like most metal armors, are not available at all. Some will not be unlocked until you have completed the appropriate quests. Make sure to check!"
 				""
 				"You can also use JEI to see what items different mobs drop, and what items breed them. This will be very valuable information."
 			]
@@ -322,10 +325,11 @@
 				title: "Using JEI"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: -2.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["75DD55D68ACC8C94"]
 			description: [
 				"The following mods are core to this modpack:"
 				"- Alex's Mobs"
@@ -333,8 +337,11 @@
 				"- Genetic Animals"
 				"- Rats"
 				"- Tinker's Contruct"
+				"- Unusual Prehistory"
 				""
 				"If you are confused about something, you may want to search for thier wikis, several of which are linked in the &2Helpful Critters&r section. That section will also give you details about the most important animals, especially where we have made changes like adding foods which will tame them."
+				""
+				"Take note of any animals you see while travelling. You may want to come back for them later. And if you find fossils, make sure to hold onto them for later."
 			]
 			id: "4342896FE9651396"
 			subtitle: "This one goes out to the ones I loved"
@@ -344,7 +351,7 @@
 				type: "checkmark"
 			}]
 			title: "Major Mods"
-			x: 3.0d
+			x: -2.0d
 			y: 2.5d
 		}
 	]

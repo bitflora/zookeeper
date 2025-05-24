@@ -78,6 +78,16 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       }
     );
 
+    e.remove({ output: 'minecraft:saddle'});
+    e.shaped('minecraft:saddle', [
+        'LLL',
+        'LFL',
+        'F F'
+    ], {
+        L: 'minecraft:leather',
+        F: 'kubejs:fur_ball'
+    });
+
     // add back in select Cyclic items
     e.shaped('1x cyclic:clock', [
         'CCC',
@@ -194,7 +204,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'FMF'
     ], {
         W: 'minecraft:string',
-        D: 'minecraft:diamond',
+        X: 'minecraft:jungle_sapling',
         F: 'kubejs:fur_ball',
         M: 'kubejs:meatwad'
     });
@@ -205,7 +215,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'FMF'
     ], {
         W: 'minecraft:ink_sac',
-        D: 'minecraft:diamond',
+        X: 'minecraft:diamond',
         F: 'kubejs:fur_ball',
         M: 'kubejs:meatwad'
     });
@@ -216,7 +226,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'FMF'
     ], {
         W: 'minecraft:pufferfish',
-        D: 'minecraft:diamond',
+        X: 'minecraft:diamond',
         F: 'kubejs:fur_ball',
         M: 'kubejs:meatwad'
     });
@@ -760,6 +770,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ], {
         I: 'minecraft:iron_ingot',
         G: 'minecraft:glass',
+        O: 'unusualprehistory:organic_ooze',
         B: 'kubejs:brain',
         C: 'minecraft:copper_ingot',
     });
