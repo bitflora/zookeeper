@@ -55,8 +55,8 @@
 				type: "item"
 			}]
 			title: "The Secret of the Ooze"
-			x: -10.0d
-			y: -5.5d
+			x: -11.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["75D3BEFEA09CF5D9"]
@@ -90,8 +90,8 @@
 					type: "item"
 				}
 			]
-			x: -8.5d
-			y: -5.5d
+			x: -11.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["4014DB068B97D666"]
@@ -110,8 +110,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: -5.5d
+			x: -11.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["566FE43D09E1B7A3"]
@@ -147,8 +147,8 @@
 					type: "observation"
 				}
 			]
-			x: -2.5d
-			y: -9.5d
+			x: -12.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["228ACCC3FDFBE7AA"]
@@ -180,8 +180,8 @@
 				}
 			]
 			title: "Smilodon Success"
-			x: -0.5d
-			y: -9.5d
+			x: -13.0d
+			y: -15.5d
 		}
 		{
 			dependencies: ["1B575536787142FF"]
@@ -240,8 +240,8 @@
 				}
 			]
 			title: "Megatherium"
-			x: 1.0d
-			y: -10.5d
+			x: -12.5d
+			y: -20.5d
 		}
 		{
 			dependencies: [
@@ -260,8 +260,8 @@
 				type: "item"
 			}]
 			title: "Wombs of Steel"
-			x: 1.5d
-			y: -8.5d
+			x: -14.0d
+			y: -17.5d
 		}
 		{
 			dependencies: ["566FE43D09E1B7A3"]
@@ -293,8 +293,8 @@
 				}
 			]
 			title: "Encrusted"
-			x: -2.5d
-			y: -7.5d
+			x: -15.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["3B91C2231946BBAB"]
@@ -327,8 +327,8 @@
 				}
 			]
 			title: "Cold Storage"
-			x: -0.5d
-			y: -7.5d
+			x: -16.0d
+			y: -16.5d
 		}
 		{
 			dependencies: ["1B575536787142FF"]
@@ -374,8 +374,8 @@
 				}
 			]
 			title: "Wooly Mammoth"
-			x: 2.5d
-			y: -10.5d
+			x: -14.0d
+			y: -23.0d
 		}
 		{
 			dependencies: ["6A226F7D1EFAC888"]
@@ -386,8 +386,8 @@
 				title: "Ancient Eggs"
 				type: "checkmark"
 			}]
-			x: -7.0d
-			y: -2.5d
+			x: -10.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["6A226F7D1EFAC888"]
@@ -398,8 +398,8 @@
 				title: "Ancient Oceans"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: -4.5d
+			x: -8.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
@@ -471,8 +471,8 @@
 				}
 			]
 			title: "Austroraptors"
-			x: -11.5d
-			y: -0.5d
+			x: -10.0d
+			y: -18.5d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
@@ -511,21 +511,10 @@
 					item: "unusualprehistory:antarcto_plate"
 					type: "item"
 				}
-				{
-					id: "6D84421392CA48F9"
-					item: {
-						Count: 1
-						id: "unusualprehistory:primal_macuahuitl"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
 			]
 			title: "Antarctopelta"
-			x: -8.0d
-			y: -1.0d
+			x: -4.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["4FACC1C88C7F81CA"]
@@ -552,8 +541,8 @@
 				type: "item"
 			}]
 			title: "Eryon"
-			x: 1.0d
-			y: 0.0d
+			x: -6.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["4FACC1C88C7F81CA"]
@@ -598,8 +587,8 @@
 				}
 			]
 			title: "Palaeophis"
-			x: 1.0d
-			y: 3.0d
+			x: -5.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["4FACC1C88C7F81CA"]
@@ -669,8 +658,8 @@
 				}
 			]
 			title: "Ammonite"
-			x: 3.0d
-			y: 2.5d
+			x: -2.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["6A226F7D1EFAC888"]
@@ -681,8 +670,8 @@
 				title: "Ancient Plants"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: -6.5d
+			x: -15.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["73E05E030F2760D0"]
@@ -757,8 +746,8 @@
 				}
 			]
 			title: "&3&lSwimming with Grace"
-			x: 3.5d
-			y: 0.5d
+			x: -3.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
@@ -809,8 +798,8 @@
 				}
 			]
 			title: "Talpanas"
-			x: -9.0d
-			y: -4.0d
+			x: -11.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
@@ -864,8 +853,8 @@
 				}
 			]
 			title: "Triceratops"
-			x: -7.0d
-			y: 1.0d
+			x: -4.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
@@ -921,13 +910,13 @@
 				}
 			]
 			title: "Majungasaurus"
-			x: -5.5d
-			y: 1.5d
+			x: -7.0d
+			y: -17.0d
 		}
 		{
 			dependencies: ["5C34CDA20CC8F25A"]
 			dependency_requirement: "one_started"
-			description: ["&fCollect &aGinkgo Saplings&r and their fruits to &6restore the legacy&r of prehistoric flora. These resilient trees carry the &bessence of ancient forests&r."]
+			description: ["A living fossil, the &aGinkgo tree&r extends all the way back to the Jurassic epoch. Growing them will help give your zoo a more prehistoric vibe. You can also use the &9fruits&r to tame some ancient animals."]
 			icon: "unusualprehistory:ginkgo_sapling"
 			id: "446D75D4092DCCF5"
 			optional: true
@@ -967,9 +956,9 @@
 					type: "item"
 				}
 			]
-			title: "&2&lRoots of the Past"
-			x: -1.0d
-			y: -6.5d
+			title: "Ginkgo Trees"
+			x: -19.0d
+			y: -15.5d
 		}
 		{
 			dependencies: ["6A226F7D1EFAC888"]
@@ -980,14 +969,11 @@
 				title: "Ancient Fuzzballs"
 				type: "checkmark"
 			}]
-			x: -7.0d
-			y: -8.5d
+			x: -14.0d
+			y: -12.5d
 		}
 		{
-			dependencies: [
-				"5C34CDA20CC8F25A"
-				"4FACC1C88C7F81CA"
-			]
+			dependencies: ["5C34CDA20CC8F25A"]
 			description: ["&fExplore the ancient waters and gather &aunique aquatic flora&r that once thrived in prehistoric oceans. From lush &3kelp&r to delicate &bcoral&r, each plant is a piece of history waiting to resurface."]
 			icon: "unusualprehistory:archaefructus"
 			id: "1AF186874427A88C"
@@ -1034,8 +1020,8 @@
 				}
 			]
 			title: "&3&lAquatic Wonders"
-			x: -3.5d
-			y: -5.5d
+			x: -18.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["5C34CDA20CC8F25A"]
@@ -1090,12 +1076,16 @@
 				}
 			]
 			title: "&2&lEarth’s Green Heritage"
-			x: -5.5d
-			y: -7.0d
+			x: -18.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["5C34CDA20CC8F25A"]
-			description: ["This ancient version of bamboo grows and has many of the same uses as it modern conterpart."]
+			description: [
+				"This ancient version of bamboo grows and has many of the same uses as it modern conterpart."
+				""
+				"&aGigantopithecus&r is also a fan of this plant."
+			]
 			id: "69903CD6D1E42BC4"
 			subtitle: "Ancient Bamboo"
 			tasks: [{
@@ -1107,8 +1097,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: -6.0d
+			x: -18.0d
+			y: -17.5d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
@@ -1123,6 +1113,7 @@
 				id: "alexsmobs:tab_icon"
 				tag: {
 					DisplayEntityType: "unusualprehistory:rex"
+					DisplayMobFlags: 50
 				}
 			}
 			id: "50A76A9371A1DFEA"
@@ -1208,13 +1199,13 @@
 				}
 			]
 			title: "The Mighty T. Rex"
-			x: -8.5d
-			y: 1.0d
+			x: -8.0d
+			y: -21.0d
 		}
 		{
 			dependencies: ["1B575536787142FF"]
 			dependency_requirement: "all_started"
-			description: ["&fTrade special fruits like &eZuloagae&r with this ancient ape to gain its trust. Its size and strength make it a &bvaluable ally&r in the wild.&7"]
+			description: ["Trade special fruits like &eZuloagae&r with this ancient ape to gain its trust. You're going to be wanting to make a bunch of trades, so maybe you'll want to revive more than one of these."]
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -1228,7 +1219,6 @@
 				type: "xp_levels"
 				xp_levels: 5
 			}]
-			subtitle: "&7\"A friend lost in time…\""
 			tasks: [
 				{
 					id: "3BAB5732A04613EC"
@@ -1241,9 +1231,9 @@
 					type: "item"
 				}
 			]
-			title: " &6&lGigantopithecus"
-			x: 5.0d
-			y: -8.5d
+			title: "Gigantopithecus"
+			x: -15.5d
+			y: -20.0d
 		}
 		{
 			dependencies: [
@@ -1315,8 +1305,8 @@
 				}
 			]
 			title: "&4&lExotic Trade"
-			x: 6.0d
-			y: 2.5d
+			x: -18.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["440356C8C654E266"]
@@ -1392,8 +1382,8 @@
 				}
 			]
 			title: "&e&lLuxurious Exchange"
-			x: 5.5d
-			y: 4.0d
+			x: -20.0d
+			y: -22.5d
 		}
 		{
 			dependencies: ["328EA9E46A99B6B6"]
@@ -1481,8 +1471,8 @@
 				}
 			]
 			title: "&3&lFragrant Rewards"
-			x: 5.0d
-			y: 5.5d
+			x: -20.5d
+			y: -25.0d
 		}
 		{
 			dependencies: ["07D0FC746A47AC28"]
@@ -1558,8 +1548,8 @@
 				}
 			]
 			title: "&d&lPristine Gifts"
-			x: 4.0d
-			y: 6.5d
+			x: -22.5d
+			y: -25.5d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
@@ -1577,18 +1567,47 @@
 			}
 			id: "7316B33460141583"
 			optional: true
+			tasks: [
+				{
+					id: "0F00A2B74A22F018"
+					item: {
+						Count: 1
+						id: "unusualprehistory:raptor_eggs"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4756F0D2A3C8FA0B"
+					item: {
+						Count: 1
+						id: "unusualprehistory:raptor_feathers"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Velociraptors"
+			x: -11.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["4DEF8983912A44B7"]
+			description: ["Finally, it is possible to construct &9maille&r, which in turn opens up the possibilities of &9plate armor&r."]
+			id: "45A3392BC3E9D954"
 			tasks: [{
-				id: "0F00A2B74A22F018"
+				id: "1A3156DADD7E5EC2"
 				item: {
 					Count: 1
-					id: "unusualprehistory:raptor_eggs"
-					tag: { }
+					id: "tconstruct:maille"
+					tag: {
+						Material: "tconstruct:ancient_hide"
+					}
 				}
 				type: "item"
 			}]
-			title: "Velociraptors"
-			x: -11.5d
-			y: -3.0d
+			x: -3.0d
+			y: -19.5d
 		}
 	]
 	title: "&a4.&r Dinosaurs"

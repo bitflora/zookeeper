@@ -775,6 +775,15 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         C: 'minecraft:copper_ingot',
     });
 
+    e.remove({output: "tconstruct:maille"});
+    e.shaped(Item.of('tconstruct:maille', '{Material:"tconstruct:ancient_hide"}'), [
+        'P P',
+        'PPP',
+        'PPP'
+    ], {
+        P: 'unusualprehistory:antarcto_plate',
+    });
+
 
   });
 

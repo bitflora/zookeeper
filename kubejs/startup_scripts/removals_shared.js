@@ -12,4 +12,3 @@ removeArmor("minecraft:iron");
 removeArmor("minecraft:golden");
 removeArmor("minecraft:diamond");
 removeArmor("minecraft:netherite");
-removeArmor("tconstruct:plate");
