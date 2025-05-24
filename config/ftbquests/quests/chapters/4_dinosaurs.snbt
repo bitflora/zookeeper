@@ -155,8 +155,10 @@
 			description: ["&9Smilidons&r are the first of many animals to be revived. Get at least two of them. When they groom each other, they'll drop &9smilodon fur&r. This special fur is far more effective at making &9fur balls&r than modern fur."]
 			icon: {
 				Count: 1
-				id: "unusualprehistory:smilo_fur"
-				tag: { }
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:smilodon"
+				}
 			}
 			id: "49A910011E2190A0"
 			tasks: [
@@ -187,9 +189,9 @@
 			description: ["Raise the &aMegatherium&r from infancy by carrying it on your back, and it’ll defend you from attack. Think of it as a very very large puppy."]
 			icon: {
 				Count: 1
-				id: "unusualprehistory:sloth_pouch_armor"
+				id: "alexsmobs:tab_icon"
 				tag: {
-					Damage: 0
+					DisplayEntityType: "unusualprehistory:megatherium"
 				}
 			}
 			id: "5FB9AEA859B8D3B7"
@@ -213,7 +215,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "&7A Gentle Giant's Bond"
+			subtitle: "Got your back bro"
 			tasks: [
 				{
 					id: "683F38834C784E8F"
@@ -266,8 +268,10 @@
 			description: ["Encrusted DNA has been corrupted, but still contains useful information. Alas, you need to fight to get it."]
 			icon: {
 				Count: 1
-				id: "unusualprehistory:encrusted_sack"
-				tag: { }
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:encrusted"
+				}
 			}
 			id: "3B91C2231946BBAB"
 			tasks: [
@@ -288,7 +292,7 @@
 					value: 1L
 				}
 			]
-			title: "The Encrusted"
+			title: "Encrusted"
 			x: -2.5d
 			y: -7.5d
 		}
@@ -335,7 +339,13 @@
 				"If you are able to defeat a &aTyrannasaurus Rex&r and craft the &9Tyrant's Crown&r, you can also &9shear&r these beasts for various items."
 			]
 			hide_until_deps_visible: true
-			icon: "unusualprehistory:mammoth_meatball"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:mammoth"
+				}
+			}
 			id: "04EA7A40090EEDC9"
 			rewards: [
 				{
@@ -350,7 +360,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "&7Command the herd’s loyalty... or their meat."
+			subtitle: "Manny did save that human, after all"
 			tasks: [
 				{
 					id: "0E2B19B0E16650C8"
@@ -397,9 +407,9 @@
 			description: ["Like the &aVelociraptor&r, these raptors have special &9feathers&r that can be used to more efficiently make &9fur balls&r, or craft &9boots&r that will ignore fall damage. They will simply drop their &9feathers&r occasionally as they groom themselves."]
 			icon: {
 				Count: 1
-				id: "unusualprehistory:austro_boots"
+				id: "alexsmobs:tab_icon"
 				tag: {
-					Damage: 0
+					DisplayEntityType: "unusualprehistory:austroraptor"
 				}
 			}
 			id: "5694EC129C10CD10"
@@ -460,7 +470,7 @@
 					type: "item"
 				}
 			]
-			title: "Austraptors"
+			title: "Austroraptors"
 			x: -11.5d
 			y: -0.5d
 		}
@@ -470,9 +480,9 @@
 			description: ["These spiky beasts don't appreciate monsters any more than you do. And their fight against monsters can have a side-benefits for you; sometimes it will cause them to drop their &9plates&r, a vital crafting ingredient."]
 			icon: {
 				Count: 1
-				id: "unusualprehistory:primal_macuahuitl"
+				id: "alexsmobs:tab_icon"
 				tag: {
-					Damage: 0
+					DisplayEntityType: "unusualprehistory:antarctopelta"
 				}
 			}
 			id: "4DEF8983912A44B7"
@@ -521,7 +531,13 @@
 			dependencies: ["4FACC1C88C7F81CA"]
 			dependency_requirement: "all_started"
 			description: ["The &aEryon&r loves digging in mud. Sometimes he uncovers junk, sometimes &9fossils&r that you can display."]
-			icon: "unusualprehistory:eryon_fossil"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:eryon"
+				}
+			}
 			id: "2C5CD39AD677CC01"
 			optional: true
 			rewards: [{
@@ -529,7 +545,7 @@
 				type: "xp_levels"
 				xp_levels: 2
 			}]
-			subtitle: "An Archaeologist of Himself"
+			subtitle: "It belongs in a museum"
 			tasks: [{
 				id: "62E69D3BE277E7F6"
 				item: "unusualprehistory:eryon_eggs"
@@ -543,7 +559,13 @@
 			dependencies: ["4FACC1C88C7F81CA"]
 			dependency_requirement: "all_started"
 			description: ["&fThe &6Palaeophis&r sheds its skin over time, leaving behind durable &7traces of history&r. Use them for crafting or trading. Its past is your gain!"]
-			icon: "unusualprehistory:palaeo_bucket"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:baby_palaophis"
+				}
+			}
 			id: "73E05E030F2760D0"
 			rewards: [
 				{
@@ -583,7 +605,13 @@
 			dependencies: ["4FACC1C88C7F81CA"]
 			dependency_requirement: "all_started"
 			description: ["&fThe &6Ammonite&r can be harvested for its durable &ashell fragments&r. These fragments can be transformed into a &bwar pick&r or reconstructed into a full shell. A true relic of ancient oceans!"]
-			icon: "unusualprehistory:ammon_bucket"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:ammon"
+				}
+			}
 			id: "6CA5F12F142F46F5"
 			rewards: [
 				{
@@ -740,7 +768,13 @@
 				""
 				"A small but vital link in the prehistoric ecosystem!"
 			]
-			icon: "unusualprehistory:talpanas_egg"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:talpanas"
+				}
+			}
 			id: "15B6B2F4A2BFC503"
 			optional: true
 			rewards: [
@@ -788,9 +822,9 @@
 			]
 			icon: {
 				Count: 1
-				id: "unusualprehistory:trike_shield"
+				id: "alexsmobs:tab_icon"
 				tag: {
-					Damage: 0
+					DisplayEntityType: "unusualprehistory:trike"
 				}
 			}
 			id: "239FC7726C5081CE"
@@ -844,9 +878,9 @@
 			hide_until_deps_visible: true
 			icon: {
 				Count: 1
-				id: "unusualprehistory:majunga_helmet"
+				id: "alexsmobs:tab_icon"
 				tag: {
-					Damage: 0
+					DisplayEntityType: "unusualprehistory:majunga"
 				}
 			}
 			id: "0373B0A1BBCF3A0D"
@@ -1084,7 +1118,13 @@
 				""
 				"This peaceful approach will earn you powerful materials for crafting legendary gear."
 			]
-			icon: "unusualprehistory:rex_head"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:rex"
+				}
+			}
 			id: "50A76A9371A1DFEA"
 			rewards: [
 				{
@@ -1175,7 +1215,13 @@
 			dependencies: ["1B575536787142FF"]
 			dependency_requirement: "all_started"
 			description: ["&fTrade special fruits like &eZuloagae&r with this ancient ape to gain its trust. Its size and strength make it a &bvaluable ally&r in the wild.&7"]
-			icon: "unusualprehistory:giganto_embryo"
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:gigantopithicus"
+				}
+			}
 			id: "4BBD2D5DDAC7922D"
 			rewards: [{
 				id: "0EAAFDB4464689F2"
@@ -1522,6 +1568,13 @@
 				""
 				"The good news is that when it does so, it can drop some of its &9feathers&r. These feathers are useful in several recipes, and much more effective at making &9fur balls&r."
 			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:veloci"
+				}
+			}
 			id: "7316B33460141583"
 			optional: true
 			tasks: [{
