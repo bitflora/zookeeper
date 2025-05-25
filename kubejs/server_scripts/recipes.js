@@ -19,7 +19,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'C C',
         'CRC'
       ], {
-        C: 'compressedblocks:c1_cobblestone',
+        C: 'compressedblocks:c0_cobblestone',
         R: 'minecraft:redstone',
       }
     );
@@ -30,7 +30,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'CBC',
         'CRC'
       ], {
-        C: 'compressedblocks:c1_cobblestone',
+        C: 'compressedblocks:c0_cobblestone',
         B: 'minecraft:bow',
         R: 'minecraft:redstone',
       }
@@ -42,7 +42,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'RRQ',
         'CCC'
       ], {
-        C: 'compressedblocks:c1_cobblestone',
+        C: 'compressedblocks:c0_cobblestone',
         R: 'minecraft:redstone',
         Q: 'minecraft:quartz'
       }
@@ -54,7 +54,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'TRT',
         'CCC'
       ], {
-        C: 'compressedblocks:c1_cobblestone',
+        C: 'compressedblocks:c0_cobblestone',
         R: 'minecraft:redstone',
         T: 'minecraft:redstone_torch'
       }
@@ -72,7 +72,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'IBI',
         'CCC'
       ], {
-        C: 'compressedblocks:c1_cobblestone',
+        C: 'compressedblocks:c0_cobblestone',
         I: 'minecraft:iron_bars',
         B: 'kubejs:brain'
       }
@@ -94,7 +94,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'FLT',
         'CCC'
       ], {
-        C: 'compressedblocks:c1_cobblestone',
+        C: 'compressedblocks:c0_cobblestone',
         F: 'kubejs:fur_ball',
         L: 'minecraft:clock',
         T: 'minecraft:redstone_torch'
@@ -242,7 +242,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ], {
         B: 'minecraft:iron_bars',
         F: 'kubejs:fur_ball',
-        C: 'compressedblocks:c1_cobblestone',
+        C: 'compressedblocks:c0_cobblestone',
     });
 
     e.remove({ output: 'rats:rat_breeding_lantern' });
