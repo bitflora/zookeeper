@@ -689,7 +689,18 @@
 		}
 		{
 			dependencies: ["497CC95523D1F210"]
+			description: ["You still have a Mantis Shrimp working in your cobblestone farm, right? Make some compressed cobblestone from that, and then smelt it down to get a nice pile of non-organic material."]
 			id: "623459C89E933CFB"
+			rewards: [{
+				count: 5
+				id: "6224F1B42EB65B40"
+				item: {
+					Count: 1
+					id: "supplementaries:ash"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7F98798E6A611340"
 				item: {

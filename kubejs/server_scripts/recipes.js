@@ -289,7 +289,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     });
 
     // Custom items
-    e.smelting('2x supplementaries:ash', 'compressedblocks:c1_cobblestone');
+    e.smelting('2x supplementaries:ash', 'compressedblocks:c0_cobblestone');
 
     // Marine Food
     e.shapeless('kubejs:marine_food', [
@@ -357,7 +357,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ]);
 
     e.shapeless('3x kubejs:meat_mess', [
-        '1x unusualprehistory:raw_mammoth',
+        'unusualprehistory:raw_mammoth',
         '2x #kubejs:bird_meat',
         '#forge:raw_fishes'
     ]);
@@ -368,9 +368,34 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '#kubejs:ancient_raw_fishes'
     ]);
 
+
+    e.shapeless('3x kubejs:meat_mess', [
+        '2x #kubejs:mammal_meat',
+        'unusualprehistory:raw_austro',
+        '#forge:raw_fishes'
+    ]);
+
     e.shapeless('9x kubejs:meat_mess', [
         '1x unusualprehistory:raw_mammoth',
         '2x #kubejs:bird_meat',
+        '#kubejs:ancient_raw_fishes'
+    ]);
+
+    e.shapeless('9x kubejs:meat_mess', [
+        'unusualprehistory:raw_mammoth',
+        'unusualprehistory:raw_austro',
+        '#forge:raw_fishes'
+    ]);
+
+    e.shapeless('9x kubejs:meat_mess', [
+        '2x #kubejs:mammal_meat',
+        'unusualprehistory:raw_austro',
+        '#kubejs:ancient_raw_fishes'
+    ]);
+
+    e.shapeless('18x kubejs:meat_mess', [
+        'unusualprehistory:raw_mammoth',
+        'unusualprehistory:raw_austro',
         '#kubejs:ancient_raw_fishes'
     ]);
 
@@ -425,47 +450,29 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         X: 'kubejs:brain',
     });
 
-    e.remove({ output: 'tconstruct:grout'});
-    e.shaped('8x tconstruct:grout', [
-        'CSS',
-        'SSA',
-        'AAA'
-    ], {
-        C: 'minecraft:clay',
-        S: '#forge:sand',
-        A: 'supplementaries:ash',
-    });
 
+    e.remove({ output: 'tconstruct:grout'});
     e.shaped('2x tconstruct:grout', [
         'CS ',
-        'A  ',
+        'AF ',
         '   '
     ], {
         C: 'minecraft:clay',
         S: '#forge:sand',
         A: 'supplementaries:ash',
+        F: 'kubejs:fur_ball'
     });
 
     e.remove({ output: 'tconstruct:nether_grout'});
-    e.shaped('8x tconstruct:nether_grout', [
-        'MSS',
-        'SSA',
-        'AAA'
-    ], {
-        M: 'minecraft:magma_block',
-        S: '#minecraft:soul_fire_base_blocks',
-        A: 'supplementaries:ash',
-    });
-
-
     e.shaped('2x tconstruct:nether_grout', [
         'MS ',
-        'A  ',
+        'AF ',
         '   '
     ], {
         M: 'minecraft:magma_cream',
         S: '#minecraft:soul_fire_base_blocks',
         A: 'supplementaries:ash',
+        F: 'kubejs:fur_ball'
     });
 
     // tconstruct recipes

@@ -4,7 +4,7 @@
 			"type": "forge:mod_loaded",
 			"modid": "unusualprehistory"
 	},
-	"entity": "unusualprehistory:scau",
+	"entity": "unusualprehistory:stethacanthus",
 	"samplerTier": 1,
 	"environments": ["sand"],
 	"requiresWater": true,
@@ -13,7 +13,7 @@
 		{
 			"chance": 1,
 			"output": {
-				"item": "unusualprehistory:raw_scau"
+				"item": "unusualprehistory:raw_stetha"
 			},
 			"minAmount": 1,
 			"maxAmount": 1
