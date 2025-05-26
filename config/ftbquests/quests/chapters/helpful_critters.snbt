@@ -788,6 +788,84 @@
 			x: 11.5d
 			y: -2.5d
 		}
+		{
+			dependencies: ["1B575536787142FF"]
+			description: ["This large creature likes to live under the water and fish. It will capture all manner of fish for you, including prehistoric fish and items."]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "peculiarprimordials:neilpeartia"
+				}
+			}
+			id: "3D6E86E713904ECD"
+			optional: true
+			subtitle: "Prehistoric Fishing Farm"
+			tasks: [{
+				id: "6DEE165AC06AFE36"
+				item: {
+					Count: 1
+					id: "peculiarprimordials:neilpeartia_eggs"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Neilpeartia"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1B575536787142FF"]
+			description: [
+				"This fish will grind up &9coral fans&r, turning them into &9sand&r, giving you an easy renewable source of &9sand&r."
+				""
+				"Make sure to put a &9name tag&r on it, though, because they are prone to despawn."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "peculiarprimordials:foreyia"
+				}
+			}
+			id: "7E70D8534F8C106C"
+			optional: true
+			rewards: [
+				{
+					id: "10D8F0078A12FE15"
+					item: {
+						Count: 1
+						id: "minecraft:brain_coral"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5FF3CCB7C0B7DFA2"
+					item: {
+						Count: 1
+						id: "minecraft:tube_coral_block"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "I hate sand. It gets everywhere."
+			tasks: [{
+				id: "135B758AE5CF233C"
+				item: {
+					Count: 1
+					id: "peculiarprimordials:foreyia_eggs"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Foreyia"
+			x: 0.5d
+			y: 0.5d
+		}
 	]
 	title: "Helpful Critters"
 }

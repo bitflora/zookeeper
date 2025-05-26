@@ -226,7 +226,7 @@
 				""
 				"You can use it as a decoration in your house, or release the bird back into a more convenient location. And they are 100% reusable!"
 				""
-				"(Note that this will only work on the birds from the Exotic Birds mod, ie: not the noble Chicken, or those from Alex's Mobs.)"
+				"(Note that this will only work on the birds from the Exotic Birds mod, ie: not &aChickens&r, or those from Alex's Mobs.)"
 			]
 			id: "2C392589E2568FD8"
 			optional: true
@@ -303,7 +303,7 @@
 				title: "Any #kubejs:furs"
 				type: "item"
 			}]
-			title: "Furballs For Beginners"
+			title: "Fur Balls For Beginners"
 			x: -10.5d
 			y: -11.0d
 		}
@@ -482,6 +482,7 @@
 					type: "item"
 				}
 			]
+			title: "Fur Balls"
 			x: -0.5d
 			y: -11.0d
 		}
@@ -664,7 +665,7 @@
 		}
 		{
 			description: [
-				"If you want to try something differen, consider &aRabbits&r for your &9wool&r source. Fluffy rabbits will produce &61&r &9white wool&r when sheared, and they are the fastest breeder of any of these animals."
+				"If you want to try something different, consider &aRabbits&r for your &9wool&r source. Fluffy rabbits will produce &61&r &9white wool&r when sheared, and they are the fastest breeder of any of these animals."
 				""
 				"Here's what else you might want to know:"
 				"- &aRabbits&r will give birth to &61-13&r kits at a time."
@@ -729,6 +730,44 @@
 			}]
 			x: -13.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["6D184A8F42832AE3"]
+			description: ["This simple filterable &9hopper&r can be a real boon as you work to automate your farms."]
+			id: "0BF185846F81BAEA"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "2123754F65E7C02D"
+					item: {
+						Count: 1
+						id: "goldenhopper:golden_hopper"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "553A545585978513"
+					item: {
+						Count: 1
+						id: "goldenhopper:golden_hopper_minecart"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3AC189BEE1F6FC89"
+				item: {
+					Count: 1
+					id: "goldenhopper:golden_hopper"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -13.0d
 		}
 	]
 	title: "&a1.&r Animal Farm"

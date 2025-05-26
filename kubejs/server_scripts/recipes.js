@@ -326,6 +326,25 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '2x #forge:feathers'
     ]);
 
+    e.remove({output: 'goldenhopper:golden_hopper'});
+    e.shaped('goldenhopper:golden_hopper', [
+        ' F ',
+        ' H ',
+        '   '
+    ], {
+        H: 'minecraft:hopper',
+        F: 'kubejs:fur_ball'
+    });
+
+    e.shaped('minecraft:name_tag', [
+        '  F',
+        ' I ',
+        '   '
+    ], {
+        I: 'minecraft:iron_ingot',
+        F: 'kubejs:fur_ball'
+    });
+
     // prehistoric stuff is more efficient, to give incentives to upgrade farms
     e.shapeless('3x kubejs:fur_mess', [
         '2x #minecraft:wool',

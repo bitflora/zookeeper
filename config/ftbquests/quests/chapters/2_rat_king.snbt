@@ -459,6 +459,15 @@
 				tag: { }
 			}
 			id: "2BD87743BD547C81"
+			rewards: [{
+				id: "64E79439863019F6"
+				item: {
+					Count: 1
+					id: "rats:chef_toque"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "I get it. It ain't making me laugh, but I get it."
 			tasks: [
 				{

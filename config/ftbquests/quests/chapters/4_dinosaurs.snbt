@@ -452,8 +452,8 @@
 				}
 			]
 			title: "Palaeophis"
-			x: 9.0d
-			y: -6.5d
+			x: 9.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1B575536787142FF"]
@@ -512,8 +512,8 @@
 				}
 			]
 			title: "Ammonite"
-			x: 9.0d
-			y: -8.5d
+			x: 9.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6A226F7D1EFAC888"]
@@ -579,8 +579,8 @@
 				}
 			]
 			title: "Triceratops"
-			x: 8.0d
-			y: -10.0d
+			x: 7.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["5C34CDA20CC8F25A"]
@@ -602,7 +602,7 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "&7Ginkgo’s ancient gift…"
+			subtitle: "Nuts"
 			tasks: [
 				{
 					id: "18C89F639D2DB96E"
@@ -836,13 +836,13 @@
 				}
 			]
 			title: "The Mighty T. Rex"
-			x: 8.5d
-			y: -4.0d
+			x: 9.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1B575536787142FF"]
 			dependency_requirement: "all_started"
-			description: ["Trade special fruits like &eZuloagae&r with this ancient ape to gain its trust. You're going to be wanting to make a bunch of trades, so maybe you'll want to revive more than one of these."]
+			description: ["Trade special fruits like &eZuloagae&r with this ancient ape to gain its trust. You're going to be wanting to make a bunch of trades and they have a trading cooldown, so maybe you'll want to revive more than one of these."]
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -856,18 +856,11 @@
 				type: "xp_levels"
 				xp_levels: 5
 			}]
-			tasks: [
-				{
-					id: "3BAB5732A04613EC"
-					item: "unusualprehistory:giganto_embryo"
-					type: "item"
-				}
-				{
-					id: "667D73CBD937E25D"
-					item: "unusualprehistory:zuloagae"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3BAB5732A04613EC"
+				item: "unusualprehistory:giganto_embryo"
+				type: "item"
+			}]
 			title: "Gigantopithecus"
 			x: 5.0d
 			y: -14.0d
@@ -877,11 +870,7 @@
 				"4BBD2D5DDAC7922D"
 				"69903CD6D1E42BC4"
 			]
-			description: [
-				"&fThe &6Gigantopithecus&r accepts &eZuloagae&r in exchange for an &cExotic Fruit Loot Box&r. Each trade unlocks a world of rare items that bring prehistoric wonders to life."
-				""
-				"&7Exotic flavors lead to exotic treasures."
-			]
+			description: ["Make your first trade and break it open to see what's inside. Construct even better fruit from the fruit pieces you find."]
 			icon: {
 				Count: 1
 				id: "unusualprehistory:fruit_loot_box"
@@ -913,7 +902,6 @@
 				}
 			]
 			size: 1.0d
-			subtitle: "&7A Taste of Adventure"
 			tasks: [
 				{
 					id: "523B1CA82CEB7316"
@@ -941,13 +929,13 @@
 					type: "item"
 				}
 			]
-			title: "&4&lExotic Trade"
+			title: "Exotic Fruit"
 			x: 6.5d
 			y: -13.0d
 		}
 		{
 			dependencies: ["440356C8C654E266"]
-			description: ["&fBring your &6Exotic fruits&r to the Gigantopithecus, and in return, receive a &bLuxurious Fruit Loot Box&r filled with exceptional finds. Indulge in the grandeur of ancient trades!"]
+			description: ["Bring your &9Exotic fruits&r to the &aGigantopithecus&r, and in return, receive a &9Luxurious Fruit Loot Box&r filled with exceptional finds. This can contain useful tools, and pieces of fruit that can be reconstructed and traded further."]
 			icon: {
 				Count: 1
 				id: "unusualprehistory:fruit_loot_box"
@@ -979,7 +967,6 @@
 				}
 			]
 			size: 1.0d
-			subtitle: "&7Opulence in a Box"
 			tasks: [
 				{
 					id: "166C6A24AC646012"
@@ -1018,14 +1005,14 @@
 					type: "item"
 				}
 			]
-			title: "&e&lLuxurious Exchange"
+			title: "Luxurious Fruit"
 			x: 8.5d
 			y: -13.0d
 		}
 		{
 			dependencies: ["328EA9E46A99B6B6"]
 			dependency_requirement: "one_started"
-			description: ["&fOffer the &6Luxurious Fruits&r to the Gigantopithecus to claim a &aRedolent Fruit Loot Box&r. Each box carries the unique aroma of prehistoric rarity."]
+			description: ["Offer the &6Luxurious Fruits&r to the &aGigantopithecus&r to claim a &aRedolent Fruit Loot Box&r. Keep crafting better fruit, and enjoy the loot you get on the side."]
 			icon: {
 				Count: 1
 				id: "unusualprehistory:fruit_loot_box"
@@ -1057,7 +1044,6 @@
 				}
 			]
 			size: 1.0d
-			subtitle: "&7Scented Fortune"
 			tasks: [
 				{
 					id: "51CAF059827A6D92"
@@ -1107,13 +1093,13 @@
 					type: "item"
 				}
 			]
-			title: "&3&lFragrant Rewards"
+			title: "Redolent Fruit"
 			x: 10.5d
 			y: -13.0d
 		}
 		{
 			dependencies: ["07D0FC746A47AC28"]
-			description: ["&fTrade &aRedolent Fruits&r with the Gigantopithecus to earn a &dSalubrious Fruit Loot Box&r. Inside lies the essence of prehistoric vitality and rewards beyond imagination."]
+			description: ["&fTrade &aRedolent Fruits&r with the Gigantopithecus to earn a &dSalubrious Fruit Loot Box&r. Inside you will finally find the &9handmade spear&r, made from ancient bones that can be found nowhere else."]
 			icon: {
 				Count: 1
 				id: "unusualprehistory:fruit_loot_box"
@@ -1145,7 +1131,6 @@
 				}
 			]
 			size: 1.0d
-			subtitle: "&7Healthy Gains"
 			tasks: [
 				{
 					id: "39F73C617370C45A"
@@ -1184,7 +1169,7 @@
 					type: "item"
 				}
 			]
-			title: "&d&lPristine Gifts"
+			title: "Salubrius Fruit"
 			x: 12.5d
 			y: -13.0d
 		}
@@ -1365,8 +1350,8 @@
 				}
 			]
 			title: "Antarctopelta"
-			x: 8.0d
-			y: -7.5d
+			x: 9.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["50A76A9371A1DFEA"]
@@ -1392,8 +1377,77 @@
 				type: "item"
 			}]
 			title: "Tyrant's Treasure"
-			x: 8.5d
-			y: -2.0d
+			x: 13.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"6CA5F12F142F46F5"
+				"4DEF8983912A44B7"
+				"73E05E030F2760D0"
+				"50A76A9371A1DFEA"
+			]
+			id: "0E65EF336D33657F"
+			tasks: [{
+				id: "7BD10DAD120267F6"
+				item: {
+					Count: 1
+					id: "kubejs:skin_mess"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"23DE2108E73E143F"
+				"50A76A9371A1DFEA"
+				"239FC7726C5081CE"
+			]
+			id: "10168B7E1F2A4A83"
+			tasks: [{
+				id: "4C4AF992764D3CF6"
+				item: {
+					Count: 1
+					id: "kubejs:bone_mess"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["10168B7E1F2A4A83"]
+			id: "31BA61F113E9C873"
+			tasks: [{
+				id: "2664C02D2054C4B7"
+				item: {
+					Count: 1
+					id: "kubejs:bone_essence"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0E65EF336D33657F"]
+			id: "2A65D84B8114B116"
+			tasks: [{
+				id: "152377D2185D6FFD"
+				item: {
+					Count: 1
+					id: "kubejs:skin_mass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: -5.0d
 		}
 	]
 	title: "&a4.&r Dinosaurs"
