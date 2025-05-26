@@ -1,0 +1,13 @@
+{
+	"type": "cagedmobs:environment_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "unusualprehistory"
+	},
+	"input": {
+		"item": "unusualprehistory:foxxi_leaves"
+	},
+	"render": "unusualprehistory:foxxi_leaves",
+	"growModifier": 1.2,
+	"categories": ["prehistory_land"]
+}

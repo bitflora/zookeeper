@@ -378,7 +378,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "&7Feathers of Flight"
+			subtitle: "Peacocks of the ancient world"
 			tasks: [
 				{
 					id: "1ECFE7C97F11BAE2"
@@ -531,7 +531,7 @@
 			description: [
 				"As the &aTriceratops&r grows, it will shed its &9horns&r, a vital crafting component."
 				""
-				"The can also tame it using &9Ginkgo fruit&r. This (with the help of a &9saddle&r) will enable you to ride it around."
+				"You can also tame it using &9Ginkgo fruit&r. This (with the help of a &9saddle&r) will enable you to ride it around."
 			]
 			icon: {
 				Count: 1
@@ -887,38 +887,6 @@
 				{
 					id: "546E8DA42AA069FE"
 					item: "unusualprehistory:rex_tooth"
-					type: "item"
-				}
-				{
-					id: "0215E5031E8F4ADA"
-					item: {
-						Count: 1
-						id: "unusualprehistory:tyrants_crown"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7473F314A0E31F2B"
-					item: "unusualprehistory:rex_boombox"
-					type: "item"
-				}
-				{
-					id: "1245F259F0891AA9"
-					item: "unusualprehistory:rex_head"
-					type: "item"
-				}
-				{
-					id: "27E01A0D6FCC77D9"
-					item: {
-						Count: 1
-						id: "unusualprehistory:veloci_shield"
-						tag: {
-							Damage: 0
-						}
-					}
 					type: "item"
 				}
 			]
@@ -1350,6 +1318,7 @@
 				}
 			}
 			id: "07A51C88058D3036"
+			subtitle: "Don't ask me to pronounce it"
 			tasks: [
 				{
 					id: "4BBDF336E1612CE3"
@@ -1386,6 +1355,7 @@
 				}
 			}
 			id: "68D0319CDC35C413"
+			subtitle: "What's wrong with your face?"
 			tasks: [
 				{
 					id: "61C40CDF4DB00E3D"

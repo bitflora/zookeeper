@@ -1,0 +1,13 @@
+{
+	"type": "cagedmobs:environment_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "unusualprehistory"
+	},
+	"input": {
+		"item": "unusualprehistory:clathrodictyon"
+	},
+	"render": "unusualprehistory:clathrodictyon",
+	"growModifier": 1.1,
+	"categories": ["prehistory_aquatic"]
+}

@@ -6,7 +6,7 @@
 	},
 	"entity": "unusualprehistory:coty",
 	"samplerTier": 1,
-	"environments": ["farm"],
+	"environments": ["prehistory_land"],
 	"growTicks": 1800,
 	"results": [
 		{

@@ -6,7 +6,7 @@
 	},
 	"entity": "unusualprehistory:sludge",
 	"samplerTier": 2,
-	"environments": ["farm"],
+	"environments": ["sand"],
 	"growTicks": 1800,
 	"results": [
 		{

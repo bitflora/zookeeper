@@ -1,0 +1,13 @@
+{
+	"type": "cagedmobs:environment_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "unusualprehistory"
+	},
+	"input": {
+		"item": "unusualprehistory:nelumbites"
+	},
+	"render": "unusualprehistory:nelumbites",
+	"growModifier": 1.0,
+	"categories": ["prehistory_aquatic"]
+}

@@ -6,7 +6,7 @@
 	},
 	"entity": "unusualprehistory:stethacanthus",
 	"samplerTier": 1,
-	"environments": ["sand"],
+	"environments": ["prehistory_aquatic"],
 	"requiresWater": true,
 	"growTicks": 1800,
 	"results": [

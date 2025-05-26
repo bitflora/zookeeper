@@ -6,7 +6,7 @@
 	},
 	"entity": "unusualprehistory:mammoth",
 	"samplerTier": 1,
-	"environments": ["farm"],
+	"environments": ["ice"],
 	"growTicks": 2800,
 	"results": [
 		{

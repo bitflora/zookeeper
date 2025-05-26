@@ -1,0 +1,13 @@
+{
+	"type": "cagedmobs:environment_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "unusualprehistory"
+	},
+	"input": {
+		"item": "unusualprehistory:dryo_leaves"
+	},
+	"render": "unusualprehistory:dryo_leaves",
+	"growModifier": 1.2,
+	"categories": ["prehistory_land"]
+}
