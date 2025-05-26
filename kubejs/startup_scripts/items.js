@@ -24,4 +24,10 @@ StartupEvents.registry('item', e => {
 
     e.create('data').tooltip('What is data but a whole lot of anecdotes?');
     e.create('hard_science').tooltip('Too much math involved, if I\'m being honest.');
+
+    e.create('skin_mess').tooltip('Combined skin of many animals. Gross.');
+    e.create('skin_mass').tooltip('Refined skin of many animals. Still gross.');
+
+    e.create('bone_mess').tooltip('Combined bones of many creatures.');
+    e.create('bone_essence').tooltip('The essence of bone.');
 });

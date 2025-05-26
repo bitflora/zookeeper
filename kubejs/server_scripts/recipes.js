@@ -424,6 +424,23 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       M: 'kubejs:meatwad'
     });
 
+    // skin
+    e.shapeless('kubejs:skin_mess', [
+      '2x unusualprehistory:shell_shard',
+      '2x unusualprehistory:palaeo_skin',
+      '2x unusualprehistory:rex_scale',
+      '2x unusualprehistory:antarcto_plate',
+    ]);
+
+    // bone
+    e.shapeless('kubejs:bone_mess', [
+      '2x unusualprehistory:trike_horn',
+      '2x unusualprehistory:rex_tooth',
+      '1x unusualprehistory:handmade_spear',
+      '2x minecraft:bone',
+    ]);
+
+
 
 
     // Tinker's Construct items
@@ -504,7 +521,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     });
 
 
-    // spawn egs
+    // spawn eggs
 
     // TODO: remove or change; there is no gold dropped anymore
     e.custom({
@@ -665,6 +682,26 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       E: '#forge:eggs',
     });
 
+    e.shaped('4x minecraft:zombie_spawn_egg', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'minecraft:rotten_flesh',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('4x minecraft:skeleton_spawn_egg', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'minecraft:bone',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
     e.shaped('minecraft:ocelot_spawn_egg', [
       'SIS',
       ' X ',
@@ -718,9 +755,9 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       ' X ',
       '  B'
     ], {
-      I: 'minecraft:diamond',
+      I: '#kubejs:diamond_sampler_point',
       X: 'kubejs:data',
-      B: 'minecraft:diamond_block',
+      B: 'minecraft:iron_block',
     });
 
     e.shaped('cagedmobs:netherite_dna_sampler', [
@@ -728,9 +765,9 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       ' X ',
       '  B'
     ], {
-      I: 'minecraft:netherite_ingot',
+      I: 'unusualprehistory:rex_tooth',
       X: 'kubejs:data',
-      B: 'minecraft:netherite_block',
+      B: 'minecraft:iron_block',
     });
 
     // TODO: make sciencey recipes for the upgrades
@@ -788,7 +825,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'PPP',
         'PPP'
     ], {
-        P: 'unusualprehistory:antarcto_plate',
+        P: 'unusualprehistory:majunga_scute',
     });
 
 

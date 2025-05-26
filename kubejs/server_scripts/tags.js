@@ -41,4 +41,10 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:ancient_feathers', 'unusualprehistory:austro_feather');
 
     e.add('forge:slimeballs', 'alexsmobs:banana_slug_slime');
+
+    e.add('kubejs:diamond_sampler_point', 'alexsmobs:bone_serpent_tooth');
+    e.add('kubejs:diamond_sampler_point', 'alexsmobs:shark_tooth');
+    e.add('kubejs:diamond_sampler_point', 'alexsmobs:cachalot_whale_tooth');
+    e.add('kubejs:diamond_sampler_point', 'alexsmobs:froststalker_horn');
+    e.add('kubejs:diamond_sampler_point', 'alexsmobs:trike_horn');
 });

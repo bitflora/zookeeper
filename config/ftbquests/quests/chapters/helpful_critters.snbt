@@ -673,65 +673,6 @@
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
-			dependency_requirement: "all_started"
-			description: [
-				"These spiky beasts don't appreciate monsters any more than you do. And their fight against monsters can have a side-benefits for you; sometimes it will cause them to drop their &9plates&r, a vital crafting ingredient."
-				""
-				"With these, it is possible to construct &9maille&r, which in turn opens up the possibilities of &9plate armor&r."
-			]
-			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "alexsmobs:tab_icon"
-				tag: {
-					DisplayEntityType: "unusualprehistory:antarctopelta"
-				}
-			}
-			id: "4DEF8983912A44B7"
-			optional: true
-			rewards: [
-				{
-					id: "2E9C14972DC53909"
-					type: "xp_levels"
-					xp_levels: 2
-				}
-				{
-					id: "24BDBED87E8AE73F"
-					item: "unusualprehistory:antarcto_plate"
-					random_bonus: 2
-					type: "item"
-				}
-			]
-			subtitle: "&7Blades of the Past"
-			tasks: [
-				{
-					id: "232E3C2793C07146"
-					item: "unusualprehistory:antarcto_eggs"
-					type: "item"
-				}
-				{
-					id: "19EAAEF5259B040F"
-					item: "unusualprehistory:antarcto_plate"
-					type: "item"
-				}
-				{
-					id: "13F6EFC3C7384E1A"
-					item: {
-						Count: 1
-						id: "tconstruct:maille"
-						tag: {
-							Material: "tconstruct:ancient_hide"
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Antarctopelta"
-			x: 11.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["3C93415319B18E01"]
 			description: ["Once tamed with &9golden sacabambaspis&r and fitted with a &9saddle&r, the &aOphthalmosaurus&r can serve as a very fast aquatic mount."]
 			hide_until_deps_complete: true
 			icon: {
@@ -775,6 +716,77 @@
 			title: "Ophthalmosaurus"
 			x: 10.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["1B575536787142FF"]
+			dependency_requirement: "all_started"
+			description: [
+				"Its &9scutes&r will be useful in crafting. They will sometimes drop when you block an attack from it with your &9shield&r."
+				""
+				"With these, it is possible to construct &9maille&r, which in turn opens up the possibilities of &9plate armor&r."
+				""
+				"If you have all the scutes you need, you can tame it with &9raw cotylorhynchus&r."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:majunga"
+				}
+			}
+			id: "0373B0A1BBCF3A0D"
+			optional: true
+			rewards: [
+				{
+					id: "0A5A86FBEB67FCD8"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "5873F9B2ECA10DC5"
+					item: "unusualprehistory:majunga_scute"
+					random_bonus: 3
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "52C8DB625E64FB9F"
+					item: "unusualprehistory:majunga_eggs"
+					type: "item"
+				}
+				{
+					id: "18D02DF6D2154CEF"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B7BAF2F52861C5D"
+					item: "unusualprehistory:majunga_scute"
+					type: "item"
+				}
+				{
+					id: "4533D9405BFE2098"
+					item: {
+						Count: 1
+						id: "tconstruct:maille"
+						tag: {
+							Material: "tconstruct:ancient_hide"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Majungasaurus"
+			x: 11.5d
+			y: -2.5d
 		}
 	]
 	title: "Helpful Critters"

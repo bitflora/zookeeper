@@ -401,6 +401,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["1B575536787142FF"]
 			dependency_requirement: "all_started"
 			description: [
 				"&fThe &aPalaeophis&r sheds its skin over time, leaving behind a useful crafting material."
@@ -455,6 +456,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["1B575536787142FF"]
 			dependency_requirement: "all_started"
 			description: ["&fThe &6Ammonite&r can be harvested for its durable &ashell fragments&r. These fragments can be transformed into a &bwar pick&r or reconstructed into a full shell. A true relic of ancient oceans!"]
 			icon: {
@@ -579,63 +581,6 @@
 			title: "Triceratops"
 			x: 8.0d
 			y: -10.0d
-		}
-		{
-			dependencies: ["1B575536787142FF"]
-			dependency_requirement: "all_started"
-			description: [
-				"Its &9scutes&r will be useful in crafting. They will sometimes drop when you block an attack from it with your &9shield&r."
-				""
-				"If you have all the scutes you need, you can tame it with &9raw cotylorhynchus&r."
-			]
-			hide_until_deps_visible: true
-			icon: {
-				Count: 1
-				id: "alexsmobs:tab_icon"
-				tag: {
-					DisplayEntityType: "unusualprehistory:majunga"
-				}
-			}
-			id: "0373B0A1BBCF3A0D"
-			rewards: [
-				{
-					id: "0A5A86FBEB67FCD8"
-					type: "xp_levels"
-					xp_levels: 2
-				}
-				{
-					id: "5873F9B2ECA10DC5"
-					item: "unusualprehistory:majunga_scute"
-					random_bonus: 3
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "52C8DB625E64FB9F"
-					item: "unusualprehistory:majunga_eggs"
-					type: "item"
-				}
-				{
-					id: "18D02DF6D2154CEF"
-					item: {
-						Count: 1
-						id: "minecraft:shield"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "2B7BAF2F52861C5D"
-					item: "unusualprehistory:majunga_scute"
-					type: "item"
-				}
-			]
-			title: "Majungasaurus"
-			x: 8.0d
-			y: -7.5d
 		}
 		{
 			dependencies: ["5C34CDA20CC8F25A"]
@@ -1380,6 +1325,75 @@
 			title: "Stethacanthus"
 			x: 5.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["1B575536787142FF"]
+			dependency_requirement: "all_started"
+			description: ["These spiky beasts don't appreciate monsters any more than you do. And their fight against monsters can have a side-benefits for you; sometimes it will cause them to drop their &9plates&r, a vital crafting ingredient."]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "unusualprehistory:antarctopelta"
+				}
+			}
+			id: "4DEF8983912A44B7"
+			rewards: [
+				{
+					id: "2E9C14972DC53909"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "24BDBED87E8AE73F"
+					item: "unusualprehistory:antarcto_plate"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Blades of the Past"
+			tasks: [
+				{
+					id: "232E3C2793C07146"
+					item: "unusualprehistory:antarcto_eggs"
+					type: "item"
+				}
+				{
+					id: "19EAAEF5259B040F"
+					item: "unusualprehistory:antarcto_plate"
+					type: "item"
+				}
+			]
+			title: "Antarctopelta"
+			x: 8.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["50A76A9371A1DFEA"]
+			description: ["Now that you have finally beaten a &aT. Rex&r, it is possible to use his &9tooth&r to construct &9dna samplers&r for boss-tier animals, including the &aT. Rex&r himself. Or you can fight them over and over for their drops..."]
+			id: "15267B61865F12E7"
+			optional: true
+			rewards: [{
+				id: "772BAB250F35532B"
+				item: {
+					Count: 1
+					id: "cagedmobs:hopping_mob_cage"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C14005FFE126D43"
+				item: {
+					Count: 1
+					id: "cagedmobs:netherite_dna_sampler"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Tyrant's Treasure"
+			x: 8.5d
+			y: -2.0d
 		}
 	]
 	title: "&a4.&r Dinosaurs"

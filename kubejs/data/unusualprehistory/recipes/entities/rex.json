@@ -1,0 +1,30 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "unusualprehistory"
+	},
+	"entity": "unusualprehistory:rex",
+	"samplerTier": 3,
+	"environments": ["prehistory_land"],
+	"growTicks": 2500,
+	"results": [
+		{
+			"chance": 0.4,
+			"output": {
+				"item": "unusualprehistory:rex_tooth"
+			},
+			"minAmount": 0,
+			"maxAmount": 1
+		},
+		{
+			"chance": 0.3,
+			"output": {
+				"item": "unusualprehistory:rex_scale"
+			},
+			"minAmount": 1,
+			"maxAmount": 3
+		}
+	]
+
+}
