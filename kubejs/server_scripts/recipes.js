@@ -2,15 +2,12 @@
 
 // Visit the wiki for more info - https://kubejs.com/
 
-console.info('Hello, World! (Loaded server scripts)')
 
 
 ServerEvents.recipes(e => { //listen for the "recipes" server event.
     // This part, inside the curly braces, is the callback.
     // You can modify as many recipes as you like in here,
     // without needing to use ServerEvents.recipes() again.
-
-    console.log('Hello! The recipe event has fired!');
 
     // Raise the cobblestone requirements
     e.remove({ output: 'minecraft:dropper' });
