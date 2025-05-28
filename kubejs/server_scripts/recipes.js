@@ -63,6 +63,23 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     e.remove({ mod: "inventorypets"});
 
     // misc recipe adjustments
+    e.shaped('inventorypets:temp_chest', [
+        'PPP',
+        'PCP',
+        'PPP'
+    ], {
+        P: '#minecraft:planks',
+        C: '#forge:chests'
+    });
+
+    e.shaped('inventorypets:temp_double_chest', [
+        'CC ',
+        '   ',
+        '   '
+    ], {
+        C: 'inventorypets:temp_chest'
+    });
+
     e.remove({ output: 'cagebox:cage_box' });
     e.shaped('1x cagebox:cage_box', [
         'III',
@@ -84,6 +101,82 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         L: 'minecraft:leather',
         F: 'kubejs:fur_ball'
     });
+
+    e.remove({ output: 'sophisticatedbackpacks:backpack', input: 'minecraft:leather'});
+    e.shaped('sophisticatedbackpacks:backpack', [
+        'SLS',
+        'FCF',
+        'LLL'
+    ], {
+        S: 'minecraft:string',
+        L: 'minecraft:leather',
+        F: 'kubejs:fur_ball',
+        C: '#forge:chests'
+    });
+
+    e.replaceInput({ output: 'sophisticatedbackpacks:upgrade_base'},
+      'minecraft:leather',
+      'kubejs:fur_ball',
+    );
+
+    e.remove({ output: 'sophisticatedstorage:upgrade_base'});
+    e.shaped('sophisticatedstorage:upgrade_base', [
+        'PIP',
+        'ISI',
+        'PIP'
+    ], {
+        I: 'minecraft:iron_ingot',
+        P: '#minecraft:planks',
+        S: 'kubejs:hard_science'
+    });
+    // Don't let them get away with upgrading backpack stuff to storage stuff; it would open progression too soon
+    // Downgrading is cool, though
+    [
+      'storage_advanced_alchemy_upgrade_from_backpack_advanced_alchemy_upgrade',
+      'storage_advanced_compacting_upgrade_from_backpack_advanced_compacting_upgrade',
+      'storage_advanced_feeding_upgrade_from_backpack_advanced_feeding_upgrade',
+      'storage_advanced_filter_upgrade_from_backpack_advanced_filter_upgrade',
+      'storage_advanced_jukebox_upgrade_from_backpack_advanced_jukebox_upgrade',
+      'storage_advanced_magnet_upgrade_from_backpack_advanced_magnet_upgrade',
+      'storage_advanced_pickup_upgrade_from_backpack_advanced_pickup_upgrade',
+      'storage_advanced_void_upgrade_from_backpack_advanced_void_upgrade',
+      'storage_alchemy_upgrade_from_backpack_alchemy_upgrade',
+      'storage_auto_blasting_upgrade_from_backpack_auto_blasting_upgrade',
+      'storage_auto_smelting_upgrade_from_backpack_auto_smelting_upgrade',
+      'storage_auto_smoking_upgrade_from_backpack_auto_smoking_upgrade',
+      'storage_blasting_upgrade_from_backpack_blasting_upgrade',
+      'storage_chipped_alchemy_bench_upgrade_from_backpack_chipped_alchemy_bench_upgrade',
+      'storage_chipped_botanist_workbench_upgrade_from_backpack_chipped_botanist_workbench_upgrade',
+      'storage_chipped_carpenters_table_upgrade_from_backpack_chipped_carpenters_table_upgrade',
+      'storage_chipped_glassblower_upgrade_from_backpack_chipped_glassblower_upgrade',
+      'storage_chipped_loom_table_upgrade_from_backpack_chipped_loom_table_upgrade',
+      'storage_chipped_mason_table_upgrade_from_backpack_chipped_mason_table_upgrade',
+      'storage_chipped_tinkering_table_upgrade_from_backpack_chipped_tinkering_table_upgrade',
+      'storage_compacting_upgrade_from_backpack_compacting_upgrade',
+      'storage_crafting_upgrade_from_backpack_crafting_upgrade',
+      'storage_feeding_upgrade_from_backpack_feeding_upgrade',
+      'storage_filter_upgrade_from_backpack_filter_upgrade',
+      'storage_jukebox_upgrade_from_backpack_jukebox_upgrade',
+      'storage_magnet_upgrade_from_backpack_magnet_upgrade',
+      'storage_pickup_upgrade_from_backpack_pickup_upgrade',
+      'storage_sawmill_sawmill_upgrade_from_backpack_sawmill_sawmill_upgrade',
+      'storage_smelting_upgrade_from_backpack_smelting_upgrade',
+      'storage_smoking_upgrade_from_backpack_smoking_upgrade',
+      'storage_stack_downgrade_tier_1_from_backpack_stack_downgrade_tier_1',
+      'storage_stack_downgrade_tier_2_from_backpack_stack_downgrade_tier_2',
+      'storage_stack_downgrade_tier_3_from_backpack_stack_downgrade_tier_3',
+      'storage_stack_upgrade_omega_tier_from_backpack_stack_upgrade_omega_tier',
+      'storage_stack_upgrade_tier_1_plus_from_backpack_stack_upgrade_starter_tier',
+      'storage_stack_upgrade_tier_2_from_backpack_stack_upgrade_tier_1',
+      'storage_stack_upgrade_tier_3_from_backpack_stack_upgrade_tier_2',
+      'storage_stack_upgrade_tier_4_from_backpack_stack_upgrade_tier_3',
+      'storage_stack_upgrade_tier_5_from_backpack_stack_upgrade_tier_4',
+      'storage_stonecutter_upgrade_from_backpack_stonecutter_upgrade',
+      'storage_void_upgrade_from_backpack_void_upgrade',
+
+    ].forEach( recipe_id => {
+      e.remove({ id: "sophisticatedstorage:" + recipe_id });
+    })
 
     // add back in select Cyclic items
     e.shaped('1x cyclic:clock', [

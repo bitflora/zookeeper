@@ -16,9 +16,9 @@
 			description: [
 				"The world is scarred. Lost."
 				""
-				"Years have passed since the loss of The Ultimate Zookeeper, but the wounds have not healed."
+				"Years have passed since the loss of &l&eThe Ultimate Zookeeper&r&r, but the wounds have not healed."
 				""
-				"It is up to you. You must bring back The Ultimate Zookeeper. And to do that, you will have to become The Penultimate Zookeeper."
+				"It is up to you. You must bring back &l&eThe Ultimate Zookeeper&r&r. And to do that, you will have to become &eThe Penultimate Zookeeper&r."
 				""
 				"Travel the world. Gather its creatures. Learn their secrets. Gain their strength. Save the Zookeeper, save the world."
 			]
@@ -318,8 +318,19 @@
 				"Some items that you are familiar with will have different recipes in this modpack. Some, like most metal armors, are not available at all. Some will not be unlocked until you have completed the appropriate quests. Make sure to check!"
 				""
 				"You can also use JEI to see what items different mobs drop, and what items breed them. This will be very valuable information."
+				""
+				"For example, here's a &aChest Pet&r to help on your journey. He's a little backpack who likes to eat &9wood planks&r. Try hovering over him and pressing 'r' to see how to make more of him, and 'u' to see what recipes he can be used in."
 			]
 			id: "75DD55D68ACC8C94"
+			rewards: [{
+				id: "5C8A8B98CCB90A8D"
+				item: {
+					Count: 1
+					id: "inventorypets:temp_chest"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "54D0042CC4CF1AAC"
 				title: "Using JEI"

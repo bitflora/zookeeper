@@ -235,7 +235,7 @@
 			}]
 			title: "Seal bartering"
 			x: 6.0d
-			y: -2.0d
+			y: 0.5d
 		}
 		{
 			description: [
@@ -280,7 +280,7 @@
 				type: "advancement"
 			}]
 			title: "Hummingbirds"
-			x: 3.5d
+			x: 6.0d
 			y: -5.0d
 		}
 		{
@@ -359,7 +359,7 @@
 			]
 			title: "Banana Slug"
 			x: 6.0d
-			y: -4.5d
+			y: -2.0d
 		}
 		{
 			description: ["&aPelicans&r can be tamed with &9cooked salmon or cod&r. After this, you can access their inventory by shift+right-clicking on them. In this way, you can take the &9fish&r they have caught."]
@@ -865,6 +865,66 @@
 			title: "Foreyia"
 			x: 0.5d
 			y: 0.5d
+		}
+		{
+			description: [
+				"You'll make many new animal allies during your adventure. Remember, the stronger they are, the stronger you are!"
+				""
+				"Take a look at some of the new items you can use to enhance your buddies. The &9collar tag&r not only makes them easier to rename, it also allows you to apply a whole host of new enchantments to them."
+				""
+				"The &9pet bed&r brings the power of beds to your animals. If you put your tamed pet onto a &9pet bed&r, when it dies it will respawn there the next morning."
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "minecraft:wolf"
+				}
+			}
+			id: "01BD75FBB55CD13E"
+			rewards: [
+				{
+					count: 3
+					id: "5542012ABB3567DE"
+					item: {
+						Count: 1
+						id: "domesticationinnovation:collar_tag"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2BED524E00A6A047"
+					item: {
+						Count: 1
+						id: "domesticationinnovation:pet_bed_blue"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "The strength of the pack is the wolf, and the strength of the wolf is the pack."
+			tasks: [
+				{
+					advancement: "minecraft:husbandry/tame_an_animal"
+					criterion: ""
+					id: "13CABC1D0AFBCEB0"
+					title: "Tame an animal"
+					type: "advancement"
+				}
+				{
+					id: "73FBE3CCF35F8208"
+					item: {
+						Count: 1
+						id: "domesticationinnovation:collar_tag"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -5.0d
 		}
 	]
 	title: "Helpful Critters"

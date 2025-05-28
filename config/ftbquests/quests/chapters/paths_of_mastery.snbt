@@ -86,10 +86,18 @@
 			description: [
 				"You are what you eat. So shouldn't you know more about what you eat?"
 				""
-				"Ponder the food, and its secrets will be revealed to you."
+				"Study the &aPig&r in his many forms to learn what food really is."
 				""
 				"(In other words, you'll know exactly how much hunger and satiety each piece of food is worth.)"
 			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "minecraft:pig"
+					DisplayMobFlags: 98
+				}
+			}
 			id: "0329AD75534DCCCA"
 			rewards: [{
 				auto: "invisible"
@@ -100,15 +108,32 @@
 				type: "gamestage"
 			}]
 			subtitle: "How do you like them apples?"
-			tasks: [{
-				id: "33EFCBF868B27EAD"
-				item: {
-					Count: 1
-					id: "minecraft:bread"
-					tag: { }
+			tasks: [
+				{
+					id: "00E6DBDB984A036D"
+					observe_type: 5
+					timer: 0L
+					title: "Find a pig"
+					to_observe: "eanimod:enhanced_pig"
+					type: "observation"
 				}
-				type: "item"
-			}]
+				{
+					id: "117B065351EE1CA4"
+					observe_type: 5
+					timer: 0L
+					title: "Find a boar"
+					to_observe: "naturalist:boar"
+					type: "observation"
+				}
+				{
+					id: "041C3D4061EA3171"
+					observe_type: 5
+					timer: 0L
+					title: "Find a piglin"
+					to_observe: "minecraft:piglin"
+					type: "observation"
+				}
+			]
 			title: "Path of the Owl A1"
 			x: -6.5d
 			y: -3.5d
@@ -665,6 +690,7 @@
 			}]
 			shape: "octagon"
 			tasks: [{
+				consume_items: true
 				count: 3L
 				id: "7D3597F4D87BA8BA"
 				item: {

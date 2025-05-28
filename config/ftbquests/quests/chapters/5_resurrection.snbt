@@ -1,0 +1,26 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5_resurrection"
+	group: "58C00CAA276A1624"
+	icon: {
+		Count: 1
+		id: "rats:halo_hat"
+		tag: { }
+	}
+	id: "27997D19FA284B01"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["53A0BB6D45E14A20"]
+		id: "36D5DE5F9B4D082A"
+		tasks: [{
+			id: "58AC3C8D7159708E"
+			title: "Begin Chapter 5"
+			type: "checkmark"
+		}]
+		x: -6.5d
+		y: -1.0d
+	}]
+	title: "&a5.&r Resurrection"
+}

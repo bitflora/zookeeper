@@ -1,0 +1,8 @@
+{
+  "type": "rats:chef",
+  "count": 1,
+  "ingredient": {
+    "item": "kubejs:skin_mess"
+  },
+  "result": "kubejs:skin_mass"
+}

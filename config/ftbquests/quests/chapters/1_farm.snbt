@@ -189,6 +189,7 @@
 				}
 				type: "item"
 			}]
+			title: "Marine Food"
 			x: -0.5d
 			y: -7.0d
 		}
@@ -768,6 +769,32 @@
 			}]
 			x: 1.5d
 			y: -13.0d
+		}
+		{
+			dependencies: ["6D184A8F42832AE3"]
+			description: ["Your &aChest Pet&r may have been a nice companion, but he also gets hungry. It is now possible to construct &9backpacks&r to make your travels easier, as well as &9backpack upgrades&r."]
+			id: "0EDC16E88FBCFE98"
+			optional: true
+			rewards: [{
+				id: "4C889B6E32508EC5"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:jukebox_upgrade"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B691B9CAEA4CFC3"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:backpack"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.5d
 		}
 	]
 	title: "&a1.&r Animal Farm"

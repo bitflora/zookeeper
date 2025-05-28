@@ -1,0 +1,8 @@
+{
+  "type": "rats:chef",
+  "count": 1,
+  "ingredient": {
+    "item": "kubejs:bone_mess"
+  },
+  "result": "kubejs:bone_essence"
+}
