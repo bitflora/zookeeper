@@ -66,7 +66,7 @@
 				""
 				"He is a &aMantis Shrimp&r. Tame him with &9marine food&r or &9tropical fish&r and he will be your first friend of many."
 				""
-				"He can follow you around, and will eevn fight off enemies. But his real strength lies in his block-breaking ability. Just put him tin &6Break Blocks&r mode, and then hand him the block to break with shift+right click!"
+				"He can follow you around, and will even fight off enemies. But his real strength lies in his block-breaking ability. Just put him in &6Break Blocks&r mode, and then hand him the block to break with shift+right click!"
 				""
 				"Keep in mind that he can only breathe in the water. If you lose him, you can buy more from a pet store in a village, or catch one in the wild in reefs or mangrove swamps."
 			]
@@ -250,7 +250,7 @@
 		{
 			dependencies: ["542CDE05F61489C1"]
 			description: [
-				"This is a tech-oriented, but with a heavy emphasis on animals. Any farms and automations that you build will be work of the behaviors of mobs; there is no Create in this pack. You will gather animals from the world and put their special abilities to work in your ever-growing zoo."
+				"This is a tech-oriented pack, but with a heavy emphasis on animals. Any farms and automations that you build will be work of the behaviors of mobs; there is no Create in this pack. You will gather animals from the world and put their special abilities to work in your ever-growing zoo."
 				""
 				"And you will be creating an actual zoo as you go, not just machines. You will need the money raised from zoogoers to fund your research."
 				""
@@ -275,6 +275,15 @@
 				"Visit the &2Helpful Critters&r section at any time for tips on what animals might be especially useful."
 			]
 			id: "0E3E391DBE4589F9"
+			rewards: [{
+				id: "5D41693CD6FC47F8"
+				item: {
+					Count: 1
+					id: "alexsmobs:animal_dictionary"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "551B2042F04945A1"
 				title: "The Research"
@@ -350,11 +359,31 @@
 				"- Tinker's Contruct"
 				"- Unusual Prehistory"
 				""
-				"If you are confused about something, you may want to search for thier wikis, several of which are linked in the &2Helpful Critters&r section. That section will also give you details about the most important animals, especially where we have made changes like adding foods which will tame them."
+				"If you are confused about something, you may want to search for their wikis, several of which are linked in the &2Helpful Critters&r section. That section will also give you details about the most important animals, especially where we have made changes like adding foods which will tame them."
 				""
 				"Take note of any animals you see while travelling. You may want to come back for them later. And if you find fossils, make sure to hold onto them for later."
 			]
 			id: "4342896FE9651396"
+			rewards: [
+				{
+					id: "31233C67F1236ED3"
+					item: {
+						Count: 1
+						id: "tconstruct:tinker_station"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "523737B48BD5ED1D"
+					item: {
+						Count: 1
+						id: "exoticbirds:bird_book"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			subtitle: "This one goes out to the ones I loved"
 			tasks: [{
 				id: "6EA68DEB08B6D1A9"

@@ -54,7 +54,7 @@
 				}
 			]
 			title: "Path of the Owl"
-			x: -5.0d
+			x: -6.5d
 			y: -2.0d
 		}
 		{
@@ -78,17 +78,21 @@
 				type: "advancement"
 			}]
 			title: "Path of the Owl 2"
-			x: -5.0d
+			x: -6.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["10C82AF7709F574A"]
+			dependencies: [
+				"10C82AF7709F574A"
+				"7C2418F4DA9AA4DD"
+				"1D49EA68F0F05751"
+				"491B6469B64D0822"
+				"63EF8EE0B559D8C2"
+			]
 			description: [
-				"You are what you eat. So shouldn't you know more about what you eat?"
+				"You are what you eat. So shouldn't you know more about what you eat? It sure would be nive to know exactly how much hunger and satiety each piece of food restores."
 				""
-				"Study the &aPig&r in his many forms to learn what food really is."
-				""
-				"(In other words, you'll know exactly how much hunger and satiety each piece of food is worth.)"
+				"Study the &aPig&r in his many forms to learn what food really is. Finding &e3&r different kinds of pigs should do it. Healthy pigs only; no zombies."
 			]
 			icon: {
 				Count: 1
@@ -99,6 +103,7 @@
 				}
 			}
 			id: "0329AD75534DCCCA"
+			min_required_dependencies: 4
 			rewards: [{
 				auto: "invisible"
 				id: "0CB2BA04505A118D"
@@ -108,35 +113,14 @@
 				type: "gamestage"
 			}]
 			subtitle: "How do you like them apples?"
-			tasks: [
-				{
-					id: "00E6DBDB984A036D"
-					observe_type: 5
-					timer: 0L
-					title: "Find a pig"
-					to_observe: "eanimod:enhanced_pig"
-					type: "observation"
-				}
-				{
-					id: "117B065351EE1CA4"
-					observe_type: 5
-					timer: 0L
-					title: "Find a boar"
-					to_observe: "naturalist:boar"
-					type: "observation"
-				}
-				{
-					id: "041C3D4061EA3171"
-					observe_type: 5
-					timer: 0L
-					title: "Find a piglin"
-					to_observe: "minecraft:piglin"
-					type: "observation"
-				}
-			]
+			tasks: [{
+				id: "40ECDD24A6F0591C"
+				title: "This will be clickable when you have found enough pigs"
+				type: "checkmark"
+			}]
 			title: "Path of the Owl A1"
-			x: -6.5d
-			y: -3.5d
+			x: -9.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["10C82AF7709F574A"]
@@ -199,7 +183,7 @@
 			]
 			title: "Path of the Owl B1"
 			x: -4.0d
-			y: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2775AA62C6D95C4E"]
@@ -257,7 +241,7 @@
 			]
 			title: "Path of the Owl B2"
 			x: -2.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			description: ["There are many ways to catch animals. Study the &aSpider&r, and learn her snares."]
@@ -609,8 +593,8 @@
 				}
 			]
 			title: "Path of the Owl A2"
-			x: -7.5d
-			y: -2.5d
+			x: -10.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1034,6 +1018,66 @@
 			title: "Path of the Turtle C4"
 			x: -3.0d
 			y: 5.5d
+		}
+		{
+			dependencies: ["10C82AF7709F574A"]
+			hide_dependency_lines: true
+			id: "7C2418F4DA9AA4DD"
+			tasks: [{
+				id: "57CCDD4FFEC83670"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eanimod:enhanced_pig"
+				type: "observation"
+			}]
+			title: "Standard Pig"
+			x: -6.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["10C82AF7709F574A"]
+			hide_dependency_lines: true
+			id: "491B6469B64D0822"
+			tasks: [{
+				id: "17A510B039F312B5"
+				observe_type: 5
+				timer: 0L
+				title: "Boar"
+				to_observe: "naturalist:boar"
+				type: "observation"
+			}]
+			x: -6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["10C82AF7709F574A"]
+			hide_dependency_lines: true
+			id: "1D49EA68F0F05751"
+			tasks: [{
+				id: "5627EC448575A621"
+				observe_type: 5
+				timer: 0L
+				title: "Piglin"
+				to_observe: "miecraft:piglin"
+				type: "observation"
+			}]
+			x: -6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["10C82AF7709F574A"]
+			hide_dependency_lines: true
+			id: "63EF8EE0B559D8C2"
+			tasks: [{
+				id: "33AF1600C3A99045"
+				observe_type: 5
+				timer: 0L
+				title: "Tusklin"
+				to_observe: "alexsmobs:tusklin"
+				type: "observation"
+			}]
+			x: -6.5d
+			y: -4.5d
 		}
 	]
 	title: "Paths of Mastery"

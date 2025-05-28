@@ -188,7 +188,11 @@
 				"49A910011E2190A0"
 				"641B372E730D52D4"
 			]
-			description: ["Many animals hatch from eggs. You can just put those anywhere they won't get trampled and wait for them to hatch. For the more mammalian creatures you are reviving, an &9Incubator&r will be needed. Keep in mind that these are one-time use!"]
+			description: [
+				"Many animals hatch from eggs. You can just put those anywhere they won't get trampled and wait for them to hatch. For the more mammalian creatures you are reviving, an &9Incubator&r will be needed. Keep in mind that these are one-time use!"
+				""
+				"After completing this task, you should revisit &2Helpful Critters&r. There are more to learn about now."
+			]
 			id: "1B575536787142FF"
 			tasks: [{
 				id: "26CA9F9B3939B7BC"
