@@ -60,25 +60,8 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     // Remove some recipes
     //e.remove({ mod: 'cyclic' }) // TODO: remove these, after investigating the recipes
     e.remove({ output: 'theoneprobe:probe' });
-    e.remove({ mod: "inventorypets"});
 
-    // misc recipe adjustments
-    e.shaped('inventorypets:temp_chest', [
-        'PPP',
-        'PCP',
-        'PPP'
-    ], {
-        P: '#minecraft:planks',
-        C: '#forge:chests'
-    });
-
-    e.shaped('inventorypets:temp_double_chest', [
-        'CC ',
-        '   ',
-        '   '
-    ], {
-        C: 'inventorypets:temp_chest'
-    });
+    modify_inventory_pets(e);
 
     e.remove({ output: 'cagebox:cage_box' });
     e.shaped('1x cagebox:cage_box', [
@@ -231,7 +214,6 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         P: 'rats:rat_paw'
     });
 
-    // Add back inventory pets
     e.remove({ output: "cookingforblockheads:cow_jar"});
     e.shaped('cookingforblockheads:cow_jar', [
         'GBG',
@@ -244,82 +226,6 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         M: 'kubejs:meatwad'
     });
 
-    e.shaped('inventorypets:pet_cow', [
-        'DXD',
-        'FMF',
-        'FMF'
-    ], {
-        X: 'minecraft:beef',
-        D: 'minecraft:diamond',
-        F: 'kubejs:fur_ball',
-        M: 'kubejs:meatwad'
-    });
-
-    e.shaped('inventorypets:pet_chicken', [
-        'DXD',
-        'FMF',
-        'FMF'
-    ], {
-        X: 'minecraft:feather',
-        D: 'minecraft:diamond',
-        F: 'kubejs:fur_ball',
-        M: 'kubejs:meatwad'
-    });
-
-    e.shaped('inventorypets:pet_sheep', [
-        'DXD',
-        'FMF',
-        'FMF'
-    ], {
-        X: 'minecraft:white_wool',
-        D: 'minecraft:diamond',
-        F: 'kubejs:fur_ball',
-        M: 'kubejs:meatwad'
-    });
-
-    e.shaped('inventorypets:pet_pig', [
-        'DXD',
-        'FMF',
-        'FMF'
-    ], {
-        X: 'minecraft:porkchop',
-        D: 'minecraft:diamond',
-        F: 'kubejs:fur_ball',
-        M: 'kubejs:meatwad'
-    });
-
-    e.shaped('inventorypets:pet_ocelot', [
-        'WXW',
-        'FMF',
-        'FMF'
-    ], {
-        W: 'minecraft:string',
-        X: 'minecraft:jungle_sapling',
-        F: 'kubejs:fur_ball',
-        M: 'kubejs:meatwad'
-    });
-
-    e.shaped('inventorypets:pet_squid', [
-        'WXW',
-        'FMF',
-        'FMF'
-    ], {
-        W: 'minecraft:ink_sac',
-        X: 'minecraft:diamond',
-        F: 'kubejs:fur_ball',
-        M: 'kubejs:meatwad'
-    });
-
-    e.shaped('inventorypets:pet_pufferfish', [
-        'WXW',
-        'FMF',
-        'FMF'
-    ], {
-        W: 'minecraft:pufferfish',
-        X: 'minecraft:diamond',
-        F: 'kubejs:fur_ball',
-        M: 'kubejs:meatwad'
-    });
 
 
 
@@ -939,6 +845,179 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
 
 
   });
+
+  function modify_inventory_pets(e) {
+    e.remove({ mod: "inventorypets"});
+
+    // available immediately
+    e.shaped('inventorypets:temp_chest', [
+        'PPP',
+        'PCP',
+        'PPP'
+    ], {
+        P: '#minecraft:planks',
+        C: '#forge:chests'
+    });
+
+    e.shaped('inventorypets:temp_double_chest', [
+        'CC ',
+        '   ',
+        '   '
+    ], {
+        C: 'inventorypets:temp_chest'
+    });
+
+    // put this back for use downstream
+    e.shapeless('9x inventorypets:nugget_diamond', ['minecraft:diamond']);
+    e.shapeless('minecraft:diamond', ['9x inventorypets:nugget_diamond']);
+
+    // the rest require meatwads
+    e.shaped('inventorypets:pet_cow', [
+        ' X ',
+        'FMF',
+        'FMF'
+    ], {
+        X: 'minecraft:beef',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_chicken', [
+        'DXD',
+        'FMF',
+        'FMF'
+    ], {
+        X: 'minecraft:feather',
+        D: 'inventorypets:nugget_diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_sheep', [
+        'DXD',
+        'FMF',
+        'FMF'
+    ], {
+        X: 'minecraft:white_wool',
+        D: 'inventorypets:nugget_diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_pig', [
+        ' X ',
+        'FMF',
+        'FMF'
+    ], {
+        X: 'minecraft:porkchop',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_ocelot', [
+        'WXW',
+        'FMF',
+        'FMF'
+    ], {
+        W: 'minecraft:string',
+        X: 'minecraft:jungle_sapling',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_siamese', [
+        'WWW',
+        'FMF',
+        'FMF'
+    ], {
+        W: 'minecraft:string',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_cheetah', [
+        'WXW',
+        'FMF',
+        'FMF'
+    ], {
+        W: 'minecraft:string',
+        X: 'minecraft:diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_wolf', [
+        'DBD',
+        'FMF',
+        'FMF'
+    ], {
+        D: 'inventorypets:nugget_diamond',
+        B: 'minecraft:bone',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_squid', [
+        'WXW',
+        'FMF',
+        'FMF'
+    ], {
+        W: 'minecraft:ink_sac',
+        X: 'minecraft:diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_pufferfish', [
+        'WXW',
+        'FMF',
+        'FMF'
+    ], {
+        W: 'minecraft:pufferfish',
+        X: 'minecraft:diamond',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_creeper', [
+        ' T ',
+        'LML',
+        'LML'
+    ], {
+        T: 'minecraft:tnt',
+        L: '#minecraft:leaves',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_spider', [
+        ' X ',
+        'XMX',
+        'XMX'
+    ], {
+        X: 'minecraft:cobweb',
+        M: 'kubejs:meatwad'
+    });
+
+    e.shaped('inventorypets:pet_magma_cube', [
+        'CCC',
+        'BMB',
+        'BMB'
+    ], {
+        C: 'minecraft:magma_cream',
+        M: 'kubejs:meatwad',
+        B: 'minecraft:magma_block',
+    });
+
+    e.shaped('inventorypets:pet_wither', [
+        'NNN',
+        'MMM',
+        ' M '
+    ], {
+        N: 'minecraft:nether_star',
+        M: 'kubejs:meatwad',
+    });
+
+  }
 
   function castingBasin(event, result, castItem, inputFluid, amount, coolingTime, consumption) {
     event.custom({
