@@ -1,0 +1,23 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "naturalist"
+	},
+	"entity": "naturalist:firefly",
+	"samplerTier": 1,
+	"environments": ["farm"],
+	"requiresWater": false,
+	"growTicks": 800,
+	"results": [
+		{
+			"chance": 0.3,
+			"output": {
+				"item": "naturalist:glow_goop"
+			},
+			"minAmount": 0,
+			"maxAmount": 1
+		}
+	]
+
+}

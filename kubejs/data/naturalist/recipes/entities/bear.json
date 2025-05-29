@@ -1,0 +1,23 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "naturalist"
+	},
+	"entity": "naturalist:bear",
+	"samplerTier": 1,
+	"environments": ["farm"],
+	"requiresWater": false,
+	"growTicks": 1000,
+	"results": [
+		{
+			"chance": 0.5,
+			"output": {
+				"item": "naturalist:fur"
+			},
+			"minAmount": 1,
+			"maxAmount": 2
+		}
+	]
+
+}

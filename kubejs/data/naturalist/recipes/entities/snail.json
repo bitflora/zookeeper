@@ -1,0 +1,31 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "naturalist"
+	},
+	"entity": "naturalist:snail",
+	"samplerTier": 1,
+	"environments": ["farm"],
+	"requiresWater": false,
+	"growTicks": 800,
+	"results": [
+		{
+			"chance": 0.3,
+			"output": {
+				"item": "minecraft:slime_ball"
+			},
+			"minAmount": 0,
+			"maxAmount": 1
+		},
+		{
+			"chance": 0.1,
+			"output": {
+				"item": "naturalist:snail_shell"
+			},
+			"minAmount": 0,
+			"maxAmount": 1
+		}
+	]
+
+}

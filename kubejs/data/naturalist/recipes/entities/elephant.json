@@ -1,0 +1,33 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "naturalist"
+	},
+	"entity": "naturalist:elephant",
+	"samplerTier": 1,
+	"environments": ["farm"],
+	"growTicks": 1800,
+	"results": [
+		{
+			"chance": 0.6,
+			"output": {
+				"item": "minecraft:leather"
+			},
+			"minAmount": 3,
+			"maxAmount": 5
+		},
+		{
+			"chance": 0.7,
+				"output": {
+					"item": "naturalist:bushmeat"
+				},
+				"output_cooked": {
+					"item": "naturalist:cooked_bushmeat"
+				},
+				"minAmount": 1,
+				"maxAmount": 3
+		}
+	]
+
+}

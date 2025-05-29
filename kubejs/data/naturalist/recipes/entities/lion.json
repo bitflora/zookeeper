@@ -1,0 +1,30 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "naturalist"
+	},
+	"entity": "naturalist:lion",
+	"samplerTier": 1,
+	"environments": ["farm"],
+	"growTicks": 1600,
+	"results": [
+		{
+			"chance": 0.6,
+			"output": {
+				"item": "minecraft:leather"
+			},
+			"minAmount": 0,
+			"maxAmount": 1
+		},
+		{
+			"chance": 0.7,
+				"output": {
+					"item": "naturalist:fur"
+				},
+				"minAmount": 0,
+				"maxAmount": 1
+		}
+	]
+
+}

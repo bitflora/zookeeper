@@ -1,0 +1,33 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "naturalist"
+	},
+	"entity": "naturalist:giraffe",
+	"samplerTier": 1,
+	"environments": ["farm"],
+	"growTicks": 1500,
+	"results": [
+		{
+			"chance": 0.2,
+			"output": {
+				"item": "minecraft:hay_block"
+			},
+			"minAmount": 0,
+			"maxAmount": 1
+		},
+		{
+			"chance": 0.7,
+				"output": {
+					"item": "naturalist:bushmeat"
+				},
+				"output_cooked": {
+					"item": "naturalist:cooked_bushmeat"
+				},
+				"minAmount": 1,
+				"maxAmount": 2
+		}
+	]
+
+}

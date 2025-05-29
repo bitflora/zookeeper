@@ -1,0 +1,23 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "naturalist"
+	},
+	"entity": "naturalist:hippo",
+	"samplerTier": 1,
+	"environments": ["farm"],
+	"requiresWater": true,
+	"growTicks": 1500,
+	"results": [
+		{
+			"chance": 0.2,
+			"output": {
+				"item": "minecraft:melon_slice"
+			},
+			"minAmount": 1,
+			"maxAmount": 5
+		}
+	]
+
+}
