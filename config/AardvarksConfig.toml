@@ -1,0 +1,55 @@
+
+[Spawning]
+	#determines if extinct mobs spawn in
+	"Extinct Spawns" = false
+	#whether if pollinators spawn from crops.
+	"Pollinator Spawns" = true
+	#whether or not zombie animals can spawn
+	"zombie spawns" = true
+	#Whether or not ANY  animals will naturally spawn in the wild
+	"Natural Spawning" = true
+
+[Fossils]
+	#Whether or not you can get cenozoic acorns from fossils
+	"Cenozoic Acorns from Fossils" = true
+	#Whether or not plant fossils can be gotten from fossil blocks
+	"Plant fossils" = true
+	#Whether or not breaking fossil blocks has a chance of giving mythical fossils
+	"Mythical Fossils" = true
+	#the chance of getting DNA from a fossil 
+	"Fossil Chance" = 0.33
+	#The chance of getting plant DNA from a fossil
+	"Plant Fossil Chance" = 0.2
+	#The Chance of getting Mythical DNA from a fossil
+	"Mythical Fossil Chance " = 0.1
+	#The speed at which the DNAizer works. Higher values work faster.
+	"DNAizer Speed" = 0.06
+	#The chance of getting an item from the sifter each tick.
+	"Sifter Speed" = 0.05
+	#The Chance of getting a fossil from the sifter
+	"Sifter Chance" = 0.1
+
+[Behaviors]
+	#Determines if Shrikes can create their spikeballs
+	"Do Shrike Spines" = true
+	#determines if peccaries eat cactus or not
+	"Do Peccary Eat Cactus" = true
+	#Determines if Kudzu spreads on its own or not
+	"Does Kudzu Spread?" = true
+	#Do marbled crayfish lay cloned eggs?
+	"Do Crayfish clone?" = true
+	#Whether Hedorah spawns smaller hedorahs as it is hit
+	"Do Hedoah Tadpolize?" = true
+	#Whether or not birds will occasionally lose feathers and lay eggs
+	"Do Birds Molt and Lay?" = true
+	#Whether or not Hoopoe and Killdeer will search for worms
+	"Do Wormhunting?" = true
+
+[Misc]
+	#Determines if the time is set to 0 upon waking up (allows Joyizers to function)
+	"Groundhog Day" = true
+	#Makes the Kaiju much bigger!
+	"Huge Kaiju" = false
+	#Whether or not the guide starts off filled out
+	"Unlock Guide" = false
+
