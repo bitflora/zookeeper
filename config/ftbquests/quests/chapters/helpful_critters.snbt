@@ -531,7 +531,7 @@
 		}
 		{
 			dependency_requirement: "all_started"
-			description: ["The &aEryon&r loves digging in mud. Sometimes he uncovers junk, sometimes &9fossils&r that you can display."]
+			description: ["The &aEryon&r loves digging in sand. Sometimes he uncovers junk, sometimes &9fossils&r that you can display."]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1

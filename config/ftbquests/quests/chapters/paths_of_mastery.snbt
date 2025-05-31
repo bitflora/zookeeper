@@ -84,10 +84,12 @@
 		{
 			dependencies: [
 				"10C82AF7709F574A"
-				"7C2418F4DA9AA4DD"
-				"1D49EA68F0F05751"
-				"491B6469B64D0822"
-				"63EF8EE0B559D8C2"
+				"1DDE91B6A2A54F4B"
+				"70C7DF6D01F9F502"
+				"604A28599B60D11D"
+				"7F2F77307A3A7242"
+				"60F55A3C14999A2F"
+				"05F5C8217E23C1FC"
 			]
 			description: [
 				"You are what you eat. So shouldn't you know more about what you eat? It sure would be nive to know exactly how much hunger and satiety each piece of food restores."
@@ -1021,63 +1023,57 @@
 		}
 		{
 			dependencies: ["10C82AF7709F574A"]
-			hide_dependency_lines: true
-			id: "7C2418F4DA9AA4DD"
-			tasks: [{
-				id: "57CCDD4FFEC83670"
-				observe_type: 5
-				timer: 0L
-				to_observe: "eanimod:enhanced_pig"
-				type: "observation"
-			}]
-			title: "Standard Pig"
-			x: -6.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["10C82AF7709F574A"]
-			hide_dependency_lines: true
-			id: "491B6469B64D0822"
-			tasks: [{
-				id: "17A510B039F312B5"
-				observe_type: 5
-				timer: 0L
-				title: "Boar"
-				to_observe: "naturalist:boar"
-				type: "observation"
-			}]
-			x: -6.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["10C82AF7709F574A"]
-			hide_dependency_lines: true
-			id: "1D49EA68F0F05751"
-			tasks: [{
-				id: "5627EC448575A621"
-				observe_type: 5
-				timer: 0L
-				title: "Piglin"
-				to_observe: "miecraft:piglin"
-				type: "observation"
-			}]
-			x: -6.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["10C82AF7709F574A"]
-			hide_dependency_lines: true
-			id: "63EF8EE0B559D8C2"
-			tasks: [{
-				id: "33AF1600C3A99045"
-				observe_type: 5
-				timer: 0L
-				title: "Tusklin"
-				to_observe: "alexsmobs:tusklin"
-				type: "observation"
-			}]
-			x: -6.5d
-			y: -4.5d
+			description: [
+				"Check out all these pigs."
+				""
+				"That sure is a lot of pigs to find."
+				""
+				"You only need &e3&r, though."
+			]
+			hide_details_until_startable: true
+			id: "05F5C8217E23C1FC"
+			invisible: true
+			invisible_until_tasks: 1
+			tasks: [
+				{
+					id: "1DDE91B6A2A54F4B"
+					observe_type: 5
+					timer: 0L
+					to_observe: "eanimod:enhanced_pig"
+					type: "observation"
+				}
+				{
+					id: "70C7DF6D01F9F502"
+					observe_type: 5
+					timer: 0L
+					to_observe: "minecraft:piglin"
+					type: "observation"
+				}
+				{
+					id: "7F2F77307A3A7242"
+					observe_type: 5
+					timer: 0L
+					to_observe: "naturalist:boar"
+					type: "observation"
+				}
+				{
+					id: "60F55A3C14999A2F"
+					observe_type: 5
+					timer: 0L
+					to_observe: "minecraft:hoglin"
+					type: "observation"
+				}
+				{
+					id: "604A28599B60D11D"
+					observe_type: 0
+					timer: 0L
+					to_observe: "alexsmobs:tusklin"
+					type: "observation"
+				}
+			]
+			title: "Find some pigs"
+			x: -8.0d
+			y: -4.0d
 		}
 	]
 	title: "Paths of Mastery"

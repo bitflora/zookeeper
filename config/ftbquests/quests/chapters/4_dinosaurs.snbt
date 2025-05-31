@@ -5,7 +5,7 @@
 	group: "58C00CAA276A1624"
 	icon: {
 		Count: 1
-		id: "alexscaves:dinosaur_nugget"
+		id: "unusualprehistory:mezo_fossil"
 		tag: { }
 	}
 	id: "06A4BBEF3E73DC32"
@@ -44,6 +44,16 @@
 			dependencies: ["7E0557D04A8EACF0"]
 			description: ["We're going to need a lot of raw material to resurrect these creatures. Make a whole lot of &9organic ooze&r. It may even be worth your while to automate the process."]
 			id: "75D3BEFEA09CF5D9"
+			rewards: [{
+				count: 3
+				id: "4BE788C0CB6A33C3"
+				item: {
+					Count: 1
+					id: "unusualprehistory:organic_ooze"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				count: 20L
 				id: "005ABDAF49B80AB9"
@@ -67,6 +77,26 @@
 				tag: { }
 			}
 			id: "4014DB068B97D666"
+			rewards: [
+				{
+					id: "64433AFD0F910140"
+					item: {
+						Count: 1
+						id: "unusualprehistory:amber_fossil"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "565A34C9617D3287"
+					item: {
+						Count: 1
+						id: "unusualprehistory:opal_fossil"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "465B6C9D8059DE3B"
@@ -101,6 +131,26 @@
 				"Note that for safety reasons, none of these creatures can be bred. To get more, you must go through these steps again (but note that you can usually analyze an animal's drops for more DNA)."
 			]
 			id: "6A226F7D1EFAC888"
+			rewards: [
+				{
+					id: "00B005B5C9E1491C"
+					item: {
+						Count: 1
+						id: "unusualprehistory:frozen_fossil_item"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4870C783F3B537EF"
+					item: {
+						Count: 1
+						id: "unusualprehistory:paleo_fossil"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4E91FDDB7669E71D"
 				item: {
@@ -334,6 +384,15 @@
 			dependencies: ["5C34CDA20CC8F25A"]
 			description: ["Most ancient animals will hatch out of eggs. Just put those eggs somewhere safe where they won't be stepped on, and wait."]
 			id: "3C93415319B18E01"
+			rewards: [{
+				id: "0F550933F9CE6A00"
+				item: {
+					Count: 1
+					id: "unusualprehistory:mezo_fossil"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "479D5FF8EBB58B11"
 				title: "Ancient Eggs"
@@ -523,6 +582,15 @@
 			dependencies: ["6A226F7D1EFAC888"]
 			description: ["Animals and plants are all part of an interdependent system. We cannot successfully raise ancient beasts without also raising the plants they depended on."]
 			id: "5C34CDA20CC8F25A"
+			rewards: [{
+				id: "14DE91A4520738B8"
+				item: {
+					Count: 1
+					id: "unusualprehistory:plant_fossil_item"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "0FC94592101964CA"
 				title: "Ancient Plants"
@@ -637,6 +705,15 @@
 			dependencies: ["3C93415319B18E01"]
 			description: ["The past isn't all scales and fins. Mammals have been stomping around for a while, too. Try reviving a few of our ancient relatives. But be aware that it will take a bit more work."]
 			id: "566FE43D09E1B7A3"
+			rewards: [{
+				id: "6115DBAF221D8F26"
+				item: {
+					Count: 1
+					id: "unusualprehistory:tar_fossil_item"
+					tag: { }
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "3C9D4B3C7A2DD2F8"
 				title: "Ancient Fuzzballs"
@@ -647,24 +724,28 @@
 		}
 		{
 			dependencies: ["5C34CDA20CC8F25A"]
-			description: ["&fExplore the ancient waters and gather &aunique aquatic flora&r that once thrived in prehistoric oceans. From lush &3kelp&r to delicate &bcoral&r, each plant is a piece of history waiting to resurface."]
+			description: ["Many aquatic plants are ready to be revived. They will help decorate your rivers, and make it possible to farm ancient aquatic animals in cages."]
 			icon: "unusualprehistory:archaefructus"
 			id: "1AF186874427A88C"
 			optional: true
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "2146FB470C1B2B12"
-					type: "loot"
-				}
-				{
 					id: "4EA187DB1DEE7C1C"
 					type: "xp_levels"
 					xp_levels: 1
 				}
+				{
+					count: 3
+					id: "192C68FDFA7BB0B0"
+					item: {
+						Count: 1
+						id: "unusualprehistory:plant_fossil_item"
+						tag: { }
+					}
+					type: "item"
+				}
 			]
 			shape: "hexagon"
-			subtitle: "&7Dive beneath the waves"
 			tasks: [
 				{
 					id: "0DF0711116E1D79A"
@@ -692,30 +773,43 @@
 					type: "item"
 				}
 			]
-			title: "&3&lAquatic Wonders"
+			title: "Aquatic Plants"
 			x: -12.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["5C34CDA20CC8F25A"]
-			description: ["&fCollect &aplants and flowers&r that once painted the prehistoric landscapes. From towering ferns to vibrant wildflowers, these specimens represent the lush beauty of ancient Earth."]
+			description: ["Collect plants and flowers that once painted the prehistoric landscapes. They not only make your zoo decorations more authentic, you need them if you want to farm dinosaurs inside cages."]
 			icon: "unusualprehistory:bennett"
 			id: "2ADFA0D6450D2199"
 			optional: true
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "3479098795AF4AA5"
-					type: "loot"
-				}
-				{
 					id: "04B896398B393EB2"
 					type: "xp_levels"
 					xp_levels: 1
 				}
+				{
+					count: 3
+					id: "68FC7E470B1B062C"
+					item: {
+						Count: 1
+						id: "supplementaries:planter"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7F80CC191C5BB3FC"
+					item: {
+						Count: 1
+						id: "minecraft:pitcher_plant"
+						tag: { }
+					}
+					type: "item"
+				}
 			]
 			shape: "octagon"
-			subtitle: "&7Reviving the land’s past"
 			tasks: [
 				{
 					id: "1948AC7C26E08F13"
@@ -748,7 +842,7 @@
 					type: "item"
 				}
 			]
-			title: "&2&lEarth’s Green Heritage"
+			title: "Land Plants"
 			x: -10.5d
 			y: -6.0d
 		}
