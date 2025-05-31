@@ -310,6 +310,13 @@
 		}
 		{
 			dependencies: ["542CDE05F61489C1"]
+			description: [
+				"Follow the steps in this guidebook to complete your mission. Sometimes, as here, you can simply check a step as complete. Often, you will need to fulfill some condition, usually producing some item as a result of following the instructions. Research chapters must be completed in order, but the rest can be done at any time."
+				""
+				"You don't actually need this book in inventory, though. You can always access the quest book from an icon in the upper left of your inventory screen. Or even set a key binding for it."
+				""
+				"Go ahead, throw this book away. It'll be cool, I promise."
+			]
 			id: "397FE29AD20529EC"
 			tasks: [{
 				id: "32686CC0BCD84E55"
