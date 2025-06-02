@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:barter",
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "functions": [
+          ],
+          "name": "minecraft:clay_ball"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 7,
+          "functions": [
+          ],
+          "name": "alexsmobs:maggot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+          ],
+          "name": "minecraft:redstone_block"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "functions": [
+          ],
+          "name": "minecraft:raw_iron"
+        }
+      ]
+    }
+  ]
+}

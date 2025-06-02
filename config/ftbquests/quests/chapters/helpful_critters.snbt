@@ -13,6 +13,7 @@
 		{
 			click: "https://alexs-mobs-unofficial.fandom.com/wiki/"
 			height: 2.0d
+			hover: ["Alex's Mobs"]
 			image: "kubejs:textures/quests/alexsmobs.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -22,6 +23,7 @@
 		{
 			click: "https://exoticbirds.fandom.com/wiki/Exotic_Birds_Wikia"
 			height: 2.0d
+			hover: ["Exotic Birds"]
 			image: "kubejs:textures/quests/exoticbirds.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -31,6 +33,7 @@
 		{
 			click: "https://minecraft-mods.fandom.com/wiki/Genetic_Animals"
 			height: 2.0d
+			hover: ["Genetic Animals"]
 			image: "kubejs:textures/quests/geneticanimals.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -40,10 +43,21 @@
 		{
 			click: "https://rats-mod.fandom.com/wiki/Rats_Mod_Wiki"
 			height: 1.0d
+			hover: ["Rats"]
 			image: "kubejs:textures/quests/rats.png"
 			rotation: 0.0d
 			width: 3.0d
 			x: 8.0d
+			y: -9.0d
+		}
+		{
+			click: "https://github.com/ZAWA-Evolved/ZAWA/wiki"
+			height: 3.0d
+			hover: ["Zoo and Wild Animals: Evolved"]
+			image: "kubejs:textures/quests/zawa.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 11.5d
 			y: -9.0d
 		}
 	]

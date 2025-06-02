@@ -1,0 +1,228 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_zoo"
+	group: ""
+	icon: {
+		Count: 1
+		id: "zawa:big_giraffe_plush"
+		tag: { }
+	}
+	id: "49FEC0587520F811"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to the start of your zoo. Great things come from humble beginnings."
+				""
+				"You may have already noticed a lot of critters wandering around. You should start building exhibits to put them on display. Your zoo will be essential to the funding of your research."
+				""
+				"Keep in mind that there are many mods an animal might come from, and this will affect its behavior and needs. Some will need to be fed and entertained after they are tamed. But if you keep them happy, they will reward you."
+				""
+				"[ \"You may want to start down the \", { \"text\": \"Path of the Owl\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"51893424D161C6E7\" } }, \"; this will make it much easier to tell exactly what kind of animal you are dealing\" ] with."
+			]
+			id: "77ABAB18A01650BA"
+			rewards: [
+				{
+					id: "03F2FFFCFA26DE13"
+					item: {
+						Count: 1
+						id: "zawa:data_book"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "155FC61BD35009FF"
+					item: {
+						Count: 1
+						id: "aardvarksweirdzoology:weird_wonderful_wild_guide"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7F76E49BA120750D"
+					item: {
+						Count: 1
+						id: "aardvarksweirdzoology:geneticists_guideto_violating_natural_laws"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "67297D8E9BEF96F1"
+				title: "Begin the Zoo"
+				type: "checkmark"
+			}]
+			x: -14.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["77ABAB18A01650BA"]
+			description: [
+				"The Zoojoyizer is the key to converting abstract happiness into cold hard material goods. Put one at the center of an exhibit with a sample of the animal's dna and it will generate resources for you every morning. The items created depend on the animal and how well decorated the exhibit is."
+				""
+				"You can look in JEI to see what animals make what resources, and what they like in their environment."
+			]
+			id: "2044B4978E27AE26"
+			rewards: [
+				{
+					id: "36CC1534030A778E"
+					item: {
+						Count: 1
+						id: "aardvarksweirdzoology:bucket_of_tiger_angelfish"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "51BE583BF93A1586"
+					item: {
+						Count: 1
+						id: "aardvarksweirdzoology:angelfish_dna"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Happy Happy Joy Joy"
+			tasks: [{
+				id: "46550C4C7A27652C"
+				item: {
+					Count: 1
+					id: "aardvarksweirdzoology:fish_zoojoyizer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["77ABAB18A01650BA"]
+			description: [
+				"Ambient, tiny, and small animals from the ZAWA mod can be picked up by right clicking them with an empty hand. Animals can then be set down by sneaking. Practice by catching these &aButterflies&r."
+				""
+				"It is recommended that you start your exhibit with these sorts of small animals. Animals that struggle while you hold them are best carried with a &9handling glove&r in your offhand."
+				""
+				"[ \"More advanced capture methods can be unlocked by pursuing the \", { \"text\": \"Path of the Spider\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"000F0C223F4007A3\" } }, \".\" ]"
+			]
+			id: "32B6A25A9A456DEB"
+			rewards: [
+				{
+					id: "208BE4FFCB022C88"
+					item: {
+						Count: 1
+						id: "zawa:handling_glove"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "368584CDACE25733"
+					item: {
+						Count: 1
+						id: "zawa:butterfly_spawn_egg"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6F36386BFE682274"
+				title: "Got it"
+				type: "checkmark"
+			}]
+			title: "Start Small"
+			x: -12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["32B6A25A9A456DEB"]
+			description: [
+				"Smaller \"ambient\" animals like these &aButterflies&r are simple to care for; they have no ongoing needs. But more complex animals will need food and water and even enrichment in their environments in order to stay healthy and in good breeding condition."
+				""
+				"After breeding some additional butterflies for food, try out this &aTree Frog&r next. It is still small enough to catch by hand, but will require care once it has been tamed with &9insecitivore kibble&r."
+			]
+			id: "73C46B64A89E4627"
+			rewards: [
+				{
+					id: "2A90009B090FC5E6"
+					item: {
+						Count: 1
+						id: "zawa:tree_frog_spawn_egg"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "584B19ADF8B1BAB7"
+					item: {
+						Count: 1
+						id: "zawa:food_bowl"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "739F5C4C1A6DFA83"
+					item: {
+						Count: 1
+						id: "zawa:climbing_vine"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0943C5373B9E5F18"
+					item: {
+						Count: 1
+						id: "zawa:insectivore_kibble"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "785CCDEBC74E2015"
+					item: {
+						Count: 1
+						id: "zawa:exhibit_glass_pane"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2171A527324B5484"
+					item: {
+						Count: 4
+						id: "zawa:black_swallowtail_butterfly"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "615CA85C84E6ABEB"
+					item: {
+						Count: 4
+						id: "minecraft:sugar"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Care and Feeding"
+			x: -9.5d
+			y: 1.0d
+		}
+	]
+	title: "The Zoo"
+}

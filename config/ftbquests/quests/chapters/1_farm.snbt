@@ -210,13 +210,42 @@
 				}
 			}
 			id: "7D3DD42485E7C0FF"
-			tasks: [{
-				id: "67E4A29E5647FA24"
-				observe_type: 5
-				timer: 0L
-				to_observe: "alexsmobs:platypus"
-				type: "observation"
+			rewards: [{
+				id: "55B2D72820D825E3"
+				item: {
+					Count: 1
+					id: "minecraft:raw_iron_block"
+					tag: { }
+				}
+				type: "item"
 			}]
+			tasks: [
+				{
+					id: "67E4A29E5647FA24"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexsmobs:platypus"
+					type: "observation"
+				}
+				{
+					id: "3E5B39D5380D21E3"
+					item: {
+						Count: 1
+						id: "alexsmobs:platypus_bucket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "30F19BC233FC6AB6"
+					item: {
+						Count: 1
+						id: "minecraft:redstone_block"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "Platypus Scavenging"
 			x: 3.5d
 			y: -7.0d

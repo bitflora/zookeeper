@@ -90,6 +90,7 @@
 				"7F2F77307A3A7242"
 				"60F55A3C14999A2F"
 				"05F5C8217E23C1FC"
+				"3506375E18D2D02C"
 			]
 			description: [
 				"You are what you eat. So shouldn't you know more about what you eat? It sure would be nive to know exactly how much hunger and satiety each piece of food restores."
@@ -1068,6 +1069,13 @@
 					observe_type: 0
 					timer: 0L
 					to_observe: "alexsmobs:tusklin"
+					type: "observation"
+				}
+				{
+					id: "3506375E18D2D02C"
+					observe_type: 5
+					timer: 0L
+					to_observe: "minecraft:piglin_brute"
 					type: "observation"
 				}
 			]

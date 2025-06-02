@@ -338,15 +338,27 @@
 				"For example, here's a &aChest Pet&r to help on your journey. He's a little backpack who likes to eat &9wood planks&r. Try hovering over him and pressing 'r' to see how to make more of him, and 'u' to see what recipes he can be used in."
 			]
 			id: "75DD55D68ACC8C94"
-			rewards: [{
-				id: "5C8A8B98CCB90A8D"
-				item: {
-					Count: 1
-					id: "inventorypets:temp_chest"
-					tag: { }
+			rewards: [
+				{
+					id: "5C8A8B98CCB90A8D"
+					item: {
+						Count: 1
+						id: "inventorypets:temp_chest"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 10
+					id: "3256A50E4FBAB1F4"
+					item: {
+						Count: 1
+						id: "minecraft:oak_planks"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "54D0042CC4CF1AAC"
 				title: "Using JEI"
@@ -365,10 +377,12 @@
 				"- Rats"
 				"- Tinker's Contruct"
 				"- Unusual Prehistory"
+				"- Zoo and Wild Animals: Evolved (ZAWA)"
+				"- Aardvark's Weird Zoology"
 				""
-				"If you are confused about something, you may want to search for their wikis, several of which are linked in the &2Helpful Critters&r section. That section will also give you details about the most important animals, especially where we have made changes like adding foods which will tame them."
+				"If you are confused about something, you may want to search for their wikis, several of which are linked in the &2Helpful Critters&r section. That section will also give you details about the most important animals, especially where we have made changes like adding foods which will tame them. Keep in mind that some animals exist in multiple mods; what works on one kind of &aEagle&r may not work on another."
 				""
-				"Take note of any animals you see while travelling. You may want to come back for them later. And if you find fossils, make sure to hold onto them for later."
+				"Take note of any animals you see while travelling. You may want to come back for them later. And if you find &9fossils&r, make sure to hold onto them for later."
 			]
 			id: "4342896FE9651396"
 			rewards: [
