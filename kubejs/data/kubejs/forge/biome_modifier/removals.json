@@ -1,0 +1,12 @@
+{
+  "type": "forge:remove_spawns",
+  "biomes": "#is_overworld",
+  "entity_types": [
+    "zawaessentials:maned_wolf",
+    "zawa:brown_rat",
+    "zawa:bald_eagle",
+    "zawa:giant_anteater",
+    "zawa:orca",
+    "zawa:snow_leopard"
+  ]
+}

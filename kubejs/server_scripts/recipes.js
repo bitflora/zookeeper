@@ -677,7 +677,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       E: '#forge:eggs',
     });
 
-    e.shaped('guinea_pig_mod:guinea_pig_spawn_egg', [
+    e.shaped('lilcritters:guinea_pig_spawn_egg', [
       ' I ',
       ' X ',
       ' E '

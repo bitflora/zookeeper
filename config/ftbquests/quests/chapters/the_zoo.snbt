@@ -144,54 +144,43 @@
 		{
 			dependencies: ["32B6A25A9A456DEB"]
 			description: [
-				"Smaller \"ambient\" animals like these &aButterflies&r are simple to care for; they have no ongoing needs. But more complex animals will need food and water and even enrichment in their environments in order to stay healthy and in good breeding condition."
+				"Smaller \"ambient\" animals like these &aButterflies&r are simple creatures. More complex animals can be tamed and claimed."
 				""
-				"After breeding some additional butterflies for food, try out this &aTree Frog&r next. It is still small enough to catch by hand, but will require care once it has been tamed with &9insecitivore kibble&r."
+				"After breeding some additional butterflies, try out this &aChinchilla&r next. It is still small enough to catch by hand, and can be tamed with &9herbivore kibble&r."
+				""
+				"(You may read in wikis that ZAWA animals need to be fed and watered after being tamed; this is not the case. Your animals will be perfectly happy in their exhibits without your constant attention.)"
 			]
+			icon: {
+				Count: 1
+				id: "zawa:black_swallowtail_butterfly"
+				tag: { }
+			}
 			id: "73C46B64A89E4627"
 			rewards: [
-				{
-					id: "2A90009B090FC5E6"
-					item: {
-						Count: 1
-						id: "zawa:tree_frog_spawn_egg"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "584B19ADF8B1BAB7"
-					item: {
-						Count: 1
-						id: "zawa:food_bowl"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "739F5C4C1A6DFA83"
-					item: {
-						Count: 1
-						id: "zawa:climbing_vine"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "0943C5373B9E5F18"
-					item: {
-						Count: 1
-						id: "zawa:insectivore_kibble"
-						tag: { }
-					}
-					type: "item"
-				}
 				{
 					count: 64
 					id: "785CCDEBC74E2015"
 					item: {
 						Count: 1
 						id: "zawa:exhibit_glass_pane"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0ADF1BC877854E7E"
+					item: {
+						Count: 1
+						id: "zawaessentials:chinchilla_spawn_egg"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5B8FA38FADE3AAA3"
+					item: {
+						Count: 1
+						id: "zawa:herbivore_kibble"
 						tag: { }
 					}
 					type: "item"

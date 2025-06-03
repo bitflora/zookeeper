@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:entity_melting",
   "entity": {
-    "type": "guinea_pig_mod:guinea_pig"
+    "type": "lilcritters:guinea_pig"
   },
   "result": {
     "fluid": "kubejs:anecdotes",
