@@ -25,7 +25,8 @@ import mods.itemstages.ItemStages;
 ItemStages.restrict(<item:scannable:scanner>, "owl_scanner");
 
 ItemStages.restrict(<item:minecraft:lead>, "spider_lead");
-ItemStages.restrict(<item:cagebox:cage_box>, "spider_cagebox");
+ItemStages.restrict(<item:zawa:capture_cage>, "spider_cagebox");
+ItemStages.restrict(<item:zawa:seine_net>, "spider_cagebox");
 
 
 import crafttweaker.api.mod.Mod;

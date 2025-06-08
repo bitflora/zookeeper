@@ -63,8 +63,8 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
 
     modify_inventory_pets(e);
 
-    e.remove({ output: 'cagebox:cage_box' });
-    e.shaped('1x cagebox:cage_box', [
+    e.remove({ output: 'zawa:capture_cage' });
+    e.shaped('1x zawa:capture_cage', [
         'III',
         'IBI',
         'CCC'
@@ -174,7 +174,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       }
     );
 
-    e.shaped('cyclic:sleeping_mat', [
+    e.shaped('inventorypets:pet_bed', [
         '   ',
         'FFB',
         'FFF'

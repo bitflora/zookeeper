@@ -16,7 +16,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["32E5BB2EC0EE79E6"]
+			dependencies: [
+				"32E5BB2EC0EE79E6"
+				"1023B9A16DFDA09C"
+			]
 			description: [
 				"&aMagpies&r often scrounge up useful items, like &9iron ingots&r. They will happily drop these in exchange for &9seeds&r that are lying around."
 				""
@@ -76,8 +79,8 @@
 				}
 			]
 			title: "Magpie Bartering"
-			x: 3.5d
-			y: -11.0d
+			x: 4.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["1F9528CF1F2437B2"]
@@ -190,11 +193,11 @@
 				type: "item"
 			}]
 			title: "Marine Food"
-			x: -0.5d
+			x: 1.5d
 			y: -7.0d
 		}
 		{
-			dependencies: ["1023B9A16DFDA09C"]
+			dependencies: ["39048B07BF1302D2"]
 			description: [
 				"The &aPlatypus&r is a strange creature. But even strange friends can be helpful."
 				""
@@ -210,6 +213,7 @@
 				}
 			}
 			id: "7D3DD42485E7C0FF"
+			optional: true
 			rewards: [{
 				id: "55B2D72820D825E3"
 				item: {
@@ -247,8 +251,8 @@
 				}
 			]
 			title: "Platypus Scavenging"
-			x: 3.5d
-			y: -7.0d
+			x: 5.0d
+			y: -11.5d
 		}
 		{
 			description: [
@@ -560,7 +564,11 @@
 		}
 		{
 			dependencies: ["6D184A8F42832AE3"]
-			description: ["A &9sleeping mat&r is a handy portable bed that will let you sleep without resetting your spawn point. Very handy for when you are travelling around trying to find new animals!"]
+			description: [
+				"A &aBed Pet&r is a friend that will let you sleep without resetting your spawn point. Very handy for when you are travelling around trying to find new animals!"
+				""
+				"He does need to munch on &9white wool&r from time to time."
+			]
 			id: "7312B3B6E31F8CA2"
 			optional: true
 			rewards: [{
@@ -568,27 +576,24 @@
 				type: "xp_levels"
 				xp_levels: 3
 			}]
-			subtitle: "Nap time"
+			subtitle: "A pet that is a bed, not a bed for pets"
 			tasks: [{
-				id: "6B7981B65F0CF23E"
+				id: "630A18674127F4DD"
 				item: {
 					Count: 1
-					id: "cyclic:sleeping_mat"
+					id: "inventorypets:pet_bed"
 					tag: {
 						Damage: 0
 					}
 				}
 				type: "item"
 			}]
-			title: "Sleeping Mat"
+			title: "Bed Pet"
 			x: 1.5d
 			y: -9.0d
 		}
 		{
-			dependencies: [
-				"39048B07BF1302D2"
-				"7D3DD42485E7C0FF"
-			]
+			dependencies: ["39048B07BF1302D2"]
 			description: [
 				"You did it! Give yourself a hearty pat on the back!"
 				""

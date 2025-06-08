@@ -1,4 +1,5 @@
 *.jar
+*.jar.disabled
 .mixin.out/
 saves/
 logs/

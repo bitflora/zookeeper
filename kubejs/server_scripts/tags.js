@@ -47,4 +47,5 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:cachalot_whale_tooth');
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:froststalker_horn');
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:trike_horn');
+    e.add('kubejs:diamond_sampler_point', 'alexsmobs:dropbear_claw');
 });

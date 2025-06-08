@@ -472,16 +472,21 @@
 				"3C436A5A1F57E9BC"
 				"000F0C223F4007A3"
 			]
-			description: ["Eureka! We can build a cage that will capture any mob who walks over it. Then it can be carried easily to another area."]
+			description: [
+				"Eureka! We can build a cage that will capture any mob who walks over it. Then it can be carried easily to another area."
+				""
+				"The &9seine net&r is similar, but for aquatic creatures."
+			]
 			id: "76C39DF60A496604"
+			rewards: [{
+				id: "014FA28B640B1C19"
+				item: "zawa:seine_net"
+				type: "item"
+			}]
 			subtitle: "What's in the box?"
 			tasks: [{
-				id: "621F663B5AB1805B"
-				item: {
-					Count: 1
-					id: "cagebox:cage_box"
-					tag: { }
-				}
+				id: "43A395D990B9EB88"
+				item: "zawa:capture_cage"
 				type: "item"
 			}]
 			title: "Path of the Spider 5"
