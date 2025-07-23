@@ -297,7 +297,7 @@
 			description: [
 				"Research is expensive! It costs money!"
 				""
-				"You're going to need to build a zoo to raise funds. Zoogooers will pay you based on how varied and how exotic your animals are. So even if you don't need an animal to build your farms, it can still be worth your while to gather them and put them into enclosures where people can see them."
+				"You're going to need to build a zoo to raise funds. &aZoogoers&r will pay you based on how varied and how exotic your animals are. So even if you don't need an animal to build your farms, it can still be worth your while to gather them and put them into enclosures where people can see them."
 			]
 			id: "5C4F9A1EDB08C532"
 			tasks: [{

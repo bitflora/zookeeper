@@ -63,47 +63,6 @@
 		{
 			dependencies: ["77ABAB18A01650BA"]
 			description: [
-				"The Zoojoyizer is the key to converting abstract happiness into cold hard material goods. Put one at the center of an exhibit with a sample of the animal's dna and it will generate resources for you every morning. The items created depend on the animal and how well decorated the exhibit is."
-				""
-				"You can look in JEI to see what animals make what resources, and what they like in their environment."
-			]
-			id: "2044B4978E27AE26"
-			rewards: [
-				{
-					id: "36CC1534030A778E"
-					item: {
-						Count: 1
-						id: "aardvarksweirdzoology:bucket_of_tiger_angelfish"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "51BE583BF93A1586"
-					item: {
-						Count: 1
-						id: "aardvarksweirdzoology:angelfish_dna"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			subtitle: "Happy Happy Joy Joy"
-			tasks: [{
-				id: "46550C4C7A27652C"
-				item: {
-					Count: 1
-					id: "aardvarksweirdzoology:fish_zoojoyizer"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -12.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["77ABAB18A01650BA"]
-			description: [
 				"Ambient, tiny, and small animals from the ZAWA mod can be picked up by right clicking them with an empty hand. Animals can then be set down by sneaking. Practice by catching these &aButterflies&r."
 				""
 				"It is recommended that you start your exhibit with these sorts of small animals. Animals that struggle while you hold them are best carried with a &9handling glove&r in your offhand."
@@ -210,6 +169,47 @@
 			]
 			title: "Care and Feeding"
 			x: -9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["73C46B64A89E4627"]
+			description: [
+				"Now that you have a few creatures to show off, it's time to let in some visitors. Make yourself a &9Zoo Donation Barrel&r and then place it in the center of your new zoo."
+				""
+				"Throughout the day, &aZoogoers&r will enter your zoo via the barrel, and wander around admiring the animals you have gathered. At the end of the day, they will return to where they came from. If they liked your zoo, they'll leave a donation of &9emeralds&r! The more animal species you add, the larger your donations will be."
+				""
+				"Naturally, more exotic animals will impress your &aZoogoers&r more. Build more exhibits to earn more money!"
+			]
+			id: "2AC8599400B467E3"
+			rewards: [{
+				id: "32174869731B79DF"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			tasks: [{
+				id: "35762F15E3FBDFA0"
+				item: "zoogoer:zoo_donation_barrel_block"
+				type: "item"
+			}]
+			title: "Time for Customers!"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2AC8599400B467E3"]
+			description: [
+				"Once you have built up some funds, you can construct other kinds of donation barrels, to invite in specialist guests. These guests prefer to see specific kinds of animals. For example, &aBird Watchers&r are twice as interested in any birds you will show them, and only half as interested as a normal &aZoogoer&r in other kinds of animals. If they see a lot of animals they like, they may even leave various items as tips."
+				""
+				"As you build out specialized areas of your zoo, make sure to place the right kind of &9donation barrel&r near the right exhibits."
+			]
+			id: "360F892F0B5BD1BF"
+			tasks: [{
+				id: "5FCD26B41762E508"
+				item: "zoogoer:bird_donation_barrel_block"
+				type: "item"
+			}]
+			title: "More Discerning Customers"
+			x: -4.5d
 			y: 1.0d
 		}
 	]

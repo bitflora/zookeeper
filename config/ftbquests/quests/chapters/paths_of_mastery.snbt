@@ -710,6 +710,11 @@
 				""
 				"You can even keep animals in there!"
 			]
+			icon: {
+				Count: 1
+				id: "nomadictents:large_indlu"
+				tag: { }
+			}
 			id: "7B1BB8EC96CE9DFD"
 			rewards: [
 				{
@@ -742,6 +747,7 @@
 				}
 			]
 			shape: "octagon"
+			subtitle: "Carry your home with you"
 			tasks: [{
 				id: "43BE8A99DD86616D"
 				item: {

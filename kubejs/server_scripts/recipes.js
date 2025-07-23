@@ -174,15 +174,6 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       }
     );
 
-    e.shaped('inventorypets:pet_bed', [
-        '   ',
-        'FFB',
-        'FFF'
-    ], {
-        F: '#kubejs:furs',
-        B: 'kubejs:fur_ball'
-    });
-
     e.shaped('cyclic:waxed_redstone', [
         'BBB',
         'BR ',
@@ -867,9 +858,47 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         C: 'inventorypets:temp_chest'
     });
 
+    e.shaped('inventorypets:temp_feed_bag', [
+        ' F ',
+        'F F',
+        'FFF'
+    ], {
+        F: 'kubejs:fur_ball'
+    });
+
+    e.shaped('inventorypets:pet_bed', [
+        '   ',
+        'FFB',
+        'FFF'
+    ], {
+        F: '#kubejs:furs',
+        B: 'kubejs:fur_ball'
+    });
+
+    e.shaped('inventorypets:pet_grave', [
+        ' C ',
+        'GEG',
+        'GGG'
+    ], {
+        C: 'minecraft:cobblestone',
+        F: 'kubejs:embryo',
+        G: 'minecraft:gravel'
+    });
+
     // put this back for use downstream
     e.shapeless('9x inventorypets:nugget_diamond', ['minecraft:diamond']);
     e.shapeless('minecraft:diamond', ['9x inventorypets:nugget_diamond']);
+
+
+    e.shaped('inventorypets:pet_cow', [
+        ' X ',
+        'FMF',
+        'FMF'
+    ], {
+        X: 'minecraft:beef',
+        F: 'kubejs:fur_ball',
+        M: 'kubejs:meatwad'
+    });
 
     // the rest require meatwads
     e.shaped('inventorypets:pet_cow', [

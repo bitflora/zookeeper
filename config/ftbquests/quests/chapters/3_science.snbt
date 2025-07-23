@@ -486,6 +486,7 @@
 				}
 				type: "item"
 			}]
+			subtitle: "Power over Life"
 			tasks: [{
 				id: "6F367C631259FDE4"
 				item: {
@@ -594,6 +595,31 @@
 			title: "Caged Mobs"
 			x: 0.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["3FA3C3C16A9DF41B"]
+			description: ["Our research is starting to give us real results! With the creation of the &aGrave Pet&r, you can now revive from your own deaths with your items intact... so long as you keep him fed."]
+			id: "28D8FF5806F8D938"
+			optional: true
+			rewards: [{
+				id: "745204193A0A4042"
+				item: "minecraft:bone"
+				type: "item"
+			}]
+			subtitle: "Power over Death"
+			tasks: [{
+				id: "6B4BC0D7607012C2"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_grave"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
 		}
 	]
 	title: "&a3.&r Science!"
