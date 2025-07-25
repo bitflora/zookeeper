@@ -346,15 +346,17 @@
 				}
 			]
 			title: "Path of the Packrat"
-			x: 3.0d
-			y: 3.0d
+			x: -1.5d
+			y: -6.5d
 		}
 		{
 			description: ["It's a dangerous world out there. You cannot always rely on your equipment to protect you. Instead, become one with your equipment. Learn the ways of the turtle."]
 			icon: {
 				Count: 1
-				id: "aquaculture:box_turtle"
-				tag: { }
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "minecraft:turtle"
+				}
 			}
 			id: "6BDA6CFB89959B12"
 			rewards: [{
@@ -1093,6 +1095,165 @@
 			title: "Find some pigs"
 			x: -8.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["68BEF1DE33D8ACD0"]
+			description: ["First, you must practice looking better with the materials you already have. Apply an armor trim to something."]
+			icon: "minecraft:dune_armor_trim_smithing_template"
+			id: "0C51EBA917A00732"
+			tasks: [{
+				advancement: "minecraft:adventure/trim_with_any_armor_pattern"
+				criterion: ""
+				id: "3D01F3808F0B2FCE"
+				title: "Craft a trimmed armor"
+				type: "advancement"
+			}]
+			title: "Path of the Peacock 2"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0C51EBA917A00732"]
+			id: "0B0BA35647E85A70"
+			rewards: [{
+				id: "360A3732ECBC5F37"
+				item: {
+					Count: 1
+					id: "cyclic:glowing_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B35EDAF83D9F0CF"
+				item: {
+					Count: 1
+					id: "cyclic:glowing_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0C51EBA917A00732"]
+			id: "3139C8054C95D7FD"
+			tasks: [{
+				id: "43F16102F48AECE1"
+				item: {
+					Count: 1
+					id: "cyclic:charm_longfall"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C51EBA917A00732"]
+			id: "491F4B4D6D05660F"
+			tasks: [{
+				id: "4EF83FB6EF6B3857"
+				item: {
+					Count: 1
+					id: "cyclic:charm_creeper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C51EBA917A00732"]
+			id: "4A7E9E329476ACD9"
+			tasks: [{
+				id: "34D5813DDCDD341F"
+				item: {
+					Count: 1
+					id: "cyclic:charm_invisible"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0C51EBA917A00732"]
+			id: "719AA004107D4A75"
+			tasks: [{
+				id: "04038D8ADE2AF0B9"
+				item: {
+					Count: 1
+					id: "cyclic:charm_fire"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0C51EBA917A00732"]
+			id: "48DFABCA5ED3F777"
+			tasks: [{
+				id: "21E58C1F97B12A76"
+				item: {
+					Count: 1
+					id: "cyclic:charm_antidote"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			description: ["The &aPeacock&r understands the value of accessorizing well. Perhaps if you studied its ways you could gain new abilities and look good doing it."]
+			icon: {
+				Count: 1
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "exoticbirds:peafowl"
+				}
+			}
+			id: "68BEF1DE33D8ACD0"
+			tasks: [
+				{
+					id: "7AB06D7494CBAAA9"
+					observe_type: 5
+					timer: 0L
+					title: "Find a peacock"
+					to_observe: "exoticbirds:peafowl"
+					type: "observation"
+				}
+				{
+					count: 5L
+					id: "0AC05555B229AB6C"
+					item: { Count: 5, id: "exoticbirds:peafowl_egg" }
+					type: "item"
+				}
+			]
+			title: "Path of the Peacock"
+			x: 4.0d
+			y: 2.5d
 		}
 	]
 	title: "Paths of Mastery"

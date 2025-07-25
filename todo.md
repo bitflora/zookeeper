@@ -1,0 +1,5 @@
+- Hard Science assets
+- replace Marine Food with Chow
+- add emeralds to tinker recipes
+- Path of the packrat?
+- final chapter

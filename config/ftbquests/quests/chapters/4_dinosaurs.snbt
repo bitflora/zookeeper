@@ -1521,7 +1521,7 @@
 		}
 		{
 			dependencies: ["10168B7E1F2A4A83"]
-			description: ["Finally, give this to a &aChef Rat&r to refine it down to the essense of bone."]
+			description: ["Finally, give that &9bone mess&r to a &aChef Rat&r to refine it down to the essense of bone."]
 			id: "31BA61F113E9C873"
 			tasks: [{
 				id: "2664C02D2054C4B7"
@@ -1537,7 +1537,7 @@
 		}
 		{
 			dependencies: ["0E65EF336D33657F"]
-			description: ["The &aChef Rat&r can refine this down to a useful skin product."]
+			description: ["The &aChef Rat&r can refine the &9skin mass&r down to a useful skin product."]
 			id: "2A65D84B8114B116"
 			tasks: [{
 				id: "152377D2185D6FFD"

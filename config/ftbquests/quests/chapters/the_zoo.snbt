@@ -205,7 +205,14 @@
 			id: "360F892F0B5BD1BF"
 			tasks: [{
 				id: "5FCD26B41762E508"
-				item: "zoogoer:bird_donation_barrel_block"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(zoogoer:advanced_donation_barrels)"
+					}
+				}
+				title: "Any #zoogoer:advanced_donation_barrels"
 				type: "item"
 			}]
 			title: "More Discerning Customers"

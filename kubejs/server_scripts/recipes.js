@@ -58,10 +58,10 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     );
 
     // Remove some recipes
-    //e.remove({ mod: 'cyclic' }) // TODO: remove these, after investigating the recipes
     e.remove({ output: 'theoneprobe:probe' });
 
     modify_inventory_pets(e);
+    modify_cyclic(e);
 
     e.remove({ output: 'zawa:capture_cage' });
     e.shaped('1x zawa:capture_cage', [
@@ -161,49 +161,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       e.remove({ id: "sophisticatedstorage:" + recipe_id });
     })
 
-    // add back in select Cyclic items
-    e.shaped('1x cyclic:clock', [
-        'CCC',
-        'FLT',
-        'CCC'
-      ], {
-        C: 'compressedblocks:c0_cobblestone',
-        F: 'kubejs:fur_ball',
-        L: 'minecraft:clock',
-        T: 'minecraft:redstone_torch'
-      }
-    );
 
-    e.shaped('cyclic:waxed_redstone', [
-        'BBB',
-        'BR ',
-        'BBB'
-    ], {
-        R: 'minecraft:redstone_block',
-        B: 'kubejs:fur_ball'
-    });
-
-    e.shaped('cyclic:fan', [
-        ' IF',
-        'BRF',
-        ' IF'
-    ], {
-        R: 'minecraft:redstone',
-        F: 'kubejs:fur_ball',
-        I: 'minecraft:iron_ingot',
-        B: 'minecraft:iron_block'
-    });
-
-    e.shaped('cyclic:fan', [
-        ' IF',
-        'PRF',
-        ' IF'
-    ], {
-        R: 'minecraft:redstone',
-        F: 'kubejs:fur_ball',
-        I: 'minecraft:iron_ingot',
-        P: 'rats:rat_paw'
-    });
 
     e.remove({ output: "cookingforblockheads:cow_jar"});
     e.shaped('cookingforblockheads:cow_jar', [
@@ -836,6 +794,54 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
 
 
   });
+
+  function modify_cyclic(e) {
+    e.remove({ mod: 'cyclic' });
+
+    // add back in select Cyclic items
+    e.shaped('1x cyclic:clock', [
+        'CCC',
+        'FLT',
+        'CCC'
+      ], {
+        C: 'compressedblocks:c0_cobblestone',
+        F: 'kubejs:fur_ball',
+        L: 'minecraft:clock',
+        T: 'minecraft:redstone_torch'
+      }
+    );
+
+    e.shaped('cyclic:waxed_redstone', [
+        'BBB',
+        'BR ',
+        'BBB'
+    ], {
+        R: 'minecraft:redstone_block',
+        B: 'kubejs:fur_ball'
+    });
+
+    e.shaped('cyclic:fan', [
+        ' IF',
+        'BRF',
+        ' IF'
+    ], {
+        R: 'minecraft:redstone',
+        F: 'kubejs:fur_ball',
+        I: 'minecraft:iron_ingot',
+        B: 'minecraft:iron_block'
+    });
+
+    e.shaped('cyclic:fan', [
+        ' IF',
+        'PRF',
+        ' IF'
+    ], {
+        R: 'minecraft:redstone',
+        F: 'kubejs:fur_ball',
+        I: 'minecraft:iron_ingot',
+        P: 'rats:rat_paw'
+    });
+  }
 
   function modify_inventory_pets(e) {
     e.remove({ mod: "inventorypets"});
