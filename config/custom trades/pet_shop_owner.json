@@ -1,0 +1,43 @@
+{
+  "profession": "rats:pet_shop_owner",
+  "removeOtherTrades": false,
+  "maxTrades": 2,
+  "trades": [
+    {
+      "offer": {
+        "itemKey": "alexsmobs:spawn_egg_mantis_shrimp",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "rats:pet_shop_owner_spawn_egg_mantis_shrimp_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:tropical_fish_bucket",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "rats:pet_shop_owner_tropical_fish_bucket_for_emerald"
+    }
+  ]
+}

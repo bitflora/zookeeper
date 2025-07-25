@@ -1,0 +1,43 @@
+{
+  "profession": "alexs_herps_:herpetologist",
+  "removeOtherTrades": false,
+  "maxTrades": 2,
+  "trades": [
+    {
+      "offer": {
+        "itemKey": "eanimod:turtle_egg",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "alexs_herps_:herpetologist_turtle_egg_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "eanimod:enhanced_axolotl_egg_bucket",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "alexs_herps_:herpetologist_enhanced_axolotl_egg_bucket_for_emerald"
+    }
+  ]
+}
