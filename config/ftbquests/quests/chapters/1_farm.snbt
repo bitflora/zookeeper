@@ -152,7 +152,7 @@
 		{
 			dependencies: ["623459C89E933CFB"]
 			description: [
-				"Fish may have different food preferences, but if you mash enough food-like stuff together, you can get something that will please most of them. &9Marine food&r can be used to tame most tameable aquatic animals, such as &aMantis Shrimps&r, &aMudskippers&r, or &aAxolotls&r."
+				"Fish may have different food preferences, but if you mash enough food-like stuff together, you can get something that will please most of them. &9Piscivore Kibble&r can be used to tame most tameable aquatic animals, such as &aMantis Shrimps&r, &aMudskippers&r, or &aAxolotls&r."
 				""
 				"To make it, you'll need &9worms&r for the nutrition, with a dash of &9sugar&r to add flavor. And of course, all fish food has some &9ash&r in it (really, look at the nutrition analysis sometime), which you can obtain by smelting down &9compressed cobblestone&r into its basic inorganic elements. Mix that all together, and you've got a nice generic food. It's got what fish crave!"
 				""
@@ -163,11 +163,7 @@
 				{
 					count: 10
 					id: "317BAD44C58D7FF7"
-					item: {
-						Count: 1
-						id: "kubejs:marine_food"
-						tag: { }
-					}
+					item: "zawa:piscivore_kibble"
 					type: "item"
 				}
 				{
@@ -185,14 +181,10 @@
 			tasks: [{
 				count: 32L
 				id: "42306082C0EA1973"
-				item: {
-					Count: 32
-					id: "kubejs:marine_food"
-					tag: { }
-				}
+				item: "zawa:piscivore_kibble"
 				type: "item"
 			}]
-			title: "Marine Food"
+			title: "Kibble"
 			x: 1.5d
 			y: -7.0d
 		}

@@ -3,6 +3,6 @@
     "replace": false,
     "values": [
       "#minecraft:fishes",
-      "kubejs:marine_food"
+      "zawa:piscivore_kibble"
     ]
   }

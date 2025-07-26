@@ -634,7 +634,7 @@
 		}
 		{
 			dependencies: ["6BDA6CFB89959B12"]
-			description: ["More!"]
+			description: ["More turtles!"]
 			id: "277D423AD980A93C"
 			rewards: [{
 				id: "49F49560BB3DE2DD"
@@ -666,7 +666,7 @@
 		}
 		{
 			dependencies: ["277D423AD980A93C"]
-			description: ["Even more!"]
+			description: ["Even more turtles!"]
 			icon: {
 				Count: 1
 				id: "aquaculture:box_turtle"
@@ -1101,6 +1101,19 @@
 			description: ["First, you must practice looking better with the materials you already have. Apply an armor trim to something."]
 			icon: "minecraft:dune_armor_trim_smithing_template"
 			id: "0C51EBA917A00732"
+			rewards: [
+				{
+					id: "02BDE6BA52400CC4"
+					item: "minecraft:wild_armor_trim_smithing_template"
+					type: "item"
+				}
+				{
+					id: "2A5D8A40997C4ECD"
+					item: "minecraft:wayfinder_armor_trim_smithing_template"
+					type: "item"
+				}
+			]
+			size: 1.5d
 			tasks: [{
 				advancement: "minecraft:adventure/trim_with_any_armor_pattern"
 				criterion: ""
@@ -1113,7 +1126,16 @@
 			y: 4.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0C51EBA917A00732"]
+			description: ["Many creatures out there have no difficulty seeing in the dark. Steal the &aRaccoon's&r secrets from him."]
+			icon: {
+				Count: 1
+				id: "cyclic:glowing_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "0B0BA35647E85A70"
 			rewards: [{
 				id: "360A3732ECBC5F37"
@@ -1126,25 +1148,46 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "5B35EDAF83D9F0CF"
-				item: {
-					Count: 1
-					id: "cyclic:glowing_helmet"
-					tag: {
-						Damage: 0
-					}
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "1BAF12606D119CBD"
+					item: "exoticbirds:peafowl_egg"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					consume_items: true
+					count: 3L
+					id: "1AC915CC765A86B4"
+					item: "alexsmobs:raccoon_tail"
+					type: "item"
+				}
+			]
+			title: "Vision Helmet"
 			x: 1.5d
 			y: 1.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0C51EBA917A00732"]
+			description: [
+				"Falling: it hurts!"
+				""
+				"But cats always seem to land lightly on their feet."
+				""
+				"Go to the &aTiger&r. Feed it to gain its blessing."
+			]
+			icon: {
+				Count: 1
+				id: "cyclic:charm_longfall"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "3139C8054C95D7FD"
-			tasks: [{
-				id: "43F16102F48AECE1"
+			rewards: [{
+				id: "568813F157BF5575"
 				item: {
 					Count: 1
 					id: "cyclic:charm_longfall"
@@ -1154,14 +1197,45 @@
 				}
 				type: "item"
 			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "2C0297F28AAAFE4F"
+					item: "exoticbirds:peafowl_egg"
+					type: "item"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/tigers_blessing"
+					criterion: ""
+					id: "2359EA93C57BABF2"
+					type: "advancement"
+				}
+				{
+					consume_items: true
+					id: "557CCA3C0E3E2889"
+					item: "zawa:big_lion_plush"
+					type: "item"
+				}
+			]
+			title: "Silkweave Slippers"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0C51EBA917A00732"]
+			description: ["&aCreepers&r are animals too, probably. Once you learn how to minify them, perhaps you can go even further and figure out how to keep them from blowing you up."]
+			icon: {
+				Count: 1
+				id: "cyclic:charm_creeper"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "491F4B4D6D05660F"
-			tasks: [{
-				id: "4EF83FB6EF6B3857"
+			rewards: [{
+				id: "06C510AF61E40799"
 				item: {
 					Count: 1
 					id: "cyclic:charm_creeper"
@@ -1171,14 +1245,37 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
-			y: 0.0d
+			tasks: [{
+				consume_items: true
+				count: 3L
+				id: "077D8599CA5332C6"
+				item: {
+					Count: 1
+					id: "inventorypets:pet_creeper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Dormant Creeper Spore"
+			x: 6.5d
+			y: 1.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0C51EBA917A00732"]
+			description: ["If you could just study how the eye has developed from the earliest ages, maybe you could also learn how to hide from it. But for that you'd need the &9lens&r shed by an &aAnamolocaris&r as they grow, and they've been extinct for millions of years."]
+			icon: {
+				Count: 1
+				id: "cyclic:charm_invisible"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "4A7E9E329476ACD9"
-			tasks: [{
-				id: "34D5813DDCDD341F"
+			rewards: [{
+				id: "40A24EF1B03AFEB7"
 				item: {
 					Count: 1
 					id: "cyclic:charm_invisible"
@@ -1188,14 +1285,39 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: 1.5d
+			tasks: [
+				{
+					consume_items: true
+					id: "307680DD90D1B1AE"
+					item: "marvelous_menagerie:anomalocaris_lens"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "1ED6DF560B89DF15"
+					item: "exoticbirds:peafowl_egg"
+					type: "item"
+				}
+			]
+			title: "Cloak of Invisibility"
+			x: 7.5d
+			y: 2.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0C51EBA917A00732"]
+			description: ["Fire and lava are constant problems in the world. But there are creatures out there that it cannot harm. Play with fire a bit, then go into the Nether and tame a &aFoxHound&r to learn its secrets."]
+			icon: {
+				Count: 1
+				id: "cyclic:charm_fire"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "719AA004107D4A75"
-			tasks: [{
-				id: "04038D8ADE2AF0B9"
+			rewards: [{
+				id: "6A19E719C26432D0"
 				item: {
 					Count: 1
 					id: "cyclic:charm_fire"
@@ -1205,14 +1327,59 @@
 				}
 				type: "item"
 			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "3793CBC6A2ADAD49"
+					item: "exoticbirds:peafowl_egg"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "254FDC495F768913"
+					item: {
+						Count: 1
+						id: "minecraft:firework_rocket"
+						tag: {
+							Fireworks: {
+								Flight: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					advancement: "quark:tame_foxhound"
+					criterion: ""
+					id: "3460091770D275EA"
+					title: "Tame a foxhound"
+					type: "advancement"
+				}
+			]
+			title: "Fire Charm"
 			x: 0.5d
 			y: 2.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0C51EBA917A00732"]
+			description: [
+				"There's nothing like exposure therapy to help you build up an immunity to poison."
+				""
+				"Start by gathering the stink of a &aSkunk&r, then move on to the more dangerous &aRattlesnake&r."
+			]
+			icon: {
+				Count: 1
+				id: "cyclic:charm_antidote"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "48DFABCA5ED3F777"
-			tasks: [{
-				id: "21E58C1F97B12A76"
+			rewards: [{
+				id: "44EA0FD06763016B"
 				item: {
 					Count: 1
 					id: "cyclic:charm_antidote"
@@ -1222,8 +1389,32 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "58A5DCCEA1B45AAD"
+					item: "exoticbirds:peafowl_egg"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "1E5D77093195F5DB"
+					item: "alexsmobs:stink_bottle"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "1A51F6C14854A3FD"
+					item: "alexsmobs:rattlesnake_rattle"
+					type: "item"
+				}
+			]
+			title: "Anitdote Charm"
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			description: ["The &aPeacock&r understands the value of accessorizing well. Perhaps if you studied its ways you could gain new abilities and look good doing it."]
@@ -1235,6 +1426,7 @@
 				}
 			}
 			id: "68BEF1DE33D8ACD0"
+			size: 1.25d
 			tasks: [
 				{
 					id: "7AB06D7494CBAAA9"

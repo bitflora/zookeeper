@@ -91,11 +91,7 @@
 				{
 					count: 24
 					id: "0D9F23D10D1D8DFE"
-					item: {
-						Count: 1
-						id: "kubejs:marine_food"
-						tag: { }
-					}
+					item: "zawa:piscivore_kibble"
 					type: "item"
 				}
 			]

@@ -3,11 +3,7 @@
 	default_quest_shape: ""
 	filename: "4_dinosaurs"
 	group: "58C00CAA276A1624"
-	icon: {
-		Count: 1
-		id: "unusualprehistory:mezo_fossil"
-		tag: { }
-	}
+	icon: "unusualprehistory:mezo_fossil"
 	id: "06A4BBEF3E73DC32"
 	order_index: 3
 	quest_links: [ ]

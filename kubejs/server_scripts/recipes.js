@@ -237,17 +237,18 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     e.smelting('2x supplementaries:ash', 'compressedblocks:c0_cobblestone');
 
     // Marine Food
-    e.shapeless('kubejs:marine_food', [
+    e.remove({ output: "zawa:piscivore_kibble"});
+    e.shapeless('zawa:piscivore_kibble', [
         'minecraft:sugar',
         '2x aquaculture:worm',
         '3x supplementaries:ash'
     ]);
-    e.shapeless('kubejs:marine_food', [
+    e.shapeless('zawa:piscivore_kibble', [
         'minecraft:sugar',
         '3x alexs_herps_:mealworm',
         '3x supplementaries:ash'
     ]);
-    e.shapeless('kubejs:marine_food', [
+    e.shapeless('zawa:piscivore_kibble', [
         'minecraft:sugar',
         '3x alexsmobs:maggot',
         '3x supplementaries:ash'

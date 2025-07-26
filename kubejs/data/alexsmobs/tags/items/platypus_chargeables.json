@@ -4,6 +4,6 @@
     "values": [
       "minecraft:redstone",
       "minecraft:redstone_block",
-      "minecraft:marine_food"
+      "zawa:piscivore_kibble"
     ]
   }
