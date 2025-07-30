@@ -245,6 +245,11 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ]);
     e.shapeless('zawa:piscivore_kibble', [
         'minecraft:sugar',
+        '2x zawa:earthworm',
+        '3x supplementaries:ash'
+    ]);
+    e.shapeless('zawa:piscivore_kibble', [
+        'minecraft:sugar',
         '3x alexs_herps_:mealworm',
         '3x supplementaries:ash'
     ]);

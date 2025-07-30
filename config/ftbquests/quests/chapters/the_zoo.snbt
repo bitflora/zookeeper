@@ -23,35 +23,15 @@
 				"[ \"You may want to start down the \", { \"text\": \"Path of the Owl\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"51893424D161C6E7\" } }, \"; this will make it much easier to tell exactly what kind of animal you are dealing\" ] with."
 			]
 			id: "77ABAB18A01650BA"
-			rewards: [
-				{
-					id: "03F2FFFCFA26DE13"
-					item: {
-						Count: 1
-						id: "zawa:data_book"
-						tag: { }
-					}
-					type: "item"
+			rewards: [{
+				id: "03F2FFFCFA26DE13"
+				item: {
+					Count: 1
+					id: "zawa:data_book"
+					tag: { }
 				}
-				{
-					id: "155FC61BD35009FF"
-					item: {
-						Count: 1
-						id: "aardvarksweirdzoology:weird_wonderful_wild_guide"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "7F76E49BA120750D"
-					item: {
-						Count: 1
-						id: "aardvarksweirdzoology:geneticists_guideto_violating_natural_laws"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			tasks: [{
 				id: "67297D8E9BEF96F1"
 				title: "Begin the Zoo"
@@ -103,7 +83,7 @@
 		{
 			dependencies: ["32B6A25A9A456DEB"]
 			description: [
-				"Smaller \"ambient\" animals like these &aButterflies&r are simple creatures. More complex animals can be tamed and claimed."
+				"Smaller \"ambient\" animals like these &aButterflies&r are simple creatures. Feed them or they might despawn! More complex animals can be tamed and claimed."
 				""
 				"After breeding some additional butterflies, try out this &aChinchilla&r next. It is still small enough to catch by hand, and can be tamed with &9herbivore kibble&r."
 				""

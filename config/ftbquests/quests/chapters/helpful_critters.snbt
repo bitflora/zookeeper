@@ -224,7 +224,7 @@
 		}
 		{
 			dependencies: ["1023B9A16DFDA09C"]
-			description: ["&aSeals&r are friendly creatures that hang around on the shore. They love &9fish&r. If thrown 3 &9fish&r or &9marine foods&r, they will search around in the water for something to repay you with."]
+			description: ["&aSeals&r are friendly creatures that hang around on the shore. They love &9fish&r. If thrown 3 &9fish&r or &9piscivore kibble&r, they will search around in the water for something to repay you with."]
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -336,7 +336,7 @@
 			y: 0.5d
 		}
 		{
-			description: ["&aBanana Slugs&r leave a trail of &9slime&r, which can be collected. It's easier than finding a slime chunk!"]
+			description: ["&aBanana Slugs&r occasionally leave behind balls of &9slime&r, which can be collected. It's easier than finding a slime chunk!"]
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -356,21 +356,13 @@
 				type: "item"
 			}]
 			subtitle: "Slimy yet satisfying"
-			tasks: [
-				{
-					id: "19C43F728B7B964B"
-					observe_type: 5
-					timer: 0L
-					to_observe: "alexsmobs:banana_slug"
-					type: "observation"
-				}
-				{
-					advancement: "alexsmobs:alexsmobs/banana_slug"
-					criterion: ""
-					id: "291125FDD8D8AEF9"
-					type: "advancement"
-				}
-			]
+			tasks: [{
+				id: "19C43F728B7B964B"
+				observe_type: 5
+				timer: 0L
+				to_observe: "alexsmobs:banana_slug"
+				type: "observation"
+			}]
 			title: "Banana Slug"
 			x: 6.0d
 			y: -2.0d
@@ -544,6 +536,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["3C93415319B18E01"]
 			dependency_requirement: "all_started"
 			description: ["The &aEryon&r loves digging in sand. Sometimes he uncovers junk, sometimes &9fossils&r that you can display."]
 			hide_until_deps_complete: true

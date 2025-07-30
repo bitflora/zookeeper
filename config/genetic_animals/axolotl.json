@@ -12,6 +12,11 @@
       "isBreedingItem": true
     },
     {
+      "registryName": "zawa:earthworm",
+      "hungerRestored": 6000,
+      "isBreedingItem": true
+    },
+    {
       "registryName": "kubejs:breeding_chow",
       "hungerRestored": 6000,
       "isBreedingItem": true

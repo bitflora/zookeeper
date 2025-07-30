@@ -278,10 +278,10 @@
 			shape: "pentagon"
 			tasks: [
 				{
-					count: 32L
+					count: 15L
 					id: "06588D4B061DE053"
 					item: {
-						Count: 32
+						Count: 1
 						id: "minecraft:spider_eye"
 						tag: { }
 					}
