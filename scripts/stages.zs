@@ -4,10 +4,10 @@ import mods.jmapstages.JMapStages;
 mods.jmapstages.JMapStages.setMinimapStage("owl_minimap");
 
 // // Restricts players from making death waypoints on the map.
-// mods.jmapstages.JMapStages.setDeathpointStage("owl_death_waypoint");
+mods.jmapstages.JMapStages.setDeadhpointStage("owl_fullmap");
 
 // Restricts players from making waypoints or seeing them in world.
-// mods.jmapstages.JMapStages.setWaypointStage("owl_waypoint");
+mods.jmapstages.JMapStages.setWaypointStage("owl_fullmap");
 
 // Restricts players from accessing the fullscreen and options screen.
 mods.jmapstages.JMapStages.setFullscreenStage("owl_fullmap");

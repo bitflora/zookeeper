@@ -1,4 +1,6 @@
 - Hard Science assets
 - add emeralds to tinker recipes
-- Path of the packrat?
+- recipes for bigger chests
+- give armorer some advanced armor
+- sell more animals in the stores
 - final chapter

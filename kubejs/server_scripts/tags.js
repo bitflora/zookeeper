@@ -48,4 +48,16 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:froststalker_horn');
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:trike_horn');
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:dropbear_claw');
+    e.add('kubejs:diamond_sampler_point', 'alexs_herps_:sqorpion_tail');
+
+    e.add('kubejs:zawa_butterflies', 'zawa:black_swallowtail_butterfly');
+    e.add('kubejs:zawa_butterflies', 'zawa:blue_morpho_butterfly');
+    e.add('kubejs:zawa_butterflies', 'zawa:cabbage_white_butterfly');
+    e.add('kubejs:zawa_butterflies', 'zawa:checkered_white_butterfly');
+    e.add('kubejs:zawa_butterflies', 'zawa:cloudless_sulfur_butterfly');
+    e.add('kubejs:zawa_butterflies', 'zawa:eastern_tiger_swallowtail_butterfly');
+    e.add('kubejs:zawa_butterflies', 'zawa:green_hairstreak_butterfly');
+    e.add('kubejs:zawa_butterflies', 'zawa:red_admiral_butterfly');
+    e.add('kubejs:zawa_butterflies', 'zawa:tawny_emperor_butterfly');
+    e.add('kubejs:zawa_butterflies', 'zawa:zebra_swallowtail_butterfly');
 });

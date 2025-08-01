@@ -130,10 +130,13 @@
 					count: 4L
 					id: "2171A527324B5484"
 					item: {
-						Count: 4
-						id: "zawa:black_swallowtail_butterfly"
-						tag: { }
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:zawa_butterflies)"
+						}
 					}
+					title: "Any #kubejs:zawa_butterflies"
 					type: "item"
 				}
 				{
