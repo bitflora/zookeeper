@@ -202,7 +202,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     });
 
     e.remove({ output: 'rats:cheese_stick' });
-    e.shaped('rats:rat_breeding_lantern', [
+    e.shaped('rats:cheese_stick', [
         '  C',
         ' F ',
         'S  '

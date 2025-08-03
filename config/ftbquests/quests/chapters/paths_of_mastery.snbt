@@ -36,7 +36,7 @@
 			tasks: [
 				{
 					consume_items: true
-					count: 32L
+					count: 20L
 					id: "2974710D3A995F7A"
 					item: {
 						Count: 1
