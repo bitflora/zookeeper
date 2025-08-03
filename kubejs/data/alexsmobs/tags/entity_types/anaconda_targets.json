@@ -1,6 +1,6 @@
 
 {
-  "__comment": "all non-player targets of the tiger mob.",
+  "__comment": "all non-player targets of the anaconda mob.",
   "replace": false,
   "values": [
     "#alexsmobs:passive_land_animals",

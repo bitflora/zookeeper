@@ -1,6 +1,6 @@
 - Hard Science assets
 - add emeralds to tinker recipes
 - recipes for bigger chests
-- give armorer some advanced armor
 - sell more animals in the stores
+- aquaculture turtle spawn eggs
 - final chapter

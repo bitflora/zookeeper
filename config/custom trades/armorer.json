@@ -138,7 +138,7 @@
         "itemKey": "minecraft:leather_boots",
         "amount": 1,
         "priceModifier": 0,
-        "advancedNBTData": "{Damage:0}"
+          "advancedNBTData": "{{Damage:0},Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
       },
       "request": {
         "itemKey": "minecraft:emerald",
@@ -151,25 +151,6 @@
       "demand": 0,
       "tradeLevel": 2,
       "UTID": "minecraft:armorer_leather_boots_for_emerald"
-    },
-    {
-      "offer": {
-        "itemKey": "minecraft:leather_leggings",
-        "amount": 1,
-        "priceModifier": 0,
-        "advancedNBTData": "{Damage:0}"
-      },
-      "request": {
-        "itemKey": "minecraft:emerald",
-        "amount": 3,
-        "priceModifier": 0
-      },
-      "tradeExp": 5,
-      "maxUses": 12,
-      "priceMultiplier": 0.2,
-      "demand": 0,
-      "tradeLevel": 2,
-      "UTID": "minecraft:armorer_leather_leggings_for_emerald"
     },
     {
       "offer": {
@@ -212,7 +193,7 @@
         "itemKey": "minecraft:leather_helmet",
         "amount": 1,
         "priceModifier": 0,
-        "advancedNBTData": "{Damage:0}"
+        "advancedNBTData": "{{Damage:0},Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
       },
       "request": {
         "itemKey": "minecraft:emerald",
@@ -224,14 +205,14 @@
       "priceMultiplier": 0.2,
       "demand": 0,
       "tradeLevel": 3,
-      "UTID": "minecraft:armorer_leather_helmet_for_emerald"
+      "UTID": "minecraft:armorer_leather_helmet2_for_emerald"
     },
     {
       "offer": {
         "itemKey": "minecraft:leather_chestplate",
         "amount": 1,
         "priceModifier": 0,
-        "advancedNBTData": "{Damage:0}"
+        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
       },
       "request": {
         "itemKey": "minecraft:emerald",
@@ -243,7 +224,7 @@
       "priceMultiplier": 0.2,
       "demand": 0,
       "tradeLevel": 3,
-      "UTID": "minecraft:armorer_leather_chestplate_for_emerald"
+      "UTID": "minecraft:armorer_leather_chestplate2_for_emerald"
     },
     {
       "offer": {
@@ -266,7 +247,7 @@
     },
     {
       "offer": {
-        "itemKey": "minecraft:leather_leggings",
+        "itemKey": "alexsmobs:centipede_leggings",
         "amount": 1,
         "priceModifier": 0,
         "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
@@ -281,11 +262,11 @@
       "priceMultiplier": 0.2,
       "demand": 0,
       "tradeLevel": 4,
-      "UTID": "minecraft:armorer_leather_leggings_for_emerald"
+      "UTID": "minecraft:armorer_centipede_leggings_for_emerald"
     },
     {
       "offer": {
-        "itemKey": "minecraft:leather_boots",
+        "itemKey": "alexsmobs:roadrunner_boots",
         "amount": 1,
         "priceModifier": 0,
         "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:depth_strider\",lvl:1s},{id:\"minecraft:feather_falling\",lvl:3s}]}"
@@ -300,11 +281,11 @@
       "priceMultiplier": 0.2,
       "demand": 0,
       "tradeLevel": 4,
-      "UTID": "minecraft:armorer_leather_boots_for_emerald"
+      "UTID": "minecraft:armorer_roadrunner_boots_for_emerald"
     },
     {
       "offer": {
-        "itemKey": "minecraft:leather_helmet",
+        "itemKey": "alexsmobs:moose_headgear",
         "amount": 1,
         "priceModifier": 0,
         "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
@@ -319,11 +300,11 @@
       "priceMultiplier": 0.2,
       "demand": 0,
       "tradeLevel": 5,
-      "UTID": "minecraft:armorer_leather_helmet_for_emerald"
+      "UTID": "minecraft:armorer_moose_headgear_for_emerald"
     },
     {
       "offer": {
-        "itemKey": "minecraft:leather_chestplate",
+        "itemKey": "alexsmobs:crocodile_chestplate",
         "amount": 1,
         "priceModifier": 0,
         "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
@@ -338,7 +319,7 @@
       "priceMultiplier": 0.2,
       "demand": 0,
       "tradeLevel": 5,
-      "UTID": "minecraft:armorer_leather_chestplate_for_emerald"
+      "UTID": "minecraft:armorer_crocodile_chestplate_for_emerald"
     }
   ]
 }

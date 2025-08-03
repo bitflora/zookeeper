@@ -1,0 +1,15 @@
+[
+    {
+        "mobsfrombiome": "creature",
+        "persecond": 0.1,
+        "attempts": 10,
+        "amount": {
+            "minimum": 1,
+            "maximum:": 3
+        },
+        "conditions": {
+            "dimension": "overworld",
+            "maxpeaceful": 30
+        }
+    }
+]

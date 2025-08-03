@@ -13,4 +13,5 @@ LootJS.modifiers((e) => {
     //     e.addEntityLootModifier(furry)
     //         .addLoot('naturalist:fur');
     // });
+
 });

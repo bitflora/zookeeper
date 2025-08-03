@@ -350,7 +350,11 @@
 			y: -6.5d
 		}
 		{
-			description: ["It's a dangerous world out there. You cannot always rely on your equipment to protect you. Instead, become one with your equipment. Learn the ways of the turtle."]
+			description: [
+				"It's a dangerous world out there. You cannot always rely on your equipment to protect you. Instead, become one with your equipment. Learn the ways of the turtle."
+				""
+				"(These kinds of turtles can be found fishing in swamps and jungles)."
+			]
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"

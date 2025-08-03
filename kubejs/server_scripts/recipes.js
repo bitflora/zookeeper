@@ -258,6 +258,11 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '3x alexsmobs:maggot',
         '3x supplementaries:ash'
     ]);
+    e.shapeless('zawa:piscivore_kibble', [
+        'minecraft:sugar',
+        '2x #forge:raw_fishes',
+        '3x supplementaries:ash'
+    ]);
 
     e.shapeless('2x alexs_herps_:burrowed_soil', [
         'alexs_herps_:burrowed_soil',
@@ -316,7 +321,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ]);
 
     e.shapeless('kubejs:fur_ball', [
-        '9x kubejs:fur_mess',
+        '3x kubejs:fur_mess',
     ]);
 
     // meatwad
