@@ -1,0 +1,30 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "zawa"
+	},
+	"entity": "zawa:african_lion",
+	"samplerTier": 1,
+	"environments": ["jungle"],
+	"growTicks": 1800,
+	"results": [
+		{
+			"chance": 1,
+			"output": {
+				"item": "naturalist:fur"
+			},
+			"minAmount": 1,
+			"maxAmount": 2
+		},
+		{
+			"chance": 0.9,
+			"output": {
+				"item": "zawa:medium_meat"
+			},
+			"minAmount": 2,
+			"maxAmount": 2
+		}
+	]
+
+}

@@ -1,0 +1,30 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "zawa"
+	},
+	"entity": "zawa:snow_leopard",
+	"samplerTier": 1,
+	"environments": ["snow"],
+	"growTicks": 1000,
+	"results": [
+		{
+			"chance": 0.9,
+			"output": {
+				"item": "naturalist:fur"
+			},
+			"minAmount": 0,
+			"maxAmount": 1
+		},
+		{
+			"chance": 0.9,
+			"output": {
+				"item": "zawa:medium_meat"
+			},
+			"minAmount": 0,
+			"maxAmount": 2
+		}
+	]
+
+}

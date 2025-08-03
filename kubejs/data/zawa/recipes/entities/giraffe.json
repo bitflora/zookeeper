@@ -1,0 +1,30 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "zawa"
+	},
+	"entity": "zawa:giraffe",
+	"samplerTier": 1,
+	"environments": ["sand"],
+	"growTicks": 2100,
+	"results": [
+		{
+			"chance": 0.9,
+			"output": {
+				"item": "naturalist:fur"
+			},
+			"minAmount": 0,
+			"maxAmount": 2
+		},
+		{
+			"chance": 0.9,
+			"output": {
+				"item": "zawa:large_meat"
+			},
+			"minAmount": 1,
+			"maxAmount": 3
+		}
+	]
+
+}

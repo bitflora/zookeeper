@@ -1,0 +1,30 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "zawa"
+	},
+	"entity": "zawa:grevys_zebra",
+	"samplerTier": 1,
+	"environments": ["farm"],
+	"growTicks": 1800,
+	"results": [
+		{
+			"chance": 0.9,
+			"output": {
+				"item": "naturalist:fur"
+			},
+			"minAmount": 1,
+			"maxAmount": 1
+		},
+		{
+			"chance": 0.9,
+			"output": {
+				"item": "zawa:medium_meat"
+			},
+			"minAmount": 1,
+			"maxAmount": 3
+		}
+	]
+
+}

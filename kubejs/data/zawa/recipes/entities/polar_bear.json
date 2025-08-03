@@ -1,0 +1,30 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "zawa"
+	},
+	"entity": "zawa:polar_bear",
+	"samplerTier": 1,
+	"environments": ["snow"],
+	"growTicks": 1800,
+	"results": [
+		{
+			"chance": 0.9,
+			"output": {
+				"item": "naturalist:fur"
+			},
+			"minAmount": 0,
+			"maxAmount": 2
+		},
+		{
+			"chance": 0.9,
+			"output": {
+				"item": "zawa:large_meat"
+			},
+			"minAmount": 0,
+			"maxAmount": 1
+		}
+	]
+
+}

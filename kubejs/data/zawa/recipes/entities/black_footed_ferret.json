@@ -1,0 +1,30 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "zawa"
+	},
+	"entity": "zawa:black_footed_ferret",
+	"samplerTier": 1,
+	"environments": ["sand"],
+	"growTicks": 1200,
+	"results": [
+		{
+			"chance": 0.3,
+			"output": {
+				"item": "naturalist:fur"
+			},
+			"minAmount": 0,
+			"maxAmount": 1
+		},
+		{
+			"chance": 0.5,
+			"output": {
+				"item": "zawa:small_meat"
+			},
+			"minAmount": 0,
+			"maxAmount": 1
+		}
+	]
+
+}
