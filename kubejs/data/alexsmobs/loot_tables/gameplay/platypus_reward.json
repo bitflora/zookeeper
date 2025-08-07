@@ -31,6 +31,13 @@
           "functions": [
           ],
           "name": "minecraft:raw_iron"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions": [
+          ],
+          "name": "minecraft:blaze_powder"
         }
       ]
     }
