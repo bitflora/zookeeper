@@ -36,8 +36,26 @@
       "maxUses": 12,
       "priceMultiplier": 0.05,
       "demand": 0,
-      "tradeLevel": 5,
+      "tradeLevel": 2,
       "UTID": "rats:pet_shop_owner_tropical_fish_bucket_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "alexsmobs:platypus_bucket",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 20,
+        "priceModifier": 0
+      },
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "rats:pet_shop_owner_platypus_bucket_for_emerald"
     }
   ]
 }

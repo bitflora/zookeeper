@@ -211,7 +211,7 @@
 				"4342896FE9651396"
 			]
 			description: [
-				"You did it! You are ready to start building your zoo, and doing the work necessary to bring back The Ultimate Zookeeper."
+				"You did it! You are ready to start building your zoo, and doing the work necessary to bring back &e&lThe Ultimate Zookeeper&r&r."
 				""
 				"Proceed to &2Chapter 1&r."
 			]
@@ -327,7 +327,7 @@
 			description: [
 				"When you pull up your inventory, JEI will show you all the items available to you on the right. Feel free to search this list. Left and right-click items to see their recipes."
 				""
-				"Some items that you are familiar with will have different recipes in this modpack. Some, like most metal armors, are not available at all. Some will not be unlocked until you have completed the appropriate quests. Make sure to check!"
+				"Some items that you are familiar with will have different recipes in this modpack. Some, like most &9metal armors&r, are not available at all. Some will not be unlocked until you have completed the appropriate quests. Make sure to check!"
 				""
 				"You can also use JEI to see what items different mobs drop, and what items breed them. This will be very valuable information."
 				""
@@ -409,6 +409,45 @@
 			title: "Major Mods"
 			x: -2.0d
 			y: 2.5d
+		}
+		{
+			description: ["It is recommended that you not build your base too close to the world spawn, or you may block any further animals from spawning as you explore. Alternately, move the world spawn far away with a command like &n/setworldspawn -500 ~ -500&r"]
+			id: "219E3AF5709416CC"
+			tasks: [{
+				id: "08E0ECC3D1A70A76"
+				title: "Tips"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"Some special items are available via villager trades that may not show up in JEI. They are:"
+				""
+				"&aPet Shop Owner&r"
+				"- &9Mantis Shrimp Spawn Egg&r, Novice"
+				"- &9Tropical Fish Bucket&r, Apprentice"
+				"- &9Platypus Bucket&r, Master"
+				""
+				"&aOceanographer&r"
+				"- &9Mantis Shrimp Spawn Egg&r, Novice"
+				""
+				"&aHerpetologist&r"
+				"- &9Turtle Egg&r, Novice"
+				"- &9Axolotl Bucket&r, Apprentice"
+				""
+				"&aArmorer&r"
+				"- A wide range of animal-based armors"
+			]
+			id: "2BCBDA9A533D9546"
+			tasks: [{
+				id: "6487007994FB18A2"
+				type: "checkmark"
+			}]
+			title: "Trades"
+			x: 4.0d
+			y: -5.0d
 		}
 	]
 	title: "Intro"

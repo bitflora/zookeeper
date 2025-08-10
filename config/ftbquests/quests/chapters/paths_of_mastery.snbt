@@ -62,7 +62,7 @@
 			description: ["As you continue your study, you will gain greater knowledge. Soon, you will not need the probe; you will know everything you need to just by looking."]
 			id: "10C82AF7709F574A"
 			rewards: [{
-				auto: "invisible"
+				auto: "enabled"
 				id: "1E215F2E093A66AF"
 				ignore_reward_blocking: true
 				stage: "owl_jade"
@@ -108,7 +108,7 @@
 			id: "0329AD75534DCCCA"
 			min_required_dependencies: 4
 			rewards: [{
-				auto: "invisible"
+				auto: "enabled"
 				id: "0CB2BA04505A118D"
 				ignore_reward_blocking: true
 				stage: "owl_appleskin"
@@ -142,7 +142,7 @@
 			}
 			id: "2775AA62C6D95C4E"
 			rewards: [{
-				auto: "invisible"
+				auto: "enabled"
 				id: "7D911ACE68D56D5C"
 				ignore_reward_blocking: true
 				stage: "owl_minimap"
@@ -204,7 +204,7 @@
 			}
 			id: "0CEE042A446CD0B3"
 			rewards: [{
-				auto: "invisible"
+				auto: "enabled"
 				id: "4BBD1D8543AE8DB6"
 				ignore_reward_blocking: true
 				stage: "owl_fullmap"
@@ -303,51 +303,6 @@
 			title: "Path of the Spider"
 			x: 2.5d
 			y: -3.0d
-		}
-		{
-			description: [
-				"You have so many things! You need so many ways to store them!"
-				""
-				"Perhaps the humble rat has things to teach you."
-			]
-			icon: {
-				Count: 1
-				id: "rats:rat_arrow"
-				tag: { }
-			}
-			id: "787A422E4D27C364"
-			rewards: [{
-				id: "04F542596286AE17"
-				item: {
-					Count: 1
-					id: "sophisticatedstorage:iron_chest"
-					tag: {
-						woodType: "acacia"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "46CD3F663A2D7799"
-					item: {
-						Count: 1
-						id: "minecraft:oak_log"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "44BBB0D9E7C5D040"
-					observe_type: 5
-					timer: 0L
-					to_observe: "rats:rat"
-					type: "observation"
-				}
-			]
-			title: "Path of the Packrat"
-			x: -1.5d
-			y: -6.5d
 		}
 		{
 			description: [

@@ -112,6 +112,22 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         P: '#minecraft:planks',
         S: 'kubejs:hard_science'
     });
+
+    // IO, item piping
+    e.replaceInput({ mod: 'sophisticatedstorage'},
+      'minecraft:repeater',
+      'kubejs:hard_science',
+    );
+    e.replaceInput({ mod: 'sophisticatedstorage'},
+      'minecraft:comparator',
+      'kubejs:hard_science',
+    );
+
+    // storage upgrades
+    e.replaceInput({ mod: 'sophisticatedstorage'},
+      'minecraft:redstone_torch',
+      '#kubejs:storage_upgrade_fur',
+    );
     // Don't let them get away with upgrading backpack stuff to storage stuff; it would open progression too soon
     // Downgrading is cool, though
     [

@@ -224,7 +224,13 @@
 		}
 		{
 			dependencies: ["1023B9A16DFDA09C"]
-			description: ["&aSeals&r are friendly creatures that hang around on the shore. They love &9fish&r. If thrown 3 &9fish&r or &9piscivore kibble&r, they will search around in the water for something to repay you with."]
+			description: [
+				"&aSeals&r are friendly creatures that hang around on the shore. They love &9fish&r. If thrown 3 &9fish&r or &9piscivore kibble&r, they will search around in the water for something to repay you with."
+				""
+				"This can yield all kinds of items, including &9redstone blocks&r, &9shark teeth&r, and &9scutes&r."
+				""
+				"(Note that process cannot be automated. You must throw the food yourself.)"
+			]
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"

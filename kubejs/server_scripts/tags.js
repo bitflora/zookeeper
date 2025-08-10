@@ -40,8 +40,14 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:ancient_feathers', 'unusualprehistory:raptor_feathers')
     e.add('kubejs:ancient_feathers', 'unusualprehistory:austro_feather');
 
+    // make banana slugs super-useful
     e.add('forge:slimeballs', 'alexsmobs:banana_slug_slime');
 
+    // for storage upgrades
+    e.add('kubejs:storage_upgrade_fur', "rats:rat_pelt");
+    e.add('kubejs:storage_upgrade_fur', "kubejs:fur_ball");
+
+    // mob cages for hostile mobs
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:bone_serpent_tooth');
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:shark_tooth');
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:cachalot_whale_tooth');
@@ -50,6 +56,7 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:dropbear_claw');
     e.add('kubejs:diamond_sampler_point', 'alexs_herps_:sqorpion_tail');
 
+    // needed for a single quest
     e.add('kubejs:zawa_butterflies', 'zawa:black_swallowtail_butterfly');
     e.add('kubejs:zawa_butterflies', 'zawa:blue_morpho_butterfly');
     e.add('kubejs:zawa_butterflies', 'zawa:cabbage_white_butterfly');
