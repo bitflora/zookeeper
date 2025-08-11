@@ -351,10 +351,10 @@
 				"1E534F3C1A7F1156"
 			]
 			description: [
-				"There are other animals skilled in the art of capture. Study the &aAnaconda&r and learn how it captures its prey. With this knowledge, construct a better &9lead&r, known as a &9vine lasso&r."
+				"There are other animals skilled in the art of capture. Study small &aSnakes&r or large &aAnacondas&r and learn how they capture their prey. With this knowledge, construct a better &9lead&r, known as a &9vine lasso&r."
 				""
 				""
-				"If you want more, feed it a few times. Eventually it will shed more skin for you."
+				"If you want more, you can harvest them sustainably by feeding an &aAnaconda&r a few times. Eventually it will shed more skin for you."
 			]
 			icon: {
 				Count: 1
@@ -383,18 +383,12 @@
 					type: "item"
 				}
 			]
-			subtitle: "The anaconda"
+			subtitle: "The snake"
 			tasks: [{
-				icon: {
-					Count: 1
-					id: "alexsmobs:shed_snake_skin"
-					tag: { }
-				}
-				id: "595E3B773E98663D"
-				observe_type: 5
-				timer: 0L
-				to_observe: "alexsmobs:anaconda"
-				type: "observation"
+				count: 3L
+				id: "3D8BABC76321885A"
+				item: { Count: 3, id: "alexsmobs:shed_snake_skin" }
+				type: "item"
 			}]
 			title: "Path of the Spider 3"
 			x: 5.0d

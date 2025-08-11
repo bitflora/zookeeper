@@ -47,6 +47,10 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:storage_upgrade_fur', "rats:rat_pelt");
     e.add('kubejs:storage_upgrade_fur', "kubejs:fur_ball");
 
+    // both kinds of turtle eggs can be acquired, even though they all hatch enhanced turtles
+    e.add('kubejs:turtle_eggs', "eanimod:turtle_egg");
+    e.add('kubejs:turtle_eggs', "minecraft:turtle_egg");
+
     // mob cages for hostile mobs
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:bone_serpent_tooth');
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:shark_tooth');

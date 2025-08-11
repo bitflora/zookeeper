@@ -791,12 +791,45 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       E: '#forge:eggs',
     });
 
+    e.shaped('alexsmobs:spawn_egg_alligator_snapping_turtle', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: '#kubejs:turtle_eggs',
+      S: '#kubejs:diamond_sampler_point',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+
+    e.shaped('2x alexsmobs:spawn_egg_alligator_snapping_turtle', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'alexsmobs:spiked_scute',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
     e.shaped('alexsmobs:spawn_egg_bald_eagle', [
       'SIS',
       ' X ',
       ' E '
     ], {
       I: 'farmersdelight:hamburger',
+      S: '#forge:feathers',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_roadrunner', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'minecraft:rail',
       S: '#forge:feathers',
       X: 'kubejs:embryo',
       E: '#forge:eggs',
@@ -893,6 +926,16 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ], {
       I: 'minecraft:spider_eye',
       S: '#forge:feathers',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('2x eanimod:turtle_egg', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: '#kubejs:turtle_eggs',
       X: 'kubejs:embryo',
       E: '#forge:eggs',
     });
