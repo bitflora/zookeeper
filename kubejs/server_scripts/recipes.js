@@ -85,99 +85,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         F: 'kubejs:fur_ball'
     });
 
-    e.remove({ output: 'sophisticatedbackpacks:backpack', input: 'minecraft:leather'});
-    e.shaped('sophisticatedbackpacks:backpack', [
-        'SLS',
-        'FCF',
-        'LLL'
-    ], {
-        S: 'minecraft:string',
-        L: 'minecraft:leather',
-        F: 'kubejs:fur_ball',
-        C: '#forge:chests'
-    });
-
-    e.replaceInput({ output: 'sophisticatedbackpacks:upgrade_base'},
-      'minecraft:leather',
-      'kubejs:fur_ball',
-    );
-
-    e.remove({ output: 'sophisticatedstorage:upgrade_base'});
-    e.shaped('sophisticatedstorage:upgrade_base', [
-        'PIP',
-        'ISI',
-        'PIP'
-    ], {
-        I: 'minecraft:iron_ingot',
-        P: '#minecraft:planks',
-        S: 'kubejs:hard_science'
-    });
-
-    // IO, item piping
-    e.replaceInput({ mod: 'sophisticatedstorage'},
-      'minecraft:repeater',
-      'kubejs:hard_science',
-    );
-    e.replaceInput({ mod: 'sophisticatedstorage'},
-      'minecraft:comparator',
-      'kubejs:hard_science',
-    );
-
-    // storage upgrades
-    e.replaceInput({ mod: 'sophisticatedstorage'},
-      'minecraft:redstone_torch',
-      '#kubejs:storage_upgrade_fur',
-    );
-    // Don't let them get away with upgrading backpack stuff to storage stuff; it would open progression too soon
-    // Downgrading is cool, though
-    [
-      'storage_advanced_alchemy_upgrade_from_backpack_advanced_alchemy_upgrade',
-      'storage_advanced_compacting_upgrade_from_backpack_advanced_compacting_upgrade',
-      'storage_advanced_feeding_upgrade_from_backpack_advanced_feeding_upgrade',
-      'storage_advanced_filter_upgrade_from_backpack_advanced_filter_upgrade',
-      'storage_advanced_jukebox_upgrade_from_backpack_advanced_jukebox_upgrade',
-      'storage_advanced_magnet_upgrade_from_backpack_advanced_magnet_upgrade',
-      'storage_advanced_pickup_upgrade_from_backpack_advanced_pickup_upgrade',
-      'storage_advanced_void_upgrade_from_backpack_advanced_void_upgrade',
-      'storage_alchemy_upgrade_from_backpack_alchemy_upgrade',
-      'storage_auto_blasting_upgrade_from_backpack_auto_blasting_upgrade',
-      'storage_auto_smelting_upgrade_from_backpack_auto_smelting_upgrade',
-      'storage_auto_smoking_upgrade_from_backpack_auto_smoking_upgrade',
-      'storage_blasting_upgrade_from_backpack_blasting_upgrade',
-      'storage_chipped_alchemy_bench_upgrade_from_backpack_chipped_alchemy_bench_upgrade',
-      'storage_chipped_botanist_workbench_upgrade_from_backpack_chipped_botanist_workbench_upgrade',
-      'storage_chipped_carpenters_table_upgrade_from_backpack_chipped_carpenters_table_upgrade',
-      'storage_chipped_glassblower_upgrade_from_backpack_chipped_glassblower_upgrade',
-      'storage_chipped_loom_table_upgrade_from_backpack_chipped_loom_table_upgrade',
-      'storage_chipped_mason_table_upgrade_from_backpack_chipped_mason_table_upgrade',
-      'storage_chipped_tinkering_table_upgrade_from_backpack_chipped_tinkering_table_upgrade',
-      'storage_compacting_upgrade_from_backpack_compacting_upgrade',
-      'storage_crafting_upgrade_from_backpack_crafting_upgrade',
-      'storage_feeding_upgrade_from_backpack_feeding_upgrade',
-      'storage_filter_upgrade_from_backpack_filter_upgrade',
-      'storage_jukebox_upgrade_from_backpack_jukebox_upgrade',
-      'storage_magnet_upgrade_from_backpack_magnet_upgrade',
-      'storage_pickup_upgrade_from_backpack_pickup_upgrade',
-      'storage_sawmill_sawmill_upgrade_from_backpack_sawmill_sawmill_upgrade',
-      'storage_smelting_upgrade_from_backpack_smelting_upgrade',
-      'storage_smoking_upgrade_from_backpack_smoking_upgrade',
-      'storage_stack_downgrade_tier_1_from_backpack_stack_downgrade_tier_1',
-      'storage_stack_downgrade_tier_2_from_backpack_stack_downgrade_tier_2',
-      'storage_stack_downgrade_tier_3_from_backpack_stack_downgrade_tier_3',
-      'storage_stack_upgrade_omega_tier_from_backpack_stack_upgrade_omega_tier',
-      'storage_stack_upgrade_tier_1_plus_from_backpack_stack_upgrade_starter_tier',
-      'storage_stack_upgrade_tier_2_from_backpack_stack_upgrade_tier_1',
-      'storage_stack_upgrade_tier_3_from_backpack_stack_upgrade_tier_2',
-      'storage_stack_upgrade_tier_4_from_backpack_stack_upgrade_tier_3',
-      'storage_stack_upgrade_tier_5_from_backpack_stack_upgrade_tier_4',
-      'storage_stonecutter_upgrade_from_backpack_stonecutter_upgrade',
-      'storage_void_upgrade_from_backpack_void_upgrade',
-
-    ].forEach( recipe_id => {
-      e.remove({ id: "sophisticatedstorage:" + recipe_id });
-    })
-
-
+    modify_sophisticated_storage(e);
 
     e.remove({ output: "cookingforblockheads:cow_jar"});
     e.shaped('cookingforblockheads:cow_jar', [
@@ -192,62 +100,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     });
 
 
-
-
-    // Rat recipe adjustments
-    e.remove({ output: 'rats:rat_cage' });
-    e.shaped('rats:rat_cage', [
-        'BBB',
-        'B B',
-        'CFC'
-    ], {
-        B: 'minecraft:iron_bars',
-        F: 'kubejs:fur_ball',
-        C: 'compressedblocks:c0_cobblestone',
-    });
-
-    e.remove({ output: 'rats:rat_breeding_lantern' });
-    e.shaped('rats:rat_breeding_lantern', [
-        ' F ',
-        'RLR',
-        ' R '
-    ], {
-        L: 'minecraft:redstone_lamp',
-        F: 'kubejs:fur_ball',
-        R: 'minecraft:red_dye',
-    });
-
-    e.remove({ output: 'rats:cheese_stick' });
-    e.shaped('rats:cheese_stick', [
-        '  C',
-        ' F ',
-        'S  '
-    ], {
-        S: 'minecraft:stick',
-        F: 'kubejs:fur_ball',
-        C: 'rats:cheese',
-    });
-
-    e.remove({ output: 'rats:rat_upgrade_basic' });
-    e.shaped('rats:rat_upgrade_basic', [
-        'CCC',
-        'CFC',
-        'CCC'
-    ], {
-        F: 'kubejs:fur_ball',
-        C: 'rats:cheese',
-    });
-
-    e.remove({ output: 'rats:rat_crafting_table' });
-    e.shaped('rats:rat_crafting_table', [
-        'BCB',
-        'CTC',
-        'BCB'
-    ], {
-        T: 'minecraft:crafting_table',
-        B: 'kubejs:brain',
-        C: 'rats:cheese'
-    });
+    modify_rats(e);
 
     // Custom items
     e.smelting('2x supplementaries:ash', 'compressedblocks:c0_cobblestone');
@@ -431,291 +284,18 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       '2x minecraft:bone',
     ]);
 
+    modify_tconstruct(e);
+    modify_spawn_eggs(e);
+    modify_caged_mobs(e);
+
+    // TODO: make sciencey recipes for the upgrades
+
+    modify_unusual_prehistory(e);
+
+  });
 
 
-
-    // Tinker's Construct items
-    e.remove({ output: 'tconstruct:smeltery_controller'});
-    e.shaped('tconstruct:smeltery_controller', [
-        'BCB',
-        'CXC',
-        'BCB'
-    ], {
-        B: 'tconstruct:seared_brick',
-        C: 'minecraft:copper_ingot',
-        X: 'kubejs:brain',
-    });
-
-
-    e.remove({ output: 'tconstruct:foundry_controller'});
-    e.shaped('tconstruct:foundry_controller', [
-        'BCB',
-        'CXC',
-        'BCB'
-    ], {
-        B: 'tconstruct:scorched_brick',
-        C: 'minecraft:obsidian',
-        X: 'kubejs:brain',
-    });
-
-
-    e.remove({ output: 'tconstruct:grout'});
-    e.shaped('2x tconstruct:grout', [
-        'CS ',
-        'AF ',
-        '   '
-    ], {
-        C: 'minecraft:clay',
-        S: '#forge:sand',
-        A: 'supplementaries:ash',
-        F: 'kubejs:fur_ball'
-    });
-
-    e.remove({ output: 'tconstruct:nether_grout'});
-    e.shaped('2x tconstruct:nether_grout', [
-        'MS ',
-        'AF ',
-        '   '
-    ], {
-        M: 'minecraft:magma_cream',
-        S: '#minecraft:soul_fire_base_blocks',
-        A: 'supplementaries:ash',
-        F: 'kubejs:fur_ball'
-    });
-
-    // tconstruct recipes
-
-    castingBasin(e, "kubejs:embryo", "kubejs:stem_cell", "kubejs:experimental_results", 810, 60, true);
-
-    castingTable(e, 'kubejs:scientific_paper_draft', 'minecraft:paper', 'kubejs:experimental_results', 810, 120, true);
-    castingTable(e, 'kubejs:scientific_paper', 'kubejs:scientific_paper_draft', 'kubejs:anecdotes', 810, 120, true);
-    castingTable(e, 'kubejs:scientific_paper', 'minecraft:paper', 'kubejs:citations', 5, 80, true);
-
-    e.custom({
-      type: "tconstruct:casting_basin",
-      fluid: {
-        fluid: 'kubejs:liquid_science',
-        amount: 810
-      },
-      result: 'kubejs:hard_science',
-      cooling_time: 90
-    });
-
-    e.custom({
-      type: "tconstruct:casting_basin",
-      fluid: {
-        fluid: 'kubejs:anecdotes',
-        amount: 810
-      },
-      result: 'kubejs:data',
-      cooling_time: 90
-    });
-
-
-    // spawn eggs
-
-    // TODO: remove or change; there is no gold dropped anymore
-    e.custom({
-      type: "tconstruct:casting_table",
-      cast: {
-        item: 'exoticbirds:peafowl_egg'
-      },
-      cast_consumed: true,
-      fluid: {
-        fluid: 'tconstruct:molten_gold',
-        amount: 810
-      },
-      result: {
-        item: 'exoticbirds:peafowl_spawn_egg',
-        nbt: {
-          EntityTag:{"Variant":2},
-          //item_name:{"color":"yellow","text":"Albino peafowl spawn egg"}
-          //display:{Name:'{"text":"Albino peafowl spawn egg"}' } // TODO: Make this not set the entity name
-        }
-      },
-      cooling_time: 40
-    });
-
-    e.shaped('alexsmobs:spawn_egg_shoebill', [
-      'SIS',
-      ' X ',
-      ' E '
-    ], {
-      I: '#forge:armors/boots',
-      S: '#forge:feathers',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('alexsmobs:spawn_egg_bald_eagle', [
-      'SIS',
-      ' X ',
-      ' E '
-    ], {
-      I: 'farmersdelight:hamburger',
-      S: '#forge:feathers',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('alexsmobs:spawn_egg_mantis_shrimp', [
-      ' I ',
-      ' X ',
-      ' E '
-    ], {
-      I: '#forge:tools/pickaxes',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('3x alexsmobs:spawn_egg_raccoon', [
-      ' I ',
-      ' X ',
-      ' E '
-    ], {
-      I: 'alexsmobs:raccoon_tail',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('alexsmobs:spawn_egg_banana_slug', [
-      ' I ',
-      ' X ',
-      ' E '
-    ], {
-      I: '#forge:slimeballs',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('alexsmobs:spawn_egg_sugar_glider', [
-      'SIS',
-      ' X ',
-      ' E '
-    ], {
-      I: 'kubejs:fur_ball',
-      S: 'minecraft:sugar',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('alexsmobs:spawn_egg_seal', [
-      'SIS',
-      ' X ',
-      ' E '
-    ], {
-      I: '#minecraft:fishes',
-      S: 'kubejs:fur_ball',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('alexsmobs:spawn_egg_platypus', [
-      'sIS',
-      ' X ',
-      ' E '
-    ], {
-      I: '#minecraft:fishes',
-      S: 'kubejs:fur_ball',
-      s: '#forge:feathers',
-      X: 'kubejs:embryo',
-      E: 'eanimod:turtle_egg',
-    });
-
-    e.shaped('alexsmobs:spawn_egg_anaconda', [
-      ' I ',
-      ' X ',
-      ' E '
-    ], {
-      I: 'alexsmobs:shed_snake_skin',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('4x alexsmobs:spawn_egg_lobster', [
-      ' I ',
-      ' X ',
-      ' E '
-    ], {
-      I: 'alexsmobs:lobster_tail',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('alexsmobs:spawn_egg_tarantula_hawk', [
-      'SIS',
-      ' X ',
-      ' E '
-    ], {
-      I: 'minecraft:spider_eye',
-      S: '#forge:feathers',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('lilcritters:guinea_pig_spawn_egg', [
-      ' I ',
-      ' X ',
-      ' E '
-    ], {
-      I: 'kubejs:fur_ball',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('4x minecraft:spider_spawn_egg', [
-      ' I ',
-      ' X ',
-      ' E '
-    ], {
-      I: 'minecraft:spider_eye',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('4x minecraft:zombie_spawn_egg', [
-      ' I ',
-      ' X ',
-      ' E '
-    ], {
-      I: 'minecraft:rotten_flesh',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('4x minecraft:skeleton_spawn_egg', [
-      ' I ',
-      ' X ',
-      ' E '
-    ], {
-      I: 'minecraft:bone',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('minecraft:ocelot_spawn_egg', [
-      'SIS',
-      ' X ',
-      ' E '
-    ], {
-      I: 'kubejs:fur_ball',
-      S: 'minecraft:jungle_sapling',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    e.shaped('minecraft:cat_spawn_egg', [
-      'SIS',
-      ' X ',
-      ' E '
-    ], {
-      I: 'kubejs:fur_ball',
-      S: 'minecraft:string',
-      X: 'kubejs:embryo',
-      E: '#forge:eggs',
-    });
-
-    // Caged Mobs
+  function modify_caged_mobs(e) {
     e.remove({ output: 'cagedmobs:mob_cage'});
     e.remove({ output: 'cagedmobs:dna_sampler'});
     e.remove({ output: 'cagedmobs:diamond_dna_sampler'});
@@ -760,67 +340,8 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       X: 'kubejs:data',
       B: 'minecraft:iron_block',
     });
+  }
 
-    // TODO: make sciencey recipes for the upgrades
-
-
-    // Unusual Prehistory
-    e.remove({ output: 'unusualprehistory:organic_ooze'});
-    e.shaped('unusualprehistory:organic_ooze', [
-        ' S ',
-        'SWS',
-        ' S '
-    ], {
-        S: 'kubejs:stem_cell',
-        W: 'kubejs:hard_science',
-    });
-
-    e.remove({ output: 'unusualprehistory:flask'});
-    e.shaped('3x unusualprehistory:flask', [
-        ' G ',
-        'G G',
-        'FGF'
-    ], {
-        G: 'minecraft:glass',
-        F: 'kubejs:fur_ball',
-    });
-
-    e.remove({ output: 'unusualprehistory:analyzer'});
-    e.shaped('unusualprehistory:analyzer', [
-        'III',
-        'IBI',
-        'CSC'
-    ], {
-        I: 'minecraft:iron_ingot',
-        B: 'kubejs:brain',
-        C: 'minecraft:copper_ingot',
-        S: 'minecraft:hard_science',
-    });
-
-    e.remove({ output: 'unusualprehistory:cultivator'});
-    e.shaped('unusualprehistory:cultivator', [
-        'III',
-        'GOG',
-        'CBC'
-    ], {
-        I: 'minecraft:iron_ingot',
-        G: 'minecraft:glass',
-        O: 'unusualprehistory:organic_ooze',
-        B: 'kubejs:brain',
-        C: 'minecraft:copper_ingot',
-    });
-
-    e.remove({output: "tconstruct:maille"});
-    e.shaped(Item.of('tconstruct:maille', '{Material:"tconstruct:ancient_hide"}'), [
-        'P P',
-        'PPP',
-        'PPP'
-    ], {
-        P: 'unusualprehistory:majunga_scute',
-    });
-
-
-  });
 
   function modify_cyclic(e) {
     e.remove({ mod: 'cyclic' });
@@ -869,6 +390,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         P: 'rats:rat_paw'
     });
   }
+
 
   function modify_inventory_pets(e) {
     e.remove({ mod: "inventorypets"});
@@ -1080,6 +602,501 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     });
 
   }
+
+
+  function modify_rats(e) {
+
+    e.remove({ output: 'rats:rat_cage' });
+    e.shaped('rats:rat_cage', [
+        'BBB',
+        'B B',
+        'CFC'
+    ], {
+        B: 'minecraft:iron_bars',
+        F: 'kubejs:fur_ball',
+        C: 'compressedblocks:c0_cobblestone',
+    });
+
+    e.remove({ output: 'rats:rat_breeding_lantern' });
+    e.shaped('rats:rat_breeding_lantern', [
+        ' F ',
+        'RLR',
+        ' R '
+    ], {
+        L: 'minecraft:redstone_lamp',
+        F: 'kubejs:fur_ball',
+        R: 'minecraft:red_dye',
+    });
+
+    e.remove({ output: 'rats:cheese_stick' });
+    e.shaped('rats:cheese_stick', [
+        '  C',
+        ' F ',
+        'S  '
+    ], {
+        S: 'minecraft:stick',
+        F: 'kubejs:fur_ball',
+        C: 'rats:cheese',
+    });
+
+    e.remove({ output: 'rats:rat_upgrade_basic' });
+    e.shaped('rats:rat_upgrade_basic', [
+        'CCC',
+        'CFC',
+        'CCC'
+    ], {
+        F: 'kubejs:fur_ball',
+        C: 'rats:cheese',
+    });
+
+    e.remove({ output: 'rats:rat_crafting_table' });
+    e.shaped('rats:rat_crafting_table', [
+        'BCB',
+        'CTC',
+        'BCB'
+    ], {
+        T: 'minecraft:crafting_table',
+        B: 'kubejs:brain',
+        C: 'rats:cheese'
+    });
+  }
+
+
+  function modify_sophisticated_storage(e) {
+    e.remove({ output: 'sophisticatedbackpacks:backpack', input: 'minecraft:leather'});
+    e.shaped('sophisticatedbackpacks:backpack', [
+        'SLS',
+        'FCF',
+        'LLL'
+    ], {
+        S: 'minecraft:string',
+        L: 'minecraft:leather',
+        F: 'kubejs:fur_ball',
+        C: '#forge:chests'
+    });
+
+    e.replaceInput({ output: 'sophisticatedbackpacks:upgrade_base'},
+      'minecraft:leather',
+      'kubejs:fur_ball',
+    );
+
+    e.remove({ output: 'sophisticatedstorage:upgrade_base'});
+    e.shaped('sophisticatedstorage:upgrade_base', [
+        'PIP',
+        'ISI',
+        'PIP'
+    ], {
+        I: 'minecraft:iron_ingot',
+        P: '#minecraft:planks',
+        S: 'kubejs:hard_science'
+    });
+
+    // IO, item piping
+    e.replaceInput({ mod: 'sophisticatedstorage'},
+      'minecraft:repeater',
+      'kubejs:hard_science',
+    );
+    e.replaceInput({ mod: 'sophisticatedstorage'},
+      'minecraft:comparator',
+      'kubejs:hard_science',
+    );
+
+    // storage upgrades
+    e.replaceInput({ mod: 'sophisticatedstorage'},
+      'minecraft:redstone_torch',
+      '#kubejs:storage_upgrade_fur',
+    );
+    // Don't let them get away with upgrading backpack stuff to storage stuff; it would open progression too soon
+    // Downgrading is cool, though
+    [
+      'storage_advanced_alchemy_upgrade_from_backpack_advanced_alchemy_upgrade',
+      'storage_advanced_compacting_upgrade_from_backpack_advanced_compacting_upgrade',
+      'storage_advanced_feeding_upgrade_from_backpack_advanced_feeding_upgrade',
+      'storage_advanced_filter_upgrade_from_backpack_advanced_filter_upgrade',
+      'storage_advanced_jukebox_upgrade_from_backpack_advanced_jukebox_upgrade',
+      'storage_advanced_magnet_upgrade_from_backpack_advanced_magnet_upgrade',
+      'storage_advanced_pickup_upgrade_from_backpack_advanced_pickup_upgrade',
+      'storage_advanced_void_upgrade_from_backpack_advanced_void_upgrade',
+      'storage_alchemy_upgrade_from_backpack_alchemy_upgrade',
+      'storage_auto_blasting_upgrade_from_backpack_auto_blasting_upgrade',
+      'storage_auto_smelting_upgrade_from_backpack_auto_smelting_upgrade',
+      'storage_auto_smoking_upgrade_from_backpack_auto_smoking_upgrade',
+      'storage_blasting_upgrade_from_backpack_blasting_upgrade',
+      'storage_chipped_alchemy_bench_upgrade_from_backpack_chipped_alchemy_bench_upgrade',
+      'storage_chipped_botanist_workbench_upgrade_from_backpack_chipped_botanist_workbench_upgrade',
+      'storage_chipped_carpenters_table_upgrade_from_backpack_chipped_carpenters_table_upgrade',
+      'storage_chipped_glassblower_upgrade_from_backpack_chipped_glassblower_upgrade',
+      'storage_chipped_loom_table_upgrade_from_backpack_chipped_loom_table_upgrade',
+      'storage_chipped_mason_table_upgrade_from_backpack_chipped_mason_table_upgrade',
+      'storage_chipped_tinkering_table_upgrade_from_backpack_chipped_tinkering_table_upgrade',
+      'storage_compacting_upgrade_from_backpack_compacting_upgrade',
+      'storage_crafting_upgrade_from_backpack_crafting_upgrade',
+      'storage_feeding_upgrade_from_backpack_feeding_upgrade',
+      'storage_filter_upgrade_from_backpack_filter_upgrade',
+      'storage_jukebox_upgrade_from_backpack_jukebox_upgrade',
+      'storage_magnet_upgrade_from_backpack_magnet_upgrade',
+      'storage_pickup_upgrade_from_backpack_pickup_upgrade',
+      'storage_sawmill_sawmill_upgrade_from_backpack_sawmill_sawmill_upgrade',
+      'storage_smelting_upgrade_from_backpack_smelting_upgrade',
+      'storage_smoking_upgrade_from_backpack_smoking_upgrade',
+      'storage_stack_downgrade_tier_1_from_backpack_stack_downgrade_tier_1',
+      'storage_stack_downgrade_tier_2_from_backpack_stack_downgrade_tier_2',
+      'storage_stack_downgrade_tier_3_from_backpack_stack_downgrade_tier_3',
+      'storage_stack_upgrade_omega_tier_from_backpack_stack_upgrade_omega_tier',
+      'storage_stack_upgrade_tier_1_plus_from_backpack_stack_upgrade_starter_tier',
+      'storage_stack_upgrade_tier_2_from_backpack_stack_upgrade_tier_1',
+      'storage_stack_upgrade_tier_3_from_backpack_stack_upgrade_tier_2',
+      'storage_stack_upgrade_tier_4_from_backpack_stack_upgrade_tier_3',
+      'storage_stack_upgrade_tier_5_from_backpack_stack_upgrade_tier_4',
+      'storage_stonecutter_upgrade_from_backpack_stonecutter_upgrade',
+      'storage_void_upgrade_from_backpack_void_upgrade',
+
+    ].forEach( recipe_id => {
+      e.remove({ id: "sophisticatedstorage:" + recipe_id });
+    });
+  }
+
+
+  function modify_spawn_eggs(e) {
+    // TODO: remove or change; there is no gold dropped anymore
+    e.custom({
+      type: "tconstruct:casting_table",
+      cast: {
+        item: 'exoticbirds:peafowl_egg'
+      },
+      cast_consumed: true,
+      fluid: {
+        fluid: 'tconstruct:molten_gold',
+        amount: 810
+      },
+      result: {
+        item: 'exoticbirds:peafowl_spawn_egg',
+        nbt: {
+          EntityTag:{"Variant":2},
+          //item_name:{"color":"yellow","text":"Albino peafowl spawn egg"}
+          //display:{Name:'{"text":"Albino peafowl spawn egg"}' } // TODO: Make this not set the entity name
+        }
+      },
+      cooling_time: 40
+    });
+
+    e.shaped('alexsmobs:spawn_egg_shoebill', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: '#forge:armors/boots',
+      S: '#forge:feathers',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_bald_eagle', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'farmersdelight:hamburger',
+      S: '#forge:feathers',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_mantis_shrimp', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: '#forge:tools/pickaxes',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('3x alexsmobs:spawn_egg_raccoon', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'alexsmobs:raccoon_tail',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_banana_slug', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: '#forge:slimeballs',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_sugar_glider', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'kubejs:fur_ball',
+      S: 'minecraft:sugar',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_seal', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: '#minecraft:fishes',
+      S: 'kubejs:fur_ball',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_platypus', [
+      'sIS',
+      ' X ',
+      ' E '
+    ], {
+      I: '#minecraft:fishes',
+      S: 'kubejs:fur_ball',
+      s: '#forge:feathers',
+      X: 'kubejs:embryo',
+      E: 'eanimod:turtle_egg',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_anaconda', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'alexsmobs:shed_snake_skin',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('4x alexsmobs:spawn_egg_lobster', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'alexsmobs:lobster_tail',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('alexsmobs:spawn_egg_tarantula_hawk', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'minecraft:spider_eye',
+      S: '#forge:feathers',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('lilcritters:guinea_pig_spawn_egg', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'kubejs:fur_ball',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('4x minecraft:spider_spawn_egg', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'minecraft:spider_eye',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('4x minecraft:zombie_spawn_egg', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'minecraft:rotten_flesh',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('4x minecraft:skeleton_spawn_egg', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'minecraft:bone',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('minecraft:ocelot_spawn_egg', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'kubejs:fur_ball',
+      S: 'minecraft:jungle_sapling',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('minecraft:cat_spawn_egg', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'kubejs:fur_ball',
+      S: 'minecraft:string',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+  }
+
+
+  function modify_tconstruct(e) {
+
+    e.remove({ output: 'tconstruct:smeltery_controller'});
+    e.shaped('tconstruct:smeltery_controller', [
+        'BCB',
+        'CXC',
+        'BCB'
+    ], {
+        B: 'tconstruct:seared_brick',
+        C: 'minecraft:copper_ingot',
+        X: 'kubejs:brain',
+    });
+
+
+    e.remove({ output: 'tconstruct:foundry_controller'});
+    e.shaped('tconstruct:foundry_controller', [
+        'BCB',
+        'CXC',
+        'BCB'
+    ], {
+        B: 'tconstruct:scorched_brick',
+        C: 'minecraft:obsidian',
+        X: 'kubejs:brain',
+    });
+
+
+    e.remove({ output: 'tconstruct:grout'});
+    e.shaped('2x tconstruct:grout', [
+        'CS ',
+        'AF ',
+        '   '
+    ], {
+        C: 'minecraft:clay',
+        S: '#forge:sand',
+        A: 'supplementaries:ash',
+        F: 'kubejs:fur_ball'
+    });
+
+    e.remove({ output: 'tconstruct:nether_grout'});
+    e.shaped('2x tconstruct:nether_grout', [
+        'MS ',
+        'AF ',
+        '   '
+    ], {
+        M: 'minecraft:magma_cream',
+        S: '#minecraft:soul_fire_base_blocks',
+        A: 'supplementaries:ash',
+        F: 'kubejs:fur_ball'
+    });
+
+    castingBasin(e, "kubejs:embryo", "kubejs:stem_cell", "kubejs:experimental_results", 810, 60, true);
+
+    castingTable(e, 'kubejs:scientific_paper_draft', 'minecraft:paper', 'kubejs:experimental_results', 810, 120, true);
+    castingTable(e, 'kubejs:scientific_paper', 'kubejs:scientific_paper_draft', 'kubejs:anecdotes', 810, 120, true);
+    castingTable(e, 'kubejs:scientific_paper', 'minecraft:paper', 'kubejs:citations', 5, 80, true);
+
+    e.custom({
+      type: "tconstruct:casting_basin",
+      fluid: {
+        fluid: 'kubejs:liquid_science',
+        amount: 810
+      },
+      result: 'kubejs:hard_science',
+      cooling_time: 90
+    });
+
+    e.custom({
+      type: "tconstruct:casting_basin",
+      fluid: {
+        fluid: 'kubejs:anecdotes',
+        amount: 810
+      },
+      result: 'kubejs:data',
+      cooling_time: 90
+    });
+
+    e.remove({output: "tconstruct:maille"});
+    e.shaped(Item.of('tconstruct:maille', '{Material:"tconstruct:ancient_hide"}'), [
+        'P P',
+        'PPP',
+        'PPP'
+    ], {
+        P: 'unusualprehistory:majunga_scute',
+    });
+  }
+
+
+  function modify_unusual_prehistory(e) {
+
+    // Unusual Prehistory
+    e.remove({ output: 'unusualprehistory:organic_ooze'});
+    e.shaped('unusualprehistory:organic_ooze', [
+        ' S ',
+        'SWS',
+        ' S '
+    ], {
+        S: 'kubejs:stem_cell',
+        W: 'kubejs:hard_science',
+    });
+
+    e.remove({ output: 'unusualprehistory:flask'});
+    e.shaped('3x unusualprehistory:flask', [
+        ' G ',
+        'G G',
+        'FGF'
+    ], {
+        G: 'minecraft:glass',
+        F: 'kubejs:fur_ball',
+    });
+
+    e.remove({ output: 'unusualprehistory:analyzer'});
+    e.shaped('unusualprehistory:analyzer', [
+        'III',
+        'IBI',
+        'CSC'
+    ], {
+        I: 'minecraft:iron_ingot',
+        B: 'kubejs:brain',
+        C: 'minecraft:copper_ingot',
+        S: 'minecraft:hard_science',
+    });
+
+    e.remove({ output: 'unusualprehistory:cultivator'});
+    e.shaped('unusualprehistory:cultivator', [
+        'III',
+        'GOG',
+        'CBC'
+    ], {
+        I: 'minecraft:iron_ingot',
+        G: 'minecraft:glass',
+        O: 'unusualprehistory:organic_ooze',
+        B: 'kubejs:brain',
+        C: 'minecraft:copper_ingot',
+    });
+  }
+
 
   function castingBasin(event, result, castItem, inputFluid, amount, coolingTime, consumption) {
     event.custom({
