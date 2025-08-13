@@ -151,6 +151,17 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '2x #forge:feathers'
     ]);
 
+    e.custom({
+      type: 'farmersdelight:cutting',
+      ingredients: [
+        { item: 'rats:rat_pelt' }
+      ],
+      tool: { tag: 'forge:tools/knives' },
+      result: [
+        { item: 'naturalist:fur', count: 1 }
+      ]
+    })
+
     e.remove({output: 'goldenhopper:golden_hopper'});
     e.shaped('goldenhopper:golden_hopper', [
         ' F ',
@@ -1031,7 +1042,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
 
 
     e.remove({ output: 'tconstruct:grout'});
-    e.shaped('2x tconstruct:grout', [
+    e.shaped('4x tconstruct:grout', [
         'CS ',
         'AF ',
         '   '
@@ -1043,7 +1054,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     });
 
     e.remove({ output: 'tconstruct:nether_grout'});
-    e.shaped('2x tconstruct:nether_grout', [
+    e.shaped('4x tconstruct:nether_grout', [
         'MS ',
         'AF ',
         '   '

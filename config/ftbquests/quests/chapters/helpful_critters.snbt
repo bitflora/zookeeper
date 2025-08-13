@@ -421,7 +421,7 @@
 			description: [
 				"The Nether's equivalent of a wolf, &aFoxhounds&r can serve the same function if you manage to tame them with &9coal&r (while protected by a &9fire resistance potion&r)."
 				""
-				"They also have the fringe benefit of speed up any &9furnace&r that they are sitting atop."
+				"They also have the fringe benefit of speeding up any &9furnace&r that they are sitting atop."
 			]
 			icon: {
 				Count: 1

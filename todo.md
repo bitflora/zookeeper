@@ -1,3 +1,4 @@
 - Hard Science assets
+- chinchillas as excellent fur sources
 - aquaculture turtle spawn eggs
 - final chapter
