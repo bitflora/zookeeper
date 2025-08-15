@@ -273,8 +273,8 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
 
     e.shaped('kubejs:breeding_chow', [
       'M M',
-      'MMM',
-      ' M '
+      ' M ',
+      '   '
     ], {
       M: 'kubejs:meatwad'
     });
@@ -447,7 +447,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'GGG'
     ], {
         C: 'minecraft:cobblestone',
-        F: 'kubejs:embryo',
+        E: 'kubejs:embryo',
         G: 'minecraft:gravel'
     });
 
@@ -790,6 +790,17 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       },
       cooling_time: 40
     });
+
+    e.shaped('eanimod:enhanced_axolotl_egg_bucket', [
+      'aIa',
+      'aXa',
+      'aEa'
+    ], {
+      a: 'minecraft:stone_axe',
+      I: 'kubejs:stem_cell',
+      X: '#forge:eggs',
+      E: 'minecraft:water_bucket',
+    }).replaceIngredient("minecraft:water_bucket", "minecraft:air");
 
     e.shaped('alexsmobs:spawn_egg_shoebill', [
       'SIS',

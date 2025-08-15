@@ -198,7 +198,7 @@
 						tag: { }
 					}
 					id: "7E3CC36E3947A181"
-					observe_type: 0
+					observe_type: 5
 					timer: 0L
 					title: "Find an axolotl"
 					to_observe: "eanimod:enhanced_axolotl"
@@ -270,7 +270,7 @@
 				""
 				"Remember how way back in Chapter 1, you built a &9worm farm&r? But it wasn't a true farm, in the sense of producing &9worms&r on its own, without your manual intervention. Now you can fix that!"
 				""
-				"&aSugar Gliders&r are really good at foraging for insects when they are placed upon a &9leaf block&r. Now, maybe you haven't found a Sugar Glider yet. Not to worry. Make yourself some &9stem cells&r, pour some &1liquid science&r on it, and you've got an &9embryo&r ready to be made into a &9Sugar Glider Spawn Egg&r."
+				"&aSugar Gliders&r are really good at foraging for insects when they are placed upon a &9leaf block&r. Now, maybe you haven't found a Sugar Glider yet. Not to worry. Make yourself some &9stem cells&r, pour some &1liquid science&r on it, and you've got an &9embryo&r ready to be made into a &9Sugar Glider Spawn Egg&r. Get some &9sweet berries&r ready to tame it with."
 			]
 			icon: {
 				Count: 1

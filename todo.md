@@ -1,4 +1,7 @@
 - Hard Science assets
 - chinchillas as excellent fur sources
+- kibble recipes
 - aquaculture turtle spawn eggs
+- more zawa explanations in zoo track
 - final chapter
+- rename meat_mess to meat_ball
