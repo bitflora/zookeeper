@@ -1,4 +1,7 @@
 - Hard Science assets
+- caged mob recipes
+  - zawa
+  - exotic birds
 - chinchillas as excellent fur sources
 - kibble recipes
 - aquaculture turtle spawn eggs

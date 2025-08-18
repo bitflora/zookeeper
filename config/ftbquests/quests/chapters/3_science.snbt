@@ -383,9 +383,9 @@
 		{
 			dependencies: ["592C13B11CD5EC9A"]
 			description: [
-				"To generate our anecdotes we will need another animal to experiment on. Three are suitable. &aRats&r are viable, but will also be the least productive. Next are &aRabbits&r, a classic lab animal. But the best of all are &aGuinea Pigs&r. If you have not yet encountered any in your travels, you now have the technology to create their spawn egg in the lab, and should do so."
+				"To generate our anecdotes we will need another animal to experiment on. Three are suitable. &aRats&r are viable, but will also be the least productive. Next are &aRabbits&r, a classic lab animal. But the best of all are &aGuinea Pigs&r. If you have not yet encountered any in your travels, you now have the technology to create their &9spawn egg&r in the lab, and should do so."
 				""
-				"As with your &aAxolotls&r, you will want to set some aside for breeding, while sending the rest into the &9Sciencery&r. "
+				"As with your &aAxolotls&r, you will want to set some aside for breeding, while sending the rest into the &9Sciencery&r. &aGuinea Pigs&r can be bred with &9carrots&r, after you have tamed them with &9herbivore kibble&r."
 			]
 			icon: {
 				Count: 1
