@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:entity_melting",
+  "entity": {
+    "type": "rats:tamed_rat"
+  },
+  "result": {
+    "fluid": "kubejs:anecdotes",
+    "amount": 20
+  },
+  "damage": 2
+}
