@@ -177,10 +177,10 @@
 					type: "item"
 				}
 				{
-					advancement: "alexsmobs:alexsmobs/bald_eagle_challenge"
+					advancement: "alexsmobs:alexsmobs/tame_bald_eagle"
 					criterion: ""
 					id: "74DFE839AA72BBCF"
-					title: "Kill something with an eagle from 100 blocks away"
+					title: "Tame a bald eagle"
 					type: "advancement"
 				}
 			]
@@ -456,7 +456,7 @@
 			description: ["So far, all of these capture devices still require us to walk the animal all the back to where we want it. This is inconvenient; many of them are not very mobile. Let us ponder the &aSpider&r's works some more."]
 			id: "3C436A5A1F57E9BC"
 			rewards: [{
-				auto: "invisible"
+				auto: "enabled"
 				id: "4518C1790ABBAEB3"
 				ignore_reward_blocking: true
 				stage: "spider_cagebox"
@@ -768,6 +768,7 @@
 			}]
 			shape: "octagon"
 			tasks: [{
+				consume_items: true
 				id: "31463BCA836A2B6E"
 				item: {
 					Count: 1
@@ -813,11 +814,7 @@
 					consume_items: true
 					count: 4L
 					id: "5C34BD721C99EEBA"
-					item: {
-						Count: 4
-						id: "alexsmobs:kangaroo_hide"
-						tag: { }
-					}
+					item: "alexsmobs:kangaroo_hide"
 					type: "item"
 				}
 				{
@@ -929,11 +926,17 @@
 		{
 			dependencies: ["7D8D8424C4280DF2"]
 			id: "6C9AD6DF920FBD97"
+			rewards: [{
+				id: "6ED72E1F259BE096"
+				item: "cyclic:heart"
+				type: "item"
+			}]
 			tasks: [{
+				consume_items: true
 				count: 5L
 				id: "3EA103BB56B16C71"
 				item: {
-					Count: 5
+					Count: 1
 					id: "minecraft:scute"
 					tag: { }
 				}
@@ -973,6 +976,11 @@
 		{
 			dependencies: ["0D312DA7734CD025"]
 			id: "1D218590FA070F67"
+			rewards: [{
+				id: "271B16B4C3638971"
+				item: "cyclic:heart"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				count: 5L

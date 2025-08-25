@@ -2,8 +2,10 @@
 - caged mob recipes
   - zawa
   - exotic birds
+  - demon rat, other rats too I guess
 - chinchillas as excellent fur sources
 - kibble recipes
+- tarantula hawk spawn recipe
 - aquaculture turtle spawn eggs
 - more zawa explanations in zoo track
 - final chapter

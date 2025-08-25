@@ -510,13 +510,8 @@
 			id: "3F245081455640EC"
 			rewards: [
 				{
-					count: 12
 					id: "4481BE6C025EF9D9"
-					item: {
-						Count: 1
-						id: "alexscaves:dinosaur_nugget"
-						tag: { }
-					}
+					item: "unusualprehistory:ulugh_fossil"
 					type: "item"
 				}
 				{

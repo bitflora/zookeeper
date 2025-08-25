@@ -18,6 +18,7 @@
     "alexsmobs:caiman",
     "alexsmobs:triops",
     "rats:rat",
-    "eanimod:enhanced:chicken"
+    "rats:tamed_rat",
+    "eanimod:enhanced_chicken"
   ]
 }

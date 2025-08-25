@@ -818,6 +818,27 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       E: '#forge:eggs',
     });
 
+    e.shaped('alexsmobs:spawn_egg_kangaroo', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: 'minecraft:red_sand',
+      S: 'minecraft:hopper',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('2x alexsmobs:spawn_egg_kangaroo', [
+      ' I ',
+      ' X ',
+      ' E '
+    ], {
+      I: 'alexsmobs:kangaroo_meat',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
     e.shaped('alexsmobs:spawn_egg_bald_eagle', [
       'SIS',
       ' X ',
@@ -901,7 +922,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       S: 'kubejs:fur_ball',
       s: '#forge:feathers',
       X: 'kubejs:embryo',
-      E: 'eanimod:turtle_egg',
+      E: '#kubejs:turtle_eggs',
     });
 
     e.shaped('alexsmobs:spawn_egg_anaconda', [
@@ -1003,6 +1024,18 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ], {
       I: 'kubejs:fur_ball',
       S: 'minecraft:string',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+
+    e.shaped('minecraft:frog_spawn_egg', [
+      'SIS',
+      ' X ',
+      ' E '
+    ], {
+      I: '#forge:slimeballs',
+      S: 'minecraft:hopper',
       X: 'kubejs:embryo',
       E: '#forge:eggs',
     });
