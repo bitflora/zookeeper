@@ -121,7 +121,18 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       result: [
         { item: 'naturalist:fur', count: 1 }
       ]
-    })
+    });
+
+    e.custom({
+      type: 'farmersdelight:cutting',
+      ingredients: [
+        { item: 'alexsmobs:raccoon_tail' }
+      ],
+      tool: { tag: 'forge:tools/knives' },
+      result: [
+        { item: 'naturalist:fur', count: 1 }
+      ]
+    });
 
     e.remove({output: 'goldenhopper:golden_hopper'});
     e.shaped('goldenhopper:golden_hopper', [
@@ -1184,12 +1195,16 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         C: 'minecraft:copper_ingot',
     });
 
-    e.shapeless('2x unusualprehistory:frozen_fossil_item', [
-      'unusualprehistory:frozen_fossil_item',
-      'unusualprehistory:organic_ooze',
-      '#unusualprehistory:fossils',
-      'minecraft:ice'
-    ]);
+    e.shaped('2x unusualprehistory:frozen_fossil_item', [
+        'III',
+        'FOf',
+        'III'
+    ], {
+      F: 'unusualprehistory:frozen_fossil_item',
+      O: 'unusualprehistory:organic_ooze',
+      f: '#unusualprehistory:fossils',
+      I: 'minecraft:ice'
+    });
   }
 
 
