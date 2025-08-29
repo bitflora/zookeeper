@@ -162,7 +162,11 @@
 		}
 		{
 			dependencies: ["566FE43D09E1B7A3"]
-			description: ["The &aSmilodon&r is fortunate enough to have a close relative still living into the modern age. Once you have a &9smilodon embryo&r, you can just stick it into an &aOcelot&r to have it brought to term."]
+			description: [
+				"The &aSmilodon&r is fortunate enough to have a close relative still living into the modern age. Once you have a &9smilodon embryo&r, you can just stick it into an &aOcelot&r to have it brought to term."
+				""
+				"You may have to dig through some permafrost icebergs in order to find the needed &9frozen fossils&r."
+			]
 			icon: {
 				Count: 1
 				id: "unusualprehistory:smilodon_embryo"
@@ -379,7 +383,11 @@
 		}
 		{
 			dependencies: ["5C34CDA20CC8F25A"]
-			description: ["Most ancient animals will hatch out of eggs. Just put those eggs somewhere safe where they won't be stepped on, and wait."]
+			description: [
+				"Most ancient animals will hatch out of eggs. Just put those eggs somewhere safe where they won't be stepped on, and wait."
+				""
+				"Also, check back in on the &2Helpful Critters&r chapter as you progress through here. New friends are available!"
+			]
 			id: "3C93415319B18E01"
 			rewards: [{
 				id: "0F550933F9CE6A00"

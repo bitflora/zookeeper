@@ -465,7 +465,7 @@
 			}]
 			title: "Foxhound"
 			x: 8.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			description: ["You've ridden a &aHorse&r before. But did you know that you can use a &9saddle&r to ride an &aOstrich&r? That'll impress your friends way more! Just make sure to mount it a few times saddle-less first to tame it."]
@@ -497,7 +497,7 @@
 			}]
 			title: "Ostrich"
 			x: 8.5d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			description: ["You were lucky enough to find a &aChocobo&r nest! Break it and take the eggs. When you're somewhere safe, hatch them, and then tame and ride these magnificent birds just like you would a &aHorse&r."]
@@ -538,8 +538,8 @@
 				type: "observation"
 			}]
 			title: "Chocobos"
-			x: 7.5d
-			y: 0.0d
+			x: 8.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3C93415319B18E01"]
@@ -681,11 +681,11 @@
 				}
 			]
 			title: "Megatherium"
-			x: 11.5d
-			y: -5.5d
+			x: 11.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["3C93415319B18E01"]
+			dependencies: ["1B575536787142FF"]
 			description: ["Once tamed with &9golden sacabambaspis&r and fitted with a &9saddle&r, the &aOphthalmosaurus&r can serve as a very fast aquatic mount."]
 			hide_until_deps_complete: true
 			icon: {
@@ -727,7 +727,7 @@
 				type: "item"
 			}]
 			title: "Ophthalmosaurus"
-			x: 10.5d
+			x: 11.0d
 			y: 0.5d
 		}
 		{
@@ -798,11 +798,11 @@
 				}
 			]
 			title: "Majungasaurus"
-			x: 11.5d
-			y: -2.5d
+			x: 11.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["1B575536787142FF"]
+			dependencies: ["3C93415319B18E01"]
 			description: ["This large creature likes to live under the water and fish. It will capture all manner of fish for you, including prehistoric fish and items."]
 			hide_until_deps_complete: true
 			icon: {
@@ -825,11 +825,11 @@
 				type: "item"
 			}]
 			title: "Neilpeartia"
-			x: -2.5d
+			x: -2.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["1B575536787142FF"]
+			dependencies: ["3C93415319B18E01"]
 			description: [
 				"This fish will grind up &9coral fans&r, turning them into &9sand&r, giving you an easy renewable source of &9sand&r."
 				""
@@ -876,7 +876,7 @@
 				type: "item"
 			}]
 			title: "Foreyia"
-			x: 0.5d
+			x: 1.0d
 			y: 0.5d
 		}
 		{

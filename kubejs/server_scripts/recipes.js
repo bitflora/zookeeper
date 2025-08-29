@@ -60,6 +60,10 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     // Custom items
     e.smelting('2x supplementaries:ash', 'compressedblocks:c0_cobblestone');
 
+    e.shapeless('minecraft:paper', [
+        '3x farmersdelight:rice'
+    ]);
+
     // kibble
     e.replaceInput('zawa:herbivore_kibble', 'zawa:prickly_pear', 'supplementaries:ash');
 
@@ -137,6 +141,9 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         I: 'minecraft:iron_ingot',
         F: 'kubejs:fur_ball'
     });
+
+    e.replaceInput('waystones:warp_stone', 'minecraft:emerald', 'kubejs:hard_science');
+    e.replaceInput('domesticationinnovation:pet_bed_white', 'minecraft:bone', 'kubejs:fur_ball');
 
     // prehistoric stuff is more efficient, to give incentives to upgrade farms
     e.shapeless('3x kubejs:fur_mess', [
@@ -1133,7 +1140,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
 
     // Unusual Prehistory
     e.remove({ output: 'unusualprehistory:organic_ooze'});
-    e.shaped('unusualprehistory:organic_ooze', [
+    e.shaped('4x unusualprehistory:organic_ooze', [
         ' S ',
         'SWS',
         ' S '
@@ -1161,7 +1168,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         I: 'minecraft:iron_ingot',
         B: 'kubejs:brain',
         C: 'minecraft:copper_ingot',
-        S: 'minecraft:hard_science',
+        S: 'unusualprehistory:organic_ooze',
     });
 
     e.remove({ output: 'unusualprehistory:cultivator'});
@@ -1176,6 +1183,13 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         B: 'kubejs:brain',
         C: 'minecraft:copper_ingot',
     });
+
+    e.shapeless('2x unusualprehistory:frozen_fossil_item', [
+      'unusualprehistory:frozen_fossil_item',
+      'unusualprehistory:organic_ooze',
+      '#unusualprehistory:fossils',
+      'minecraft:ice'
+    ]);
   }
 
 
