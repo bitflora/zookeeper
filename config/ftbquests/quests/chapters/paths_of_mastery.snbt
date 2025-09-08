@@ -485,6 +485,11 @@
 			]
 			description: ["Thanks to the latest scientific advances, you don't even need to lay snares anymore. A flick of the wrist, and they are yours."]
 			id: "12AE03987D663AB8"
+			rewards: [{
+				id: "194D1522BAFE7F54"
+				item: "cyclic:magic_net"
+				type: "item"
+			}]
 			subtitle: "Gotta catch them all"
 			tasks: [{
 				id: "6917B6F7363D4064"
@@ -573,6 +578,20 @@
 				}
 			}
 			id: "13C07E06513000D0"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "77314CD14E3215DB"
+					ignore_reward_blocking: true
+					stage: "spider_pokeball"
+					type: "gamestage"
+				}
+				{
+					id: "1EA0085BF0F73037"
+					item: "alexsmobs:spawn_egg_tarantula_hawk"
+					type: "item"
+				}
+			]
 			subtitle: "To catch a predator"
 			tasks: [{
 				advancement: "alexsmobs:alexsmobs/tame_tarantula_hawk"

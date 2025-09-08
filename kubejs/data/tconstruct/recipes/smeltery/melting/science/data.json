@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "kubejs:data"
+  },
+  "result": {
+    "fluid": "kubejs:anecdotes",
+    "amount": 10
+  },
+  "temperature": 450,
+  "time": 200
+}

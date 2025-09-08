@@ -401,6 +401,16 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         I: 'minecraft:iron_ingot',
         P: 'rats:rat_paw'
     });
+
+    e.shaped('cyclic:magic_net', [
+        'DDD',
+        'DCD',
+        'BBB'
+    ], {
+        D: 'kubejs:data',
+        C: 'zawa:capture_cage',
+        B: 'minecraft:blue_ice',
+    });
   }
 
 
@@ -965,13 +975,14 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
 
     e.shaped('alexsmobs:spawn_egg_tarantula_hawk', [
       'SIS',
-      ' X ',
-      ' E '
+      'tXt',
+      'tEt'
     ], {
       I: 'minecraft:spider_eye',
       S: '#forge:feathers',
       X: 'kubejs:embryo',
       E: '#forge:eggs',
+      t: '#kubejs:tarantulas'
     });
 
     e.shaped('2x eanimod:turtle_egg', [
@@ -1205,7 +1216,42 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       f: '#unusualprehistory:fossils',
       I: 'minecraft:ice'
     });
+
+    e.shaped('2x unusualprehistory:frozen_fossil_item', [
+        'III',
+        'FOf',
+        'III'
+    ], {
+      F: 'unusualprehistory:frozen_fossil_item',
+      O: 'unusualprehistory:organic_ooze',
+      f: '#unusualprehistory:fossils',
+      I: 'unusualprehistory:permafrost'
+    });
+
+    e.shaped('2x unusualprehistory:amber_fossil', [
+        'III',
+        'FOf',
+        'III'
+    ], {
+      F: 'unusualprehistory:amber_fossil',
+      O: 'unusualprehistory:organic_ooze',
+      f: '#unusualprehistory:fossils',
+      I: 'unusualprehistory:amber_shard'
+    });
+
+    e.shaped('2x unusualprehistory:opal_fossil', [
+        'III',
+        'FOf',
+        'III'
+    ], {
+      F: 'unusualprehistory:opal_fossil',
+      O: 'unusualprehistory:organic_ooze',
+      f: '#unusualprehistory:fossils',
+      I: 'unusualprehistory:opal_chunk'
+    });
   }
+
+
 
 
   function castingBasin(event, result, castItem, inputFluid, amount, coolingTime, consumption) {

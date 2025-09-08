@@ -71,4 +71,14 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:zawa_butterflies', 'zawa:red_admiral_butterfly');
     e.add('kubejs:zawa_butterflies', 'zawa:tawny_emperor_butterfly');
     e.add('kubejs:zawa_butterflies', 'zawa:zebra_swallowtail_butterfly');
+
+    e.add('kubejs:tarantulas', 'zawa:antilles_pinktoe_tarantula');
+    e.add('kubejs:tarantulas', 'zawa:brazilian_black_tarantula');
+    e.add('kubejs:tarantulas', 'zawa:chilean_rosehair_tarantula');
+    e.add('kubejs:tarantulas', 'zawa:cobalt_blue_tarantula');
+    e.add('kubejs:tarantulas', 'zawa:goliath_birdeater_tarantula');
+    e.add('kubejs:tarantulas', 'zawa:greenbottle_blue_tarantula');
+    e.add('kubejs:tarantulas', 'zawa:king_baboon_tarantula');
+    e.add('kubejs:tarantulas', 'zawa:mexican_red_knee_tarantula');
+    e.add('kubejs:tarantulas', 'zawa:western_desert_tarantula');
 });

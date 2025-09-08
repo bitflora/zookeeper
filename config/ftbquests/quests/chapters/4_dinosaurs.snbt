@@ -203,7 +203,11 @@
 		}
 		{
 			dependencies: ["228ACCC3FDFBE7AA"]
-			description: ["&9Smilidons&r are the first of many animals to be revived. Get at least two of them. When they groom each other, they'll drop &9smilodon fur&r. This special fur is far more effective at making &9fur balls&r than modern fur."]
+			description: [
+				"&9Smilidons&r are the first of many animals to be revived. Get at least two of them. When they groom each other, they'll drop &9smilodon fur&r. This special fur is far more effective at making &9fur balls&r than modern fur."
+				""
+				"Be careful! They are &onot&r friendly!"
+			]
 			icon: {
 				Count: 1
 				id: "alexsmobs:tab_icon"
@@ -449,11 +453,6 @@
 			subtitle: "Peacocks of the ancient world"
 			tasks: [
 				{
-					id: "1ECFE7C97F11BAE2"
-					item: "unusualprehistory:austro_eggs"
-					type: "item"
-				}
-				{
 					id: "3CA1A3454A9BCA70"
 					item: "unusualprehistory:raw_austro"
 					type: "item"
@@ -627,34 +626,16 @@
 					xp_levels: 2
 				}
 				{
-					id: "2C336AF2A357E782"
-					item: {
-						Count: 1
-						id: "alexscaves:primordial_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					id: "72F913CC6465FC21"
-					item: "unusualprehistory:trike_eggs"
-					type: "item"
-				}
-				{
-					id: "647B9D057E5C06D0"
-					item: "unusualprehistory:trike_horn"
-					type: "item"
-				}
-				{
-					id: "1960B90E0C89CAAA"
+					id: "3449B0983D6A8F5C"
 					item: "unusualprehistory:ginkgo_fruit"
 					type: "item"
 				}
 			]
+			tasks: [{
+				id: "647B9D057E5C06D0"
+				item: "unusualprehistory:trike_horn"
+				type: "item"
+			}]
 			title: "Triceratops"
 			x: 7.5d
 			y: -10.5d
@@ -876,7 +857,7 @@
 			dependencies: ["1B575536787142FF"]
 			dependency_requirement: "all_started"
 			description: [
-				"&fDefeat the mighty &cTyrannosaurus&r to weaken it. Use an &eAdorned Staff&r to interact and collect its scales and teeth without taking its life. "
+				"&fDefeat the mighty &cTyrannosaurus&r to weaken it. Use an &eAdorned Staff&r to spare its life, and it will passively drop scale and teeth from then on."
 				""
 				"This peaceful approach will earn you powerful materials for crafting legendary gear."
 			]
@@ -911,11 +892,6 @@
 			]
 			subtitle: "&7Even the mightiest can be pacified..."
 			tasks: [
-				{
-					id: "5E7CED5013330689"
-					item: "unusualprehistory:rex_eggs"
-					type: "item"
-				}
 				{
 					id: "5301F499397CEDAF"
 					item: {
@@ -1092,17 +1068,6 @@
 					type: "item"
 				}
 				{
-					id: "5FDCF787299E318A"
-					item: {
-						Count: 1
-						id: "unusualprehistory:handmade_battleaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "1D11B6E3791CDE92"
 					item: "unusualprehistory:white_fruit"
 					type: "item"
@@ -1164,28 +1129,6 @@
 								id: "unusualprehistory:white_fruit"
 							}
 							translationKey: "unusualprehistory.fruit_loot_box.redolent"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4B529FDFD281BF17"
-					item: {
-						Count: 1
-						id: "unusualprehistory:handmade_club"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4564E8CE402C4EBC"
-					item: {
-						Count: 1
-						id: "unusualprehistory:barina_whistle"
-						tag: {
-							instrument: "unusualprehistory:ocarina"
 						}
 					}
 					type: "item"
@@ -1302,26 +1245,15 @@
 				}
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "0F00A2B74A22F018"
-					item: {
-						Count: 1
-						id: "unusualprehistory:raptor_eggs"
-						tag: { }
-					}
-					type: "item"
+			tasks: [{
+				id: "4756F0D2A3C8FA0B"
+				item: {
+					Count: 1
+					id: "unusualprehistory:raptor_feathers"
+					tag: { }
 				}
-				{
-					id: "4756F0D2A3C8FA0B"
-					item: {
-						Count: 1
-						id: "unusualprehistory:raptor_feathers"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Velociraptors"
 			x: -0.5d
 			y: -4.5d
@@ -1352,27 +1284,16 @@
 			}
 			id: "07A51C88058D3036"
 			subtitle: "Don't ask me to pronounce it"
-			tasks: [
-				{
-					id: "4BBDF336E1612CE3"
-					item: {
-						Count: 1
-						id: "unusualprehistory:scau_eggs"
-						tag: { }
-					}
-					type: "item"
+			tasks: [{
+				count: 3L
+				id: "2D1736272AAFF735"
+				item: {
+					Count: 1
+					id: "unusualprehistory:raw_scau"
+					tag: { }
 				}
-				{
-					count: 3L
-					id: "2D1736272AAFF735"
-					item: {
-						Count: 1
-						id: "unusualprehistory:raw_scau"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Scaumencia"
 			x: 5.0d
 			y: -1.5d
@@ -1389,27 +1310,16 @@
 			}
 			id: "68D0319CDC35C413"
 			subtitle: "What's wrong with your face?"
-			tasks: [
-				{
-					id: "61C40CDF4DB00E3D"
-					item: {
-						Count: 1
-						id: "unusualprehistory:stetha_eggs"
-						tag: { }
-					}
-					type: "item"
+			tasks: [{
+				count: 3L
+				id: "015EEACC78921F0A"
+				item: {
+					Count: 1
+					id: "unusualprehistory:raw_stetha"
+					tag: { }
 				}
-				{
-					count: 3L
-					id: "015EEACC78921F0A"
-					item: {
-						Count: 1
-						id: "unusualprehistory:raw_stetha"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Stethacanthus"
 			x: 5.0d
 			y: -4.5d

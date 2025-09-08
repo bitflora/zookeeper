@@ -5,7 +5,7 @@
 			"modid": "unusualprehistory"
 	},
 	"entity": "unusualprehistory:sludge",
-	"samplerTier": 2,
+	"samplerTier": 3,
 	"environments": ["sand"],
 	"growTicks": 1800,
 	"results": [

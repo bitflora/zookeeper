@@ -1,0 +1,8 @@
+{
+  "type": "rats:chef",
+  "count": 2,
+  "ingredient": {
+    "item": "farmersdelight:rice_panicle"
+  },
+  "result": "farmersdelight:rice"
+}

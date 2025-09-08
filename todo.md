@@ -5,8 +5,8 @@
   - demon rat, other rats too I guess
 - chinchillas as excellent fur sources
 - kibble recipes
-- tarantula hawk spawn recipe
 - aquaculture turtle spawn eggs
 - more zawa explanations in zoo track
 - final chapter
 - rename meat_mess to meat_ball
+- fix broken unusualprehistory flasks
