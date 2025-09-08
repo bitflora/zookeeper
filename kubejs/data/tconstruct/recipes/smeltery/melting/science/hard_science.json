@@ -1,10 +1,10 @@
 {
   "type": "tconstruct:melting",
   "ingredient": {
-    "item": "kubejs:data"
+    "item": "kubejs:hard_science"
   },
   "result": {
-    "fluid": "kubejs:anecdotes",
+    "fluid": "kubejs:liquid_science",
     "amount": 810
   },
   "temperature": 450,
