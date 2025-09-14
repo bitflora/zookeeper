@@ -1427,6 +1427,96 @@
 			x: 4.0d
 			y: 2.5d
 		}
+		{
+			can_repeat: true
+			dependencies: ["0C51EBA917A00732"]
+			description: ["Gain the Blessing of the &aTiger&r, and learn how to strike faster in the process!"]
+			icon: {
+				Count: 1
+				id: "cyclic:charm_attack_speed"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6669250E32A8F71C"
+			rewards: [{
+				id: "3BE3D14B88AA94D3"
+				item: {
+					Count: 1
+					id: "cyclic:charm_attack_speed"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Float like a butterfly, sting like a tiger"
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "652784A93519F8E1"
+					item: { Count: 5, id: "exoticbirds:peafowl_egg" }
+					type: "item"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/tigers_blessing"
+					criterion: ""
+					id: "0E33DBB978B32B6C"
+					type: "advancement"
+				}
+				{
+					id: "511EBADA664BC63B"
+					item: "zawa:eastern_tiger_swallowtail_butterfly"
+					type: "item"
+				}
+			]
+			title: "Windforce Gauntlets"
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0C51EBA917A00732"]
+			description: ["Study the &aRattlesnake&r to learn the perfect time to strike your enemies, making your critical hits more powerful!"]
+			icon: {
+				Count: 1
+				id: "cyclic:charm_crit"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1783A1079FBD76D9"
+			rewards: [{
+				id: "7961470C25019E31"
+				item: {
+					Count: 1
+					id: "cyclic:charm_crit"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "0605B60317CBF378"
+					item: { Count: 5, id: "exoticbirds:peafowl_egg" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "61542E87E85D5C34"
+					item: "alexsmobs:rattlesnake_rattle"
+					type: "item"
+				}
+			]
+			title: "Bracers of the Titans"
+			x: 1.5d
+			y: 4.0d
+		}
 	]
 	title: "Paths of Mastery"
 }

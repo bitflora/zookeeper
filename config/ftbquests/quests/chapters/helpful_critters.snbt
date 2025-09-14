@@ -17,7 +17,7 @@
 			image: "kubejs:textures/quests/alexsmobs.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 0.5d
+			x: -0.5d
 			y: -9.0d
 		}
 		{
@@ -27,7 +27,7 @@
 			image: "kubejs:textures/quests/exoticbirds.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 3.0d
+			x: 2.5d
 			y: -9.0d
 		}
 		{
@@ -37,7 +37,7 @@
 			image: "kubejs:textures/quests/geneticanimals.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 5.5d
+			x: 5.0d
 			y: -9.0d
 		}
 		{
@@ -47,7 +47,7 @@
 			image: "kubejs:textures/quests/rats.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 8.0d
+			x: 7.5d
 			y: -9.0d
 		}
 		{
@@ -57,8 +57,28 @@
 			image: "kubejs:textures/quests/zawa.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 11.5d
+			x: 10.5d
 			y: -9.0d
+		}
+		{
+			click: "https://www.curseforge.com/minecraft/mc-mods/domestication-innovation"
+			height: 2.0d
+			hover: ["Domestication Innovation"]
+			image: "kubejs:textures/quests/domestication_innovation.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			click: "https://quarkmod.net/#features"
+			height: 1.0d
+			hover: ["Quark"]
+			image: "kubejs:textures/quests/quark.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.0d
+			y: 2.5d
 		}
 	]
 	order_index: 1

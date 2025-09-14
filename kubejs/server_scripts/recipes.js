@@ -411,13 +411,24 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         C: 'zawa:capture_cage',
         B: 'minecraft:blue_ice',
     });
+
+    e.shaped('cyclic:disenchanter', [
+        ' F ',
+        'fUf',
+        ' E '
+    ], {
+        F: 'rats:filth',
+        f: 'kubejs:fur_ball',
+        U: 'rats:rat_upgrade_disenchanter',
+        E: 'minecraft:enchanting_table',
+    });
   }
 
 
   function modify_inventory_pets(e) {
     e.remove({ mod: "inventorypets"});
 
-    // available immediately
+    // available immediately; minor utility pets
     e.shaped('inventorypets:temp_chest', [
         'PPP',
         'PCP',
@@ -434,6 +445,25 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ], {
         C: 'inventorypets:temp_chest'
     });
+
+    e.shaped('inventorypets:pet_crafting_table', [
+        'PPP',
+        'PCP',
+        'PPP'
+    ], {
+        P: '#minecraft:planks',
+        C: 'minecraft:crafting_table'
+    });
+
+    e.shaped('inventorypets:pet_furnace', [
+        'CCC',
+        'CFC',
+        'CCC'
+    ], {
+        F: 'minecraft:furnace',
+        C: 'minecraft:cobblestone'
+    });
+
 
     e.shaped('inventorypets:temp_feed_bag', [
         ' F ',
@@ -452,6 +482,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         B: 'kubejs:fur_ball'
     });
 
+    // advanced utility pets
     e.shaped('inventorypets:pet_grave', [
         ' C ',
         'GEG',
@@ -462,20 +493,67 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         G: 'minecraft:gravel'
     });
 
+    e.shaped('inventorypets:pet_pixie', [
+        ' x ',
+        'xEx',
+        'fff'
+    ], {
+        x: 'cagedmobs:crystallized_experience',
+        E: 'kubejs:embryo',
+        f: '#forge:feathers'
+    });
+
+    e.shaped('inventorypets:pet_loot', [
+        'fGf',
+        'fEf',
+        'fff'
+    ], {
+        G: 'minecraft:gold_ingot',
+        E: 'kubejs:embryo',
+        f: 'kubejs:fur_ball'
+    });
+
+    e.shaped('inventorypets:pet_house', [
+        ' s ',
+        'sEs',
+        'GGG'
+    ], {
+        x: '#minecraft:wooden_slabs',
+        E: 'kubejs:embryo',
+        G: 'minecraft:cobblestone'
+    });
+
+    e.shaped('inventorypets:pet_nether_portal', [
+        'CCC',
+        'CEC',
+        'CCC'
+    ], {
+        E: 'kubejs:embryo',
+        C: 'minecraft:quartz'
+    });
+
+
+    e.shaped('inventorypets:pet_end_portal', [
+        'CCC',
+        'CEC',
+        'CCC'
+    ], {
+        E: 'kubejs:embryo',
+        C: 'minecraft:end_stone'
+    });
+
     // put this back for use downstream
     e.shapeless('9x inventorypets:nugget_diamond', ['minecraft:diamond']);
     e.shapeless('minecraft:diamond', ['9x inventorypets:nugget_diamond']);
 
+    e.shapeless('9x inventorypets:nugget_ender', ['minecraft:ender_pearl']);
+    e.shapeless('minecraft:ender_pearl', ['9x inventorypets:nugget_ender']);
 
-    e.shaped('inventorypets:pet_cow', [
-        ' X ',
-        'FMF',
-        'FMF'
-    ], {
-        X: 'minecraft:beef',
-        F: 'kubejs:fur_ball',
-        M: 'kubejs:meatwad'
-    });
+    e.shapeless('9x inventorypets:nugget_coal', ['minecraft:coal']);
+    e.shapeless('minecraft:coal', ['9x inventorypets:nugget_coal']);
+
+    e.shapeless('9x inventorypets:nugget_obsidian', ['minecraft:obsidian']);
+    e.shapeless('minecraft:obsidian', ['9x inventorypets:nugget_obsidian']);
 
     // the rest require meatwads
     e.shaped('inventorypets:pet_cow', [
@@ -612,6 +690,15 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         C: 'minecraft:magma_cream',
         M: 'kubejs:meatwad',
         B: 'minecraft:magma_block',
+    });
+
+    e.shaped('inventorypets:pet_blaze', [
+        'BBB',
+        'BEB',
+        'BBB'
+    ], {
+        e: 'kubejs:embryo',
+        B: 'minecraft:blaze_rod',
     });
 
     e.shaped('inventorypets:pet_wither', [
@@ -1067,6 +1154,16 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       S: 'minecraft:hopper',
       X: 'kubejs:embryo',
       E: '#forge:eggs',
+    });
+
+    e.shaped('minecraft:spawner', [
+      'bSb',
+      'SeS',
+      'bSb'
+    ], {
+      b: 'minecraft:iron_bars',
+      S: 'kubejs:hard_science',
+      e: 'kubejs:embryo',
     });
   }
 

@@ -260,10 +260,10 @@
 		[cyclic.blocks.disenchanter]
 			# Power per use disenchanter
 			#Range: > 0
-			energy_cost = 2500
+			energy_cost = 25000
 			# Cost of (or payment for if negative) per enchanted book generated
 			#Range: -1000 ~ 16000
-			fluid_cost = 100
+			fluid_cost = 0
 
 		[cyclic.blocks.anvil]
 			# Power per repair anvil

@@ -1,4 +1,3 @@
-- Hard Science assets
 - caged mob recipes
   - zawa
   - exotic birds
@@ -10,3 +9,4 @@
 - final chapter
 - rename meat_mess to meat_ball
 - fix broken unusualprehistory flasks
+- quark carrots to zombify and skeletonize

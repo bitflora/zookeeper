@@ -33,8 +33,8 @@
 				title: "Begin Chapter 3"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: -1.0d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6831C5457E1E265B"]
@@ -140,8 +140,8 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
-			y: -1.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6CB261440A7B3B52"]
@@ -228,8 +228,8 @@
 				}
 			]
 			title: "Axolotls!"
-			x: 0.5d
-			y: -1.0d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6CB261440A7B3B52"]
@@ -261,7 +261,7 @@
 			}]
 			title: "Better Tools"
 			x: -1.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3903C286AAE568C9"]
@@ -330,8 +330,8 @@
 				}
 			]
 			title: "Reproducible Science"
-			x: 4.0d
-			y: -1.0d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1266905BED12A811"]
@@ -347,8 +347,8 @@
 				type: "item"
 			}]
 			title: "Industrial Science"
-			x: 2.0d
-			y: -1.0d
+			x: 3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3FA3C3C16A9DF41B"]
@@ -377,8 +377,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: -1.0d
+			x: 7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["592C13B11CD5EC9A"]
@@ -415,8 +415,8 @@
 				}
 			]
 			title: "Less Rigorous Science"
-			x: 0.0d
-			y: 2.0d
+			x: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0B3C743441943C29"]
@@ -438,8 +438,8 @@
 				type: "item"
 			}]
 			title: "Citations"
-			x: 3.5d
-			y: 2.0d
+			x: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6079EDB456F3DE89"]
@@ -456,8 +456,8 @@
 				type: "item"
 			}]
 			title: "Publish"
-			x: -5.5d
-			y: 2.0d
+			x: -4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["01B494C61A52BB02"]
@@ -468,8 +468,8 @@
 				title: "Rejected"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 2.0d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3FA3C3C16A9DF41B"]
@@ -498,7 +498,7 @@
 			}]
 			title: "Spawn Eggs"
 			x: 4.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["41F5F15BE95C79DC"]
@@ -531,8 +531,8 @@
 				type: "item"
 			}]
 			title: "Complete Chapter 3"
-			x: 6.5d
-			y: 2.0d
+			x: 7.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0B3C743441943C29"]
@@ -588,8 +588,8 @@
 				}
 			]
 			title: "Caged Mobs"
-			x: 0.0d
-			y: 4.0d
+			x: 2.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3FA3C3C16A9DF41B"]
@@ -614,7 +614,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -2.5d
+			y: -3.5d
 		}
 	]
 	title: "&a3.&r Science!"
