@@ -81,4 +81,8 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:tarantulas', 'zawa:king_baboon_tarantula');
     e.add('kubejs:tarantulas', 'zawa:mexican_red_knee_tarantula');
     e.add('kubejs:tarantulas', 'zawa:western_desert_tarantula');
+
+    e.add('kubejs:bone_weapons', 'unusualprehistory:handmade_spear');
+    e.add('kubejs:bone_weapons', 'unusualprehistory:handmade_battleaxe');
+    e.add('kubejs:bone_weapons', 'unusualprehistory:handmade_club');
 });

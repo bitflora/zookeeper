@@ -266,8 +266,8 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     e.shapeless('kubejs:bone_mess', [
       '2x unusualprehistory:trike_horn',
       '2x unusualprehistory:rex_tooth',
-      '1x unusualprehistory:handmade_spear',
-      '2x minecraft:bone',
+      '1x #kubejs:bone_weapons',
+      '4x minecraft:bone',
     ]);
 
     modify_tconstruct(e);
@@ -1260,11 +1260,12 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     // Unusual Prehistory
     e.remove({ output: 'unusualprehistory:organic_ooze'});
     e.shaped('4x unusualprehistory:organic_ooze', [
-        ' S ',
+        'MSM',
         'SWS',
-        ' S '
+        'MSM'
     ], {
         S: 'kubejs:stem_cell',
+        M: 'kubejs:meatwad',
         W: 'kubejs:hard_science',
     });
 

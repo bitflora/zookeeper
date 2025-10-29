@@ -85,8 +85,6 @@
 			description: [
 				"Smaller \"ambient\" animals like these &aButterflies&r are simple creatures. Feed them or they might despawn! More complex animals can be tamed and claimed."
 				""
-				"After breeding some additional butterflies, try out this &aChinchilla&r next. It is still small enough to catch by hand, and can be tamed with &9herbivore kibble&r."
-				""
 				"(You may read in wikis that ZAWA animals need to be fed and watered after being tamed; this is not the case. Your animals will be perfectly happy in their exhibits without your constant attention.)"
 			]
 			icon: {
@@ -116,11 +114,38 @@
 					type: "item"
 				}
 				{
+					count: 5
 					id: "5B8FA38FADE3AAA3"
 					item: {
 						Count: 1
 						id: "zawa:herbivore_kibble"
 						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5A63B33D7240174D"
+					item: {
+						Count: 1
+						id: "zawaessentials:chinchilla_spawn_egg"
+						tag: {
+							EntityTag: {
+								Gender: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "65491E4F06D8B814"
+					item: {
+						Count: 1
+						id: "zawaessentials:chinchilla_spawn_egg"
+						tag: {
+							EntityTag: {
+								Gender: 1b
+							}
+						}
 					}
 					type: "item"
 				}
@@ -155,7 +180,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["73C46B64A89E4627"]
+			dependencies: ["2DB5D0C73719F978"]
 			description: [
 				"Now that you have a few creatures to show off, it's time to let in some visitors. Make yourself a &9Zoo Donation Barrel&r and then place it in the center of your new zoo."
 				""
@@ -175,7 +200,7 @@
 				type: "item"
 			}]
 			title: "Time for Customers!"
-			x: -7.0d
+			x: -5.0d
 			y: 1.0d
 		}
 		{
@@ -199,7 +224,32 @@
 				type: "item"
 			}]
 			title: "More Discerning Customers"
-			x: -4.5d
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["73C46B64A89E4627"]
+			description: [
+				"Many animals in this world have genders, so you will need a male and a female in order to breed them. The spawn eggs from the previous task should guarantee you one breedable pair of &aChinchillas&r. After building them a nice exhibit and taming them, try breeding them!"
+				""
+				"Animals like these must first be tamed with &9kibble&r, then they can be bred with &9wheat&r."
+			]
+			icon: "zawaessentials:chinchilla_plush"
+			id: "2DB5D0C73719F978"
+			rewards: [{
+				id: "7A64FD0653784CF9"
+				item: "zawaessentials:chinchilla_plush"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2971FFFFA13D61F1"
+				observe_type: 5
+				timer: 0L
+				to_observe: "zawaessentials:chinchilla"
+				type: "observation"
+			}]
+			title: "Care and Breeding"
+			x: -7.5d
 			y: 1.0d
 		}
 	]

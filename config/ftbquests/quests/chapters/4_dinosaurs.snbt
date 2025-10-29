@@ -1145,7 +1145,7 @@
 		}
 		{
 			dependencies: ["07D0FC746A47AC28"]
-			description: ["&fTrade &aRedolent Fruits&r with the Gigantopithecus to earn a &dSalubrious Fruit Loot Box&r. Inside you will finally find the &9handmade spear&r, made from ancient bones that can be found nowhere else."]
+			description: ["Trade &9Redolent Fruits&r with the Gigantopithecus to earn a &9Salubrious Fruit Loot Box&r. Inside you will finally find the &9handmade weapons&r, made from ancient bones that can be found nowhere else."]
 			icon: {
 				Count: 1
 				id: "unusualprehistory:fruit_loot_box"
@@ -1202,11 +1202,12 @@
 					id: "3A970EC9E9B4400F"
 					item: {
 						Count: 1
-						id: "unusualprehistory:handmade_spear"
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							Damage: 0
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:bone_weapons)"
 						}
 					}
+					title: "Any #kubejs:bone_weapons"
 					type: "item"
 				}
 				{
