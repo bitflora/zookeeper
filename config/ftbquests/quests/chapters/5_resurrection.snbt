@@ -11,16 +11,80 @@
 	id: "27997D19FA284B01"
 	order_index: 4
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["53A0BB6D45E14A20"]
-		id: "36D5DE5F9B4D082A"
-		tasks: [{
-			id: "58AC3C8D7159708E"
-			title: "Begin Chapter 5"
-			type: "checkmark"
-		}]
-		x: -6.5d
-		y: -1.0d
-	}]
+	quests: [
+		{
+			dependencies: ["53A0BB6D45E14A20"]
+			description: [
+				"The time has come for all of your work to pay off. You've gone from a simple farm to a proper zoo, to one with real live dinoaurs! And in the process, you have gathered everything you need to finally resurrect &e&lThe Ultimate Zookeeper&r&r."
+				""
+				"Take moment to admire your zoo and make sure it's ready to greet its most important visitor of all."
+			]
+			id: "36D5DE5F9B4D082A"
+			rewards: [
+				{
+					id: "6BDFB42CBFD6020A"
+					item: "minecraft:spyglass"
+					type: "item"
+				}
+				{
+					id: "20A9EE813064555E"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			tasks: [{
+				id: "58AC3C8D7159708E"
+				title: "Begin Chapter 5"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["36D5DE5F9B4D082A"]
+			description: ["It is time. Apply all of your science to prepare for the resurrection."]
+			id: "5F4EFA3375A400EE"
+			tasks: [{
+				id: "4582740A4AF5B6BC"
+				item: "zoogoer:steve_spawn_egg"
+				type: "item"
+			}]
+			title: "The Final Egg"
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5F4EFA3375A400EE"]
+			description: [
+				"Congratulations! Revive our long-lost hero in the very heart of your zoo, where he can most appreciate it!"
+				""
+				"You have completed this mod pack! Good job!"
+			]
+			icon: "rats:party_hat"
+			id: "4E3952EC283FBD94"
+			rewards: [
+				{
+					id: "42186B6BED85F928"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					id: "20F03ADC1495973B"
+					item: "rats:party_hat"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3404E9C200E03325"
+				observe_type: 5
+				timer: 0L
+				title: "Behold, Steve!"
+				to_observe: "zoogoer:steve_mob"
+				type: "observation"
+			}]
+			x: -6.5d
+			y: -6.0d
+		}
+	]
 	title: "&a5.&r Resurrection"
 }

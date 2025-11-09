@@ -18,6 +18,8 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     modify_inventory_pets(e);
     modify_cyclic(e);
 
+    modify_exotic_birds_cage_drops(e);
+
     e.remove({ output: 'zawa:capture_cage' });
     e.shaped('1x zawa:capture_cage', [
         'III',
@@ -262,6 +264,8 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       '2x unusualprehistory:antarcto_plate',
     ]);
 
+    // skin mass is made by chef rats
+
     // bone
     e.shapeless('kubejs:bone_mess', [
       '2x unusualprehistory:trike_horn',
@@ -269,6 +273,18 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       '1x #kubejs:bone_weapons',
       '4x minecraft:bone',
     ]);
+
+    e.remove({output: 'zoogoer:steve_spawn_egg'});
+    e.shaped('zoogoer:steve_spawn_egg', [
+      'sHs',
+      'oBo',
+      'sos'
+    ], {
+      B: 'kubejs:bone_essence',
+      H: 'kubejs:brain',
+      s: 'kubejs:skin_mass',
+      o: 'unusualprehistory:organic_ooze'
+    });
 
     modify_tconstruct(e);
     modify_spawn_eggs(e);
@@ -421,6 +437,71 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         f: 'kubejs:fur_ball',
         U: 'rats:rat_upgrade_disenchanter',
         E: 'minecraft:enchanting_table',
+    });
+
+    e.shaped('cyclic:toxic_carrot', [
+        ' r ',
+        'pcp',
+        ' S '
+    ], {
+        c: 'minecraft:carrot',
+        S: 'kubejs:hard_science',
+        p: 'rats:plague_essence',
+        r: 'minecraft:rotten_flesh',
+    });
+
+    e.shaped('cyclic:carrot_ender', [
+        ' x ',
+        'pcp',
+        ' S '
+    ], {
+        c: 'minecraft:carrot',
+        S: 'kubejs:hard_science',
+        p: 'rats:plague_essence',
+        x: 'minecraft:ender_pearl',
+    });
+
+    e.shaped('cyclic:diamond_carrot_health', [
+        ' x ',
+        ' c ',
+        ' S '
+    ], {
+        c: 'minecraft:carrot',
+        S: 'kubejs:hard_science',
+        x: 'minecraft:diamond',
+    });
+
+    e.shaped('cyclic:redstone_carrot_speed', [
+        ' x ',
+        'pcp',
+        ' S '
+    ], {
+        c: 'minecraft:carrot',
+        S: 'kubejs:hard_science',
+        p: 'minecraft:redstone',
+        x: 'minecraft:redstone_block',
+    });
+
+    e.shaped('cyclic:emerald_carrot_jump', [
+        ' x ',
+        'pcp',
+        ' S '
+    ], {
+        c: 'minecraft:carrot',
+        S: 'kubejs:hard_science',
+        p: 'minecraft:emerald',
+        x: 'minecraft:emerald_block',
+    });
+
+    e.shaped('cyclic:lapis_carrot_variant', [
+        ' x ',
+        'pcp',
+        ' S '
+    ], {
+        c: 'minecraft:carrot',
+        S: 'kubejs:hard_science',
+        p: 'minecraft:lapis',
+        x: 'minecraft:lapis_block',
     });
   }
 
@@ -1349,7 +1430,50 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     });
   }
 
+  function modify_exotic_birds_cage_drops(event) {
+    Utils.getRegistryIds("entity_type").forEach(entity => {
+      var entity_id = entity.toString();
+      if (entity_id.startsWith("exoticbirds:")) {
+        console.log("caging bird:" + entity_id);
+        if (entity_id.endsWith("phoenix")) {
+          bird_cage(event, entity_id, 3, 6);
+        } else {
+          bird_cage(event, entity_id, 1, 2);
+        }
+      }
+    })
+  }
 
+  function bird_cage(event, bird, minFeathers, maxFeathers) {
+    event.custom({
+      type: "cagedmobs:entity_data",
+      entity: bird,
+      samplerTier: 1,
+      environments: ["farm"],
+      growTicks: 1200,
+      results: [
+        {
+          chance: 0.5,
+          output: {
+            item: "minecraft:feather"
+          },
+          minAmount: minFeathers,
+          maxAmount: maxFeathers
+        },
+        {
+          chance: 0.8,
+            output: {
+              item: "exoticbirds:raw_birdmeat"
+            },
+            output_cooked: {
+              item: "exoticbirds:cooked_birdmeat"
+            },
+            minAmount: 1,
+            maxAmount: 1
+        }
+      ]
+    })
+  }
 
 
   function castingBasin(event, result, castItem, inputFluid, amount, coolingTime, consumption) {
