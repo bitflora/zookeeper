@@ -1,6 +1,5 @@
 - caged mob recipes
   - demon rat, other rats too I guess
-- chinchillas as excellent fur sources
 - kibble recipes
 - aquaculture turtle spawn eggs
 - more zawa explanations in zoo track

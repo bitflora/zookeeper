@@ -1,0 +1,30 @@
+{
+	"type": "cagedmobs:entity_data",
+	"forge:condition": {
+			"type": "forge:mod_loaded",
+			"modid": "zawaessentials"
+	},
+	"entity": "zawaessentials:chinchilla",
+	"samplerTier": 1,
+	"environments": ["farm"],
+	"growTicks": 1100,
+	"results": [
+		{
+			"chance": 0.7,
+			"output": {
+				"item": "naturalist:fur"
+			},
+			"minAmount": 1,
+			"maxAmount": 3
+		},
+		{
+			"chance": 0.5,
+			"output": {
+				"item": "zawa:small_meat"
+			},
+			"minAmount": 0,
+			"maxAmount": 1
+		}
+	]
+
+}
