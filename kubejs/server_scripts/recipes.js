@@ -1163,6 +1163,67 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       E: '#forge:eggs',
     });
 
+    e.shaped('aquaculture:arrau_turtle_spawn_egg', [
+      ' I ',
+      ' X ',
+      ' a '
+    ], {
+      I: '#kubejs:turtle_eggs',
+      X: 'kubejs:stem_cell',
+      a: 'aquaculture:arapaima',
+    });
+
+    e.shaped('aquaculture:arrau_turtle_spawn_egg', [
+      ' T ',
+      ' X ',
+      ' E '
+    ], {
+      T: 'aquaculture:arrau_turtle',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    e.shaped('aquaculture:box_turtle_spawn_egg', [
+      ' I ',
+      ' X ',
+      ' a '
+    ], {
+      I: '#kubejs:turtle_eggs',
+      X: 'kubejs:stem_cell',
+      a: 'aquaculture:box',
+    });
+
+    e.shaped('aquaculture:box_turtle_spawn_egg', [
+      ' T ',
+      ' X ',
+      ' E '
+    ], {
+      T: 'aquaculture:box_turtle',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
+    // for the completionists
+    e.shaped('aquaculture:starshell_turtle_spawn_egg', [
+      ' I ',
+      ' X ',
+      ' a '
+    ], {
+      I: '#kubejs:turtle_eggs',
+      X: 'kubejs:stem_cell',
+      a: 'minecraft:nether_star',
+    });
+
+    e.shaped('aquaculture:starshell_turtle_spawn_egg', [
+      ' T ',
+      ' X ',
+      ' E '
+    ], {
+      T: 'aquaculture:starshell_turtle',
+      X: 'kubejs:embryo',
+      E: '#forge:eggs',
+    });
+
     e.shaped('lilcritters:guinea_pig_spawn_egg', [
       ' I ',
       ' X ',

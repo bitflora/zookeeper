@@ -1,7 +1,6 @@
 - caged mob recipes
   - demon rat, other rats too I guess
 - kibble recipes
-- aquaculture turtle spawn eggs
 - more zawa explanations in zoo track
 - rename meat_mess to meat_ball
 - fix broken unusualprehistory flasks

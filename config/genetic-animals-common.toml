@@ -38,9 +38,9 @@
 	#If true wandering traders have a chance to bring llamas to trade
 	"Wandering traders sell llamas" = true
 	#If true wandering traders have a chance to bring mooshrooms to trade
-	"Wandering traders sell mooshrooms" = false
+	"Wandering traders sell mooshrooms" = true
 	#If true wandering traders have a chance to bring mooblooms to trade
-	"Wandering traders sell mooblooms" = false
+	"Wandering traders sell mooblooms" = true
 	#If true wandering traders have a chance to bring turtles to trade
 	"Wandering traders sell turtles" = true
 	#If true wandering traders have a chance to bring axolotls to trade
