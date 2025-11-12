@@ -30,6 +30,10 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:bird_meat', 'farmersdelight:chicken_cuts');
     e.add('kubejs:bird_meat', 'naturalist:duck');
 
+    // mmm.. tender
+    e.add('kubejs:worms', 'zawa:earthworm');
+    e.add('kubejs:worms', 'aquaculture:worm');
+
     // already have forge:raw_fishes
     e.add('kubejs:ancient_raw_fishes', 'unusualprehistory:raw_stetha');
     e.add('kubejs:ancient_raw_fishes', 'unusualprehistory:raw_scau');

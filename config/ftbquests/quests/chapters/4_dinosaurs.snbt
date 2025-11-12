@@ -1456,6 +1456,7 @@
 			description: ["The &aChef Rat&r can refine the &9skin mass&r down to a useful skin product."]
 			id: "2A65D84B8114B116"
 			tasks: [{
+				count: 4L
 				id: "152377D2185D6FFD"
 				item: {
 					Count: 1

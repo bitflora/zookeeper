@@ -67,17 +67,17 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ]);
 
     // kibble
-    e.replaceInput('zawa:herbivore_kibble', 'zawa:prickly_pear', 'supplementaries:ash');
+    e.shapeless('2x zawa:herbivore_kibble', [
+        'minecraft:wheat_seeds',
+        'minecraft:beetroot',
+        'minecraft:wheat',
+        '3x supplementaries:ash'
+    ]);
 
     e.remove({ output: "zawa:piscivore_kibble"});
     e.shapeless('zawa:piscivore_kibble', [
         'minecraft:sugar',
-        '2x aquaculture:worm',
-        '3x supplementaries:ash'
-    ]);
-    e.shapeless('zawa:piscivore_kibble', [
-        'minecraft:sugar',
-        '2x zawa:earthworm',
+        '2x #kubejs:worms',
         '3x supplementaries:ash'
     ]);
     e.shapeless('zawa:piscivore_kibble', [
@@ -93,6 +93,43 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     e.shapeless('zawa:piscivore_kibble', [
         'minecraft:sugar',
         '2x #forge:raw_fishes',
+        '3x supplementaries:ash'
+    ]);
+
+    e.shapeless('4x zawa:carnivore_kibble', [
+        'zawa:large_meat',
+        'minecraft:chicken',
+        '3x supplementaries:ash'
+    ]);
+
+    e.shapeless('3x zawa:carnivore_kibble', [
+        'zawa:medium_meat',
+        '2x minecraft:chicken',
+        '6x supplementaries:ash'
+    ]);
+
+    e.shapeless('3x zawa:insectivore_kibble', [
+        'zawa:mealworms',
+        '3x #kubejs:worms',
+        '3x supplementaries:ash'
+    ]);
+
+    e.shapeless('3x zawa:omnivore_kibble', [
+        '#forge:eggs',
+        'minecraft:wheat',
+        'zawa:medium_meat',
+        '3x supplementaries:ash'
+    ]);
+
+    e.shapeless('zawa:shellfish_kibble', [
+        'zawa:clam',
+        'minecraft:wheat',
+        '3x supplementaries:ash'
+    ]);
+
+    e.shapeless('zawa:shellfish_kibble', [
+        'zawa:mussels',
+        'minecraft:wheat',
         '3x supplementaries:ash'
     ]);
 
@@ -862,7 +899,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         S: 'minecraft:string',
         L: 'minecraft:leather',
         F: 'kubejs:fur_ball',
-        C: '#forge:chests'
+        C: 'inventorypets:temp_chest'
     });
 
     e.replaceInput({ output: 'sophisticatedbackpacks:upgrade_base'},

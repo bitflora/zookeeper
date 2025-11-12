@@ -20,7 +20,7 @@
 				""
 				"Keep in mind that there are many mods an animal might come from, and this will affect its behavior and needs. Some will need to be fed and entertained after they are tamed. But if you keep them happy, they will reward you."
 				""
-				"[ \"You may want to start down the \", { \"text\": \"Path of the Owl\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"51893424D161C6E7\" } }, \"; this will make it much easier to tell exactly what kind of animal you are dealing\" ] with."
+				"[ \"You may want to start down the \", { \"text\": \"Path of the Owl\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"51893424D161C6E7\" } }, \"; this will make it much easier to tell exactly what kind of animal you are dealing with.\" ]"
 			]
 			id: "77ABAB18A01650BA"
 			rewards: [{
@@ -232,7 +232,7 @@
 			description: [
 				"Many animals in this world have genders, so you will need a male and a female in order to breed them. The spawn eggs from the previous task should guarantee you one breedable pair of &aChinchillas&r. After building them a nice exhibit and taming them, try breeding them!"
 				""
-				"Animals like these must first be tamed with &9kibble&r, then they can be bred with &9wheat&r. They are a very good source of &9fur&r."
+				"Animals like these must first be tamed with &9herbivore kibble&r, then they can be bred with &9wheat&r. They are a very good source of &9fur&r."
 			]
 			icon: "zawaessentials:chinchilla_plush"
 			id: "2DB5D0C73719F978"

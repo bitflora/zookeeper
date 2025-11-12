@@ -1,6 +1,5 @@
 - caged mob recipes
   - demon rat, other rats too I guess
-- kibble recipes
 - more zawa explanations in zoo track
 - rename meat_mess to meat_ball
 - fix broken unusualprehistory flasks

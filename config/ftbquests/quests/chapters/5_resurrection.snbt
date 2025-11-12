@@ -44,6 +44,7 @@
 			dependencies: ["36D5DE5F9B4D082A"]
 			description: ["It is time. Apply all of your science to prepare for the resurrection."]
 			id: "5F4EFA3375A400EE"
+			size: 2.0d
 			tasks: [{
 				id: "4582740A4AF5B6BC"
 				item: "zoogoer:steve_spawn_egg"
@@ -74,6 +75,7 @@
 					type: "item"
 				}
 			]
+			size: 3.0d
 			tasks: [{
 				id: "3404E9C200E03325"
 				observe_type: 5
