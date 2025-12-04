@@ -43,6 +43,7 @@
 		{
 			dependencies: ["36D5DE5F9B4D082A"]
 			description: ["It is time. Apply all of your science to prepare for the resurrection."]
+			hide_until_deps_complete: true
 			id: "5F4EFA3375A400EE"
 			size: 2.0d
 			tasks: [{

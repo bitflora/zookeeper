@@ -55,6 +55,8 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:turtle_eggs', "eanimod:turtle_egg");
     e.add('kubejs:turtle_eggs', "minecraft:turtle_egg");
     e.add('kubejs:turtle_eggs', "lilcritters:box_turtle_egg");
+    e.add('kubejs:turtle_eggs', "alexsmobs:terrapin_egg");
+    e.add('kubejs:turtle_eggs', "naturalist:tortoise_egg");
 
     // mob cages for hostile mobs
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:bone_serpent_tooth');

@@ -9,6 +9,13 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     // You can modify as many recipes as you like in here,
     // without needing to use ServerEvents.recipes() again.
 
+    Utils.getRegistryIds("entity_type").forEach(entity => {
+      var entity_id = entity.toString();
+      if (entity_id.startsWith("zawa") || entity_id.startsWith("lilcritters:")) {
+        console.log("   " + entity_id);
+      }
+    });
+
     // Raise the cobblestone requirements
     modify_cobblestone_requirements(e);
 
@@ -66,72 +73,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '3x farmersdelight:rice'
     ]);
 
-    // kibble
-    e.shapeless('2x zawa:herbivore_kibble', [
-        'minecraft:wheat_seeds',
-        'minecraft:beetroot',
-        'minecraft:wheat',
-        '3x supplementaries:ash'
-    ]);
-
-    e.remove({ output: "zawa:piscivore_kibble"});
-    e.shapeless('zawa:piscivore_kibble', [
-        'minecraft:sugar',
-        '2x #kubejs:worms',
-        '3x supplementaries:ash'
-    ]);
-    e.shapeless('zawa:piscivore_kibble', [
-        'minecraft:sugar',
-        '3x alexs_herps_:mealworm',
-        '3x supplementaries:ash'
-    ]);
-    e.shapeless('zawa:piscivore_kibble', [
-        'minecraft:sugar',
-        '3x alexsmobs:maggot',
-        '3x supplementaries:ash'
-    ]);
-    e.shapeless('zawa:piscivore_kibble', [
-        'minecraft:sugar',
-        '2x #forge:raw_fishes',
-        '3x supplementaries:ash'
-    ]);
-
-    e.shapeless('4x zawa:carnivore_kibble', [
-        'zawa:large_meat',
-        'minecraft:chicken',
-        '3x supplementaries:ash'
-    ]);
-
-    e.shapeless('3x zawa:carnivore_kibble', [
-        'zawa:medium_meat',
-        '2x minecraft:chicken',
-        '6x supplementaries:ash'
-    ]);
-
-    e.shapeless('3x zawa:insectivore_kibble', [
-        'zawa:mealworms',
-        '3x #kubejs:worms',
-        '3x supplementaries:ash'
-    ]);
-
-    e.shapeless('3x zawa:omnivore_kibble', [
-        '#forge:eggs',
-        'minecraft:wheat',
-        'zawa:medium_meat',
-        '3x supplementaries:ash'
-    ]);
-
-    e.shapeless('zawa:shellfish_kibble', [
-        'zawa:clam',
-        'minecraft:wheat',
-        '3x supplementaries:ash'
-    ]);
-
-    e.shapeless('zawa:shellfish_kibble', [
-        'zawa:mussels',
-        'minecraft:wheat',
-        '3x supplementaries:ash'
-    ]);
+    modify_zawa(e);
 
     e.shapeless('2x alexs_herps_:burrowed_soil', [
         'alexs_herps_:burrowed_soil',
@@ -1528,6 +1470,109 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     });
   }
 
+  function modify_zawa(e) {
+    // kibble
+    e.shapeless('2x zawa:herbivore_kibble', [
+        'minecraft:wheat_seeds',
+        'minecraft:beetroot',
+        'minecraft:wheat',
+        '3x supplementaries:ash'
+    ]);
+
+    e.remove({ output: "zawa:piscivore_kibble"});
+    e.shapeless('zawa:piscivore_kibble', [
+        'minecraft:sugar',
+        '2x #kubejs:worms',
+        '3x supplementaries:ash'
+    ]);
+    e.shapeless('zawa:piscivore_kibble', [
+        'minecraft:sugar',
+        '3x alexs_herps_:mealworm',
+        '3x supplementaries:ash'
+    ]);
+    e.shapeless('zawa:piscivore_kibble', [
+        'minecraft:sugar',
+        '3x alexsmobs:maggot',
+        '3x supplementaries:ash'
+    ]);
+    e.shapeless('zawa:piscivore_kibble', [
+        'minecraft:sugar',
+        '2x #forge:raw_fishes',
+        '3x supplementaries:ash'
+    ]);
+
+    e.shapeless('4x zawa:carnivore_kibble', [
+        'zawa:large_meat',
+        'minecraft:chicken',
+        '3x supplementaries:ash'
+    ]);
+
+    e.shapeless('3x zawa:carnivore_kibble', [
+        'zawa:medium_meat',
+        '2x minecraft:chicken',
+        '6x supplementaries:ash'
+    ]);
+
+    e.shapeless('3x zawa:insectivore_kibble', [
+        'zawa:mealworms',
+        '3x #kubejs:worms',
+        '3x supplementaries:ash'
+    ]);
+
+    e.shapeless('3x zawa:omnivore_kibble', [
+        '#forge:eggs',
+        'minecraft:wheat',
+        'zawa:medium_meat',
+        '3x supplementaries:ash'
+    ]);
+
+    e.shapeless('zawa:shellfish_kibble', [
+        'zawa:clam',
+        'minecraft:wheat',
+        '3x supplementaries:ash'
+    ]);
+
+    e.shapeless('zawa:shellfish_kibble', [
+        'zawa:mussels',
+        'minecraft:wheat',
+        '3x supplementaries:ash'
+    ]);
+
+    var critters = {
+      "capybara": "herbivore",
+      "guinea_pig": "herbivore",
+      "tufted_deer": "herbivore",
+      "raccoon": "omnivore",
+      "box_turtle": "omnivore",
+      "opossum": "omnivore",
+      "pond_slider": "omnivore",
+      "skunk": "omnivore",
+      "tree_squirrel": "omnivore",
+      "bullfrog": "insectivore",
+      "dart_frog": "insectivore",
+      "pacman_frog": "insectivore",
+      "pumpkin_toadlet": "insectivore",
+      "tomato_frog": "insectivore",
+      "tree_monitor": "insectivore",
+      "dwarf_crocodile": "carnivore",
+      "small_clawed_otter": "shellfish",
+      "banded_penguin": "piscivore",
+
+    };
+    Object.keys(critters).forEach(animal => {
+      var kibbleType = critters[animal];
+      register_tameable(e, "lilcritters", animal, "zawa:" + kibbleType + "_kibble");
+    });
+
+    // critters = {
+    //   "chinchilla": "herbivore",
+    // };
+    // Object.keys(critters).forEach(animal => {
+    //   var kibbleType = critters[animal];
+    //   register_tameable(e, "zawaessentials", animal, "zawa:" + kibbleType + "_kibble");
+    // });
+  }
+
   function modify_exotic_birds_cage_drops(event) {
     Utils.getRegistryIds("entity_type").forEach(entity => {
       var entity_id = entity.toString();
@@ -1539,7 +1584,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
           bird_cage(event, entity_id, 1, 2);
         }
       }
-    })
+    });
   }
 
   function bird_cage(event, bird, minFeathers, maxFeathers) {
@@ -1570,7 +1615,23 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
             maxAmount: 1
         }
       ]
-    })
+    });
+  }
+
+  function register_tameable(event, mod, animal, item) {
+    var mob = {};
+    mob[animal] = {
+      "inputs": [
+        { "item": item }
+      ]
+    };
+    event.custom({
+      type: "justenoughbreeding:taming",
+      mod: mod,
+      mobs: [
+        mob
+      ]
+    });
   }
 
 

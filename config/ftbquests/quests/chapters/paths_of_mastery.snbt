@@ -70,13 +70,20 @@
 				type: "gamestage"
 			}]
 			subtitle: "Gain Insight"
-			tasks: [{
-				advancement: "exoticbirds:default/incubate_egg"
-				criterion: ""
-				id: "57848E5053F990A9"
-				title: "Incubate an egg to 100% spawn chance"
-				type: "advancement"
-			}]
+			tasks: [
+				{
+					advancement: "exoticbirds:default/incubate_egg"
+					criterion: ""
+					id: "57848E5053F990A9"
+					title: "Incubate an egg to 100% spawn chance"
+					type: "advancement"
+				}
+				{
+					id: "6AEEEC01170A4A52"
+					item: "exoticbirds:egg_incubator"
+					type: "item"
+				}
+			]
 			title: "Path of the Owl 2"
 			x: -6.5d
 			y: -3.0d

@@ -193,7 +193,7 @@
 			description: [
 				"The &aPlatypus&r is a strange creature. But even strange friends can be helpful."
 				""
-				"When given &9piscivore kibble&r or &9redstone&r, he will get charged up, seek out the nearest &9clay block&r, and dig up useful materials for you."
+				"When given &9piscivore kibble&r or &9redstone&r, he will get charged up, seek out the nearest &9clay block&r, and dig up useful materials for you, including &9iron&r and &9blaze powder&r."
 				""
 				"The &aPlatypus&r can be easily transported inside a &9water bucket&r."
 			]
@@ -270,9 +270,12 @@
 				id: "101745A1909C60BA"
 				item: {
 					Count: 1
-					id: "exoticbirds:oak_birdcage"
-					tag: { }
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(exoticbirds:birdcages)"
+					}
 				}
+				title: "Any #exoticbirds:birdcages"
 				type: "item"
 			}]
 			title: "Birdcages"
@@ -288,7 +291,7 @@
 				""
 				"And hey, if you get some good meat to eat in the process, all the better!"
 				""
-				"It may also be worth noting that the &aGrizzly Bear&r will shed even while alive, if you are brave enough to pen some up."
+				"It may also be worth noting that the &aGrizzly Bear&r will shed even while alive, and &aBison&r can be sheared, if you are brave enough to pen some up."
 			]
 			icon: {
 				Count: 1

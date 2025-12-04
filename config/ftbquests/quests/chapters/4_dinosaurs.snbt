@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "4_dinosaurs"
 	group: "58C00CAA276A1624"
-	hide_quest_until_deps_complete: true
 	icon: "unusualprehistory:mezo_fossil"
 	id: "06A4BBEF3E73DC32"
 	order_index: 3

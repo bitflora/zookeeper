@@ -3,3 +3,11 @@
 - more zawa explanations in zoo track
 - rename meat_mess to meat_ball
 - fix broken unusualprehistory flasks
+- add rockwool
+- https://christofmeg.github.io/JustEnoughBreeding/
+  - zawa taming
+  - zawa breeding
+  - lilcritters taming
+  - lilcritters breeding
+  - zawaessentials taming
+  - zawaessentials breeding

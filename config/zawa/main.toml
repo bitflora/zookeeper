@@ -10,16 +10,16 @@
 	# Baby growth is in minecraft ticks, and will be multiplied by double the entity's size stat (where tiny=1 and giant=5) plus one.
 	# For example, by default, a baby koala (small=2) will have a growth timer of 80,000 ticks; that is (16000 * (2 * 2 + 1)).
 	# Default: 16000
-	baby_growth = 16000
+	baby_growth = 10000
 	# Breeding cooldown is in minecraft ticks, and will be multiplied by double the entity's size stat (where tiny=1 and giant=5) plus one.
 	# For example, by default, a female koala (small=2) will have a breeding cooldown of 120,000 ticks; that is (24000 * (2 * 2 + 1)).
 	# This only applies to the female on a successful breeding, unsuccessful attempts and males are always set to minecraft's default of 6000 ticks.
 	# Default: 24000
-	breeding_cooldown = 24000
+	breeding_cooldown = 800
 	# Gestation time is in minecraft ticks, and will be multiplied by double the entity's size stat (where tiny=1 and giant=5) plus one.
 	# For example, by default, a koala (small=2) will have a gestation time of 40,000 ticks; that is (8000 * (2 * 2 + 1)).
 	# Default: 8000
-	gestation_time = 8000
+	gestation_time = 1000
 	venom_cooldown = 24000
 
 ["Entity Stats"]

@@ -67,7 +67,7 @@
 			image: "kubejs:textures/quests/domestication_innovation.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 4.5d
+			x: 1.5d
 			y: 2.5d
 		}
 		{
@@ -77,7 +77,16 @@
 			image: "kubejs:textures/quests/quark.png"
 			rotation: 0.0d
 			width: 1.0d
-			x: 7.0d
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			click: "https://starfish-studios.com/mods/naturalist"
+			height: 1.0d
+			image: "kubejs:textures/quests/naturalist-logo.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 7.5d
 			y: 2.5d
 		}
 	]

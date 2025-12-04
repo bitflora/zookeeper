@@ -329,7 +329,7 @@
 				""
 				"Some items that you are familiar with will have different recipes in this modpack. Some, like most &9metal armors&r, are not available at all. Some will not be unlocked until you have completed the appropriate quests. Make sure to check!"
 				""
-				"You can also use JEI to see what items different mobs drop, and what items breed them. This will be very valuable information."
+				"You can also use JEI to see what items different mobs drop, what items breed them, and what tames them. This will be very valuable information."
 				""
 				"For example, here's a &aChest Pet&r to help on your journey. He's a little backpack who likes to eat &9wood planks&r. Try hovering over him and pressing 'r' to see how to make more of him, and 'u' to see what recipes he can be used in."
 			]
@@ -380,26 +380,15 @@
 				"Take note of any animals you see while travelling. You may want to come back for them later. And if you find &9fossils&r, make sure to hold onto them for later."
 			]
 			id: "4342896FE9651396"
-			rewards: [
-				{
-					id: "31233C67F1236ED3"
-					item: {
-						Count: 1
-						id: "tconstruct:tinker_station"
-						tag: { }
-					}
-					type: "item"
+			rewards: [{
+				id: "31233C67F1236ED3"
+				item: {
+					Count: 1
+					id: "tconstruct:tinker_station"
+					tag: { }
 				}
-				{
-					id: "523737B48BD5ED1D"
-					item: {
-						Count: 1
-						id: "exoticbirds:bird_book"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			subtitle: "This one goes out to the ones I loved"
 			tasks: [{
 				id: "6EA68DEB08B6D1A9"
