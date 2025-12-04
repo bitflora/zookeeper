@@ -1,0 +1,43 @@
+{
+  "type": "justenoughbreeding:taming",
+  "mod": "lilcritters",
+  "mobs": [
+    {
+      "raccoon": {
+        "inputs": [{
+            "item": "zawa:omnivore_kibble"
+        }]
+      },
+      "box_turtle": {
+        "inputs": [{
+            "item": "zawa:omnivore_kibble"
+        }]
+      },
+      "opossum": {
+        "inputs": [{
+            "item": "zawa:omnivore_kibble"
+        }]
+      },
+      "pond_slider": {
+        "inputs": [{
+            "item": "zawa:omnivore_kibble"
+        }]
+      },
+      "skunk": {
+        "inputs": [{
+            "item": "zawa:omnivore_kibble"
+        }]
+      },
+      "spider_monkey": {
+        "inputs": [{
+            "item": "zawa:omnivore_kibble"
+        }]
+      },
+      "tree_squirrel": {
+        "inputs": [{
+            "item": "zawa:omnivore_kibble"
+        }]
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "type": "justenoughbreeding:taming",
+  "mod": "zawa",
+  "mobs": [
+    {
+      "red_panda": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "giant_panda": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "koala": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "coquerels_sifaka": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "hornbill": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "kakapo": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "macaw": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "ring_tailed_lemur": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "asian_elephant": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "giraffe": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "sloth": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "sumatran_orangutan": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "western_lowland_gorilla": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "grevys_zebra": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "red_kangaroo": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      }
+    }
+  ]
+}

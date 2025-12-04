@@ -1,0 +1,38 @@
+{
+  "type": "justenoughbreeding:breeding",
+  "mod": "lilcritters",
+  "mobs": [
+    {
+      "bullfrog": {
+        "inputs": [{
+            "item": "zawa:brown_rat"
+        }]
+      },
+      "dart_frog": {
+        "inputs": [{
+            "item": "zawa:leafcutter_ant"
+        }]
+      },
+      "pacman_frog": {
+        "inputs": [{
+            "item": "zawa:brown_rat"
+        }]
+      },
+      "pumpkin_toadlet": {
+        "inputs": [{
+            "item": "zawa:leafcutter_ant"
+        }]
+      },
+      "tomato_frog": {
+        "inputs": [{
+            "item": "zawa:brown_rat"
+        }]
+      },
+      "tree_monitor": {
+        "inputs": [{
+            "item": "zawa:termites"
+        }]
+      }
+    }
+  ]
+}

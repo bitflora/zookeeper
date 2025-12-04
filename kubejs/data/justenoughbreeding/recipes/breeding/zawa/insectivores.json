@@ -1,0 +1,18 @@
+{
+  "type": "justenoughbreeding:taming",
+  "mod": "zawa",
+  "mobs": [
+    {
+      "giant_anteater": {
+        "inputs": [{
+            "item": "zawa:leafcutter_ant"
+        }]
+      },
+      "tree_frog": {
+        "inputs": [{
+            "item": "zawa:leafcutter_ant"
+        }]
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "justenoughbreeding:taming",
+  "mod": "lilcritters",
+  "mobs": [
+    {
+      "capybara": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "guinea_pig": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      },
+      "tufted_deer": {
+        "inputs": [{
+            "item": "zawa:herbivore_kibble"
+        }]
+      }
+    }
+  ]
+}

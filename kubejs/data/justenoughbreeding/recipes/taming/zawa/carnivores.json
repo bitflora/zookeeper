@@ -1,0 +1,43 @@
+{
+  "type": "justenoughbreeding:taming",
+  "mod": "zawa",
+  "mobs": [
+    {
+      "african_lion": {
+        "inputs": [{
+            "item": "zawa:carnivore_kibble"
+        }]
+      },
+      "african_wild_dog": {
+        "inputs": [{
+            "item": "zawa:carnivore_kibble"
+        }]
+      },
+      "komodo_dragon": {
+        "inputs": [{
+            "item": "zawa:carnivore_kibble"
+        }]
+      },
+      "polar_bear": {
+        "inputs": [{
+            "item": "zawa:carnivore_kibble"
+        }]
+      },
+      "snow_leopard": {
+        "inputs": [{
+            "item": "zawa:carnivore_kibble"
+        }]
+      },
+      "bald_eagle": {
+        "inputs": [{
+            "item": "zawa:carnivore_kibble"
+        }]
+      },
+      "black_footed_ferret": {
+        "inputs": [{
+            "item": "zawa:carnivore_kibble"
+        }]
+      }
+    }
+  ]
+}

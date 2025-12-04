@@ -1,0 +1,38 @@
+{
+  "type": "justenoughbreeding:breeding",
+  "mod": "lilcritters",
+  "mobs": [
+    {
+      "raccoon": {
+        "inputs": [{
+            "item": "zawa:small_meat"
+        }]
+      },
+      "box_turtle": {
+        "inputs": [{
+            "item": "zawa:earthworm"
+        }]
+      },
+      "opossum": {
+        "inputs": [{
+            "item": "lilcritters:mystery_snail"
+        }]
+      },
+      "pond_slider": {
+        "inputs": [{
+            "item": "zawa:water_lettuce"
+        }]
+      },
+      "skunk": {
+        "inputs": [{
+            "item": "zawa:earthworm"
+        }]
+      },
+      "tree_squirrel": {
+        "inputs": [{
+            "item": "minecraft:pumpkin_seeds"
+        }]
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "justenoughbreeding:taming",
+  "mod": "zawa",
+  "mobs": [
+    {
+      "emperor_penguin": {
+        "inputs": [{
+            "item": "zawa:piscivore_kibble"
+        }]
+      },
+      "indian_gharial": {
+        "inputs": [{
+            "item": "zawa:piscivore_kibble"
+        }]
+      },
+      "orca": {
+        "inputs": [{
+            "item": "zawa:piscivore_kibble"
+        }]
+      },
+      "flamingo": {
+        "inputs": [{
+            "item": "zawa:piscivore_kibble"
+        }]
+      }
+    }
+  ]
+}
