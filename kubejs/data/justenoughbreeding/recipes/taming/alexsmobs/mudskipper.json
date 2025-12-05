@@ -6,7 +6,7 @@
       "mudskipper": {
         "inputs": [
           {
-            "item": "alexsmobs:mudskipper_tameables"
+            "tag": "alexsmobs:mudskipper_tameables"
           }
         ],
         "spawn_eggs": [

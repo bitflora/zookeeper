@@ -4,12 +4,12 @@
   "mobs": [
     {
       "grizzly_bear": {
-        "extra_inputs": [
+        "inputs": [
           {
-            "item": "minecraft:salmon"
+            "tag": "alexsmobs:grizzly_tameables"
           }
         ],
-        "inputs": [
+        "extra_inputs": [
           {
             "tag": "alexsmobs:grizzly_honey"
           }
