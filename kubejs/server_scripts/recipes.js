@@ -1538,31 +1538,37 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '3x supplementaries:ash'
     ]);
 
-    var critters = {
-      "capybara": "herbivore",
-      "guinea_pig": "herbivore",
-      "tufted_deer": "herbivore",
-      "raccoon": "omnivore",
-      "box_turtle": "omnivore",
-      "opossum": "omnivore",
-      "pond_slider": "omnivore",
-      "skunk": "omnivore",
-      "tree_squirrel": "omnivore",
-      "bullfrog": "insectivore",
-      "dart_frog": "insectivore",
-      "pacman_frog": "insectivore",
-      "pumpkin_toadlet": "insectivore",
-      "tomato_frog": "insectivore",
-      "tree_monitor": "insectivore",
-      "dwarf_crocodile": "carnivore",
-      "small_clawed_otter": "shellfish",
-      "banded_penguin": "piscivore",
+    // Animal is removed because we have a whole Rats! mod, but it's needed for breeding a lot of things
+    e.shapeless('zawa:brown_rat', [
+        'rats:raw_rat',
+        'minecraft:brown_dye'
+    ]);
 
-    };
-    Object.keys(critters).forEach(animal => {
-      var kibbleType = critters[animal];
-      register_tameable(e, "lilcritters", animal, "zawa:" + kibbleType + "_kibble");
-    });
+    // var critters = {
+    //   "capybara": "herbivore",
+    //   "guinea_pig": "herbivore",
+    //   "tufted_deer": "herbivore",
+    //   "raccoon": "omnivore",
+    //   "box_turtle": "omnivore",
+    //   "opossum": "omnivore",
+    //   "pond_slider": "omnivore",
+    //   "skunk": "omnivore",
+    //   "tree_squirrel": "omnivore",
+    //   "bullfrog": "insectivore",
+    //   "dart_frog": "insectivore",
+    //   "pacman_frog": "insectivore",
+    //   "pumpkin_toadlet": "insectivore",
+    //   "tomato_frog": "insectivore",
+    //   "tree_monitor": "insectivore",
+    //   "dwarf_crocodile": "carnivore",
+    //   "small_clawed_otter": "shellfish",
+    //   "banded_penguin": "piscivore",
+
+    // };
+    // Object.keys(critters).forEach(animal => {
+    //   var kibbleType = critters[animal];
+    //   register_tameable(e, "lilcritters", animal, "zawa:" + kibbleType + "_kibble");
+    // });
 
     // critters = {
     //   "chinchilla": "herbivore",

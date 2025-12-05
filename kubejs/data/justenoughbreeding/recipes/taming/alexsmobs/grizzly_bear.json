@@ -4,12 +4,12 @@
   "mobs": [
     {
       "grizzly_bear": {
-        "inputs": [
+        "extra_inputs": [
           {
             "tag": "alexsmobs:grizzly_tameables"
           }
         ],
-        "extra_inputs": [
+        "inputs": [
           {
             "tag": "alexsmobs:grizzly_honey"
           }
