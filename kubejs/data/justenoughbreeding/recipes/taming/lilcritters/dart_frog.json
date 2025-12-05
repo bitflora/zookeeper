@@ -3,9 +3,9 @@
   "mod": "lilcritters",
   "mobs": [
     {
-      "banded_penguin": {
+      "dart_frog": {
         "inputs": [{
-            "item": "zawa:piscivore_kibble"
+            "item": "zawa:insectivore_kibble"
         }]
       }
     }

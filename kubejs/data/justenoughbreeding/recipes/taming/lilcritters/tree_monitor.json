@@ -3,9 +3,9 @@
   "mod": "lilcritters",
   "mobs": [
     {
-      "small_clawed_otter": {
+      "tree_monitor": {
         "inputs": [{
-            "item": "zawa:shellfish_kibble"
+            "item": "zawa:insectivore_kibble"
         }]
       }
     }

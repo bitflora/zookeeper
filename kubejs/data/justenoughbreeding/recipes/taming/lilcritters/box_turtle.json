@@ -3,9 +3,9 @@
   "mod": "lilcritters",
   "mobs": [
     {
-      "dwarf_crocodile": {
+      "box_turtle": {
         "inputs": [{
-            "item": "zawa:carnivore_kibble"
+            "item": "zawa:omnivore_kibble"
         }]
       }
     }
