@@ -1,0 +1,24 @@
+{
+  "type": "justenoughbreeding:breeding",
+  "mod": "eanimod",
+  "mobs": [
+    {
+      "enhanced_axolotl": {
+        "inputs": [
+          {
+            "item": "minecraft:tropical_fish_bucket"
+          },
+          {
+            "item": "aquaculture:worm"
+          },
+          {
+            "item": "zawa:earthworm"
+          },
+          {
+            "item": "kubejs:breeding_chow"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -30,7 +30,7 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:bird_meat', 'farmersdelight:chicken_cuts');
     e.add('kubejs:bird_meat', 'naturalist:duck');
 
-    // mmm.. tender
+    // mmm... tender
     e.add('kubejs:worms', 'zawa:earthworm');
     e.add('kubejs:worms', 'aquaculture:worm');
 
@@ -57,6 +57,26 @@ ServerEvents.tags('item', e => {
     e.add('kubejs:turtle_eggs', "lilcritters:box_turtle_egg");
     e.add('kubejs:turtle_eggs', "alexsmobs:terrapin_egg");
     e.add('kubejs:turtle_eggs', "naturalist:tortoise_egg");
+
+    // make breeding chow useful
+    [
+        'alexsmobs:alligator_snapping_turtle_breedables',
+        'alexsmobs:anaconda_breedables',
+        'alexsmobs:bald_eagle_breedables',
+        'alexsmobs:caiman_breedables',
+        'alexsmobs:crocodile_breedables',
+        'alexsmobs:froststalker_breedables',
+        'alexsmobs:grizzly_bear_breedables',
+        'alexsmobs:komodo_dragon_breedables',
+        'alexsmobs:maned_wolf_breedables',
+        'alexsmobs:mantis_shrimp_breedables',
+        'alexsmobs:orca_breedables',
+        'alexsmobs:snow_leopard_breedables',
+        'alexsmobs:tiger_breedables',
+        'alexsmobs:warped_toad_breedables'
+    ].forEach((tag) => {
+        e.add(tag, 'kubejs:breeding_chow');
+    });
 
     // mob cages for hostile mobs
     e.add('kubejs:diamond_sampler_point', 'alexsmobs:bone_serpent_tooth');
