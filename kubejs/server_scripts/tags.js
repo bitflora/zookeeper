@@ -18,6 +18,8 @@ ServerEvents.tags('item', e => {
     // e.add('kubejs:mammal_meat', 'unusualprehistory:raw_mammoth');
     e.add('kubejs:mammal_meat', 'rats:raw_rat');
     e.add('kubejs:mammal_meat', 'eanimod:rawrabbit_small');
+    e.add('kubejs:mammal_meat', 'zawa:medium_meat');
+    e.add('kubejs:mammal_meat', 'zawa:large_meat');
 
     e.add('kubejs:bird_meat', '#forge:raw_chicken');
     e.add('kubejs:bird_meat', 'minecraft:chicken');

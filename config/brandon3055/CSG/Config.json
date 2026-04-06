@@ -1,6 +1,8 @@
 {
   "inventory": {
-    "0:0": "{Count:1b,id:\"ftbquests:book\",tag:{}}"
+    "0:8": "{Count:1b,id:\"minecraft:spyglass\"}",
+    "0:0": "{Count:1b,id:\"ftbquests:book\",tag:{}}",
+    "0:9": "{Count:3b,id:\"minecraft:torch\"}"
   },
   "wipeBlacklist": []
 }

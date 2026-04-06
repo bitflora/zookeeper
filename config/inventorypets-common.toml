@@ -283,4 +283,141 @@
 	disableWither = false
 	#Disable the Wolf pet (default:false)
 	disableWolf = false
+	#Dingot only looks for Inventory Pets structures (default:false)
+	dingotIPStruturesOnly = false
+	#Anvil Pet's favorite food
+	foodAnvil = "minecraft:iron_nugget"
+	#Apple Pet's favorite food
+	foodApple = "minecraft:gold_ingot"
+	#April Fool Pet's favorite food
+	foodAprilFool = "minecraft:tripwire_hook"
+	#Banana Pet's favorite food
+	foodBanana = "minecraft:glowstone_dust"
+	#Bed Pet's favorite food
+	foodBed = "minecraft:white_wool"
+	#Biome Pet's favorite food
+	foodBiome = "minecraft:grass_block"
+	#Black Hole Pet's favorite food
+	foodBlackHole = "inventorypets:nugget_obsidian"
+	#Blaze Pet's favorite food
+	foodBlaze = "minecraft:quartz"
+	#Brewing Stand Pet's favorite food
+	foodBrewingStand = "minecraft:nether_wart"
+	#Cheetah Pet's favorite food
+	foodCheetah = "minecraft:beef"
+	#Chest Pet's favorite food
+	foodChest = "minecraft:oak_planks"
+	#Chicken Pet's favorite food
+	foodChicken = "minecraft:wheat_seeds"
+	#Cloud Pet's favorite food
+	foodCloud = "minecraft:quartz"
+	#Cobblestone Pet's favorite food
+	foodCobblestone = "minecraft:dirt"
+	#Cow Pet's favorite food
+	foodCow = "minecraft:wheat"
+	#Crafting Table Pet's favorite food
+	foodCraftingTable = "minecraft:oak_planks"
+	#Creeper Pet's favorite food
+	foodCreeper = "inventorypets:nugget_emerald"
+	#Dingot Pet's favorite food
+	foodDingot = "minecraft:copper_ingot"
+	#Dirt Pet's favorite food
+	foodDirt = "minecraft:cobblestone"
+	#Double Chest Pet's favorite food
+	foodDoubleChest = "minecraft:oak_log"
+	#Dubstep Pet's favorite food
+	foodDubstep = "minecraft:note_block"
+	#Enchanting Table Pet's favorite food
+	foodEnchantingTable = "inventorypets:nugget_lapis"
+	#Ender Chest Pet's favorite food
+	foodEnderChest = "inventorypets:nugget_ender"
+	#Enderman Pet's favorite food
+	foodEnderman = "inventorypets:nugget_obsidian"
+	#End Portal Pet's favorite food
+	foodEndPortal = "inventorypets:nugget_ender"
+	#Flying Saddle Pet's favorite food
+	foodFlyingSaddle = "inventorypets:nugget_diamond"
+	#Furnace Pet's favorite food
+	foodFurnace = "inventorypets:nugget_coal"
+	#Ghast Pet's favorite food
+	foodGhast = "minecraft:blaze_powder"
+	#Grave Pet's favorite food
+	foodGrave = "minecraft:bone"
+	#Heart Pet's favorite food
+	foodHeart = "minecraft:red_tulip"
+	#House Pet's favorite food
+	foodHouse = "minecraft:iron_nugget"
+	#Iron Golem Pet's favorite food
+	foodIronGolem = "minecraft:iron_ingot"
+	#Illuminati Pet's favorite food
+	foodIlluminati = "inventorypets:nugget_emerald"
+	#Juggernaut Pet's favorite food
+	foodJuggernaut = "inventorypets:nugget_obsidian"
+	#Jukebox Pet's favorite food
+	foodJukebox = "minecraft:redstone"
+	#Lead Pet's favorite food
+	foodLead = "minecraft:string"
+	#Loot Pet's favorite food
+	foodLoot = "minecraft:gold_nugget"
+	#Magma Cube Pet's favorite food
+	foodMagmaCube = "minecraft:quartz"
+	#Mickerson Pet's favorite food
+	foodMickerson = "inventorypets:nugget_diamond"
+	#Moon Pet's favorite food
+	foodMoon = "inventorypets:nugget_emerald"
+	#Mooshroom Pet's favorite food
+	foodMooshroom = "minecraft:red_mushroom"
+	#Nether Portal Pet's favorite food
+	foodNetherPortal = "inventorypets:nugget_obsidian"
+	#Ocelot Pet's favorite food
+	foodOcelot = "minecraft:cooked_cod"
+	#Pac-Man Pet's favorite food
+	foodPacMan = "minecraft:cookie"
+	#Pig Pet's favorite food
+	foodPig = "minecraft:carrot"
+	#Pingot Pet's favorite food
+	foodPingot = "inventorypets:nugget_diamond"
+	#Pixie Pet's favorite food
+	foodPixie = "inventorypets:nugget_emerald"
+	#Pufferfish Pet's favorite food
+	foodPufferfish = "minecraft:glowstone_dust"
+	#Purplicious Cow Pet's favorite food
+	foodPurpliciousCow = "inventorypets:nugget_diamond"
+	#Quantum Crystal Monster Pet's favorite food
+	foodQuantumCrystalMonster = "inventorypets:nugget_lapis"
+	#Quiver Pet's favorite food
+	foodQuiver = "minecraft:feather"
+	#Saddle Pet's favorite food
+	foodSaddle = "minecraft:iron_nugget"
+	#Sheep Pet's favorite food
+	foodSheep = "minecraft:wheat"
+	#Shield Pet's favorite food
+	foodShield = "minecraft:iron_nugget"
+	#Siamese Pet's favorite food
+	foodSiamese = "minecraft:cooked_chicken"
+	#Silverfish Pet's favorite food
+	foodSilverfish = "minecraft:cobblestone"
+	#Slime Pet's favorite food
+	foodSlime = "minecraft:golden_apple"
+	#Snow Golem Pet's favorite food
+	foodSnowGolem = "minecraft:pumpkin"
+	#Spider Pet's favorite food
+	foodSpider = "minecraft:beef"
+	#Sponge Pet's favorite food
+	foodSponge = "minecraft:lily_pad"
+	#Squid Pet's favorite food
+	foodSquid = "minecraft:cod"
+	#Sun Pet's favorite food
+	foodSun = "minecraft:gold_ingot"
+	#Torch Pet's favorite food
+	foodTorch = "inventorypets:nugget_coal"
+	#Wither Pet's favorite food
+	foodWither = "minecraft:soul_sand"
+	#Wolf Pet's favorite food
+	foodWolf = "minecraft:bone"
+	#Disable the Dingot pet (default:false)
+	disableDingot = false
+	#Chunks Dingot Pet will search through (default:96)
+	#Range: 1 ~ 225
+	dingotSearchChunks = 96
 

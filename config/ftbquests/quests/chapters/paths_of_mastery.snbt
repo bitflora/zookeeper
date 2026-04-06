@@ -1437,7 +1437,7 @@
 		{
 			can_repeat: true
 			dependencies: ["0C51EBA917A00732"]
-			description: ["Gain the Blessing of the &aTiger&r, and learn how to strike faster in the process!"]
+			description: ["Combine the ferocity of a &ascorpion&r with the grace of a &abutterfly&r!"]
 			icon: {
 				Count: 1
 				id: "cyclic:charm_attack_speed"
@@ -1457,7 +1457,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Float like a butterfly, sting like a tiger"
+			subtitle: "Float like a butterfly, sting like a scorpion"
 			tasks: [
 				{
 					consume_items: true
@@ -1467,14 +1467,15 @@
 					type: "item"
 				}
 				{
-					advancement: "alexsmobs:alexsmobs/tigers_blessing"
-					criterion: ""
-					id: "0E33DBB978B32B6C"
-					type: "advancement"
-				}
-				{
+					consume_items: true
 					id: "511EBADA664BC63B"
 					item: "zawa:eastern_tiger_swallowtail_butterfly"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "23F2009C2DBFB2BE"
+					item: "zawa:emperor_scorpion"
 					type: "item"
 				}
 			]

@@ -167,6 +167,12 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '#forge:raw_fishes'
     ]);
 
+    e.shapeless('kubejs:meat_mess', [
+        'zawa:large_meat',
+        '2x #kubejs:bird_meat',
+        '#forge:raw_fishes'
+    ]);
+
     e.shapeless('3x kubejs:meat_mess', [
         'unusualprehistory:raw_mammoth',
         '2x #kubejs:bird_meat',
@@ -179,9 +185,20 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         '#kubejs:ancient_raw_fishes'
     ]);
 
+    e.shapeless('3x kubejs:meat_mess', [
+        'zawa:large_meat',
+        '2x #kubejs:bird_meat',
+        '#kubejs:ancient_raw_fishes'
+    ]);
 
     e.shapeless('3x kubejs:meat_mess', [
         '2x #kubejs:mammal_meat',
+        'unusualprehistory:raw_austro',
+        '#forge:raw_fishes'
+    ]);
+
+    e.shapeless('3x kubejs:meat_mess', [
+        'zawa:large_meat',
         'unusualprehistory:raw_austro',
         '#forge:raw_fishes'
     ]);
