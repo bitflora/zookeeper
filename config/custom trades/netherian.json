@@ -1,0 +1,25 @@
+{
+  "profession": "morevillagers:netherian",
+  "removeOtherTrades": false,
+  "maxTrades": 2,
+  "trades": [
+    {
+      "offer": {
+        "itemKey": "minecraft:blaze_powder",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "morevillagers:netherian_blaze_powder_for_emerald"
+    }
+  ]
+}
