@@ -23,25 +23,6 @@
     },
     {
       "offer": {
-        "itemKey": "minecraft:leather_leggings",
-        "amount": 1,
-        "priceModifier": 0,
-        "advancedNBTData": "{Damage:0}"
-      },
-      "request": {
-        "itemKey": "minecraft:emerald",
-        "amount": 7,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 12,
-      "priceMultiplier": 0.2,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:armorer_leather_leggings_for_emerald"
-    },
-    {
-      "offer": {
         "itemKey": "minecraft:leather_boots",
         "amount": 1,
         "priceModifier": 0,
@@ -58,44 +39,6 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:armorer_leather_boots_for_emerald"
-    },
-    {
-      "offer": {
-        "itemKey": "minecraft:leather_helmet",
-        "amount": 1,
-        "priceModifier": 0,
-        "advancedNBTData": "{Damage:0}"
-      },
-      "request": {
-        "itemKey": "minecraft:emerald",
-        "amount": 5,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 12,
-      "priceMultiplier": 0.2,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:armorer_leather_helmet_for_emerald"
-    },
-    {
-      "offer": {
-        "itemKey": "minecraft:leather_chestplate",
-        "amount": 1,
-        "priceModifier": 0,
-        "advancedNBTData": "{Damage:0}"
-      },
-      "request": {
-        "itemKey": "minecraft:emerald",
-        "amount": 9,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 12,
-      "priceMultiplier": 0.2,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:armorer_leather_chestplate_for_emerald"
     },
     {
       "offer": {
@@ -135,25 +78,6 @@
     },
     {
       "offer": {
-        "itemKey": "minecraft:leather_boots",
-        "amount": 1,
-        "priceModifier": 0,
-          "advancedNBTData": "{{Damage:0},Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
-      },
-      "request": {
-        "itemKey": "minecraft:emerald",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "tradeExp": 5,
-      "maxUses": 12,
-      "priceMultiplier": 0.2,
-      "demand": 0,
-      "tradeLevel": 2,
-      "UTID": "minecraft:armorer_leather_boots_for_emerald"
-    },
-    {
-      "offer": {
         "itemKey": "minecraft:emerald",
         "amount": 1,
         "priceModifier": 0
@@ -190,44 +114,6 @@
     },
     {
       "offer": {
-        "itemKey": "minecraft:leather_helmet",
-        "amount": 1,
-        "priceModifier": 0,
-        "advancedNBTData": "{{Damage:0},Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
-      },
-      "request": {
-        "itemKey": "minecraft:emerald",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "tradeExp": 10,
-      "maxUses": 12,
-      "priceMultiplier": 0.2,
-      "demand": 0,
-      "tradeLevel": 3,
-      "UTID": "minecraft:armorer_leather_helmet2_for_emerald"
-    },
-    {
-      "offer": {
-        "itemKey": "minecraft:leather_chestplate",
-        "amount": 1,
-        "priceModifier": 0,
-        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
-      },
-      "request": {
-        "itemKey": "minecraft:emerald",
-        "amount": 4,
-        "priceModifier": 0
-      },
-      "tradeExp": 10,
-      "maxUses": 12,
-      "priceMultiplier": 0.2,
-      "demand": 0,
-      "tradeLevel": 3,
-      "UTID": "minecraft:armorer_leather_chestplate2_for_emerald"
-    },
-    {
-      "offer": {
         "itemKey": "minecraft:shield",
         "amount": 1,
         "priceModifier": 0,
@@ -250,7 +136,7 @@
         "itemKey": "alexsmobs:centipede_leggings",
         "amount": 1,
         "priceModifier": 0,
-        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
+        "advancedNBTData": "{Damage:0}"
       },
       "request": {
         "itemKey": "minecraft:emerald",
@@ -266,29 +152,10 @@
     },
     {
       "offer": {
-        "itemKey": "alexsmobs:roadrunner_boots",
-        "amount": 1,
-        "priceModifier": 0,
-        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:2s},{id:\"minecraft:depth_strider\",lvl:1s},{id:\"minecraft:feather_falling\",lvl:3s}]}"
-      },
-      "request": {
-        "itemKey": "minecraft:emerald",
-        "amount": 23,
-        "priceModifier": 0
-      },
-      "tradeExp": 15,
-      "maxUses": 3,
-      "priceMultiplier": 0.2,
-      "demand": 0,
-      "tradeLevel": 4,
-      "UTID": "minecraft:armorer_roadrunner_boots_for_emerald"
-    },
-    {
-      "offer": {
         "itemKey": "alexsmobs:moose_headgear",
         "amount": 1,
         "priceModifier": 0,
-        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+        "advancedNBTData": "{Damage:0}"
       },
       "request": {
         "itemKey": "minecraft:emerald",
@@ -307,7 +174,7 @@
         "itemKey": "alexsmobs:crocodile_chestplate",
         "amount": 1,
         "priceModifier": 0,
-        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
+        "advancedNBTData": "{Damage:0}"
       },
       "request": {
         "itemKey": "minecraft:emerald",
@@ -320,6 +187,101 @@
       "demand": 0,
       "tradeLevel": 5,
       "UTID": "minecraft:armorer_crocodile_chestplate_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "alexsmobs:unsettling_kimono",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0}"
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 40,
+        "priceModifier": 0
+      },
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "minecraft:armorer_unsettling_kimono_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "alexsmobs:flying_fish_boots",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0}"
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:armorer_flying_fish_boots_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "alexsmobs:frontier_cap",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0}"
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:armorer_frontier_cap_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "alexsmobs:roadrunner_boots",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{{Damage:0},Enchantments:[{id:\"minecraft:protection\",lvl:2s}]}"
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 5,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "minecraft:armorer_roadrunner_boots_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "alexsmobs:emu_leggings",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:0}"
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 28,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "minecraft:armorer_emu_leggings_for_emerald"
     }
   ]
 }

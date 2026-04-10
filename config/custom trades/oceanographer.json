@@ -20,6 +20,24 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "morevillagers:oceanographer_spawn_egg_mantis_shrimp_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:emerald",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "minecraft:kelp",
+        "amount": 20,
+        "priceModifier": 0
+      },
+      "tradeExp": 10,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:oceanographer_emerald_for_kelp"
     }
   ]
 }

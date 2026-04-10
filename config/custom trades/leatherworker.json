@@ -82,7 +82,7 @@
         "itemKey": "minecraft:leather_helmet",
         "amount": 1,
         "priceModifier": 0,
-        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:3s}]}"
+        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:3s},{id:\"minecraft:aqua_affinity\",lvl:1s}]}"
       },
       "request": {
         "itemKey": "minecraft:emerald",
@@ -101,7 +101,7 @@
         "itemKey": "minecraft:leather_boots",
         "amount": 1,
         "priceModifier": 0,
-        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:3s}]}"
+        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:3s},{id:\"minecraft:depth_strider\",lvl:1s},{id:\"minecraft:feather_falling\",lvl:3s}]}"
       },
       "request": {
         "itemKey": "minecraft:emerald",
@@ -211,7 +211,7 @@
         "itemKey": "minecraft:leather_helmet",
         "amount": 1,
         "priceModifier": 0,
-        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:5s}]}"
+        "advancedNBTData": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:5s},{id:\"minecraft:aqua_affinity\",lvl:3s}]}"
       },
       "request": {
         "itemKey": "minecraft:emerald",

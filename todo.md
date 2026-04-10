@@ -3,5 +3,4 @@
 - rename meat_mess to meat_ball
 - fix broken unusualprehistory flasks
 - add rockwool
-- make kibble tame more alex mobs
-- make breeding chow work on more zawa mobs
+x make breeding chow work on more zawa mobs: no can do; they only accept one breeding item
