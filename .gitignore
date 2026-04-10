@@ -18,3 +18,4 @@ config/jei/ingredient-list-type-sort-order.ini
 config/jei/world/local/FAFO/bookmarks.ini
 *.bak
 modernfix/StructureCacheV1/*
+screenshots/

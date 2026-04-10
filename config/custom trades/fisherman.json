@@ -1,0 +1,25 @@
+{
+  "profession": "minecraft:fisherman",
+  "removeOtherTrades": false,
+  "maxTrades": 2,
+  "trades": [
+    {
+      "offer": {
+        "itemKey": "alexsmobs:platypus_bucket",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 20,
+        "priceModifier": 0
+      },
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "minecraft:fisherman_platypus_bucket_for_emerald"
+    }
+  ]
+}

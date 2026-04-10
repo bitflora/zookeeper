@@ -5,6 +5,42 @@
   "trades": [
     {
       "offer": {
+        "itemKey": "aquaculture:box_turtle_spawn_egg",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "alexs_herps_:herpetologist_box_turtle_egg_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "alexsmobs:terrapin_egg",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "alexs_herps_:terrapin_egg_for_emerald"
+    },
+    {
+      "offer": {
         "itemKey": "eanimod:turtle_egg",
         "amount": 1,
         "priceModifier": 0
