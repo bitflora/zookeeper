@@ -24,6 +24,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
 
     modify_inventory_pets(e);
     modify_cyclic(e);
+    modify_compressed_blocks(e);
 
     modify_exotic_birds_cage_drops(e);
 
@@ -47,6 +48,16 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     ], {
         L: 'minecraft:leather',
         F: 'kubejs:fur_ball'
+    });
+
+    e.remove({ id: "farmersdelight:lead_from_straw" });
+    e.shaped('minecraft:lead', [
+        'ss ',
+        'sS ',
+        '  s'
+    ], {
+        s: 'farmersdelight:straw',
+        S: '#forge:slimeballs'
     });
 
     modify_sophisticated_storage(e);
@@ -85,6 +96,15 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         'minecraft:dirt',
         'farmersdelight:straw'
     ]);
+
+    e.shaped('alexs_herps_:herpetologist_table', [
+        'ss ',
+        'ww ',
+        'ww '
+    ], {
+        s: 'alexs_herps_:chameleon_scale',
+        w: '#minecraft:planks'
+    });
 
     // Fur ball
     e.shapeless('kubejs:fur_mess', [
@@ -364,6 +384,35 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
       X: 'kubejs:data',
       B: 'minecraft:iron_block',
     });
+  }
+
+  function modify_compressed_blocks(e) {
+    e.remove({ output: 'compressedblocks:crated_carrot' });
+    e.remove({ output: 'quark:carrot_crate' });
+    e.replaceInput({ input: 'compressedblocks:crated_carrot'},
+      'compressedblocks:crated_carrot',
+      'farmersdelight:carrot_crate',
+    );
+
+    e.remove({ output: 'compressedblocks:crated_potato' });
+    e.remove({ output: 'quark:potato_crate' });
+    e.replaceInput({ input: 'compressedblocks:crated_potato'},
+      'compressedblocks:crated_potato',
+      'farmersdelight:potato_crate',
+    );
+
+    e.remove({ output: 'compressedblocks:crated_beetroot' });
+    e.remove({ output: 'quark:beetroot_crate' });
+    e.replaceInput({ input: 'compressedblocks:crated_beetroot'},
+      'compressedblocks:crated_beetroot',
+      'farmersdelight:beetroot_crate',
+    );
+
+    e.remove({ output: 'compressedblocks:crated_suagr_cane' });
+    e.replaceInput({ input: 'compressedblocks:crated_suagr_cane'},
+      'compressedblocks:crated_suagr_cane',
+      'quark:sugar_cane_block',
+    );
   }
 
 
@@ -845,6 +894,13 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         B: 'kubejs:brain',
         C: 'rats:cheese'
     });
+
+    e.remove({ output: 'rats:assorted_vegetables' });
+    e.shapeless('rats:assorted_vegetables', [
+        '2x minecraft:carrot',
+        '2x minecraft:potato',
+        '5x #forge:vegetables',
+    ]);
   }
 
 

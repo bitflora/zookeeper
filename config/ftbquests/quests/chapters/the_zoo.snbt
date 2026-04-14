@@ -83,7 +83,7 @@
 		{
 			dependencies: ["32B6A25A9A456DEB"]
 			description: [
-				"Smaller \"ambient\" animals like these &aButterflies&r are simple creatures. Feed them or they might despawn! More complex animals can be tamed and claimed."
+				"Smaller \"ambient\" animals like these &aButterflies&r are simple creatures. Feed them and breed them with sugar or they might despawn! More complex animals can be tamed and claimed. Ambient animals can generally be farmed to feed to animals higher up the food chain."
 				""
 				"(You may read in wikis that ZAWA animals need to be fed and watered after being tamed; this is not the case. Your animals will be perfectly happy in their exhibits without your constant attention.)"
 			]

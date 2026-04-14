@@ -107,7 +107,11 @@
 		}
 		{
 			dependencies: ["4C415A8AB88183F2"]
-			description: ["With so many animals stomping around, our machines need to be sturdier than usual. Some of the recipes you are familiar with will require more &9cobblestone&r than usual. Make sure to check the recipe book."]
+			description: [
+				"With so many animals stomping around, our machines need to be sturdier than usual. Some of the recipes you are familiar with will require more &9cobblestone&r than usual. Make sure to check the recipe book."
+				""
+				"You can use the same lava setup to generate many other kinds of rocks; just put that rock underneath the generation area. See JEI to learn which ones this will work for. Your &aShrimp&r can be generating lots of blocks for you to build with."
+			]
 			icon: {
 				Count: 1
 				id: "compressedblocks:c0_cobblestone"
