@@ -25,6 +25,7 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     modify_inventory_pets(e);
     modify_cyclic(e);
     modify_compressed_blocks(e);
+    modify_genetic_animals(e);
 
     modify_exotic_birds_cage_drops(e);
 
@@ -836,6 +837,106 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
         M: 'kubejs:meatwad',
     });
 
+  }
+
+
+  function modify_genetic_animals(e) {
+    [
+      'eanimod:rawchicken_darksmall',
+      'eanimod:rawchicken_palesmall',
+    ].forEach( item_id => {
+      e.custom({
+        type: 'farmersdelight:cutting',
+        ingredients: [
+          { item: item_id }
+        ],
+        tool: { tag: 'forge:tools/knives' },
+        result: [
+          { item: 'farmersdelight:chicken_cuts', count: 1 },
+          { item: 'minecraft:bone_meal', count: 1 },
+        ]
+      });
+    });
+    [
+      'eanimod:cookedchicken_darksmall',
+      'eanimod:cookedchicken_palesmall',
+    ].forEach( item_id => {
+      e.custom({
+        type: 'farmersdelight:cutting',
+        ingredients: [
+          { item: item_id }
+        ],
+        tool: { tag: 'forge:tools/knives' },
+        result: [
+          { item: 'farmersdelight:cooked_chicken_cuts', count: 1 },
+          { item: 'minecraft:bone_meal', count: 1 },
+        ]
+      });
+    });
+
+    [
+      'eanimod:rawchicken_dark',
+      'eanimod:rawchicken_pale',
+    ].forEach( item_id => {
+      e.custom({
+        type: 'farmersdelight:cutting',
+        ingredients: [
+          { item: item_id }
+        ],
+        tool: { tag: 'forge:tools/knives' },
+        result: [
+          { item: 'farmersdelight:chicken_cuts', count: 2 },
+          { item: 'minecraft:bone_meal', count: 1 },
+        ]
+      });
+    });
+    [
+      'eanimod:cookedchicken_dark',
+      'eanimod:cookedchicken_pale',
+    ].forEach( item_id => {
+      e.custom({
+        type: 'farmersdelight:cutting',
+        ingredients: [
+          { item: item_id }
+        ],
+        tool: { tag: 'forge:tools/knives' },
+        result: [
+          { item: 'farmersdelight:cooked_chicken_cuts', count: 2 },
+          { item: 'minecraft:bone_meal', count: 1 },
+        ]
+      });
+    });
+
+    [
+      'eanimod:rawchicken_darkbig',
+    ].forEach( item_id => {
+      e.custom({
+        type: 'farmersdelight:cutting',
+        ingredients: [
+          { item: item_id }
+        ],
+        tool: { tag: 'forge:tools/knives' },
+        result: [
+          { item: 'farmersdelight:chicken_cuts', count: 3 },
+          { item: 'minecraft:bone_meal', count: 1 },
+        ]
+      });
+    });
+    [
+      'eanimod:cookedchicken_darkbig',
+    ].forEach( item_id => {
+      e.custom({
+        type: 'farmersdelight:cutting',
+        ingredients: [
+          { item: item_id }
+        ],
+        tool: { tag: 'forge:tools/knives' },
+        result: [
+          { item: 'farmersdelight:cooked_chicken_cuts', count: 3 },
+          { item: 'minecraft:bone_meal', count: 1 },
+        ]
+      });
+    });
   }
 
 
