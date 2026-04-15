@@ -1,0 +1,33 @@
+
+#General settings
+[general]
+	#Use config instead of datapack
+	use_config = true
+
+	#List settings
+	#Syntax: ["modid:block|weight"]
+	#Example: ["minecraft:stone|2","minecraft:dirt|1"]
+	#Forge tags are supported
+	[general.lists]
+		#Cobble gen
+		block_list_cobble = ["minecraft:cobblestone"]
+		#Stone gen
+		block_list_stone = ["minecraft:stone"]
+		#Basalt gen
+		block_list_basalt = ["minecraft:basalt"]
+
+		#Custom settings
+		[general.lists.custom]
+			#Custom generators
+			#Syntax: [gen]
+			#Gen: [type, block, list]
+			#Type: cobblestone, stone
+			#Block: resource location of the block below the generated block
+			#List: see List settings
+			#Examples:
+			#custom_generators = [
+			#   ["cobblestone", "minecraft:diamond_block", ["minecraft:diamond_block"]],
+			#   ["cobblestone", "minecraft:dirt", ["forge:dirt"]],
+			#   ["cobblestone", "minecraft:white_wool", ["minecraft:wool"]]]
+			custom_generators = [["cobblestone", "minecraft:mud", ["minecraft:mud"]], ["cobblestone", "minecraft:clay", ["minecraft:clay"]], ["cobblestone", "minecraft:andesite", ["minecraft:andesite"]], ["cobblestone", "minecraft:granite", ["minecraft:granite"]], ["cobblestone", "minecraft:diorite", ["minecraft:diorite"]], ["cobblestone", "minecraft:deepslate", ["minecraft:deepslate"]], ["cobblestone", "minecraft:gravel", ["minecraft:gravel"]], ["cobblestone", "minecraft:tuff", ["minecraft:tuff"]], ["cobblestone", "minecraft:blackstone", ["minecraft:blackstone"]], ["cobblestone", "minecraft:end_stone", ["minecraft:end_stone"]], ["cobblestone", "minecraft:calcite", ["minecraft:calcite"]], ["stone", "minecraft:mud", ["minecraft:mud"]], ["stone", "minecraft:clay", ["minecraft:clay"]], ["stone", "minecraft:andesite", ["minecraft:andesite"]], ["stone", "minecraft:granite", ["minecraft:granite"]], ["stone", "minecraft:diorite", ["minecraft:diorite"]], ["stone", "minecraft:deepslate", ["minecraft:deepslate"]], ["stone", "minecraft:gravel", ["minecraft:gravel"]], ["stone", "minecraft:tuff", ["minecraft:tuff"]], ["stone", "minecraft:blackstone", ["minecraft:blackstone"]], ["stone", "minecraft:end_stone", ["minecraft:end_stone"]], ["stone", "minecraft:calcite", ["minecraft:calcite"]]]
+
