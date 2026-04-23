@@ -42,7 +42,7 @@
     {
       "offer": {
         "itemKey": "alexsmobs:platypus_bucket",
-        "amount": 8,
+        "amount": 1,
         "priceModifier": 0
       },
       "request": {

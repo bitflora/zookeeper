@@ -594,10 +594,20 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
 
     e.shaped('inventorypets:temp_feed_bag', [
         ' F ',
-        'F F',
+        'W W',
+        'WWW'
+    ], {
+        F: 'kubejs:fur_ball',
+        W: '#minecraft:wool'
+    });
+
+    e.shaped('inventorypets:pet_bed', [
+        '   ',
+        'FFB',
         'FFF'
     ], {
-        F: 'kubejs:fur_ball'
+        F: '#minecraft:wool',
+        B: 'kubejs:fur_ball'
     });
 
     e.shaped('inventorypets:pet_bed', [
@@ -1047,6 +1057,10 @@ ServerEvents.recipes(e => { //listen for the "recipes" server event.
     // storage upgrades
     e.replaceInput({ mod: 'sophisticatedstorage'},
       'minecraft:redstone_torch',
+      '#kubejs:storage_upgrade_fur',
+    );
+    e.replaceInput({ mod: 'sophisticatedstorage'},
+      'minecraft:lever',
       '#kubejs:storage_upgrade_fur',
     );
     // Don't let them get away with upgrading backpack stuff to storage stuff; it would open progression too soon
